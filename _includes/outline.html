@@ -16,31 +16,37 @@
           <i class="fa fa-{{ chapter.icon }} fa-stack-1x fa-inverse"></i>
         </span>
         <h3 class="left-align">
-          <div class="h5 light-gray thin">Chapter {{ forloop.index }}</div>
+          <div class="h5 light-gray thin">{% if chapter.skip_chapter_heading %}&nbsp;{% else %}Chapter {{ forloop.index }}{% endif %}</div>
           <div style="height: 50px">{{ chapter.title }}</div>
         </h3>
         <p class="light-gray thin left-align" style="height: 50px;">
           {{ chapter.summary }}
         </p>
-        <dl class="light-gray thin left-align">
-          <dt class="bold mt2">Key ideas you'll explore</dt>
-          <dd class="ml1">
-            <ul class="mt0 pl2">
-              {% for item in chapter.key_ideas %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </dd>
+        {% if chapter.key_ideas or chapter.examples %}
+          <dl class="light-gray thin left-align">
+            {% if chapter.key_ideas %}
+              <dt class="bold mt2">Key ideas you'll explore</dt>
+              <dd class="ml1">
+                <ul class="mt0 pl2">
+                  {% for item in chapter.key_ideas %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </dd>
+            {% endif %}
 
-          <dt class="bold mt2">Examples you'll try</dt>
-          <dd class="ml1">
-            <ul class="mt0 pl2">
-              {% for item in chapter.examples %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-          </dd>
-        </dl>
+            {% if chapter.examples %}
+              <dt class="bold mt2">Examples you'll try</dt>
+              <dd class="ml1">
+                <ul class="mt0 pl2">
+                  {% for item in chapter.examples %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </dd>
+            {% endif %}
+          </dl>
+        {% endif %}
       </div>
     {% endfor %}
   </div>

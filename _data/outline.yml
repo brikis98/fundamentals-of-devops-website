@@ -139,5 +139,12 @@
     - Platform engineering.
     - DevSecOps, shift left, supply chain security.
     - Infrastructure from code, runbooks.
-  examples:
-    - TBD!
+
+- title: Open source code samples
+  icon: github
+  skip_chapter_heading: true
+  summary: |
+    The book includes dozens of code samples for you to try. You can find the code here:
+    <br>
+    <br>
+    <a href="https://github.com/brikis98/fundamentals-of-devops-code">https://github.com/brikis98/fundamentals-of-devops-code</a>.
