@@ -1,0 +1,47 @@
+<section class="mt4 mb4 p2 max-width-3 mx-auto">
+  <h2 class="mb0">About the book</h2>
+  <p class="mt2 thin">
+    This book is for individual contributors in operations roles (e.g., current and aspiring Site Reliability Engineers,
+    DevOps Engineers, Sysadmins, Operations Engineers, and Release Engineers) who want to level up their knowledge of
+    software delivery, individual contributors in dev roles (e.g., Software Engineers, Software Developers, Web
+    Developers, and Full Stack Engineers) who want to learn more about the operations side of the house, and managers
+    (e.g., Engineering Managers, Engineering Directors, CTOs, VPEs, and CIOs) who want to learn how to adopt DevOps and
+    software delivery best practices in their organizations.
+  </p>
+  <div class="clearfix clear-2">
+    {% for chapter in site.data.outline %}
+      <div class="md-col md-col-6 px2 mb3 center">
+        <span class="fa-stack fa-3x book-blue">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-{{ chapter.icon }} fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3 class="left-align">
+          <div class="h5 light-gray thin">Chapter {{ forloop.index }}</div>
+          <div style="height: 50px">{{ chapter.title }}</div>
+        </h3>
+        <p class="light-gray thin left-align" style="height: 50px;">
+          {{ chapter.summary }}
+        </p>
+        <dl class="light-gray thin left-align">
+          <dt class="bold mt2">Key ideas you'll explore</dt>
+          <dd class="ml1">
+            <ul class="mt0 pl2">
+              {% for item in chapter.key_ideas %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </dd>
+
+          <dt class="bold mt2">Examples you'll try</dt>
+          <dd class="ml1">
+            <ul class="mt0 pl2">
+              {% for item in chapter.examples %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    {% endfor %}
+  </div>
+</section>

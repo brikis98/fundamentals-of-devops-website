@@ -1,0 +1,56 @@
+# Website settings
+baseurl: "/"
+url: "https://www.fundamentals-of-devops.com"
+thumbnail_path: "book-cover-3d-mock-medium.png"
+
+# About settings
+name: "Fundamentals of DevOps and Software Delivery"
+description: "There are many guides out there on how to write software. This blog post series is a guide to software delivery: that is, all the processes, tools, and techniques that are required to run software in production and maintain it on an ongoing basis, so it can generate value for your customers and for your company. In particular, this series is a guide to DevOps, which is one of the main methodologies used today to make software delivery vastly more efficient. Whereas most DevOps content tends to focus primarily on culture and theory, this series is a hands-on guide that includes dozens of examples that walk you, step-by-step, through how to run real systems and real code. You’ll start with the basics—running a single server—and work all the way up to Kubernetes clusters, automated deployment pipelines, distributed data systems, and more. By the time you’re done with the blog post series, you will have had hands-on practice with all the core concepts and best practices of modern DevOps and software delivery."
+website_repo_url: "https://github.com/brikis98/fundamentals-of-devops-website"
+early_release_url: "#" # TODO: update
+
+# URLs
+contact_urls:
+  twitter:
+    url: "https://twitter.com/brikis98"
+    label: "Twitter"
+    icon: "twitter-square"
+    username: "@brikis98"
+  linkedin:
+    url: "https://www.linkedin.com/in/jbrikman"
+    label: "LinkedIn"
+    icon: "linkedin-square"
+  facebook:
+    url: "https://www.facebook.com/brikis98"
+    label: "Facebook"
+    icon: "facebook-square"
+  google:
+    url: "https://plus.google.com/+YevgeniyBrikman/"
+    label: "Google+"
+    icon: "google-plus-square"
+  slideshare:
+    url: "https://www.slideshare.net/brikis98"
+    label: "SlideShare"
+    icon: "slideshare"
+  github:
+    url: "https://github.com/brikis98/"
+    label: "GitHub"
+    icon: "github-square"
+  email:
+    url: "mailto:jim@ybrikman.com"
+    label: "Email"
+    value: "jim@ybrikman.com"
+    icon: "envelope-square"
+
+# Jekyll build settings
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed
+highlighter: rouge
+timezone: 'America/Los_Angeles'
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate

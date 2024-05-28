@@ -1,0 +1,35 @@
+$hyperlink-color: #07c;
+$bg-gray-color: #f9f9f9;
+
+a {
+  color: $hyperlink-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hyperlink-color {
+  color: $hyperlink-color;
+}
+
+.hyperlink-color-on-hover:hover {
+  color: $hyperlink-color;
+}
+
+.medium-gray {
+  color: #696969;
+}
+
+.light-gray {
+  color: #808080;
+}
+
+.book-blue {
+  color: #0f4d8b;
+}
+
+.bg-gray-color {
+  background-color: $bg-gray-color;
+}

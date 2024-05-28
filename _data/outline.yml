@@ -1,0 +1,143 @@
+- title: How to Deploy Your App
+  icon: rocket
+  summary: How to deploy an app in the cloud in minutes.
+  key_ideas:
+    - Workstations vs servers.
+    - On-prem vs cloud.
+    - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS).
+  examples:
+    - Run an app on Fly.io.
+    - Run an app on an EC2 instance in AWS.
+
+- title: How to Manage Your Infrastructure as Code
+  icon: code
+  summary: How to manage your infrastructure as code (IaC) instead of manually (ClickOps).
+  key_ideas:
+    - Ad hoc scripts.
+    - Configuration management tools.
+    - Server templating tools.
+    - Provisioning tools.
+  examples:
+    - Use Bash to deploy an EC2 instance.
+    - Use Ansible to deploy an EC2 instance.
+    - Use Packer to build an AMI.
+    - Use OpenTofu to deploy an EC2 instance.
+
+- title: "How to Deploy Many Apps: VMs, Containers, and Serverless"
+  icon: cubes
+  summary: How to run your app by using the most popular orchestration approaches.
+  key_ideas:
+    - Server orchestration.
+    - VM orchestration.
+    - Container orchestration.
+    - Serverless orchestration.
+  examples:
+    - Use Ansible to deploy app servers &amp; Nginx.
+    - Use OpenTofu to deploy an ASG and ALB.
+    - Deploy a Dockerized app in Kubernetes.
+    - Deploy a serverless app with AWS Lambda.
+
+- title: How to Version, Build, and Test Your Code
+  icon: code-fork
+  summary: How to use version control, build systems, and automated tests.
+  key_ideas:
+    - Version control.
+    - Build systems.
+    - Dependency management.
+    - Automated testing.
+  examples:
+    - Store your code in GitHub and use PRs.
+    - Configure your build in NPM.
+    - Set up automated tests for a Node.js app.
+    - Set up automated tests for OpenTofu code.
+
+- title: How to set up CI and CD
+  icon: refresh
+  summary: How to fully automate your software development lifecycle (SDLC).
+  key_ideas:
+    - Trunk-based development.
+    - Branch by abstraction.
+    - Feature toggles.
+    - Deployment strategies and pipelines.
+  examples:
+    - Use OIDC with GitHub Actions and AWS.
+    - Run tests in GitHub Actions.
+    - Run deployments in GitHub Actions.
+
+- title: "How to set up Networking: VPCs, VPN, and DNS"
+  icon: sitemap
+  summary: The basics of networking and its impact on connectivity and security.
+  key_ideas:
+    - Virtual private clouds (VPCs).
+    - "Moat & bailey: bastion host, SSH, VPN."
+    - "Zero-trust: Tailscale, Teleport."
+    - DNS and domain names.
+  examples:
+    - Deploy a custom VPC in AWS.
+    - Use SSH and EC2 Instance Connect.
+    - Set up a custom domain name in Route 53.
+
+- title: How to Manage Authentication, Authorization, and Secrets
+  icon: lock
+  summary: How to manage access to your systems and protect sensitive data.
+  key_ideas:
+    - "Authn: IAM, SSO, MFA."
+    - "Authorz: principle of least privilege, IAM."
+    - Encryption at rest and in transit.
+    - Secrets management.
+  examples:
+    - Set up SSO for AWS.
+    - Use ACM to provision a TLS certificate.
+    - Store secrets in AWS Secrets Manager.
+
+- title: How to Work with Multiple Teams and Environments
+  icon: users
+  summary: The basics of governance in larger organizations.
+  key_ideas:
+    - Account baselines, account factories.
+    - Microservices.
+    - Service discovery and service meshes.
+    - Updating and patching.
+  examples:
+    - Create multiple AWS accounts.
+    - Deploy microservices in Kubernetes.
+    - Do service discovery with Kubernetes.
+    - Configure automated updates.
+
+- title: "How to store data: SQL, NoSQL, Queues, and more"
+  icon: database
+  summary: Data storage options, trade-offs, and back-up.
+  key_ideas:
+    - "Hard-drives: local and network disks."
+    - Relational DBs, schema management.
+    - NoSQL, queues, data warehouses.
+    - File storage.
+  examples:
+    - Deploy PostgreSQL using RDS.
+    - Deploy Redis using ElastiCache.
+    - Use Flyway for schema migrations.
+    - Use S3 and CloudFront for static assets.
+
+- title: "How to Monitor Your Systems: Metrics, Logs, and Alerts"
+  icon: line-chart
+  summary: How to get visibility into your systems.
+  key_ideas:
+    - Metrics and dashboards.
+    - Logs and log aggregation.
+    - Alerts and on-call rotations.
+    - Observability and tracing.
+  examples:
+    - Create a dashboard in Grafana.
+    - Aggregate logs in Elasticsearch.
+    - Set up alerts in CloudWatch.
+
+- title: The Future of DevOps and Software Delivery
+  icon: magic
+  summary: How DevOps and software delivery may change over time.
+  key_ideas:
+    - Serverless, service mesh, AI.
+    - Platform engineering.
+    - DevSecOps, shift left, supply chain security.
+    - Infrastructure from code, runbooks.
+  examples:
+    - TBD!

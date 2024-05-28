@@ -1,0 +1,19 @@
+<section class="mt4 mb4 p2 pb6 clearfix max-width-3 mx-auto" id="buy-now">
+  <h2 class="mb2">Pre-order now</h2>
+  <div class="clearfix">
+    <p class="mt2 mb4 thin">
+      <em>{{ site.name }}</em>, is available for <strong>pre-order</strong> at the online stores below. Be one of the
+      first to get a copy and to provide feedback that helps to shape the book!
+    </p>
+  </div>
+  <div class="clearfix clear-2">
+    {% for store in site.data.stores %}
+    {% capture buy_text %}Buy {{ site.short_title }} on {{ store.name }}{% endcapture %}
+    <div class="md-col md-col-6 py1 center">
+      <a href="{{ store.url }}" class="block border border-gray mr2 rounded height-70 tracked" data-trk="buy-{{ store.id }}-button-get-the-book" data-value="{{ store.value }}" target="_blank" title="{{ buy_text }}">
+        {% include image.html path=store.image alt=buy_text class="align-middle" %}
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

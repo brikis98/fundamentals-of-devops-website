@@ -1,0 +1,8 @@
+- id: "early-release"
+  url: "#"
+  title: "Pre-order now!"
+  date: "June 1, 2024"
+  image: "book-cover-3d-mock-medium.png"
+  description: |
+    You can pre-order the book now on Amazon!
+  call_to_action: "Get your copy on Amazon"
