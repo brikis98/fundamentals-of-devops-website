@@ -1,8 +1,7 @@
-- title: How to Deploy Your App
+- title: An Introduction to DevOps and Software Delivery
   icon: rocket
-  summary: How to deploy an app in the cloud in minutes.
   key_ideas:
-    - Workstations vs servers.
+    - The evolution of DevOps.
     - On-prem vs cloud.
     - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS).
   examples:
@@ -11,7 +10,6 @@
 
 - title: How to Manage Your Infrastructure as Code
   icon: code
-  summary: How to manage your infrastructure as code (IaC) instead of manually (ClickOps).
   key_ideas:
     - Ad hoc scripts.
     - Configuration management tools.
@@ -25,7 +23,6 @@
 
 - title: "How to Deploy Many Apps: VMs, Containers, and Serverless"
   icon: cubes
-  summary: How to run your app by using the most popular orchestration approaches.
   key_ideas:
     - Server orchestration.
     - VM orchestration.
@@ -39,7 +36,6 @@
 
 - title: How to Version, Build, and Test Your Code
   icon: code-fork
-  summary: How to use version control, build systems, and automated tests.
   key_ideas:
     - Version control.
     - Build systems.
@@ -53,7 +49,6 @@
 
 - title: How to set up CI and CD
   icon: refresh
-  summary: How to fully automate your software development lifecycle (SDLC).
   key_ideas:
     - Trunk-based development.
     - Branch by abstraction.
@@ -66,7 +61,6 @@
 
 - title: "How to set up Networking: VPCs, VPN, and DNS"
   icon: sitemap
-  summary: The basics of networking and its impact on connectivity and security.
   key_ideas:
     - Virtual private clouds (VPCs).
     - "Moat & bailey: bastion host, SSH, VPN."
@@ -79,10 +73,9 @@
 
 - title: How to Manage Authentication, Authorization, and Secrets
   icon: lock
-  summary: How to manage access to your systems and protect sensitive data.
   key_ideas:
-    - "Authn: IAM, SSO, MFA."
-    - "Authorz: principle of least privilege, IAM."
+    - "Authn, IAM, SSO, MFA."
+    - "Authz, principle of least privilege."
     - Encryption at rest and in transit.
     - Secrets management.
   examples:
@@ -92,7 +85,6 @@
 
 - title: How to Work with Multiple Teams and Environments
   icon: users
-  summary: The basics of governance in larger organizations.
   key_ideas:
     - Account baselines, account factories.
     - Microservices.
@@ -106,7 +98,6 @@
 
 - title: "How to store data: SQL, NoSQL, Queues, and more"
   icon: database
-  summary: Data storage options, trade-offs, and back-up.
   key_ideas:
     - "Hard-drives: local and network disks."
     - Relational DBs, schema management.
@@ -120,7 +111,6 @@
 
 - title: "How to Monitor Your Systems: Metrics, Logs, and Alerts"
   icon: line-chart
-  summary: How to get visibility into your systems.
   key_ideas:
     - Metrics and dashboards.
     - Logs and log aggregation.
@@ -133,7 +123,6 @@
 
 - title: The Future of DevOps and Software Delivery
   icon: magic
-  summary: How DevOps and software delivery may change over time.
   key_ideas:
     - Serverless, service mesh, AI.
     - Platform engineering.
