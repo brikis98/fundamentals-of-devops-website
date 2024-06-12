@@ -63,8 +63,8 @@
   icon: sitemap
   key_ideas:
     - Virtual private clouds (VPCs).
-    - "Moat & bailey: bastion host, SSH, VPN."
-    - "Zero-trust: Tailscale, Teleport."
+    - Bastion host, SSH, VPN.
+    - Moat & bailey vs zero trust.
     - DNS and domain names.
   examples:
     - Deploy a custom VPC in AWS.
@@ -74,19 +74,19 @@
 - title: How to Manage Authentication, Authorization, and Secrets
   icon: lock
   key_ideas:
-    - "Authn, IAM, SSO, MFA."
-    - "Authz, principle of least privilege."
+    - Authentication and user management.
+    - Authorization, permissions, ACLs.
     - Encryption at rest and in transit.
     - Secrets management.
   examples:
-    - Set up SSO for AWS.
+    - Set up SSO and roles for AWS.
     - Use ACM to provision a TLS certificate.
     - Store secrets in AWS Secrets Manager.
 
 - title: How to Work with Multiple Teams and Environments
   icon: users
   key_ideas:
-    - Account baselines, account factories.
+    - Internal developer platforms.
     - Microservices.
     - Service discovery and service meshes.
     - Updating and patching.
@@ -99,7 +99,7 @@
 - title: "How to store data: SQL, NoSQL, Queues, and more"
   icon: database
   key_ideas:
-    - "Hard-drives: local and network disks."
+    - Local and network drives.
     - Relational DBs, schema management.
     - NoSQL, queues, data warehouses.
     - File storage.
@@ -124,8 +124,8 @@
 - title: The Future of DevOps and Software Delivery
   icon: magic
   key_ideas:
-    - Serverless, service mesh, AI.
-    - Platform engineering.
+    - Serverless.
+    - AI.
     - DevSecOps, shift left, supply chain security.
     - Infrastructure from code, runbooks.
 
