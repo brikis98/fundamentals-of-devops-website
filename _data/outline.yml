@@ -59,17 +59,29 @@
     - Run tests in GitHub Actions.
     - Run deployments in GitHub Actions.
 
+- title: How to Work with Multiple Teams and Environments
+  icon: users
+  key_ideas:
+    - Internal developer platforms.
+    - Microservices.
+    - Updating and patching.
+  examples:
+    - Create multiple AWS accounts.
+    - Deploy microservices in Kubernetes.
+    - Configure automated updates.
+
 - title: "How to set up Networking: VPCs, VPN, and DNS"
   icon: sitemap
   key_ideas:
+    - DNS, domain names, CDN.
     - Virtual private clouds (VPCs).
-    - Bastion host, SSH, VPN.
-    - Moat & bailey vs zero trust.
-    - DNS and domain names.
+    - Service discovery, service meshes.
+    - Network access and hardening.
   examples:
-    - Deploy a custom VPC in AWS.
-    - Use SSH and EC2 Instance Connect.
     - Set up a custom domain name in Route 53.
+    - Deploy a custom VPC in AWS.
+    - Do service discovery with Kubernetes.
+    - Use SSH and EC2 Instance Connect.
 
 - title: How to Manage Authentication, Authorization, and Secrets
   icon: lock
@@ -82,19 +94,6 @@
     - Set up SSO and roles for AWS.
     - Use ACM to provision a TLS certificate.
     - Store secrets in AWS Secrets Manager.
-
-- title: How to Work with Multiple Teams and Environments
-  icon: users
-  key_ideas:
-    - Internal developer platforms.
-    - Microservices.
-    - Service discovery and service meshes.
-    - Updating and patching.
-  examples:
-    - Create multiple AWS accounts.
-    - Deploy microservices in Kubernetes.
-    - Do service discovery with Kubernetes.
-    - Configure automated updates.
 
 - title: "How to store data: SQL, NoSQL, Queues, and more"
   icon: database
