@@ -1,9 +1,11 @@
 - id: "early-release"
-  url: "#"
-  title: "The Early Release is now available!"
+  url: "#buy-now"
+  title: "The early release and pre-orders are now available!"
   date: "June 24, 2024"
   image: "book-2d-cover-early-release-small.png"
   description: |
-    Grab a copy of the ebook before the final version is done so you can start learning today. You'll receive new
-    chapters and updates as they are written, plus the final ebook bundle when the book is released.
-  call_to_action: "Get your copy on O'Reilly"
+    The early release is now available at O'Reilly Media! Grab a copy of the ebook before the final version is done so
+    you can start learning today, and receive new chapters and updates as they are written, plus the final ebook bundle
+    when the book is released. If you prefer to wait for the final version, you can preorder the book at online stores
+    now!
+  call_to_action: "Get the early release or pre-order now!"
