@@ -5,15 +5,14 @@
   value: 50
 - id: "amazon"
   name: "Amazon"
-  url: "#"
+  url: "https://www.amazon.com/Fundamentals-DevOps-Software-Delivery-Hands/dp/1098174593/"
   image: "amazon-small.png"
-  value: 50
-
-#- id: "barnes-noble"
-#  name: "Barnes & Noble"
-#  url: "https://www.barnesandnoble.com/w/terraform-yevgeniy-brikman/1125298641"
-#  image: "barnes-noble-small.png"
-#  value: 20
+  value: 70
+- id: "barnes-noble"
+  name: "Barnes & Noble"
+  url: "https://www.barnesandnoble.com/w/fundamentals-of-devops-and-software-delivery-jim-brikman/1145837544"
+  image: "barnes-noble-small.png"
+  value: 70
 #- id: "target"
 #  name: "Target"
 #  url: "https://www.target.com/p/terraform-up-and-running-3rd-edition-by-yevgeniy-brikman-paperback/-/A-86266702"
