@@ -1,8 +1,9 @@
 - id: "early-release"
   url: "#"
-  title: "Pre-order now!"
-  date: "June 1, 2024"
-  image: "book-cover-2d-draft-medium.png"
+  title: "The Early Release is now available!"
+  date: "June 24, 2024"
+  image: "book-2d-cover-early-release-small.png"
   description: |
-    You can pre-order the book now on Amazon!
-  call_to_action: "Get your copy on Amazon"
+    Grab a copy of the ebook before the final version is done so you can start learning today. You'll receive new
+    chapters and updates as they are written, plus the final ebook bundle when the book is released.
+  call_to_action: "Get your copy on O'Reilly"

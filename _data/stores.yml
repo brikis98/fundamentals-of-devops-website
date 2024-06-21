@@ -1,13 +1,13 @@
-- id: "amazon"
-  name: "Amazon"
-  url: "#"
-  image: "amazon-small.png"
-  value: 20
 - id: "oreilly"
   name: "O'Reilly"
   url: "#"
   image: "oreilly-small.png"
-  value: 20
+  value: 50
+- id: "amazon"
+  name: "Amazon"
+  url: "#"
+  image: "amazon-small.png"
+  value: 50
 
 #- id: "barnes-noble"
 #  name: "Barnes & Noble"

@@ -1,0 +1,6 @@
+{% capture buy_text %}Buy {{ site.short_title }} on {{ include.store.name }}{% endcapture %}
+<div class="{% if include.class %}{{ include.class }}{% else %}md-col md-col-6 py1 center{% endif %}">
+  <a href="{{ include.store.url }}" class="block border border-gray mr2 rounded height-70 tracked" data-trk="buy-{{ include.store.id }}-button-get-the-book" data-value="{{ include.store.value }}" target="_blank" title="{{ buy_text }}">
+    {% include image.html path=include.store.image alt=buy_text class="align-middle" %}
+  </a>
+</div>
