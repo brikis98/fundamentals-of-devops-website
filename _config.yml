@@ -5,7 +5,7 @@ thumbnail_path: "book-3d-cover-no-shadow-medium.png"
 
 # About settings
 name: "Fundamentals of DevOps and Software Delivery"
-description: "There are many guides out there on how to write software. This blog post series is a guide to software delivery: that is, all the processes, tools, and techniques that are required to run software in production and maintain it on an ongoing basis, so it can generate value for your customers and for your company. In particular, this series is a guide to DevOps, which is one of the main methodologies used today to make software delivery vastly more efficient. Whereas most DevOps content tends to focus primarily on culture and theory, this series is a hands-on guide that includes dozens of examples that walk you, step-by-step, through how to run real systems and real code. You’ll start with the basics—running a single server—and work all the way up to Kubernetes clusters, automated deployment pipelines, distributed data systems, and more. By the time you’re done with the blog post series, you will have had hands-on practice with all the core concepts and best practices of modern DevOps and software delivery."
+description: "This book is a hands-on guide to software delivery—that is, all the processes, tools, and techniques that are required to run and maintain software in production on an ongoing basis—and DevOps, one of the methodologies used today to make software delivery vastly more efficient."
 website_repo_url: "https://github.com/brikis98/fundamentals-of-devops-website"
 early_release_url: "#" # TODO: update
 
