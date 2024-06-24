@@ -1,4 +1,4 @@
-- chapter: "1. An Introduction to DevOps and Software Delivery"
+- chapter: "1. An Introduction to DevOps & Software Delivery"
   page: 19
 - section: A Primer on DevOps
   page: 20
@@ -69,7 +69,7 @@
 - subsection: Provisioning Plus Server Templating Plus Orchestration
   page: 108
 - section: Conclusion
-- chapter: "3. How to Deploy Many Apps: Orchestration, VMs, Containers, and Serverless"
+- chapter: "3. How to Deploy Many Apps"
   page: 111
 - section: An Introduction to Orchestration
   page: 112
