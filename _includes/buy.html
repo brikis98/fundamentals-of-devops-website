@@ -1,24 +1,26 @@
-<section class="mt4 mb4 p2 pb6 clearfix max-width-3 mx-auto" id="buy-now">
-  <h2 class="mb2">Buy now</h2>
-  <div class="lg-col lg-col-6 py2">
-    <p class="mt2 thin">
-      The <strong>Early Release</strong> of <em>{{ site.name }}</em> is now available at O'Reilly! Grab a copy of
-      the ebook before the final version is done, so you can start learning today, receive new chapters as they are
-      written, and provide feedback directly to the author to help shape the book:
-    </p>
-    {% assign oreilly = site.data.stores | first %}
-    {% include buy-button.html store=oreilly class="center" %}
-    <p class="mt3 thin">
-      If you prefer to wait for the final release, you can <strong>pre-order</strong> the book now at the following
-      stores:
-    </p>
-    {% for store in site.data.stores offset:1 %}
-      {% include buy-button.html store=store %}
-    {% endfor %}
-  </div>
-  <div class="lg-col lg-col-6 px2">
-    <a href="{{ oreilly.url }}" data-trk="buy-{{ oreilly.id }}-button-get-the-book" data-value="{{ oreilly.value }}" target="_blank" title="Buy {{ site.name }} on {{ oreilly.name }}">
-      {% include image.html path="book-2d-cover-early-release-small.png" alt="Fundamentals of DevOps and Software Delivery Early Release" %}
-    </a>
+<section class="mt4 mb4 p2 pb7 clearfix bg-gray-color border-bottom border-top border-gray">
+  <div class="max-width-3 mx-auto">
+    <h2 class="mb2">Buy now</h2>
+    <div class="lg-col lg-col-6 lg-col-right px2">
+      <a href="{{ oreilly.url }}" data-trk="buy-{{ oreilly.id }}-button-get-the-book" data-value="{{ oreilly.value }}" target="_blank" title="Buy {{ site.name }} on {{ oreilly.name }}">
+        {% include image.html path="book-2d-cover-early-release-small.png" alt="Fundamentals of DevOps and Software Delivery Early Release" %}
+      </a>
+    </div>
+    <div class="lg-col lg-col-6 lg-col-right py2">
+      <p class="mt2 thin">
+        The <strong>Early Release</strong> of <em>{{ site.name }}</em> is now available at O'Reilly! Grab a copy of
+        the ebook before the final version is done, so you can start learning today, receive new chapters as they are
+        written, and provide feedback directly to the author to help shape the book:
+      </p>
+      {% assign oreilly = site.data.stores | first %}
+      {% include buy-button.html store=oreilly class="center" %}
+      <p class="mt3 thin">
+        If you prefer to wait for the print version, you can <strong>pre-order</strong> the book now at the following
+        stores:
+      </p>
+      {% for store in site.data.stores offset:1 %}
+        {% include buy-button.html store=store %}
+      {% endfor %}
+    </div>
   </div>
 </section>

@@ -1,4 +1,4 @@
-<figure{% if include.class %} class="{{ include.class }}"{% endif %}>
+<figure class="m0 p0{% if include.class %} {{ include.class }}{% endif %}">
   {% capture alt %}{% if include.caption %}{{ include.caption }}{% else %}{{ include.alt }}{% endif %}{% endcapture %}
   {% capture image_html %}{% include image.html path=include.path external=include.external alt=alt class=include.image_class style=include.style %}{% endcapture %}
   {% if include.url %}
@@ -9,7 +9,7 @@
     {{ image_html }}
   {% endif %}
   {% if include.caption %}
-    <figcaption>
+    <figcaption class="h6">
       {% if include.url %}
         <a href="{{ include.url }}" target="_blank">{{ include.caption }}</a>
       {% else %}

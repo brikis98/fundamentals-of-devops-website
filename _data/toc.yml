@@ -1,0 +1,54 @@
+- chapter: "3. How to Deploy Many Apps: Orchestration, VMs, Containers, and Serverless"
+  page: 111
+- section: An Introduction to Orchestration
+  page: 112
+- section: Server Orchestration
+  page: 115
+- subsection: "Example: Deploy Multiple Servers in AWS Using Ansible"
+  page: 115
+- subsection: "Example: Deploy an App Securely and Reliably Using Ansible"
+  page: 117
+- subsection: "Example: Deploy a Load Balancer Using Ansible and Nginx"
+  page: 122
+- subsection: "Example: Roll Out Updates with Ansible"
+  page:  126
+- section: VM Orchestration
+  page: 127
+- subsection: "Example: Build a VM Image Using Packer"
+  page: 128
+- subsection: "Example: Deploy a VM Image in an Auto Scaling Group Using OpenTofu"
+  page: 130
+- subsection: "Example: Deploy an Application Load Balancer Using OpenTofu"
+  page: 133
+- subsection: "Example: Roll Out Updates with OpenTofu and Auto Scaling Groups"
+  page: 137
+- section: Container Orchestration
+  page: 141
+- subsection: "Example: A Crash Course on Docker"
+  page: 143
+- subsection: "Example: Create a Docker Image for a Node.js app"
+  page: 145
+- subsection: "Example: Deploy a Dockerized App with Kubernetes"
+  page: 148
+- subsection: "Example: Deploy a Load Balancer with Kubernetes"
+  page: 154
+- subsection: "Example: Roll Out Updates with Kubernetes"
+  page: 155
+- subsection: "Example: Deploy a Kubernetes Cluster in AWS Using EKS"
+  page: 157
+- subsection: "Example: Push a Docker Image to ECR"
+  page: 160
+- subsection: "Example: Deploy a Dockerized App into an EKS Cluster"
+  page: 162
+- section: Serverless Orchestration
+  page: 164
+- subsection: "Example: Deploy a Serverless Function with AWS Lambda"
+  page: 168
+- subsection: "Example: Deploy an API Gateway in Front of AWS Lambda"
+  page: 171
+- subsection: "Example: Roll Out Updates with AWS Lambda"
+  page: 173
+- section: Comparing Orchestration Options
+  page: 174
+- section: Conclusion
+  page: 179
