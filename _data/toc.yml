@@ -1,3 +1,74 @@
+- chapter: "1. An Introduction to DevOps and Software Delivery"
+  page: 19
+- section: A Primer on DevOps
+  page: 20
+- subsection: Where DevOps Came From
+  page: 21
+- subsection: The Evolution of DevOps
+  page: 23
+- subsection: Adopting DevOps Practices
+  page: 33
+- section: An Introduction to Deploying Apps
+  page: 35
+- subsection: "Example: Run the Sample App Locally"
+  page: 35
+- subsection: Deploying an App on a Server
+  page: 37
+- subsection: Deploying On Prem Versus in the Cloud
+  page: 39
+- subsection: Deploying An App Using PaaS
+  page: 43
+- subsection: Deploying an App Using IaaS
+  page: 47
+- subsection: Comparing PaaS and IaaS
+  page: 60
+- section: Conclusion
+  page: 62
+- chapter: "2. How to Manage Your Infrastructure as Code"
+  page: 65
+- section: The Benefits of IaC
+  page: 67
+- section: Ad Hoc Scripts
+  page: 69
+- subsection: "Example: Deploy an EC2 Instance Using a Bash Script"
+  page: 70
+- subsection: How Ad Hoc Scripts Stack Up
+  page: 72
+- section: Configuration Management Tools
+  page: 74
+- subsection: "Example: Deploy an EC2 Instance Using Ansible"
+  page: 75
+- subsection: "Example: Configure a Server Using Ansible"
+  page: 77
+- subsection: How Configuration Management Tools Stack Up
+  page: 82
+- section: Server Templating Tools
+  page: 84
+- subsection: "Example: Create a VM Image Using Packer"
+  page: 86
+- subsection: How Server Templating Tools Stack Up
+  page: 89
+- section: Provisioning Tools
+  page: 90
+- subsection: "Example: Deploy an EC2 Instance Using OpenTofu"
+  page: 91
+- subsection: "Example: Update and Destroy Infrastructure Using OpenTofu"
+  page: 97
+- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Module"
+  page: 99
+- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Module from GitHub"
+  page: 104
+- subsection: How Provisioning Tools Stack Up
+  page: 105
+- section: Using Multiple IaC Tools Together
+  page: 107
+- subsection: Provisioning Plus Configuration Management
+  page: 107
+- subsection: Provisioning Plus Server Templating
+  page: 107
+- subsection: Provisioning Plus Server Templating Plus Orchestration
+  page: 108
+- section: Conclusion
 - chapter: "3. How to Deploy Many Apps: Orchestration, VMs, Containers, and Serverless"
   page: 111
 - section: An Introduction to Orchestration

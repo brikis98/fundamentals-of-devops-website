@@ -1,6 +1,6 @@
-<div class="border px2 mt1" style="height: 450px; overflow: scroll">
+<div class="border p2 mt1" style="height: 450px; overflow: scroll">
   <div class="right-align">
-    <h3 class="mb3">Table of Contents</h3>
+    <h3 class="mb3 mt0">Table of Contents</h3>
   </div>
   <table>
     <tbody>
@@ -12,7 +12,7 @@
             <td class="pl1 h5">{{ item.section }}</td>
           {% elsif item.subsection %}
             {% assign substr = item.subsection | slice: 0, 7 %}
-            <td class="pl2 h6"><span class="{% if substr == "Example" %}bg-yellow{% endif %}">{{ item.subsection }}</span></td>
+            <td class="pl2 h6"><span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}">{{ item.subsection }}</span></td>
           {% endif %}
           <td class="h6">{{ item.page }}</td>
         </tr>
@@ -20,4 +20,4 @@
     </tbody>
   </table>
 </div>
-<p class="thin h6 mt1">A snippet of the table of contents highlighting a few of the step-by-step examples in the book.</p>
+<p class="thin h6 mt1">A snippet of the table of contents highlighting a few of the hands-on examples in the book.</p>
