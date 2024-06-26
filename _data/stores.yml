@@ -1,6 +1,6 @@
 - id: "oreilly"
   name: "O'Reilly"
-  url: "https://learning.oreilly.com/library/view/fundamentals-of-devops/9781098174583/"
+  url: "http://oreillymedia.pxf.io/c/5553902/2077261/15173"
   image: "oreilly-small.png"
   value: 50
 - id: "amazon"
