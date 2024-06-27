@@ -13,11 +13,16 @@
   url: "https://www.barnesandnoble.com/w/fundamentals-of-devops-and-software-delivery-jim-brikman/1145837544"
   image: "barnes-noble-small.png"
   value: 70
-#- id: "target"
-#  name: "Target"
-#  url: "https://www.target.com/p/terraform-up-and-running-3rd-edition-by-yevgeniy-brikman-paperback/-/A-86266702"
-#  image: "target-small.png"
-#  value: 20
+- id: "target"
+  name: "Target"
+  url: "https://www.target.com/p/fundamentals-of-devops-and-software-delivery-by-jim-brikman-paperback/-/A-92561472"
+  image: "target-small.png"
+  value: 70
+- id: "adlibris"
+  name: "Adlibris"
+  url: "https://www.adlibris.com/no/bok/fundamentals-of-devops-and-software-delivery-9781098174590"
+  image: "adlibris-logo.png"
+  value: 70
 #- id: "apple"
 #  name: "Apple iTunes"
 #  url: "https://books.apple.com/us/book/terraform-up-and-running/id6443437585"
