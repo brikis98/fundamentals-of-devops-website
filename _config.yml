@@ -1,7 +1,7 @@
 # Website settings
 baseurl: "/"
 url: "https://www.fundamentals-of-devops.com"
-thumbnail_path: "book-3d-cover-no-shadow-medium.png"
+thumbnail_path: "fundamentals-of-devops-and-software-delivery-3d-cover-no-shadow-medium.png"
 
 # About settings
 name: "Fundamentals of DevOps and Software Delivery"
