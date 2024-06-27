@@ -1,6 +1,7 @@
 <section id="buy-now" class="mt4 mb4 p2 pb7 clearfix bg-gray-color border-bottom border-top border-gray">
   <div class="max-width-3 mx-auto">
     <h2 class="mb2">Buy now</h2>
+    {% assign oreilly = site.data.stores | first %}
     <div class="lg-col lg-col-6 lg-col-right px2">
       <a href="{{ oreilly.url }}" data-trk="buy-{{ oreilly.id }}-button-get-the-book" data-value="{{ oreilly.value }}" target="_blank" title="Buy {{ site.name }} on {{ oreilly.name }}">
         {% include image.html path="fundamentals-of-devops-and-software-delivery-2d-cover-early-release-small.png" alt="Fundamentals of DevOps and Software Delivery Early Release" %}
@@ -12,7 +13,6 @@
         the ebook before the final version is done, so you can start learning today, receive new chapters as they are
         written, and provide feedback directly to the author to help shape the book:
       </p>
-      {% assign oreilly = site.data.stores | first %}
       {% include buy-button.html store=oreilly class="center" %}
       <p class="mt1 thin h6 italic">
         Not an O'Reilly subscriber? Get a
