@@ -62,18 +62,18 @@
 - title: How to Work with Multiple Teams and Environments
   icon: users
   key_ideas:
-    - Internal developer platforms.
-    - Microservices.
-    - Updating and patching.
+    - Multiple environments.
+    - Multiple libraries.
+    - Multiple services.
   examples:
     - Create multiple AWS accounts.
+    - Configure apps for multiple environments.
     - Deploy microservices in Kubernetes.
-    - Configure automated updates.
 
 - title: "How to set up Networking: VPCs, VPN, and DNS"
   icon: sitemap
   key_ideas:
-    - DNS, domain names, CDN.
+    - Domain Name System (DNS).
     - Virtual private clouds (VPCs).
     - Service discovery, service meshes.
     - Network access and hardening.
@@ -101,7 +101,7 @@
     - Local and network drives.
     - Relational DBs, schema management.
     - NoSQL, queues, data warehouses.
-    - File storage.
+    - File storage and CDNs.
   examples:
     - Deploy PostgreSQL using RDS.
     - Deploy Redis using ElastiCache.
