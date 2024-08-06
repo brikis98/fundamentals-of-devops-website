@@ -70,18 +70,18 @@
     - Configure apps for multiple environments.
     - Deploy microservices in Kubernetes.
 
-- title: "How to set up Networking: VPCs, VPN, and DNS"
+- title: "How to set up Networking"
   icon: sitemap
   key_ideas:
     - Domain Name System (DNS).
     - Virtual private clouds (VPCs).
-    - Service discovery, service meshes.
     - Network access and hardening.
+    - Service discovery, service meshes.
   examples:
     - Set up a custom domain name in Route 53.
     - Deploy a custom VPC in AWS.
-    - Do service discovery with Kubernetes.
-    - Use SSH and EC2 Instance Connect.
+    - Use SSH to connect to a server.
+    - Use Istio as a service mesh with Kubernetes.
 
 - title: How to Manage Authentication, Authorization, and Secrets
   icon: lock
