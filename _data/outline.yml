@@ -83,17 +83,17 @@
     - Use SSH to connect to a server.
     - Use Istio as a service mesh with Kubernetes.
 
-- title: How to Manage Authentication, Authorization, and Secrets
+- title: How to Manage Secrets and Authentication
   icon: lock
   key_ideas:
-    - Authentication and user management.
-    - Authorization, permissions, ACLs.
-    - Encryption at rest and in transit.
-    - Secrets management.
+    - Cryptography.
+    - Secrets management (encryption at rest).
+    - Secure communication (encryption in transit).
+    - Authentication.
   examples:
-    - Set up SSO and roles for AWS.
-    - Use ACM to provision a TLS certificate.
     - Store secrets in AWS Secrets Manager.
+    - Use ACM to provision a TLS certificate.
+    - Set up SSO for AWS.
 
 - title: "How to store data: SQL, NoSQL, Queues, and more"
   icon: database
