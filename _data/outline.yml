@@ -83,7 +83,7 @@
     - Use SSH to connect to a server.
     - Use Istio as a service mesh with Kubernetes.
 
-- title: How to Manage Secrets and Authentication
+- title: How to Secure Communication, Storage, and Authentication
   icon: lock
   key_ideas:
     - Cryptography.
