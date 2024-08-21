@@ -83,17 +83,17 @@
     - Use SSH to connect to a server.
     - Use Istio as a service mesh with Kubernetes.
 
-- title: How to Secure Communication, Storage, and Authentication
+- title: How to Secure Communication and Storage
   icon: lock
   key_ideas:
     - Cryptography.
-    - Secrets management (encryption at rest).
+    - Secure storage (encryption at rest).
     - Secure communication (encryption in transit).
-    - Authentication.
   examples:
+    - Encrypt data with AES and RSA.
+    - Verify integrity with SHA-256, HMAC, and signatures.
     - Store secrets in AWS Secrets Manager.
-    - Use ACM to provision a TLS certificate.
-    - Set up SSO for AWS.
+    - Set up HTTPS with a TLS certificate from LetsEncrypt.
 
 - title: "How to store data: SQL, NoSQL, Queues, and more"
   icon: database
