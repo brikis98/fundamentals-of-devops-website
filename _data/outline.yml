@@ -95,17 +95,17 @@
     - Store secrets in AWS Secrets Manager.
     - Set up HTTPS with a TLS certificate from LetsEncrypt.
 
-- title: "How to store data: SQL, NoSQL, Queues, and more"
+- title: "How to store data"
   icon: database
   key_ideas:
-    - Local and network drives.
     - Relational DBs, schema management.
-    - NoSQL, queues, data warehouses.
+    - NoSQL, NewSQL, queues, streams.
     - File storage and CDNs.
+    - Backup and recovery.
   examples:
     - Deploy PostgreSQL using RDS.
-    - Deploy Redis using ElastiCache.
-    - Use Flyway for schema migrations.
+    - Configure PostgreSQL read replicas and snapshots.
+    - Use Knex.js for schema migrations.
     - Use S3 and CloudFront for static assets.
 
 - title: "How to Monitor Your Systems: Metrics, Logs, and Alerts"
