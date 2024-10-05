@@ -116,9 +116,9 @@
     - Alerts and on-call rotations.
     - Observability and tracing.
   examples:
-    - Create a dashboard in Grafana.
-    - Aggregate logs in Elasticsearch.
-    - Set up alerts in CloudWatch.
+    - Create a dashboard in CloudWatch.
+    - Configure structured logging with winston.js.
+    - Set up Route 53 health checks and alerts.
 
 - title: The Future of DevOps and Software Delivery
   icon: magic
