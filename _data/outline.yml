@@ -117,7 +117,7 @@
     - Observability and tracing.
   examples:
     - Create a dashboard in CloudWatch.
-    - Configure structured logging with winston.js.
+    - Do structured logging with Winston.
     - Set up Route 53 health checks and alerts.
 
 - title: The Future of DevOps and Software Delivery
