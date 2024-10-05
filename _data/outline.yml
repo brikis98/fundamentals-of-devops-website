@@ -108,7 +108,7 @@
     - Use Knex.js for schema migrations.
     - Use S3 and CloudFront for static assets.
 
-- title: "How to Monitor Your Systems: Metrics, Logs, and Alerts"
+- title: "How to Monitor Your Systems"
   icon: line-chart
   key_ideas:
     - Metrics and dashboards.
