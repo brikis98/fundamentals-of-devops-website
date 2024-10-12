@@ -21,7 +21,7 @@
     - Use Packer to build an AMI.
     - Use OpenTofu to deploy an EC2 instance.
 
-- title: "How to Deploy Many Apps: VMs, Containers, and Serverless"
+- title: "How to Deploy Your Apps: VMs, Containers, and Serverless"
   icon: cubes
   key_ideas:
     - Server orchestration.
@@ -47,7 +47,7 @@
     - Set up automated tests for a Node.js app.
     - Set up automated tests for OpenTofu code.
 
-- title: How to set up CI and CD
+- title: How to Set Up CI and CD
   icon: refresh
   key_ideas:
     - Trunk-based development.
@@ -70,7 +70,7 @@
     - Configure apps for multiple environments.
     - Deploy microservices in Kubernetes.
 
-- title: "How to set up Networking"
+- title: "How to Set Up Networking"
   icon: sitemap
   key_ideas:
     - Domain Name System (DNS).
@@ -95,7 +95,7 @@
     - Store secrets in AWS Secrets Manager.
     - Set up HTTPS with a TLS certificate from LetsEncrypt.
 
-- title: "How to store data"
+- title: "How to Store Data"
   icon: database
   key_ideas:
     - Relational DBs, schema management.
@@ -128,7 +128,7 @@
     - DevSecOps, shift left, supply chain security.
     - Infrastructure from code, runbooks.
 
-- title: Open source code samples
+- title: Open Source Code Samples
   icon: github
   skip_chapter_heading: true
   summary: |
