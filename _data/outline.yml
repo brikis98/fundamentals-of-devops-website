@@ -5,7 +5,7 @@
     - On-prem vs cloud.
     - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS).
   examples:
-    - Run an app on Fly.io.
+    - Run an app on Render.
     - Run an app on an EC2 instance in AWS.
 
 - title: How to Manage Your Infrastructure as Code
