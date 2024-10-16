@@ -1,138 +1,139 @@
 - title: An Introduction to DevOps and Software Delivery
   icon: rocket
   key_ideas:
-    - The evolution of DevOps.
-    - On-prem vs cloud.
-    - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS).
+    - The evolution of DevOps
+    - On-prem vs cloud
+    - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS)
   examples:
-    - Run an app on Render.
-    - Run an app on an EC2 instance in AWS.
+    - Run an app locally
+    - Run an app on Render
+    - Run an app on an EC2 instance in AWS
 
 - title: How to Manage Your Infrastructure as Code
   icon: code
   key_ideas:
-    - Ad hoc scripts.
-    - Configuration management tools.
-    - Server templating tools.
-    - Provisioning tools.
+    - Ad hoc scripts
+    - Configuration management tools
+    - Server templating tools
+    - Provisioning tools
   examples:
-    - Use Bash to deploy an EC2 instance.
-    - Use Ansible to deploy an EC2 instance.
-    - Use Packer to build an AMI.
-    - Use OpenTofu to deploy an EC2 instance.
+    - Use Bash to deploy an EC2 instance
+    - Use Ansible to deploy an EC2 instance
+    - Use Packer to build an AMI
+    - Use OpenTofu to deploy an EC2 instance
 
 - title: "How to Deploy Your Apps: VMs, Containers, and Serverless"
   icon: cubes
   key_ideas:
-    - Server orchestration.
-    - VM orchestration.
-    - Container orchestration.
-    - Serverless orchestration.
+    - Server orchestration
+    - VM orchestration
+    - Container orchestration
+    - Serverless orchestration
   examples:
-    - Use Ansible to deploy app servers &amp; Nginx.
-    - Use OpenTofu to deploy an ASG and ALB.
-    - Deploy a Dockerized app in Kubernetes.
-    - Deploy a serverless app with AWS Lambda.
+    - Use Ansible to deploy app servers &amp; Nginx
+    - Use OpenTofu to deploy an ASG and ALB
+    - Deploy a Dockerized app in Kubernetes
+    - Deploy a serverless app with AWS Lambda
 
 - title: How to Version, Build, and Test Your Code
   icon: code-fork
   key_ideas:
-    - Version control.
-    - Build systems.
-    - Dependency management.
-    - Automated testing.
+    - Version control
+    - Build systems
+    - Dependency management
+    - Automated testing
   examples:
-    - Store your code in GitHub and use PRs.
-    - Configure your build in NPM.
-    - Set up automated tests for a Node.js app.
-    - Set up automated tests for OpenTofu code.
+    - Store your code in GitHub and use PRs
+    - Configure your build in NPM
+    - Set up automated tests for a Node.js app
+    - Set up automated tests for OpenTofu code
 
 - title: How to Set Up CI and CD
   icon: refresh
   key_ideas:
-    - Trunk-based development.
-    - Branch by abstraction.
-    - Feature toggles.
-    - Deployment strategies and pipelines.
+    - Trunk-based development
+    - Branch by abstraction
+    - Feature toggles
+    - Deployment strategies and pipelines
   examples:
-    - Use OIDC with GitHub Actions and AWS.
-    - Run tests in GitHub Actions.
-    - Run deployments in GitHub Actions.
+    - Use OIDC with GitHub Actions and AWS
+    - Run tests in GitHub Actions
+    - Run deployments in GitHub Actions
 
 - title: How to Work with Multiple Teams and Environments
   icon: users
   key_ideas:
-    - Multiple environments.
-    - Multiple libraries.
-    - Multiple services.
+    - Multiple environments
+    - Multiple libraries
+    - Multiple services
   examples:
-    - Create multiple AWS accounts.
-    - Configure apps for multiple environments.
-    - Deploy microservices in Kubernetes.
+    - Create multiple AWS accounts
+    - Configure apps for multiple environments
+    - Deploy microservices in Kubernetes
 
 - title: "How to Set Up Networking"
   icon: sitemap
   key_ideas:
-    - Domain Name System (DNS).
-    - Virtual private clouds (VPCs).
-    - Network access and hardening.
-    - Service discovery, service meshes.
+    - Domain Name System (DNS)
+    - Virtual private clouds (VPCs)
+    - Network access and hardening
+    - Service discovery, service meshes
   examples:
-    - Set up a custom domain name in Route 53.
-    - Deploy a custom VPC in AWS.
-    - Use SSH to connect to a server.
-    - Use Istio as a service mesh with Kubernetes.
+    - Set up a custom domain name in Route 53
+    - Deploy a custom VPC in AWS
+    - Use SSH to connect to a server
+    - Use Istio as a service mesh with Kubernetes
 
 - title: How to Secure Communication and Storage
   icon: lock
   key_ideas:
-    - Cryptography.
-    - Secure storage (encryption at rest).
-    - Secure communication (encryption in transit).
+    - Cryptography
+    - Encryption at rest
+    - Encryption in transit
   examples:
-    - Encrypt data with AES and RSA.
-    - Verify integrity with SHA-256, HMAC, and signatures.
-    - Store secrets in AWS Secrets Manager.
-    - Set up HTTPS with a TLS certificate from LetsEncrypt.
+    - Encrypt data with AES and RSA
+    - Verify integrity with SHA-256, HMAC
+    - Store secrets in AWS Secrets Manager
+    - Set up HTTPS with LetsEncrypt
 
 - title: "How to Store Data"
   icon: database
   key_ideas:
-    - Relational DBs, schema management.
-    - NoSQL, NewSQL, queues, streams.
-    - File storage and CDNs.
-    - Backup and recovery.
+    - Relational DBs, schemas
+    - NoSQL, NewSQL, queues, streams
+    - File storage and CDNs
+    - Backup and recovery
   examples:
-    - Deploy PostgreSQL using RDS.
-    - Configure PostgreSQL read replicas and snapshots.
-    - Use Knex.js for schema migrations.
-    - Use S3 and CloudFront for static assets.
+    - Deploy PostgreSQL using RDS
+    - Configure RDS backup, replicas
+    - Use Knex.js for schema migrations
+    - Use S3 and CloudFront for static assets
 
 - title: "How to Monitor Your Systems"
   icon: line-chart
   key_ideas:
-    - Metrics and dashboards.
-    - Logs and log aggregation.
-    - Alerts and on-call rotations.
-    - Observability and tracing.
+    - Metrics and dashboards
+    - Logs and log aggregation
+    - Alerts and on-call rotations
+    - Observability and tracing
   examples:
-    - Create a dashboard in CloudWatch.
-    - Do structured logging with Winston.
-    - Set up Route 53 health checks and alerts.
+    - Create a dashboard in CloudWatch
+    - Do structured logging with Node.js
+    - Set up Route 53 health checks and alerts
 
 - title: The Future of DevOps and Software Delivery
   icon: magic
   key_ideas:
-    - Serverless.
-    - AI.
-    - DevSecOps, shift left, supply chain security.
-    - Infrastructure from code, runbooks.
+    - Infrastructureless
+    - Generative AI
+    - Shift left, supply chain security
+    - Platform engineering
 
 - title: Open Source Code Samples
   icon: github
   skip_chapter_heading: true
   summary: |
-    The book includes dozens of code samples for you to try. You can find the code here:
+    The book includes dozens of code samples for you to try, which you can find here:
     <br>
     <br>
-    <a href="https://github.com/brikis98/fundamentals-of-devops-code">https://github.com/brikis98/fundamentals-of-devops-code</a>.
+    <a href="https://github.com/brikis98/fundamentals-of-devops-code">https://github.com/brikis98/fundamentals-of-devops-code</a>
