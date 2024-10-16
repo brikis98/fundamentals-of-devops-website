@@ -3,7 +3,7 @@
   key_ideas:
     - The evolution of DevOps
     - On-prem vs cloud
-    - Platform as a Service (PaaS) vs Infrastructure as a Service (IaaS)
+    - PaaS vs IaaS
   examples:
     - Run an app locally
     - Run an app on Render
@@ -52,7 +52,6 @@
   icon: refresh
   key_ideas:
     - Trunk-based development
-    - Branch by abstraction
     - Feature toggles
     - Deployment strategies and pipelines
   examples:
@@ -92,7 +91,6 @@
     - Encryption in transit
   examples:
     - Encrypt data with AES and RSA
-    - Verify integrity with SHA-256, HMAC
     - Store secrets in AWS Secrets Manager
     - Set up HTTPS with LetsEncrypt
 
@@ -112,9 +110,8 @@
 - title: "How to Monitor Your Systems"
   icon: line-chart
   key_ideas:
-    - Metrics and dashboards
     - Logs and log aggregation
-    - Alerts and on-call rotations
+    - Metrics, dashboards, alerts
     - Observability and tracing
   examples:
     - Create a dashboard in CloudWatch
