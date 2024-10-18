@@ -22,7 +22,7 @@
     - Use Packer to build an AMI
     - Use OpenTofu to deploy an EC2 instance
 
-- title: "How to Deploy Your Apps: VMs, Containers, and Serverless"
+- title: "How to Deploy Your Apps"
   icon: cubes
   key_ideas:
     - Server orchestration
