@@ -3,24 +3,7 @@
     <h2 class="mb0">News</h2>
     {% include newsletter.html %}
     {% for news in site.data.news %}
-      {% assign url_first_char = news.url | slice:0 %}
-      {% assign target = "_blank" %}
-      {% if url_first_char == "#" %}{% assign target = "_self" %}{% endif %}
-      <div class="clearfix mxn2 mt4 mb4">
-        <div class="sm-col sm-col-4 mb2 px2">
-          <a href="{{ news.url }}" target="{{ target }}" class="tracked" data-trk="click-news-{{ news.id }}">{% include image.html path=news.image alt=news.title %}</a>
-        </div>
-        <div class="sm-col sm-col-8 thin px2">
-          <h3 class="mt0 mb0"><a href="{{ news.url }}" target="{{ target }}" class="black tracked" data-trk="click-news-{{ news.id }}">{{ news.title }}</a></h3>
-          <time class="block mb1 light-gray" datetime="{{ news.date }}">{{ news.date }}</time>
-          <p class="mt0">
-            {{ news.description }}
-          </p>
-          <p>
-            <a href="{{ news.url }}" target="{{ target }}" class="tracked" data-trk="click-news-{{ news.id }}">{{ news.call_to_action }} &raquo;</a>
-          </p>
-        </div>
-      </div>
+      {% include resource.html type="news" id=news.id url=news.url title=news.title description=news.description image=news.image date=news.date call_to_action=news.call_to_action %}
     {% endfor %}
   </div>
 </section>
