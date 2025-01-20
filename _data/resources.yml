@@ -1,8 +1,0 @@
-- id: "git-in-5-min"
-  url: "/git-in-5-min"
-  title: "Learn Git in 5 minutes"
-  date: "January 20, 2025"
-  image: "git-logo.png"
-  description: |
-    Learn the basics of Git in just 5 minutes with this quick start tutorial
-  call_to_action: "Read more"

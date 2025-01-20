@@ -43,6 +43,9 @@ contact_urls:
     icon: "envelope-square"
 
 # Jekyll build settings
+paginate: 10
+paginate_path: "/resources/page:num"
+permalink: "/resources/:year/:month/:day/:title/"
 sass:
   sass_dir: "/assets/css"
   style: :compressed
