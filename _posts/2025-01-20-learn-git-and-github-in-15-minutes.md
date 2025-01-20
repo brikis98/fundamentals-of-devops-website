@@ -174,7 +174,8 @@ For each commit in the log, you'll see the commit ID, author, date, and commit m
 _commit ID_: each commit has a different ID that you can use to uniquely identify that commit, and many Git commands
 take a commit ID as an argument. Under the hood, a commit ID is calculated by taking the SHA-1 hash of the contents of
 the commit, all the commit metadata (author, date, and so on), and the ID of the previous commit (you'll learn more
-about SHA-1 and other hash functions in <<how_to_manage_auth_and_secrets>>).[^1] Commit IDs are 40 characters long, but 
+about SHA-1 and other hash functions in Chapter 8 of 
+_[Fundamentals of DevOps and Software Delivery]({{ site.url }})_).[^1] Commit IDs are 40 characters long, but 
 in most commands, you can use just the first 7 characters, as that will be unique enough to identify commits in all but 
 the largest repos.
 
@@ -344,7 +345,7 @@ the dominant players in the market. Therefore, it's a good idea to learn to use 
 
 ### Push your code to GitHub
 
-Let's push the example code you've worked on while reading this {book-signifier} to GitHub. Go into the folder where
+Let's push the example code you've worked on while reading this book to GitHub. Go into the folder where
 you have your code:
 
 ```console
@@ -395,7 +396,7 @@ Untracked files:
 ```
 
 Before staging these files, you should create a new file in the root of the repo called _.gitignore_, with the contents
-shown in <<example_gitignore>>:
+shown below:
 
 
 ```
@@ -421,15 +422,15 @@ coverage
 The _.gitignore_ file specifies files you do _not_ want Git to track:
 
 1. OpenTofu state should _not_ be checked into version control. You'll learn why not, and the proper way to
-   store state files in <<how_to_set_up_ci_cd>>.
+   store state files in Chapter 5 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_.
 1. The _.terraform_ folder is used by OpenTofu as a scratch directory and should not be checked in.
-1. The Ansible examples in earlier {chapter-signifier-local}s store SSH private keys locally in _.key_ files. These
+1. The Ansible examples in earlier chapters store SSH private keys locally in _.key_ files. These
    are secrets, so they should be stored in an appropriate secret store (as you'll learn about in
-   <<how_to_manage_auth_and_secrets>>), and not in version control.
-1. The `lambda` module from <<how_to_deploy_many_apps>> creates a Zip file automatically. This is a
-   build artifact and should not be checked in.
+   Chapter 8 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_), and not in version control.
+1. The `lambda` module from Chapter 3 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_ creates a Zip 
+   file automatically. This is a build artifact and should not be checked in.
 1. The _node_modules_ and _coverage_ folders are also scratch directories that should not be checked in. You'll learn
-   more about these folders later in this {chapter-signifier-local-short}.
+   more about these folders later in this chapter.
 
 I usually commit the _.gitignore_ file first to ensure I don't accidentally commit other files that don't belong in
 version control:
@@ -479,7 +480,7 @@ named `<REMOTE>`. So to push your `main` branch to the GitHub repo you just crea
 $ git push origin main
 ```
 
-If you refresh your repo in GitHub, you should now see your code there, as shown in <<gh_repo_with_code>>:
+If you refresh your repo in GitHub, you should now see your code there, as shown in the following image:
 
 ![Your GitHub repo with code in it](/assets/img/resources/learn-git-in-5-minutes/gh-repo-with-code.png)
 
@@ -489,14 +490,14 @@ endpoint.
 
 Notice how GitHub prompts you to "Add a README" to your new repo. Adding documentation for your code is always a good
 idea, so let's do it. Click the green Add a README button, and you'll get a code editor in your browser where you can
-write the README in Markdown, as shown in <<gh_repo_readme>>:
+write the README in Markdown:
 
 ![Filling in a README for the GitHub repo](/assets/img/resources/learn-git-in-5-minutes/gh-repo-create-readme.png)
 
 Fill in a reasonable description for the repo and then click the "Commit changes..."
 button. GitHub will prompt you for a commit message, so fill one in just like the `-m` flag on the command-line, and
 click the "Commit changes" button. GitHub will commit the changes and then take you back to your repo, where you'll be
-able to see your README, as shown in <<gh_repo_with_readme>>:
+able to see your README:
 
 ![Your GitHub repo with a README](/assets/img/resources/learn-git-in-5-minutes/gh-repo-with-readme.png)
 
@@ -600,16 +601,17 @@ the Pull Requests tab of your repo in a web browser and clicking the New Pull Re
 web browser, and you should see a page where you can fill in a title and description for the PR. You can also scroll
 down on that page to see the changes between your branch and `main`, which should be the same ones you saw when
 running `git diff`. If those changes look OK, click the "Create pull request" button, and you'll end up on the GitHub
-PR UI, as shown in <<gh_pr_open>>:
+PR UI:
 
 ![An open pull request in GitHub](/assets/img/resources/learn-git-in-5-minutes/gh-pr-open.png)
 
 You and all your team members can use this PR page to see the code changes (try clicking the "Files changed" tab
 to get a view similar to `git diff`), discuss the changes, request reviewers, request changes, and so on. All of this
 discussion gets stored in GitHub, so if later on, you're trying to debug an issue or figure out why some code is the way
-it is, these PR pages serve as a great source of history and context. As you'll see in <<how_to_set_up_ci_cd>>,
-this is also the place where a lot of the CI / CD integration will happen. If the PR looks good, click "Merge pull
-request," and then "Confirm merge," to merge the changes in.
+it is, these PR pages serve as a great source of history and context. As you'll see in Chapter 5 of
+_[Fundamentals of DevOps and Software Delivery]({{ site.url }})_, this is also the place where a lot of the CI / CD 
+integration will happen. If the PR looks good, click "Merge pull request," and then "Confirm merge," to merge the 
+changes in.
 
 ## Conclusion
 
@@ -620,7 +622,7 @@ get your hands dirty:
 * Learn to use `git rebase`. How does it compare to `git merge`?
 
 To learn how to integrate version control into your continuous integration and continuous delivery (CI / CD) pipelines, 
-check out [Fundamentals of DevOps and Software Delivery]({{ site.url }})!
+check out _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_!
 
 <br>
 <br>
