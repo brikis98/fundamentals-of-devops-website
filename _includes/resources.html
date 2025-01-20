@@ -2,7 +2,7 @@
   <div class="max-width-3 mx-auto">
     <h2 class="mb0">Resources</h2>
     <p class="mt2 thin">
-      Blog posts, excerpts, appendices, and other useful information related to DevOps and software delivery.
+      Blog posts, appendices, and other useful information related to the book.
     </p>
     {% for resource in site.data.resources %}
       {% include resource.html type="resource" id=resource.id url=resource.url title=resource.title description=resource.description image=resource.image date=resource.date call_to_action=resource.call_to_action %}
