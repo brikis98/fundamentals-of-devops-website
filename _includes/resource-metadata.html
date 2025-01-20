@@ -1,0 +1,10 @@
+{% assign minutes = include.content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+  {% assign minutes = 1 %}
+{% endif %}
+
+<p class="light-gray thin mt0">
+  <time datetime="{{ include.date | date:"%Y-%m-%d" }}">{{ include.date | date:"%b %d, %Y" }}</time>
+  |
+  {{ minutes }} min read
+</p>
