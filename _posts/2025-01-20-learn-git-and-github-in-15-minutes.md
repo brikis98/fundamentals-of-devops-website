@@ -1,9 +1,24 @@
 ---
 layout: resource
-title: "Learn Git in 5 Minutes"
-description: "Learn the basics of Git in just 5 minutes with this quick start tutorial."
-image: "git-logo.png"
+title: "Learn Git and GitHub in 15 Minutes"
+description: "Learn the basics of Git and GitHub in 15 minutes with this hands-on tutorial."
+image: "/resources/learn-git-in-5-minutes/git-github.png"
 ---
+
+A _version control system (VCS)_ is a tool that allows you to store source code, share it with your team, integrate
+your work together, and track changes over time. I cannot imagine developing software without using a VCS. It's a
+central part of every modern software delivery process. And there's nothing modern about it: nearly 25 years ago, using
+version control was item #1 on the [Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) 
+(a quick test you can use to rate the quality of a software team), and the first version control system was developed 
+roughly 50 years ago.
+
+Despite all that, I still come across a surprising number of developers who don't know how or why to use version
+control. If you're one of these developers, it's nothing to be ashamed of, and you'll find that if you take a small
+amount of time to learn it now, it's one of those skills that will benefit you for years to come. This tutorial will
+teach you to use two of the most popular version control tools available today, Git and GitHub, in a hands-on tutorial
+that takes about 15 minutes.
+
+Let's get started.
 
 ## Version control primer
 
