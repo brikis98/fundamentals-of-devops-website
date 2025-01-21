@@ -10,14 +10,14 @@ your work together, and track changes over time. A VCS is a central part of ever
 delivery]({{ site.url }}) process, and yet, I still frequently come across developers who don't know how or why to use 
 version control. If you're one of these developers, it's nothing to be ashamed of, and you'll find that if you take a 
 small amount of time to learn it now, it's one of those skills that will benefit you for years to come. This tutorial 
-will teach you to use two of the most popular version control tools available today, Git and GitHub, through a series of 
-hands-on exercises that take about 15 minutes.
+will teach you the basics of how to use two of the most popular version control tools available today, Git and GitHub, 
+through a series of hands-on exercises that take about 15 minutes.
 
 Here's what this tutorial will cover:
 
 * [Version control primer](#version-control-primer): Learn the basics of what a VCS is and why you might use one.
-* [Git crash course](#a-crash-course-on-git): Learn to use Git locally, on your own computer.
-* [GitHub crash course](#a-crash-course-on-github): Learn to use Git with others by using GitHub.
+* [Git crash course](#a-crash-course-on-git): Learn the basics of using Git on your own computer.
+* [GitHub crash course](#a-crash-course-on-github): Learn the basics of using Git with others by using GitHub.
 
 Let's get started by learning the basics of version control.
 
@@ -517,8 +517,8 @@ changes in.
 
 ## Conclusion
 
-Congrats! You've now learned how to use Git and GitHub. To go further, here are a few exercises you can try at home to 
-get your hands dirty:
+Congrats! You've now learned the basics of how to use Git and GitHub. This is just enough to get you started and 
+minimally productive. To go further, here are a few exercises you can try at home to get your hands dirty:
 
 * Learn how to use [`.gitignore` files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) 
   to tell Git which files _not_ to commit. 
