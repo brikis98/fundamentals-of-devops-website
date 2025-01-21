@@ -6,19 +6,20 @@ image: "/resources/learn-git-in-5-minutes/git-github.png"
 ---
 
 A _version control system (VCS)_ is a tool that allows you to store source code, share it with your team, integrate
-your work together, and track changes over time. I cannot imagine developing software without using a VCS. It's a
-central part of every modern software delivery process. And there's nothing modern about it: nearly 25 years ago, using
-version control was item #1 on the [Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) 
-(a quick test you can use to rate the quality of a software team), and the first version control system was developed 
-roughly 50 years ago.
+your work together, and track changes over time. A VCS is a central part of every modern [software 
+delivery]({{ site.url }}) process, and yet, I still frequently come across developers who don't know how or why to use 
+version control. If you're one of these developers, it's nothing to be ashamed of, and you'll find that if you take a 
+small amount of time to learn it now, it's one of those skills that will benefit you for years to come. This tutorial 
+will teach you to use two of the most popular version control tools available today, Git and GitHub, through a series of 
+hands-on exercises that take about 15 minutes.
 
-Despite all that, I still come across a surprising number of developers who don't know how or why to use version
-control. If you're one of these developers, it's nothing to be ashamed of, and you'll find that if you take a small
-amount of time to learn it now, it's one of those skills that will benefit you for years to come. This tutorial will
-teach you to use two of the most popular version control tools available today, Git and GitHub, in a hands-on tutorial
-that takes about 15 minutes.
+Here's what this tutorial will cover:
 
-Let's get started.
+* [Version control primer](#version-control-primer): Learn the basics of what a VCS is and why you might use one.
+* [Git crash course](#a-crash-course-on-git): Learn to use Git locally, on your own computer.
+* [GitHub crash course](#a-crash-course-on-github): Learn to use Git with others by using GitHub.
+
+Let's get started by learning the basics of version control.
 
 ## Version control primer
 
@@ -173,11 +174,9 @@ Date:   Sat Apr 20 16:01:28 2024 -0400
 For each commit in the log, you'll see the commit ID, author, date, and commit message. Take special note of the
 _commit ID_: each commit has a different ID that you can use to uniquely identify that commit, and many Git commands
 take a commit ID as an argument. Under the hood, a commit ID is calculated by taking the SHA-1 hash of the contents of
-the commit, all the commit metadata (author, date, and so on), and the ID of the previous commit (you'll learn more
-about SHA-1 and other hash functions in Chapter 8 of 
-_[Fundamentals of DevOps and Software Delivery]({{ site.url }})_).[^1] Commit IDs are 40 characters long, but 
-in most commands, you can use just the first 7 characters, as that will be unique enough to identify commits in all but 
-the largest repos.
+the commit, all the commit metadata (author, date, and so on), and the ID of the previous commit. Commit IDs are 40 
+characters long, but in most commands, you can use just the first 7 characters, as that will be unique enough to 
+identify commits in all but the largest repos.
 
 Let's make another commit. First, make a change to _example.txt_:
 
@@ -320,12 +319,12 @@ You can see that Git was able to merge all the changes automatically, as there w
 `testing` branches. If you now look at _example.txt_, it will have three lines in it, and if you run `git log`, you'll
 see three commits.
 
-## A Crash Course on GitHub
-
 Now that you know how to run Git locally, on your own computer, you've already learned something useful. If nothing
-else, you now have a way to store revisions of your work that's much more effective than _essay-v2.doc_,
+else, you now have a way to store revisions of your work that's more effective than _essay-v2.doc_,
 _essay-v3.doc_, etc. But to see the full power of Git, you'll want to use it with other developers, which is the focus
 of the next section.
+
+## A Crash Course on GitHub
 
 Git is a _distributed VCS_, which means that every team member can have a full copy of the repository, and do commits,
 merges, and branches, completely locally. However, the most common way to use Git is to pick one copy of the repository
@@ -345,117 +344,20 @@ the dominant players in the market. Therefore, it's a good idea to learn to use 
 
 ### Push your code to GitHub
 
-Let's push the example code you've worked on while reading this book to GitHub. Go into the folder where
-you have your code:
+Let's push the example code you've worked on in this tutorial to GitHub. Go into the folder where you have your Git
+repo:
 
 ```console
-$ cd fundamentals-of-devops
+$ cd /tmp/git-practice
 ```
-
-If you've done all the examples up to this point, the contents of this folder should look something like this:
-
-```console
-$ tree -L 2
-.
-├── ch1
-│   ├── ec2-user-data-script
-│   └── sample-app
-├── ch2
-│   ├── ansible
-│   ├── bash
-│   ├── packer
-│   └── tofu
-└── ch3
-    ├── ansible
-    ├── docker
-    ├── kubernetes
-    ├── packer
-    └── tofu
-```
-
-Turn this into a Git repo by running `git init`:
-
-```console
-$ git init
-Initialized empty Git repository in /fundamentals-of-devops/.git/
-```
-
-If you run `git status`, you'll see that there are no commits and no files staged for commit:
-
-```console
-$ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	ch1/
-	ch2/
-	ch3/
-```
-
-Before staging these files, you should create a new file in the root of the repo called _.gitignore_, with the contents
-shown below:
-
-
-```
-# <1>
-*.tfstate
-*.tfstate.backup
-*.tfstate.lock.info
-
-# <2>
-.terraform
-
-# <3>
-*.key
-
-# <4>
-*.zip
-
-# <5>
-node_modules
-coverage
-```
-
-The _.gitignore_ file specifies files you do _not_ want Git to track:
-
-1. OpenTofu state should _not_ be checked into version control. You'll learn why not, and the proper way to
-   store state files in Chapter 5 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_.
-1. The _.terraform_ folder is used by OpenTofu as a scratch directory and should not be checked in.
-1. The Ansible examples in earlier chapters store SSH private keys locally in _.key_ files. These
-   are secrets, so they should be stored in an appropriate secret store (as you'll learn about in
-   Chapter 8 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_), and not in version control.
-1. The `lambda` module from Chapter 3 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_ creates a Zip 
-   file automatically. This is a build artifact and should not be checked in.
-1. The _node_modules_ and _coverage_ folders are also scratch directories that should not be checked in. You'll learn
-   more about these folders later in this chapter.
-
-I usually commit the _.gitignore_ file first to ensure I don't accidentally commit other files that don't belong in
-version control:
-
-```console
-$ git add .gitignore
-$ git commit -m "Add .gitignore"
-```
-
-With that done, you can use `git add .` to stage all the files and folders in your _fundamentals-of-devops_ folder, and
-then commit them:
-
-```console
-$ git add .
-$ git commit -m "Example code for first few chapters"
-```
-
-The code is now in a Git repo on your local computer. Let's now push it to a Git repo on GitHub.
 
 If you don't have a GitHub account already, [sign up for one now](https://github.com/signup) (it's free), and follow the
-[authenticating on the command line docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line)
+[authenticating on the command line 
+documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line)
 to learn to authenticate to GitHub from your terminal.
 
-Next, [create a new repository in GitHub](https://github.com/new), give it a name, make the repo public, and click
-"Create repository," as shown in here:
+Next, [create a new repository in GitHub](https://github.com/new), give it a name (e.g., `git-practice`), make the repo 
+private, and click "Create repository," as shown in here:
 
 ![Create a new GitHub repo](/assets/img/resources/learn-git-in-5-minutes/create-new-gh-repo.png)
 
@@ -563,13 +465,13 @@ changes look like:
 ```console
 $ git diff
 diff --git a/README.md b/README.md
-index 843bd01..ad75c5e 100644
+index fe36da2..4a1a513 100644
 --- a/README.md
 +++ b/README.md
 @@ -1,3 +1,5 @@
- # Fundamentals of DevOps and Software Delivery Examples
+ # Git practice
 
- Code examples for the book _Fundamentals of DevOps and Software Delivery_.
+ A repo for learning Git and GitHub.
 +
 +https://www.fundamentals-of-devops.com/
 ```
@@ -617,25 +519,11 @@ changes in.
 
 Congrats! You've now learned how to use Git and GitHub. To go further, here are a few exercises you can try at home to 
 get your hands dirty:
- 
-* Learn how to use the `git tag` command to create tags.
-* Learn to use `git rebase`. How does it compare to `git merge`?
 
-To learn how to integrate version control into your continuous integration and continuous delivery (CI / CD) pipelines, 
+* Learn how to use [`.gitignore` files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) 
+  to tell Git which files _not_ to commit. 
+* Learn how to use the [`git tag` command](https://git-scm.com/book/en/v2/Git-Basics-Tagging) to create tags.
+* Learn to use [`git rebase`](https://git-scm.com/docs/git-rebase). How does it compare to `git merge`?
+
+To learn how to integrate version control into your software delivery process, 
 check out _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_!
-
-<br>
-<br>
-<br>
-<br>
-
-#### Footnotes
-
-[^1]: This method of calculating commit IDs is brilliant. First, it ensures that commit IDs are consistent without a 
-    central mechanism for issuing IDs: the same commit done on any computer, anywhere in the world, at any time always gets 
-    the exact same ID. Second, it ensures commits can't be tampered with: change even 1 bit of the contents, metadata, or
-    history, and you get a totally different SHA-1 hash. Third, it gives you an efficient way to compare commits: you can
-    compare commits using just the IDs, without having to send the full contents; even more interestingly, you can compare
-    the full history just by comparing IDs, as the commit ID calculation includes the ID of the previous commit, which,
-    in turn, includes the ID of its predecessor, and so on, so two commit IDs are only equal if their entire history is
-    equal.
