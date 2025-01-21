@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: "Learn Git and GitHub in 15 Minutes"
-description: "Learn the basics of Git and GitHub in 15 minutes with this hands-on tutorial."
+description: "Learn the basics of Git and GitHub in 15 minutes with this hands-on tutorial. Topics include version control, repositories, branches, commits, merges, pull requests, and more."
 image: "/resources/learn-git-in-5-minutes/git-github.png"
 ---
 
