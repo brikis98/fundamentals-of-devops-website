@@ -57,7 +57,7 @@ basic idea with a VCS is as follows:
   made the changes, and a _commit message_ that describes the changes.
 * **Merges**: At any time, you can merge branches together. For example, it's common to create a branch from `main`, 
   work in that branch for a while, and then merge your changes back into `main`.
-* **Conflicts**: VCS tools can merge some types of changes completely automatically, but if there is a _conflict_ (e.g.,
+* **Conflicts**: VCS tools can merge some types of changes automatically, but if there is a _conflict_ (e.g.,
   two people changed the same line of code in different ways), the VCS will ask you to _resolve_ the conflict manually.
 * **History**: The VCS tracks every commit in every branch in a _commit log_, which lets you see the full history of how
   the code changed, including all previous revisions of every file, what changed between each revision, and who made
@@ -439,18 +439,20 @@ as discussed in the next section.
 
 ### Open a Pull Request in GitHub
 
-A _pull request (PR)_ is a request to merge one branch into another; in effect, you're requesting that someone else
-runs `git pull` on your repo/branch. GitHub popularized the PR workflow as the de facto way to make changes to open
-source repos, and these days, many companies use PRs to make changes to private repos as well. The pull request
-process is as follows:
+A _pull request (PR)_ (sometimes called a _merge request_ in other platforms, such as GitLab) is a request to merge one 
+branch into another; in effect, you're requesting that someone else runs `git pull` on your repo/branch. GitHub 
+popularized the PR workflow as the de facto way to make changes to open source repos, and these days, many companies 
+use PRs to make changes to private repos as well. The pull request process is as follows:
 
-* You check out a copy of repo `R`, create a branch `B`, and commit your changes to this branch. Note that if you have
-  write access to repo `R`, you can create branch `B` directly in repo `R`. However, if you don't have write access,
-  which is usually the case if `R` is an open source repo in someone else's account, then you first create a
-  _fork_ of repo `R`, which is a copy of the repo in your own account, and then you create branch `B` in your fork.
-* When you're done with your work in branch `B`, you open a pull request against repo `R`, requesting that the
-  maintainer of that repo merges your changes from branch `B` into some branch in repo `R` (typically `main`).
-* The owner of repo `R` then uses GitHub's PR UI to review your changes, provide comments and feedback, and
+* You check out a copy of repo (e.g., `acme-repo`), create a branch (e.g., `bug-fix`), and commit your changes to this 
+  branch. Note that if you have write access to `acme-repo`, you can create the `bug-fix` branch directly in 
+  `acme-repo`. However, if you don't have write access, which is usually the case if `acme-repo` is an open source repo 
+  in someone else's account, then you first create a _fork_ of `acme-repo`, which is a copy of the repo in your own 
+  account, and then you create the `bug-fix` branch in your fork.
+* When you're done with your work in the `bug-fix` branch, you open a pull request against `acme-repo`, requesting that 
+  the maintainer of that repo merges your changes from the `bug-fix` branch into some branch in `acme-repo` (typically 
+  `main`).
+* The owner of `acme-repo` then uses GitHub's PR UI to review your changes, provide comments and feedback, and
   ultimately, decide to either merge the changes in, or close the PR unmerged.
 
 Let's give it a shot. Create a new branch called `update-readme` in your repo:
