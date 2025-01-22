@@ -115,7 +115,7 @@
   page: 164
 - subsection: "Example: Deploy a Serverless Function with AWS Lambda"
   page: 168
-- subsection: "Example: Deploy an API Gateway in Front of AWS Lambda"
+- subsection: "Example: Create a Lambda Function URL"
   page: 171
 - subsection: "Example: Roll Out Updates with AWS Lambda"
   page: 173

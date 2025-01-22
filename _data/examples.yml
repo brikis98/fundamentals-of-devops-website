@@ -26,7 +26,7 @@
 - "Example: Push a Docker Image to ECR"
 - "Example: Deploy a Dockerized App into an EKS Cluster"
 - "Example: Deploy a Serverless Function with AWS Lambda"
-- "Example: Deploy an API Gateway in Front of AWS Lambda"
+- "Example: Create a Lambda Function URL"
 - "Example: Roll Out Updates with AWS Lambda"
 - "Example: A Crash Course on Git"
 - "Example: Store your Code in GitHub"
