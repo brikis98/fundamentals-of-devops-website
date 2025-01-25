@@ -2,15 +2,12 @@
 layout: default
 ---
 
-<section class="pt2 py4 clearfix bg-gray-color border-bottom border-gray">
-  <div class="max-width-3 mx-auto">
-    {% include breadcrumbs.html %}
-    <h1 class="mt0 mb0 h1-xl">{{ page.title }}</h1>
+<section class="my4 p2 max-width-3 mx-auto">
+  <div class="max-width-3 mx-auto pb2">
+    <h1 class="mt0 h1-xl">{{ page.title }}</h1>
     {% include resource-metadata.html content=page.content date=page.date %}
   </div>
-</section>
 
-<section class="mb4 p2 max-width-3 mx-auto">
   <p class="mx-auto center py4">
     {% include image.html path=page.image alt=page.title %}
   </p>
@@ -20,6 +17,4 @@ layout: default
   </div>
 </section>
 
-<section class="clearfix bg-gray-color border-bottom border-top border-gray">
-  {% include foot.html %}
-</section>
+{% include foot.html %}

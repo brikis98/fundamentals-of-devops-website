@@ -8,9 +8,9 @@
   <div class="sm-col sm-col-8 thin px2">
     <h3 class="mt0 mb0"><a href="{{ include.url }}" target="{{ target }}" class="black tracked" data-trk="click-{{ include.type }}-{{ include.id }}">{{ include.title }}</a></h3>
     {% if include.include_metadata %}
-      {% include resource-metadata.html content=include.content date=include.date %}
+      {% include date-length.html content=include.content date=include.date %}
     {% endif %}
-    <p class="mt0">
+    <p class="mt1">
       {{ include.description }}
     </p>
     {% if include.call_to_action %}
