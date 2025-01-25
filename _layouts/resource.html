@@ -15,6 +15,12 @@ layout: default
   <div class="resource-content">
     {{ content }}
   </div>
+
+  <div class="max-width-3 mx-auto mt4 pb2">
+    <hr>
+    {% include resource-metadata.html date=page.date %}
+    <hr class="mt2">
+  </div>
 </section>
 
 {% include foot.html %}
