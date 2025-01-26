@@ -203,9 +203,14 @@ There are [multiple ways to authenticate to AWS from the command
 line](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-authentication.html). For me, the option that strikes
 the best balance between convenience (as it lets me use my browser for authentication) and security (as it only uses
 temporary credentials) is to use the [AWS Command Line Interface (CLI)](https://aws.amazon.com/cli/) along with IAM
-Identity Center. To use this method, [Install the AWS 
+Identity Center. To use this method, [install the AWS
 CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) (make sure to install version 2.15
-or newer), and the first time you use it, run the `aws configure sso` command:
+or newer), and configure a session and profile, as described in the next two sections.
+
+### Configure a session
+
+A _session_ in the AWS CLI roughly corresponds to being authenticated to a single IAM Identity Center access portal
+(which usually corresponds to a single AWS organization). To configure a session, run the `aws configure sso` command:
 
 ```console
 $ aws configure sso
@@ -215,8 +220,7 @@ SSO region [None]: eu-west-1
 SSO registration scopes [sso:account:access]:
 ```
 
-The AWS CLI will first try to configure a _session_, which roughly corresponds to a single access portal (a single AWS 
-Organization). The CLI will prompt you for the following information:
+The AWS CLI will prompt you for the following information:
 
 * **SSO session name**. This typically corresponds to the AWS organization where you have AWS Identity Center and an 
   access portal configured. For example, if this is your personal AWS account, you might name it "personal." If this
@@ -238,18 +242,22 @@ the code matches what you see in your terminal) and then "Allow access," as show
 
 ![Authorizing the AWS CLI](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/aws-cli-authorize.png)
 
-Once you've approved the request, you can close the browser window, and back in the terminal, the AWS CLI will then
-try to configure a _profile_, which corresponds to being logged into a single AWS account (one of the ones within the
-AWS organization that's part of the session) with a specific permission set. If your IAM Identity Center user has 
-access to only a single AWS account and permission set, the AWS CLI will pick that one automatically, but if you have
-access to multiple AWS accounts, the AWS CLI will show you a drop-down where you can pick which account to authenticate 
-to, as shown below, and if you have access to multiple permission sets in that account, you'll get another drop-down to 
-pick which permission set to use:
+Once you've approved the request, you can close the browser window, and go back into the terminal to configure a 
+profile, as described in the next section.
+
+### Configure a profile
+
+A _profile_ in the AWS CLI corresponds to being logged into a single AWS account (one of the ones within the
+AWS organization that's part of the session) with a specific permission set. After you've configured a session and 
+gone back to the terminal, the AWS CLI will start configuring a profile. If your IAM Identity Center user has 
+access to only a single AWS account and permission set, the AWS CLI will use that one automatically for the profile, 
+but if you have access to multiple AWS accounts, the AWS CLI will show you a drop-down where you can pick which account 
+to authenticate to, as shown below, and if you have access to multiple permission sets in that account, you'll get 
+another drop-down to pick which permission set to use:
 
 ![Authorizing the AWS CLI](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/aws-cli-pick-account.png)
 
-Once you've picked an account and permission set, the AWS CLI will then prompt you for information to set up your 
-profile:
+Once you've picked an account and permission set, the AWS CLI will then prompt you for the following information:
 
 ```console
 CLI default client Region [None]:
@@ -272,9 +280,14 @@ Here is the information the CLI prompts you for:
   `personal-mgmt-admin` to indicate that this profile gives you admin permissions in the management account of your 
   personal AWS organization.
 
-Once you enter all this information, your session and profile will be created, and you'll be logged into that profile.
-You can now use this profile with the AWS CLI and any other CLI tools that need to authenticate to AWS by passing in
-the profile name via the `--profile` flag. For example, you can check your authentication with the AWS CLI as follows:
+Once you enter all this information, your session and profile will be created, and you'll be logged into that session.
+You can now use this session and profile with all your AWS CLI tools, as described in the next section.
+
+### Use sessions and profiles with CLI tools
+
+Now that you're authenticated, you can use your pfoile with the AWS CLI and any other CLI tools that need to 
+authenticate to AWS by passing in the profile name via the `--profile` flag. For example, you can check your 
+authentication with the AWS CLI as follows:
 
 ```console
 $ aws sts get-caller-identity --profile=personal-mgmt-admin
@@ -288,7 +301,6 @@ $ export AWS_PROFILE=personal-mgmt-admin
 
 Now the AWS CLI will automatically use that profile without additional flags:
 
-
 ```console
 $ aws sts get-caller-identity
 ```
@@ -300,16 +312,20 @@ profile, too:
 $ tofu apply
 ```
 
-If your session expires, you can log in again using the `aws sso login` command:
+### Re-authenticate
+
+If your session expires (e.g., after 12 hours), you can log in again using the `aws sso login` command:
 
 ```console
 $ aws sso login --sso-session personal
 ```
 
 Note that logging into a session allows you to use all the profiles that are part of that session without having to 
-login again. So if you had the profiles `personal-mgmt-admin`, `personal-dev-admin`, and `personal-prod-admin`, all
+log in again. So if you had the profiles `personal-mgmt-admin`, `personal-dev-admin`, and `personal-prod-admin`, all
 under the `personal` session, then as soon as you log in to the `personal` session, you can use all three of those
 profiles (via the `--profile` flag or `AWS_PROFILE` environment variable) without having to log in again.
+
+### Add more profiles
 
 If you need to add other profiles in the future (to access other accounts or permissions sets), you can run the
 `aws configure sso` command again, and enter the session name you used previously:
@@ -319,9 +335,9 @@ $ aws configure sso
 SSO session name (Recommended): personal
 ```
 
-If you start typing in that field, you'll get an auto-complete drop down that shows you all existing session names,
-so you can pick one, and hit Enter. This will skip all the other session configuration and go straight to the profile
-configuration. Alternatively, you can add profiles by hand to your [AWS CLI configuration 
+As soon as you start typing, you'll get an auto-complete drop down that shows you all existing session names,
+so you can pick one, and hit Enter. This will skip all the other session configuration and go straight to [the profile
+configuration](#configure-a-profile). Alternatively, you can add profiles by hand to your [AWS CLI configuration 
 file](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html), which lives in 
 `~/.aws/config` on Linux or macOS, or at `C:\Users\USERNAME\.aws\config` on Windows.
 
