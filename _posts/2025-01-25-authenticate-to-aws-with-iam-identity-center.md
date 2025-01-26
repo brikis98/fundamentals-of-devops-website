@@ -7,9 +7,9 @@ image: "/resources/authenticate-to-aws-with-iam-identity-center/aws-iam-identity
 
 For many years, the main way to authenticate to AWS was to use _[Identity and Access Management 
 (IAM)](https://aws.amazon.com/iam/)_, but in the last few years, AWS has been pushing users towards the newer _[IAM 
-Identity Center](https://aws.amazon.com/iam/identity-center/)_ (formerly known as AWS SSO). This blog post is a short 
-guide to this more modern and secure way to authenticate to AWS, both on the web and the command line. Here's an 
-outline of what this post will cover:
+Identity Center](https://aws.amazon.com/iam/identity-center/)_ (formerly known as AWS SSO), which offers a more secure
+and convenient way to authenticate. This blog post is a guide to how to  set up IAM Identity Center and use it to 
+authenticate to AWS, both on the web and the command line. Here's an outline of what this post will cover:
 
 - [Prerequisite: create an AWS account](#prerequisite-create-an-aws-account)
 - [Enable IAM Identity Center](#enable-iam-identity-center)
@@ -26,43 +26,43 @@ Let's get started by taking care of a prerequisite: creating an AWS account.
 This is a guide to authenticating to AWS, so of course you need an AWS account! If you don't already have one, do
 the following:
 
-1. **Sign up**. Head over to https://aws.amazon.com and follow the on-screen instructions to sign up. You'll have to 
-   provide a credit card for payment, but AWS offers a [generous free tier](https://aws.amazon.com/free), which 
-   includes the IAM Identity Center, so following this guide shouldn't cost you anything.
+1. **Sign up**. Head over to [https://aws.amazon.com](https://aws.amazon.com) and follow the on-screen instructions to 
+   sign up. You'll have to provide a credit card for payment, but AWS offers a [free tier](https://aws.amazon.com/free), 
+   which includes the IAM Identity Center, so following this guide shouldn't cost you anything.
 2. **Protect the root user credentials**. When you first register for AWS, you initially sign in as the _root user_. 
    It's critical to protect the root user account, so make sure to store the root user credentials in a secure password 
    manager (e.g., [1Password](https://1password.com/), [BitWarden](https://bitwarden.com/)). You'll learn more 
-   about secrets management in Chapter 8 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_). 
+   about secrets management in Chapter 8 of _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_. 
 3. **Enable MFA for the root user**. As an additional layer of protection, make sure to enable [_multi-factor
    authentication (MFA)_ for the root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-mfa-for-root.html).
 
 The root user, by design, has permissions to do absolutely anything in your AWS account, including bypassing most 
 security restrictions you put in place, so from a security perspective, it's not a good idea to use the root user on a 
 day-to-day basis. In fact, the _only_ thing you should use the root user for is to create other user accounts in the 
-IAM Identity Center with more-limited permissions, and then switch to one of those accounts immediately, as described 
-in the following steps.
+IAM Identity Center with more-limited permissions, as described in the following steps.
 
 ## Enable IAM Identity Center
 
 By default, when you create a new AWS account, IAM Identity Center is not enabled. To enable it, head over to the 
 [IAM Identity Service Console](https://console.aws.amazon.com/singlesignon), and if you see an Enable IAM Identity 
-Center button, as shown in the image below, click it! 
+Center button, as shown in the image below, click it: 
 
 ![Enable IAM Identity Center](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-enable.png)
 
 On the next screen, select Enable with AWS Organizations, click Continue, and wait a minute or two for IAM Identity 
-Center to be available. Once the IAM Identity Center dashboard loads, on the right side, you should see several
-pieces of information, as shown in the following image:
+Center to be available. Once the IAM Identity Center dashboard loads, on the right side, you should see the settings
+summary, as shown in the following image:
 
 ![Take note of the AWS region and AWS access portal URL from the IAM Identity Center dashboard](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-dashboard.png)
 
 Take note of the following two pieces of information:
 
-1. **AWS region**: Jot down which AWS region you're using for AWS Identity Center. It'll be something like "United
+1. **Region**: Jot down which AWS region you're using for AWS Identity Center. It'll be something like "United
    "Europe (Ireland) | eu-west-1" or "States (Ohio) | us-east-2". You can learn more about AWS regions 
    [here](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 2. **Access portal URL**: Jot down your unique AWS access portal URL. It'll look something like
-   `https://d-c123456789.awsapps.com/start/`. 
+   `https://d-c123456789.awsapps.com/start/`. A little later on, you'll see how to use this URL to log in to your AWS 
+   accounts.
 
 Write both of these down, as you'll need them later to login.
 
@@ -70,9 +70,11 @@ Write both of these down, as you'll need them later to login.
 
 By default, new IAM Identity Center users have no permissions whatsoever and cannot do anything in an AWS account. To 
 give a user the ability to do something, you need to associate one or more permission sets with that user. A 
-_permission set_ grants permissions by combining one or more _IAM Policies_, which are JSON documents that define what 
-you are or aren't allowed to do. You can create your own IAM Policies or use some of the predefined IAM Policies built 
-into your AWS account, which are known as _Managed IAM Policies_.
+_permission set_ grants permissions by combining one or more _[IAM 
+Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)_, which are JSON documents that define 
+what you are or aren't allowed to do. You can create your own IAM Policies or use some of the predefined IAM Policies built 
+into your AWS account, which are known as _[Managed 
+Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)_.
 
 To create a permission set, head over to the [IAM Identity Center Console](https://console.aws.amazon.com/singlesignon), 
 select "Permission sets" in the left nav, and click the "Create permission set" button, as shown in the following 
@@ -86,14 +88,15 @@ On the next page, you need to pick a permission set type:
 
 You can either use one of the predefined permission sets (which wrap various AWS managed policies) or create a custom 
 permission set. For the purposes of this tutorial, choose "Predefined permission set," and you should see the list of 
-available options below:
+available options, as shown in the following image:
 
 ![Pick a predefined permission set](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-predefined-permission-sets.png)
 
 For the purposes of this tutorial, select `AdministratorAccess`, as at least a few of your users will likely need
 admin permissions (full access to all AWS services and resources), and click the Next button. On the next page, 
-give the permission set a name (I usually stick with the default, which is the name of the policy), set the session
-duration to 12 hours (so you aren't logged out more than once per day), and click Next:
+give the permission set a name—I usually stick with the default, which is the name of the policy (e.g., 
+`AdministratorAccess`), set the session duration to 12 hours (so you aren't logged out more than once per day), and 
+click Next:
 
 ![Configure the permission set details](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-permission-set-details.png)
 
@@ -104,27 +107,29 @@ Review all the settings on the next page, and if everything looks good, click th
 Although you can assign permissions sets directly to users, it's usually more manageable to assign permissions to 
 _groups_ of users. To create a group, head over to the [IAM Identity Center 
 Console](https://console.aws.amazon.com/singlesignon), select Groups in the left nav, and click the "Create group" 
-button: 
+button, as shown in the following image: 
 
 ![Groups in the IAM Identity Center](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-groups.png)
 
 On the next page, you need to configure the group details, such as the group name and description. For the purposes of
-this tutorial, give the group the name `admins`, as you'll be assigning this group the `AdministratorAccess` permission
-set you created earlier:
+this tutorial, give the group the name `admins`, as shown in the following image, as you'll be assigning this group 
+the `AdministratorAccess` permission set you created earlier:
 
 ![Configure the group details](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-group-details.png)
 
 For now, skip adding any users to the group, and click the "Create group" button. This will take you back to the groups 
-page, where you should see your newly-created `admins` group:
+page, where you should see your newly-created `admins` group, as shown below:
 
 ![The newly-created admins group](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-newly-created-group.png)
 
-Click on your newly-created `admins` group, select the "AWS accounts" tab, and click the "Assign accounts" button: 
+Click on your newly-created `admins` group, select the "AWS accounts" tab, and click the "Assign accounts" button, as
+shown in the following image: 
 
 ![Assign accounts to your newly-created admins group](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-group-accounts.png)
 
 On the next page, grant admin access to one or more AWS accounts by selecting those AWS accounts (e.g., such as the
-one you may have created in the pre-requisites section), and then selecting the `AdministratorAccess` permission set:
+one you may have created in the pre-requisites section), and then selecting the `AdministratorAccess` permission set,
+as shown in the following image:
 
 ![Grant admin access to your AWS account](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-group-assign-accounts.png)
 
@@ -151,45 +156,46 @@ use the groups page to add users to the appropriate groups.
 Alternatively, if you're just using this AWS account for personal learning and testing, you can create a custom user
 in the directory built into IAM Identity Center itself. For the purposes of this tutorial, let's try that out. Head
 over to the [IAM Identity Center Console](https://console.aws.amazon.com/singlesignon) one more time, select Users
-in the left nav, and click the Add User button: 
+in the left nav, and click the Add User button, as shown in the following image: 
 
 ![IAM Identity Center users](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-users.png)
 
 On the next page, enter a username, email address, first name, and last name, leave all other settings at their 
-default, and click the Next button:
+default, as shown below, and click the Next button:
 
 ![Create an IAM Identity Center user](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-user-details.png)
 
-On the next page, add the user to the appropriate groups, such as the `admins` group, and click Next: 
+On the next page, add the user to the appropriate groups, such as the `admins` group, as shown below, and click Next: 
 
 ![Add the user to the admins group](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-user-assign-groups.png)
 
 Review the settings on the next page, and if everything looks good, click the "Add user" button. After a few seconds, 
-you should get an invitation email to sign-in via your access portal: 
+you should get an invitation email to sign-in via your access portal, as shown in the followin gimage: 
 
 ![Invite email](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-portal-invite-email.png)
 
 Click the "Accept invitation" button in the email, and follow the on-screen instructions to set a password for your 
 user (make sure to save the password in a secure password manager, such as 1Password or BitWarden), login, and 
-configure an MFA device. When you're done with that process, you should be logged into the access portal: 
+configure an MFA device. When you're done with that process, you should be logged into the access portal, as shown in
+the following image: 
 
 ![Access portal](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-access-portal.png)
 
-From now on, you can use your IAM Identity Center user (rather than the root user) and this portal to log in to your
-AWS accounts. The following two sections describe how to do that.
+From now on, you can use your IAM Identity Center user (rather than the root user) and this access portal to log in to 
+your AWS accounts. The following two sections describe how to do that.
 
 ## Authenticate to AWS on the web
 
 To access your AWS accounts on the web, first, login to your access portal: you should have the URL saved from when
 you configured IAM Identity Center; alternatively, you can find that URL at the bottom of the invite email from when
 you created your IAM Identity Center user. Once you're logged in, the access portal should show you the list of AWS
-accounts yo have access to. Click the arrow next to one of the accounts, and you should see a link with the name of 
-the permission set you have access to, such as `AdministratorAccess`:
+accounts you have access to. Click the arrow next to one of the accounts, and you should see a link with the name of 
+the permission set you have access to, such as `AdministratorAccess`, as shown in the following image:
 
 ![Seeing the permission set you have access to in an account](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-portal-auth-to-account.png)
 
-Click on the permission set, and AWS will open up a new tab and log you into that AWS account, with those corresponding
-permissions. That's all there is too it!
+Click on the permission set you want to use (e.g., `AdministratorAccess`), and AWS will open up a new tab and log you 
+into that AWS account, with those corresponding permissions. That's all there is too it!
 
 ## Authenticate to AWS on the command line
 
@@ -214,41 +220,51 @@ Organization). The CLI will prompt you for the following information:
 
 * **SSO session name**. This typically corresponds to the AWS organization where you have AWS Identity Center and an 
   access portal configured. For example, if this is your personal AWS account, you might name it "personal." If this
-  is an AWS organization you use at work, and you only have one such organization, you might call name it after your
-  company. If your company has multiple AWS organizations, you might name it after those organization names. 
+  is an AWS organization you use at work, and you only have one such organization, you might name it after your
+  company. If your company has multiple AWS organizations, you might name it after the corresponding organization name. 
 * **SSO start URL**. This is the URL of the access portal you use to log in to your AWS accounts. This is one of the
   pieces of information you saved when configuring IAM Identity Center; it's also in the invitation email you got when
   creating an IAM Identity Center user. It looks something like `https://d-c123456789.awsapps.com/start/`.
 * **SSO region name**. This is the AWS region in which you set up AWS IAM Identity Center (e.g., eu-west-1).
-* **SSO registration scopes**. You can hit Enter to leave this value at its default (`sso:account:access`).
+* **SSO registration scopes**. These scopes define the permissions the AWS CLI will have on your behalf. You can find
+  the [available scopes 
+  here](https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.html), but in most
+  cases, you can hit Enter to leave this value at its default (`sso:account:access`).
 
 Once you've filled in all this information, the AWS CLI will open your browser window, which allows you to log in to 
-your access portal as usual. Follow the on-screen prompts to authorize the AWS CLI, clicking "Confirm and continue" (if
-the code matches what you see in your terminal) and then "Allow access." 
+your access portal as usual (in fact, you may still be logged in from earlier, which saves you from having to retype
+your credentials). Follow the on-screen prompts to authorize the AWS CLI, clicking "Confirm and continue" (if
+the code matches what you see in your terminal) and then "Allow access," as shown in the following image: 
 
 ![Authorizing the AWS CLI](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/aws-cli-authorize.png)
 
 Once you've approved the request, you can close the browser window, and back in the terminal, the AWS CLI will then
 try to configure a _profile_, which corresponds to being logged into a single AWS account (one of the ones within the
-AWS organization that's part of the session) with a specific permission set. If you have access to multiple AWS accounts
-or permissions sets, the AWS CLI will show you a drop-down where you can pick which account to authenticate to, and
-then another drop-down where you can pick which permission set to use:
+AWS organization that's part of the session) with a specific permission set. If your IAM Identity Center user has 
+access to only a single AWS account and permission set, the AWS CLI will pick that one automatically, but if you have
+access to multiple AWS accounts, the AWS CLI will show you a drop-down where you can pick which account to authenticate 
+to, as shown below, and if you have access to multiple permission sets in that account, you'll get another drop-down to 
+pick which permission set to use:
 
 ![Authorizing the AWS CLI](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/aws-cli-pick-account.png)
 
-If you only have access to a single AWS account and permission set, the AWS CLI will pick that one automatically. The
-CLI will then prompt you for information to set up your profile:
+Once you've picked an account and permission set, the AWS CLI will then prompt you for information to set up your 
+profile:
 
 ```console
 CLI default client Region [None]:
-CLI default output format [None]:
+CLI default output format [None]: text
 CLI profile name [AdministratorAccess-111111111111]: personal-mgmt-admin
 ```
 
 Here is the information the CLI prompts you for:
 
-* **CLI default client Region**. Hit Enter to leave this value at its default (None).
-* **CLI default output format**. Hit Enter to leave this value at its default (None).
+* **CLI default client Region**. The default AWS region to use for all API calls to AWS. I typically hit Enter to leave 
+  this value at its default, None, which helps me avoid accidentally using the wrong region, as it forces me to 
+  explicitly specify the region in all my API calls.
+* **CLI default output format**. The default output format to use with the AWS CLI. The [supported 
+  options](https://docs.aws.amazon.com/cli/v1/userguide/cli-usage-output-format.html) include `text`, `json`, and
+  `table`.
 * **CLI profile name**. This is the name to use for the profile. Since this corresponds to a single permission set in
   a single account in a single AWS organization, you may want to use a name format such as 
   `<ORG>-<ACCOUNT>-<PERMISSIONS>`, where `ORG` is the name of the organization, `ACCOUNT` is the name of the account,
@@ -287,11 +303,26 @@ $ tofu apply
 If your session expires, you can log in again using the `aws sso login` command:
 
 ```console
-$ aws sso login --profile=personal-mgmt-admin
+$ aws sso login --sso-session personal
 ```
 
-And if you need to add other profiles in the future (to access other accounts or permissions sets), you can run the
-`aws configure sso` command again, or add profiles by hand to your AWS CLI configuration file, which lives in 
+Note that logging into a session allows you to use all the profiles that are part of that session without having to 
+login again. So if you had the profiles `personal-mgmt-admin`, `personal-dev-admin`, and `personal-prod-admin`, all
+under the `personal` session, then as soon as you log in to the `personal` session, you can use all three of those
+profiles (via the `--profile` flag or `AWS_PROFILE` environment variable) without having to log in again.
+
+If you need to add other profiles in the future (to access other accounts or permissions sets), you can run the
+`aws configure sso` command again, and enter the session name you used previously:
+
+```console
+$ aws configure sso
+SSO session name (Recommended): personal
+```
+
+If you start typing in that field, you'll get an auto-complete drop down that shows you all existing session names,
+so you can pick one, and hit Enter. This will skip all the other session configuration and go straight to the profile
+configuration. Alternatively, you can add profiles by hand to your [AWS CLI configuration 
+file](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html), which lives in 
 `~/.aws/config` on Linux or macOS, or at `C:\Users\USERNAME\.aws\config` on Windows.
 
 ## Conclusion
