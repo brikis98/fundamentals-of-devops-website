@@ -175,8 +175,9 @@ For each commit in the log, you'll see the commit ID, author, date, and commit m
 _commit ID_: each commit has a different ID that you can use to uniquely identify that commit, and many Git commands
 take a commit ID as an argument. Under the hood, a commit ID is calculated by taking the SHA-1 hash of the contents of
 the commit, all the commit metadata (author, date, and so on), and the ID of the previous commit. Commit IDs are 40 
-characters long, but in most commands, you can use just the first 7 characters, as that will be unique enough to 
-identify commits in all but the largest repos.
+characters long, but most `git` commands allow you to specify just the first few characters, so long as the substring
+is unique to one commit. That means you can sometimes use as few as the first 4 characters, though its more common to 
+use the first 7 characters, as that's usually enough to uniquely identify commits in all but the largest repos.
 
 Let's make another commit. First, make a change to _example.txt_:
 
@@ -229,10 +230,8 @@ Now you can see both of your commits, including their commit messages. This comm
 
 * **Debugging**: If something breaks in your code, the first question you typically ask is, "what changed?" The commit
   log gives you an easy way to answer that question.
-* **Reverting**: You can use `git revert <ID>` to automatically create a new commit that reverts all the changes
-  in the commit with ID `<ID>`, thereby undoing the changes in that commit, while still preserving your Git history.
-  Or you can use `git reset --hard <ID>` to get rid of all commits after `<ID>` entirely, including removing them
-  from history (use with care!).
+* **Reverting**: Git offers numerous ways to revert changes, such as `git revert` and `git reset` (learn more about 
+  these commands [here](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)).
 * **Comparison**: While `git diff` compares your local changes to the latest in the current branch, you can also use
   `git diff <COMMIT_1> <COMMIT_2>` to compare any two commits, passing in IDs of those commits as arguments.
 * **Author**: You can use `git blame` to annotate each line of a file with information about the last commit that
@@ -245,11 +244,11 @@ multiple branches, which is the focus of the next section.
 
 ### Git branching and merging
 
-Let's practice creating and merging Git branches. To create a new branch and switch to it, use the `git checkout`
-command with the `-b` flag:
+Let's practice creating and merging Git branches. To create a new branch and switch to it, use the `git switch`
+command with the `-c` flag:
 
 ```console
-$ git checkout -b testing
+$ git switch -c testing
 Switched to a new branch 'testing'
 ```
 
@@ -291,11 +290,12 @@ $ git log --oneline
 0da69c2 Initial commit
 ```
 
-But that third commit is _only_ in the `testing` branch. You can see this by using `git checkout` to switch back to the
-`main` branch:
+But that third commit is _only_ in the `testing` branch. This is visible in a subtle way in the `git log` output
+(note how `main` is only up to the second commit, whereas `testing` is on the third), but if you want to see it more
+clearly, run `git switch` to switch back to the `main` branch:
 
 ```console
-$ git checkout main
+$ git switch main
 Switched to branch 'main'
 ```
 
@@ -415,7 +415,7 @@ The log output should show you that Git was able to pull the changes in and a su
 include the new _README.md_ file. Congrats, you now know how to pull changes from a remote endpoint!
 
 Note that if you didn't have a copy of the repo locally on your computer at all, you couldn't just run `git pull`.
-Instead, you first need to use _git clone_ to checkout the initial copy of the repo (note: you don't actually need to
+Instead, you first need to use _git clone_ to check out the initial copy of the repo (note: you don't actually need to
 run this command, as you have a copy of this repo already, but just be aware of this for working with other repos
 in the future):
 
@@ -458,7 +458,7 @@ use PRs to make changes to private repos as well. The pull request process is as
 Let's give it a shot. Create a new branch called `update-readme` in your repo:
 
 ```console
-$ git checkout -b update-readme
+$ git switch -c update-readme
 ```
 
 Make a change to the _README.md_ file. For example, add a URL to the end of the file. Run `git diff` to see what your
@@ -525,7 +525,9 @@ minimally productive. To go further, here are a few exercises you can try at hom
 * Learn how to use [`.gitignore` files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) 
   to tell Git which files _not_ to commit. 
 * Learn how to use the [`git tag` command](https://git-scm.com/book/en/v2/Git-Basics-Tagging) to create tags.
-* Learn to use [`git rebase`](https://git-scm.com/docs/git-rebase). How does it compare to `git merge`?
+* Learn to use [`git rebase`](https://git-scm.com/docs/git-rebase). Note that there is a lot of nuance to when to use
+  `git rebase` versus `git rebase -i` versus `git merge`. See [merging versus 
+  rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) for a nice guide. 
 
 To learn how to integrate version control into your software delivery process, 
 check out _[Fundamentals of DevOps and Software Delivery]({{ site.url }})_!
