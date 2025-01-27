@@ -411,13 +411,15 @@ from, and `<BRANCH>` is the branch to pull:
 $ git pull origin main
 ```
 
-The log output should show you that Git was able to pull the changes in and a summary of what changed, which should
-include the new _README.md_ file. Congrats, you now know how to pull changes from a remote endpoint!
+Git will fetch the latest changes from `origin`, merge them into your local copy, and show you a summary of what 
+changed, which should include the new _README.md_ file. Congrats, you now know how to pull changes from a remote 
+endpoint!
 
 Note that if you didn't have a copy of the repo locally on your computer at all, you couldn't just run `git pull`.
-Instead, you first need to use _git clone_ to check out the initial copy of the repo (note: you don't actually need to
-run this command, as you have a copy of this repo already, but just be aware of this for working with other repos
-in the future):
+Instead, you first need to use _git clone_ to check out the initial copy of the repo. To try this out, move your 
+_git-practice_ folder to the trash. This may seem a bit scary, but one of the benefits of version control is that it 
+backs up all your work, so don't worry! Once the folder is in the trash, run `git clone` to get a fresh copy of it
+locally again:
 
 ```console
 $ git clone https://github.com/<USERNAME>/<REPO>
@@ -444,11 +446,11 @@ branch into another; in effect, you're requesting that someone else runs `git pu
 popularized the PR workflow as the de facto way to make changes to open source repos, and these days, many companies 
 use PRs to make changes to private repos as well. The pull request process is as follows:
 
-* You check out a copy of repo (e.g., `acme-repo`), create a branch (e.g., `bug-fix`), and commit your changes to this 
+* You check out a copy of a repo (e.g., `acme-repo`), create a branch (e.g., `bug-fix`), and commit your changes to this 
   branch. Note that if you have write access to `acme-repo`, you can create the `bug-fix` branch directly in 
-  `acme-repo`. However, if you don't have write access, which is usually the case if `acme-repo` is an open source repo 
-  in someone else's account, then you first create a _fork_ of `acme-repo`, which is a copy of the repo in your own 
-  account, and then you create the `bug-fix` branch in your fork.
+  `acme-repo`. However, if you don't have write access, which is the case if `acme-repo` is in someone else's account
+  (e.g., it's an open source repo maintained by someone else), then you first create a _fork_ of `acme-repo`, which is 
+  a copy of the repo in your own account, and then you create the `bug-fix` branch in your fork.
 * When you're done with your work in the `bug-fix` branch, you open a pull request against `acme-repo`, requesting that 
   the maintainer of that repo merges your changes from the `bug-fix` branch into some branch in `acme-repo` (typically 
   `main`).
@@ -491,7 +493,7 @@ Next, push your `update-readme` branch to the remote repo:
 $ git push origin update-readme
 ```
 
-You should see log output that looks something like this:
+You should see output that looks something like this:
 
 ```
 remote:
@@ -500,7 +502,7 @@ remote:      https://github.com/<USERNAME>/<REPO>/pull/new/update-readme
 remote:
 ```
 
-In the log output, GitHub conveniently shows you a URL for creating a pull request (you can also create PRs by going to
+GitHub conveniently shows you a URL for creating a pull request (you can also create PRs by going to
 the Pull Requests tab of your repo in a web browser and clicking the New Pull Request button). Open that URL in your
 web browser, and you should see a page where you can fill in a title and description for the PR. You can also scroll
 down on that page to see the changes between your branch and `main`, which should be the same ones you saw when
