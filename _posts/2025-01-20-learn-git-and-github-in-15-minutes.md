@@ -523,7 +523,8 @@ Congrats! You've now learned the basics of how to use Git and GitHub. This is ju
 minimally productive. To go further, here are a few exercises you can try at home to get your hands dirty:
 
 * Learn how to use [`.gitignore` files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) 
-  to tell Git which files _not_ to commit. 
+  to tell Git which files _not_ to commit (also, check out [gitignore.io](https://www.gitignore.io/) for a handy 
+  tool for generating `.gitignore` files). 
 * Learn how to use the [`git tag` command](https://git-scm.com/book/en/v2/Git-Basics-Tagging) to create tags.
 * Learn to use [`git rebase`](https://git-scm.com/docs/git-rebase). Note that there is a lot of nuance to when to use
   `git rebase` versus `git rebase -i` versus `git merge`. See [merging versus 
