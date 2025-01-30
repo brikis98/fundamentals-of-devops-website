@@ -501,14 +501,14 @@ Now defining an environment is as simple as adding a _[variable definition
 file](https://opentofu.org/docs/language/values/variables/#variable-definitions-tfvars-files)_. For example, to define
 the dev environment, create a _dev.tfvars_ file with the following contents:
 
-```hcl
+```js
 environment   = "dev"
 instance_type = "t2.micro"
 ```
 
 And to define a prod environment, create a _prod.tfvars_ file as follows:
 
-```hcl
+```js
 environment   = "prod"
 instance_type = "m7i.large"
 ```
@@ -557,13 +557,13 @@ variable "instance_module_version" {
 Now you can use different versions of this module in different environments. For example, you could have version 1.0.0
 deployed in prod by updating _prod.tfvars_ as follows:
 
-```hcl
+```js
 instance_module_version = "1.0.0"
 ```
 
 In the meantime, you could test out version 2.0.0 in dev by updating _dev.tfvars_ as follows:
 
-```hcl
+```js
 instance_module_version = "2.0.0"
 ```
 
