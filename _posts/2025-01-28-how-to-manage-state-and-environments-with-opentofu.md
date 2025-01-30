@@ -294,7 +294,8 @@ To use KMS as a key provider, you must first create a KMS key. One way to do thi
 KMS that can be used for symmetric encryption, a basic access policy, and an alias for the key (so you can refer to it 
 by a human-friendly name rather than a long, randomly-generated ID). 
 
-**NOTE: AWS KMS is NOT free to use**. As per the [KMS pricing page](https://aws.amazon.com/kms/pricing/), each
+{:.callout}
+**NOTE: AWS KMS is NOT free to use.** As per the [KMS pricing page](https://aws.amazon.com/kms/pricing/), each
 key that you create in AWS KMS costs $1/month (prorated hourly). There is also a charge for key usage, though the AWS
 free tier includes 20,000 requests/month at no cost. 
 
