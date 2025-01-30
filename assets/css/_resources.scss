@@ -1,3 +1,20 @@
-.resource-content li {
-  margin-bottom: 10px;
+.resource-content {
+  li {
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    td, th {
+      padding: 8px;
+      border: 1px solid #cccccc;
+      vertical-align: middle;
+    }
+
+    &.monofont {
+      // Copied from GitHub Gist styling
+      font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+  }
 }
