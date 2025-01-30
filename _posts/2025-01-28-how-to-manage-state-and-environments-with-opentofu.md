@@ -444,8 +444,8 @@ black squares = better):
 | No extra tooling to learn or use	     	| ■■■■■      | ■■■■■    | □□□□□      
 
 Each of the options has some strengths and weaknesses. With OpenTofu, which supports early variable evaluation as of
-[version 1.8](https://opentofu.org/blog/opentofu-1-8-0/), we now have a new approach for managing multiple environments
-that may offer the greatest strengths of all: _defining environments in variable definition files_.
+[version 1.8](https://opentofu.org/blog/opentofu-1-8-0/), we now have a new approach to consider for managing multiple 
+environments: _defining environments in variable definition files_.
 
 Let's go through an example so you can see how it works. Go back to the EC2 module you've been using throughout this
 blog post, and add a _variables.tf_ file with the following code:
@@ -501,14 +501,14 @@ Now defining an environment is as simple as adding a _[variable definition
 file](https://opentofu.org/docs/language/values/variables/#variable-definitions-tfvars-files)_. For example, to define
 the dev environment, create a _dev.tfvars_ file with the following contents:
 
-```terraform
+```hcl
 environment   = "dev"
 instance_type = "t2.micro"
 ```
 
 And to define a prod environment, create a _prod.tfvars_ file as follows:
 
-```terraform
+```hcl
 environment   = "prod"
 instance_type = "m7i.large"
 ```
@@ -557,13 +557,13 @@ variable "instance_module_version" {
 Now you can use different versions of this module in different environments. For example, you could have version 1.0.0
 deployed in prod by updating _prod.tfvars_ as follows:
 
-```terraform
+```hcl
 instance_module_version = "1.0.0"
 ```
 
 In the meantime, you could test out version 2.0.0 in dev by updating _dev.tfvars_ as follows:
 
-```terraform
+```hcl
 instance_module_version = "2.0.0"
 ```
 
