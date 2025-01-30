@@ -122,10 +122,12 @@ Instead of using version control, the way to store state in both Terraform and O
 _[backend](https://opentofu.org/docs/language/settings/backends/configuration/)_, which is a plugin that control how
 OpenTofu loads and stores state. If you don't specify a backend, the default is the [local 
 backend](https://opentofu.org/docs/language/settings/backends/local/), which stores the state file on your local disk. 
-OpenTofu supports a number of other backends that can store state in a variety of data stores, including [Amazon 
-S3](https://opentofu.org/docs/language/settings/backends/s3/), [Azure Blob 
-Storage](https://opentofu.org/docs/language/settings/backends/azurerm/), and [Google Cloud 
-Storage](https://opentofu.org/docs/language/settings/backends/gcs/). 
+OpenTofu supports a number of other backends that can store state in a variety of data stores, including 
+[Amazon S3](https://opentofu.org/docs/language/settings/backends/s3/), 
+[Azure Blob Storage](https://opentofu.org/docs/language/settings/backends/azurerm/), 
+[Google Cloud Storage](https://opentofu.org/docs/language/settings/backends/gcs/),
+[Consul](https://opentofu.org/docs/language/settings/backends/consul/), and
+[Postgres](https://opentofu.org/docs/language/settings/backends/pg/). 
 
 Let's go through an example of using Amazon S3 as a backend. It's a good choice for a backend as it's a fully managed 
 service that supports [high levels of durability and 
