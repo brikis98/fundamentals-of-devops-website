@@ -1,7 +1,7 @@
-- title: An Introduction to DevOps and Software Delivery
+- title: How to Deploy Your App
   icon: rocket
   key_ideas:
-    - The evolution of DevOps
+    - Personal computers vs servers
     - On-prem vs cloud
     - PaaS vs IaaS
   examples:
@@ -22,7 +22,7 @@
     - Use Packer to build an AMI
     - Use OpenTofu to deploy an EC2 instance
 
-- title: "How to Deploy Your Apps"
+- title: How to Manage Your Apps Using Orchestration Tools
   icon: cubes
   key_ideas:
     - Server orchestration
