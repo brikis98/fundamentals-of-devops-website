@@ -1,13 +1,22 @@
 ---
 layout: default
 title: "Fundamentals of DevOps and Software Delivery"
+sections:
+  - intro.html
+  - outline.html
+  - author.html
+  - hands-on.html
+  - buy.html
+  - resources.html
+  - news.html
 ---
 
-{% include intro.html %}
-{% include outline.html %}
-{% include author.html %}
-{% include hands-on.html %}
-{% include buy.html %}
-{% include resources.html %}
-{% include news.html %}
+{% for section in page.sections %}
+  <section class="py3 clearfix {% cycle 'bg-gray-color border-bottom border-top border-gray', '' %}">
+    <div class="max-width-{% if section == 'intro.html' %}4{% else %}3{% endif %} mx-auto">
+      {% include {{ section }} %}
+    </div>
+  </section>
+{% endfor %}
+
 {% include foot.html %}

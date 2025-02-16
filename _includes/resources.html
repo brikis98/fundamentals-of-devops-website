@@ -1,11 +1,7 @@
-<section class="mt4 mb4 p2 pb6 clearfix" id="resource">
-  <div class="max-width-3 mx-auto">
-    <h2 class="mb0">Resources</h2>
-    <p class="mt2 thin">
-      Blog posts, appendices, and other useful information related to the book.
-    </p>
-    {% for resource in paginator.posts %}
-      {% include resource.html type="resource" id=resource.id url=resource.url title=resource.title description=resource.description content=resource.content image=resource.image date=resource.date call_to_action=resource.call_to_action include_metadata=true %}
-    {% endfor %}
-  </div>
-</section>
+<h2 class="mb0">Resources</h2>
+<p class="mt2 thin">
+  Blog posts, appendices, and other useful information related to the book.
+</p>
+{% for resource in paginator.posts %}
+  {% include resource.html type="resource" id=resource.id url=resource.url title=resource.title description=resource.description content=resource.content image=resource.image date=resource.date call_to_action=resource.call_to_action include_metadata=true %}
+{% endfor %}

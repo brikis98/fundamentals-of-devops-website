@@ -1,9 +1,5 @@
-<section id="news" class="mt4 p2 clearfix bg-gray-color border-bottom border-top border-gray">
-  <div class="max-width-3 mx-auto">
-    <h2 class="mb0">News</h2>
-    {% include newsletter.html %}
-    {% for news in site.data.news %}
-      {% include resource.html type="news" id=news.id url=news.url title=news.title description=news.description image=news.image date=news.date call_to_action=news.call_to_action %}
-    {% endfor %}
-  </div>
-</section>
+<h2 class="mb0">News</h2>
+{% include newsletter.html %}
+{% for news in site.data.news %}
+  {% include resource.html type="news" id=news.id url=news.url title=news.title description=news.description image=news.image date=news.date call_to_action=news.call_to_action %}
+{% endfor %}
