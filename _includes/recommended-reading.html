@@ -1,0 +1,24 @@
+<h2 id="recommended-books">Recommended Books</h2>
+<table class="border-collapse col-12">
+  <thead>
+    <tr>
+      {% assign header_class = "py2 align-top left-align border-bottom border-gray" %}
+      <th class="{{ header_class }} pr1 col-6">Title</th>
+      <th class="{{ header_class }} pr1 col-4">Author(s)</th>
+      <th class="{{ header_class }} col-2">Publisher</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for resource in include.chapter.recommended_reading %}
+      {% assign row_class = "py2 align-top left-align" %}
+      {% unless forloop.last %}
+        {% assign row_class = row_class | append: " border-bottom border-gray" %}
+      {% endunless %}
+      <tr>
+        <td class="{{ row_class }} pr1"><em><a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a></em></td>
+        <td class="{{ row_class }} pr1 thin">{{ resource.author }}</td>
+        <td class="{{ row_class }} thin">{{ resource.publisher }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

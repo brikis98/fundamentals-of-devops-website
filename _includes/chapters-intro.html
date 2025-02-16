@@ -1,0 +1,46 @@
+<section class="py4 clearfix border-bottom border-gray bg-gray-color">
+  <div class="max-width-4 mx-auto">
+    <div class="lg-col lg-col-5 lg-col-right p3 py4">
+      <a href="{{ site.url }}" class="book-container">
+        <div class="book">
+          <picture>
+            <source media="(min-width: 64em)" srcset="{% include image-url.html path="fundamentals-of-devops-cover-2d-color-website-home.png" %}">
+            {% include image.html path="fundamentals-of-devops-cover-2d-color-website-home-small.png" alt="Fundamentals of DevOps and Software Delivery" %}
+          </picture>
+        </div>
+      </a>
+    </div>
+    <div class="lg-col lg-col-7 lg-col-right p3">
+      <h3 class="mt0 mb0 light-gray thin">Resources</h3>
+      <h1 class="mt0 mb0">Chapter {{ include.chapter_index | plus: 1 }}: {{ include.chapter.title }}</h1>
+      <p class="justify thin mt2">
+        This page lists recommended learning resources and tools related to Chapter {{ include.chapter_index | plus: 1 }},
+        "{{ include.chapter.title }}" of the book
+        <em><a href="{{ site.url }}">Fundamentals of DevOps and Software Delivery</a></em> by Yevgeniy Brikman.
+      </p>
+      {% if include.chapter.recommended_reading or include.chapter.recommended_other_resources %}
+        <p>
+          Recommended learning resources:
+        </p>
+        <ul class="thin">
+          {% if include.chapter.recommended_reading %}
+            <li><a href="#recommended-books">Books</a></li>
+          {% endif %}
+          {% if include.chapter.recommended_other_resources %}
+            <li><a href="#recommended-other-resources">Other resources</a></li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      {% if include.chapter.recommended_tools %}
+        <p>
+          Recommended tools:
+        </p>
+        <ul class="thin">
+          {% for tool_type in include.chapter.recommended_tools %}
+            <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</section>

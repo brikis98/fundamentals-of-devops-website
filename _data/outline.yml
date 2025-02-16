@@ -8,6 +8,79 @@
     - Run an app locally
     - Run an app on Render
     - Run an app on an EC2 instance in AWS
+  recommended_reading:
+    - title: "Hello, Startup"
+      author: "Yevgeniy Brikman"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Ybvre2"
+    - title: "Site Reliability Engineering"
+      author: "Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3XWle4U"
+    - title: "Practice of Cloud System Administration"
+      author: "Thomas Limoncelli, Strata Chalup, and Christina Hogan"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/3Y34BEH"
+    - title: "Accelerate"
+      author: "Nicole Forsgren PhD, Jez Humble, Gene Kim"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/3Yi5dHP"
+    - title: "Implementing Lean Software Development"
+      author: "Mary Poppendieck and Tom Poppendieck"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/3Y3Pb3a"
+    - title: "The DevOps Handbook"
+      author: "Gene Kim, Jez Humble, Patrick Debois, and John Willis"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/3NqnHQ4"
+    - title: "Visible Ops Handbook"
+      author: "Kevin Behr, Gene Kim, and George Spafford"
+      publisher: "Information Technology Process Institute"
+      url: "https://amzn.to/3BEhhKO"
+    - title: "The Unicorn Project"
+      author: "Gene Kim"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/48aToXs"
+    - title: "Leading the Transformation"
+      author: "Gary Gruver and Tommy Mouser"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/3BEhqOm"
+    - title: "Lean Enterprise"
+      author: "Jez Humble, Joanne Molesky, Barry O'Reilly"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4h4WsZe"
+    - title: "The Phoenix Project"
+      author: "Gene Kim, Kevin Behr, George Spafford"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/4hhGX0b"
+  recommended_other_resources:
+    - title: "Continuously Deploying Culture"
+      author: "Michael Rembetsy and Patrick McDonnell"
+      url: "https://vimeo.com/51310058"
+      type: "Talk"
+    - title: "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr"
+      author: "John Allspaw and Paul Hammond"
+      url: "https://www.youtube.com/watch?v=LdOe18KhtT4"
+      type: "Talk"
+    - title: "How to authenticate to AWS with IAM Identity Center"
+      author: "Yevgeniy Brikman"
+      url: "https://www.fundamentals-of-devops.com/resources/2025/01/25/authenticate-to-aws-with-iam-identity-center/"
+      type: "Blog post"
+  recommended_tools:
+    - type: Platform as a Service (PaaS)
+      tools:
+        - name: Heroku
+          url: https://www.heroku.com/
+        - name: Render
+          url: https://render.com/
+        - name: Fly.io
+          url: https://fly.io/
+    - type: Infrastructure as a Service (IaaS)
+      tools:
+        - name: Amazon Web Services (AWS)
+          url: https://aws.amazon.com/
+        - name: Microsoft Azure
+          url: https://azure.microsoft.com/
 
 - title: How to Manage Your Infrastructure as Code
   icon: code
@@ -21,6 +94,40 @@
     - Use Ansible to deploy an EC2 instance
     - Use Packer to build an AMI
     - Use OpenTofu to deploy an EC2 instance
+  recommended_reading:
+    - title: "Terraform: Up & Running"
+      author: "Yevgeniy Brikman"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3ZWnKL8"
+    - title: "Infrastructure as Code"
+      author: "Kief Morris"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Yn0gxE"
+    - title: "Ansible for DevOps"
+      author: "Jeff Geerling"
+      publisher: "Midwestern Mac"
+      url: "https://amzn.to/3UwLouj"
+  recommended_other_resources:
+    - title: "Reusable, composable, battle-tested Terraform modules"
+      author: "Yevgeniy Brikman"
+      url: "https://www.ybrikman.com/writing/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
+      type: "Talk"
+    - title: "5 Lessons Learned from Writing Over 300,000 Lines of Infrastructure Code"
+      author: "Yevgeniy Brikman"
+      url: "https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1"
+      type: "Talk, blog post"
+    - title: "Infrastructure as Code Best Practices"
+      author: "Yevgeniy Brikman"
+      url: "https://se-radio.net/2020/04/episode-405-yevgeniy-brikman-on-infrastructure-as-code-best-practices/"
+      type: "Podcast"
+    - title: "What is Infrastructure as Code?"
+      author: "Beau Carnes"
+      url: "https://www.freecodecamp.org/news/what-is-infrastructure-as-code/"
+      type: "Online course"
+    - title: "IaC Learning Path"
+      author: "KodeKloud"
+      url: "https://kodekloud.com/learning-path/iac"
+      type: "Online course"
 
 - title: How to Manage Your Apps Using Orchestration Tools
   icon: cubes
@@ -34,6 +141,43 @@
     - Use OpenTofu to deploy an ASG and ALB
     - Deploy a Dockerized app in Kubernetes
     - Deploy a serverless app with AWS Lambda
+  recommended_reading:
+    - title: "Cloud Native Infrastructure"
+      author: "Justin Garrison and Kris Nova"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3XWmswQ"
+    - title: "Kubernetes in Action"
+      author: "Marko Luksa"
+      publisher: "Manning"
+      url: "https://amzn.to/402dml9"
+    - title: "Cloud Native DevOps with Kubernetes"
+      author: "John Arundel and Justin Domingus"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3YoKT7V"
+    - title: "Cloud-Native Patterns"
+      author: "Cornelia Davis"
+      publisher: "Manning"
+      url: "https://amzn.to/3U6womk"
+    - title: "Kubernetes: Up and Running"
+      author: "Kelsey Hightower, Brendan Burns, and Joe Beda"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/409hSOu"
+    - title: "Docker: Up and Running"
+      author: "Karl Matthias and Sean P. Kane"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3NpDlvm"
+    - title: "Kubernetes Patterns"
+      author: "Bilgin Ibryam and Roland Huß"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4e0KPQl"
+    - title: "Production Kubernetes"
+      author: "Josh Rosso, Rich Lander, Alex Brand, John Harris"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3NpuUzU"
+    - title: "Serverless Architectures on AWS"
+      author: "Peter Sbarski"
+      publisher: "Manning"
+      url: "https://amzn.to/401RkyU"
 
 - title: How to Version, Build, and Test Your Code
   icon: code-fork
@@ -47,6 +191,68 @@
     - Configure your build in NPM
     - Set up automated tests for a Node.js app
     - Set up automated tests for OpenTofu code
+  recommended_reading:
+    - title: "Growing Object-Oriented Software, Guided by Tests"
+      author: "Steve Freeman and Nat Pryce"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/4f0sAeG"
+    - title: "Working Effectively with Legacy Code"
+      author: "Michael Feathers"
+      publisher: "Pearson"
+      url: "https://amzn.to/3BG1I54"
+    - title: "Full Stack Testing"
+      author: "Gayathri Mohan"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4h1ahYp"
+    - title: "The Art of Software Testing"
+      author: "Glenford J. Myers, Corey Sandler, and Tom Badgett"
+      publisher: "Wiley"
+      url: "https://amzn.to/3BKXB85"
+    - title: "The Art of Unit Testing"
+      author: "Roy Osherove"
+      publisher: "Manning"
+      url: "https://amzn.to/3U8iYGL"
+    - title: "Testing JavaScript Applications"
+      author: "Lucas da Costa"
+      publisher: "Manning"
+      url: "https://amzn.to/40GpJ58"
+    - title: "Clean Code"
+      author: "Robert C. Martin"
+      publisher: "Pearson"
+      url: "https://amzn.to/4fkDJXZ"
+    - title: "Extreme Programming Explained"
+      author: "Kent Beck and Cynthia Andres"
+      publisher: "Addison-Wesley"
+      url: "https://amzn.to/4eZOONR"
+    - title: "Pro Git"
+      author: "Scott Chacon and Ben Straub"
+      publisher: "Apress"
+      url: "https://amzn.to/4f1U8A2"
+  recommended_other_resources:
+    - title: "Learn Git and GitHub in 15 Minutes"
+      author: "Yevgeniy Brikman"
+      url: "https://www.fundamentals-of-devops.com/resources/2025/01/20/learn-git-and-github-in-15-minutes/"
+      type: "Blog post"
+    - title: "Automated Testing for Terraform, Docker, Packer, Kubernetes, and More"
+      author: "Yevgeniy Brikman"
+      url: "https://www.infoq.com/presentations/automated-testing-terraform-docker-packer/"
+      type: "Talk"
+    - title: "The Practical Test Pyramid"
+      author: "Ham Vocke"
+      url: "https://martinfowler.com/articles/practical-test-pyramid.html"
+      type: "Blog post"
+    - title: "Patterns for Managing Source Code Branches"
+      author: "Martin Fowler"
+      url: "https://martinfowler.com/articles/branching-patterns.html"
+      type: "Blog post"
+    - title: "Git How To"
+      author: "Alexander Shvets"
+      url: "https://githowto.com/"
+      type: "Online course"
+    - title: "Learn Git Branching"
+      author: "Peter Cottle"
+      url: "https://learngitbranching.js.org/"
+      type: "Online course"
 
 - title: How to Set Up CI and CD
   icon: refresh
@@ -58,6 +264,60 @@
     - Use OIDC with GitHub Actions and AWS
     - Run tests in GitHub Actions
     - Run deployments in GitHub Actions
+  recommended_reading:
+    - title: "Continuous Delivery"
+      author: "Jez Humble and David Farley"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/3BLPDeY"
+    - title: "Release It!"
+      author: "Michael T. Nygard"
+      publisher: "Pragmatic Bookshelf"
+      url: "https://amzn.to/488b4mA"
+  recommended_other_resources:
+    - title: "Agility Requires Safety"
+      author: "Yevgeniy Brikman"
+      url: "https://www.ybrikman.com/writing/2016/02/14/agility-requires-safety/"
+      type: "Talk"
+    - title: "Cloud Adoption Fails"
+      author: "Yevgeniy Brikman"
+      url: "https://www.youtube.com/watch?v=sYzhlBayRpU"
+      type: "Talk"
+    - title: "How to manage state and environments with OpenTofu"
+      author: "Yevgeniy Brikman"
+      url: "https://www.fundamentals-of-devops.com/resources/2025/01/28/how-to-manage-state-and-environments-with-opentofu/"
+      type: "Blog post"
+    - title: "Continuous Integration"
+      author: "Martin Fowler"
+      url: "https://martinfowler.com/articles/continuousIntegration.html"
+      type: "Blog post"
+    - title: "Frequency Reduces Difficulty"
+      author: "Martin Fowler"
+      url: "https://martinfowler.com/bliki/FrequencyReducesDifficulty.html"
+      type: "Blog post"
+    - title: "Feature Toggles (aka Feature Flags)"
+      author: "Pete Hodgson"
+      url: "https://martinfowler.com/articles/feature-toggles.html"
+      type: "Blog post"
+    - title: "Adopting Continuous Delivery"
+      author: "Jez Humble"
+      url: "https://www.youtube.com/watch?v=skLJuksCRTw"
+      type: "Talk"
+    - title: "Why Google Stores Billions of Lines of Code in a Single Repository"
+      author: "Rachel Potvin"
+      url: "https://www.youtube.com/watch?v=W71BTkUbdqE"
+      type: "Talk"
+    - title: "What is Trunk-Based Development?"
+      author: "Paul Hammant"
+      url: "https://paulhammant.com/2013/04/05/what-is-trunk-based-development/"
+      type: "Blog post"
+    - title: "Feature Flag"
+      author: "Martin Fowler"
+      url: "https://martinfowler.com/bliki/FeatureFlag.html"
+      type: "Blog post"
+    - title: "Data Driven Products Now!"
+      author: "Dan McKinley"
+      url: "http://mcfunley.com/data-driven-products-now"
+      type: "Talk"
 
 - title: How to Work with Multiple Teams and Environments
   icon: users
@@ -69,6 +329,36 @@
     - Create multiple AWS accounts
     - Configure apps for multiple environments
     - Deploy microservices in Kubernetes
+  recommended_reading:
+    - title: "Production-Ready Microservices"
+      author: "Susan J. Fowler"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3BKwaLu"
+    - title: "Team Topologies"
+      author: "Matthew Skelton and Manuel Pais"
+      publisher: "IT Revolution Press"
+      url: "https://amzn.to/483JzdM"
+    - title: "Microservices in Action"
+      author: "Morgan Bruce and Paulo A. Pereira"
+      publisher: "Manning"
+      url: "https://amzn.to/48cDLPe"
+    - title: "Microservices Patterns"
+      author: "Chris Richardson"
+      publisher: "Manning"
+      url: "https://amzn.to/481Hz5H"
+    - title: "Building Microservices"
+      author: "Sam Newman"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3YjNv6N"
+  recommended_other_resources:
+    - title: "Gruntwork DevOps Foundations"
+      author: "Yevgeniy Brikman"
+      url: "https://blog.gruntwork.io/devops-foundations-6a9adf96921b"
+      type: "Blog post"
+    - title: "Microservices"
+      author: "James Lewis and Martin Fowler"
+      url: "https://martinfowler.com/articles/microservices.html"
+      type: "Blog post"
 
 - title: "How to Set Up Networking"
   icon: sitemap
@@ -82,6 +372,31 @@
     - Deploy a custom VPC in AWS
     - Use SSH to connect to a server
     - Use Istio as a service mesh with Kubernetes
+  recommended_reading:
+    - title: "Networking and Kubernetes"
+      author: "James Strong, Vallery Lancey"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/483JHtM"
+    - title: "Cloud Native Data Center Networking"
+      author: "Dinesh Dutt"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3BReuOc"
+    - title: "High Performance Browser Networking"
+      author: "Ilya Grigorik"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Y6SLJC"
+    - title: "Computer Networking"
+      author: "James Kurose and Keith Ross"
+      publisher: "Pearson"
+      url: "https://amzn.to/3zWLrbu"
+    - title: "Network Basics for Hackers"
+      author: "Master OccupytheWeb"
+      publisher: "Independently published"
+      url: "https://amzn.to/3Nrc4Zn"
+    - title: "Zero Trust Networks"
+      author: "Razi Rais, Christina Morillo, Evan Gilman, Doug Barth"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Yk1o4Z"
 
 - title: How to Secure Communication and Storage
   icon: lock
@@ -93,6 +408,52 @@
     - Encrypt data with AES and RSA
     - Store secrets in AWS Secrets Manager
     - Set up HTTPS with LetsEncrypt
+  recommended_reading:
+    - title: "Real-World Cryptography"
+      author: "David Wong"
+      publisher: "Manning"
+      url: "https://amzn.to/3zSZy1F"
+    - title: "Serious Cryptography"
+      author: "Jean-Philippe Aumasson"
+      publisher: "No Starch Press"
+      url: "https://amzn.to/3U5Mflc"
+    - title: "Building Secure and Reliable Systems"
+      author: "Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, and Adam Stubblefield"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3XZViW2"
+    - title: "Securing DevOps"
+      author: "Julien Vehent"
+      publisher: "Manning"
+      url: "https://amzn.to/4f42mYM"
+    - title: "DevSecOps"
+      author: "Greg Wilson"
+      publisher: "Rethink Press"
+      url: "https://amzn.to/3ZZyPer"
+    - title: "Container Security"
+      author: "Liz Rice"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3BSYsmV"
+    - title: "Writing Secure Code"
+      author: "Michael Howard and David LeBlanc"
+      publisher: "Microsoft Press"
+      url: "https://amzn.to/3ZZo9fF"
+    - title: "Bulletproof TLS and PKI"
+      author: "Ivan Ristić"
+      publisher: "Feisty Duck"
+      url: "https://amzn.to/4eI4HZr"
+  recommended_other_resources:
+    - title: "A Guide to Threat Modelling for Developers"
+      author: "Jim Gumbley"
+      url: "https://martinfowler.com/articles/agile-threat-modelling.html"
+      type: "Blog post"
+    - title: "OWASP Top Ten"
+      author: "the OWASP Foundation"
+      url: "https://owasp.org/www-project-top-ten/"
+      type: "Cheat sheet"
+    - title: "OWASP Password Cheat Sheet"
+      author: "the OWASP Foundation"
+      url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+      type: "Cheat sheet"
 
 - title: "How to Store Data"
   icon: database
@@ -106,6 +467,44 @@
     - Configure RDS backup, replicas
     - Use Knex.js for schema migrations
     - Use S3 and CloudFront for static assets
+  recommended_reading:
+    - title: "Designing Data-Intensive Applications"
+      author: "Martin Kleppmann"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4eExfTO"
+    - title: "Database Reliability Engineering"
+      author: "Laine Campbell and Charity Majors"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4gYvxhD"
+    - title: "NoSQL Distilled"
+      author: "Pramod Sadalage and Martin Fowler"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/4dIXqY6"
+    - title: "Seven Databases in Seven Weeks"
+      author: " Eric Redmond and Jim Wilson"
+      publisher: "Pragmatic Bookshelf"
+      url: "https://amzn.to/3BTZKhu"
+    - title: "I Heart Logs"
+      author: "Jay Kreps"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Y2VnIB"
+    - title: "SQL Cookbook"
+      author: "Anthony Molinaro and Robert de Graaf"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3NJqkg0"
+    - title: "SQL in 10 Minutes a Day"
+      author: "Ben Forta"
+      publisher: "Sams Publishing"
+      url: "https://amzn.to/4fnUdyv"
+    - title: "T-SQL Fundamentals"
+      author: "Itzik Ben-Gan"
+      publisher: "Microsoft Press"
+      url: "https://amzn.to/3Yniei7"
+  recommended_other_resources:
+    - title: "Distributed systems theory for the distributed systems engineer"
+      author: "Paper Trail"
+      url: "https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/"
+      type: "Blog post"
 
 - title: "How to Monitor Your Systems"
   icon: line-chart
@@ -117,6 +516,27 @@
     - Create a dashboard in CloudWatch
     - Do structured logging with Node.js
     - Set up Route 53 health checks and alerts
+  recommended_reading:
+    - title: "Practical Monitoring"
+      author: "Mike Julian"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3Yk5mdY"
+    - title: "Observability Engineering"
+      author: "Charity Majors, Liz Fong-Jones, George Miranda"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3XWmhBS"
+    - title: "Effective Monitoring and Alerting"
+      author: "Slawek Ligus"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4f2fJIJ"
+    - title: "The Site Reliability Workbook"
+      author: "Betsy Beyer, Niall Murphy, David Rensin, Kent Kawahara, and Stephen Thorne"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4f3TcLx"
+    - title: "How to Measure Anything"
+      author: "Douglas W. Hubbard"
+      publisher: "Wiley"
+      url: "https://amzn.to/4f1hSo3"
 
 - title: The Future of DevOps and Software Delivery
   icon: magic
@@ -125,6 +545,24 @@
     - Generative AI
     - Shift left, supply chain security
     - Platform engineering
+  recommended_reading:
+    - title: "Platform Engineering"
+      author: "Camille Fournier and Ian Nowland"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/3EH005b"
+    - title: "Software Supply Chain Security"
+      author: "Cassie Crossley"
+      publisher: "O'Reilly"
+      url: "https://amzn.to/4i0VVao"
+  recommended_other_resources:
+    - title: "Secure by Design"
+      author: "CISA"
+      url: "https://www.cisa.gov/securebydesign"
+      type: "Blog post"
+    - title: "A Brief, Incomplete, and Mostly Wrong History of Programming Languages"
+      author: "James Iry"
+      url: "https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html"
+      type: "Blog post"
 
 - title: Open Source Code Samples
   icon: github
