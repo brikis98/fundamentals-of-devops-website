@@ -1,0 +1,18 @@
+<div class="h5 thin">
+  {% if include.chapter_index > 0 %}
+    {% assign prev_chapter_index = include.chapter_index | minus: 1 %}
+    {% assign prev_chapter = site.data.outline[prev_chapter_index] %}
+    <a href="{% include chapter-url.html chapter_index=include.chapter_index chapter_title=prev_chapter.title %}">&laquo; Previous chapter</a> |
+  {% else %}
+    <span class="light-gray">&laquo; Previous chapter</span> |
+  {% endif %}
+  <a href="{{ site.url }}#outline">Full outline</a> |
+  {% if include.chapter_index < 10 %}
+    {% assign next_chapter_index = include.chapter_index | plus: 1 %}
+    {% assign next_chapter_index_1 = include.chapter_index | plus: 2 %}
+    {% assign next_chapter = site.data.outline[next_chapter_index] %}
+    <a href="{% include chapter-url.html chapter_index=next_chapter_index_1 chapter_title=next_chapter.title %}">Next chapter &raquo;</a>
+  {% else %}
+    <span class="light-gray">Next chapter &raquo;</span>
+  {% endif %}
+</div>

@@ -11,30 +11,30 @@
       </a>
     </div>
     <div class="lg-col lg-col-7 lg-col-right p3">
-      <h3 class="mt0 mb0 light-gray thin">Resources</h3>
-      <h1 class="mt0 mb0">Chapter {{ include.chapter_index | plus: 1 }}: {{ include.chapter.title }}</h1>
-      <p class="justify thin mt2">
-        This page lists learning resources and tools related to Chapter {{ include.chapter_index | plus: 1 }},
-        "{{ include.chapter.title }}" of the book
-        <em><a href="{{ site.url }}">Fundamentals of DevOps and Software Delivery</a></em> by Yevgeniy Brikman.
-      </p>
+      <h3 class="mt0 mb0 light-gray thin">
+        {% include chapter-pagination.html chapter_index=include.chapter_index %}
+      </h3>
+      <h1 class="mt0 mb0">
+        {% assign chapter_index_1 = include.chapter_index | plus: 1 %}
+        Chapter {{ chapter_index_1 }}: {{ include.chapter.title }}
+      </h1>
       {% if chapter.key_ideas %}
-      <dt class="regular mt2">Key ideas you'll explore</dt>
+      <dt class="regular mt2">Key ideas you'll explore in this chapter</dt>
       <dd class="ml1">
         <ul class="mt0 pl2">
           {% for item in chapter.key_ideas %}
-          <li>{{ item }}</li>
+            <li class="thin">{{ item }}</li>
           {% endfor %}
         </ul>
       </dd>
       {% endif %}
 
       {% if chapter.examples %}
-      <dt class="regular mt2">Examples you'll try</dt>
+      <dt class="regular mt2">Examples you'll try in this chapter</dt>
       <dd class="ml1">
         <ul class="mt0 pl2">
           {% for item in chapter.examples %}
-          <li>{{ item }}</li>
+            <li class="thin">{{ item }}</li>
           {% endfor %}
         </ul>
       </dd>
@@ -42,7 +42,7 @@
 
       {% if include.chapter.books or include.chapter.other_resources %}
         <p>
-          Learning resources:
+          Learning resource to go deeper:
         </p>
         <ul class="thin">
           {% if include.chapter.books %}
