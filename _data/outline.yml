@@ -289,6 +289,11 @@
       author: "Peter Sbarski"
       publisher: "Manning"
       url: "https://amzn.to/401RkyU"
+  other_resources:
+    - title: "A Brief History of Containers: From the 1970s Till Now"
+      author: "Rani Osnat"
+      type: "Blog post"
+      url: "https://www.aquasec.com/blog/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016/"
   tools:
     - type: Deployment Script
       tools:
