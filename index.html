@@ -12,7 +12,7 @@ sections:
 ---
 
 {% for section in page.sections %}
-  <section class="py3 clearfix {% cycle 'bg-gray-color border-bottom border-top border-gray', '' %}">
+  <section class="py4 clearfix border-bottom border-gray {% cycle 'bg-gray-color', '' %}">
     <div class="max-width-{% if section == 'intro.html' %}4{% else %}3{% endif %} mx-auto">
       {% include {{ section }} %}
     </div>
