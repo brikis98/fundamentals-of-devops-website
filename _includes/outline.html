@@ -1,4 +1,4 @@
-<h2 class="my0">About the book</h2>
+<h2 id="outline" class="my0">About the book</h2>
 <p class="mt2 thin">
   This book is for <strong>individual contributors in operations</strong> (e.g., current and aspiring Site
   Reliability Engineers, DevOps Engineers, Sysadmins, Operations Engineers, and Release Engineers) who want to level
@@ -11,17 +11,23 @@
   {% for chapter in site.data.outline %}
     <div class="md-col md-col-6 px2 mb3 center">
       <div style="height: 295px">
-        <a a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="fa-stack fa-3x book-blue">
+        <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="fa-stack fa-3x book-blue">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-{{ chapter.icon }} fa-stack-1x fa-inverse"></i>
         </a>
         <h3 class="left-align">
-          <div class="h5 light-gray thin">{% if chapter.skip_chapter_heading %}&nbsp;{% else %}Chapter {{ forloop.index }}{% endif %}</div>
+          <div class="h5 light-gray thin">
+            <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="light-gray">
+              {% if chapter.skip_chapter_heading %}&nbsp;{% else %}Chapter {{ forloop.index }}{% endif %}
+            </a>
+          </div>
           <div style="height: 50px">
             {% if chapter.skip_chapter_heading %}
               {{ chapter.title }}
             {% else %}
-              <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="black">{{ chapter.title }}</a>
+              <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="black">
+                {{ chapter.title }}
+              </a>
             {% endif %}
           </div>
         </h3>
