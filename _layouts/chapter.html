@@ -8,25 +8,25 @@ layout: default
 {% include chapters-intro.html chapter=chapter chapter_index=chapter_index %}
 
 {% assign all_sections = "" %}
-{% if chapter.recommended_reading %}
-  {% assign all_sections = all_sections | append: "recommended-reading.html" %}
+{% if chapter.books %}
+  {% assign all_sections = all_sections | append: "books.html" %}
 {% endif %}
-{% if chapter.recommended_other_resources %}
-  {% assign all_sections = all_sections | append: ",recommended-other-resources.html" %}
+{% if chapter.other_resources %}
+  {% assign all_sections = all_sections | append: ",other-resources.html" %}
 {% endif %}
 
 {% assign all_sections = all_sections | split: "," %}
 
-{% if chapter.recommended_tools %}
+{% if chapter.tools %}
   {% assign tools_start_index = all_sections | size %}
-  {% assign all_sections = all_sections | concat: chapter.recommended_tools %}
+  {% assign all_sections = all_sections | concat: chapter.tools %}
 {% endif %}
 
 {% for section in all_sections %}
   <section class="py4 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
     <div class="max-width-3 mx-auto">
       {% if forloop.index0 >= tools_start_index %}
-        {% include recommended-tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
+        {% include tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
       {% else %}
         {% include {{ section }} chapter=chapter chapter_index=chapter_index %}
       {% endif %}

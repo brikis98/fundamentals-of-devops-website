@@ -14,29 +14,29 @@
       <h3 class="mt0 mb0 light-gray thin">Resources</h3>
       <h1 class="mt0 mb0">Chapter {{ include.chapter_index | plus: 1 }}: {{ include.chapter.title }}</h1>
       <p class="justify thin mt2">
-        This page lists recommended learning resources and tools related to Chapter {{ include.chapter_index | plus: 1 }},
+        This page lists learning resources and tools related to Chapter {{ include.chapter_index | plus: 1 }},
         "{{ include.chapter.title }}" of the book
         <em><a href="{{ site.url }}">Fundamentals of DevOps and Software Delivery</a></em> by Yevgeniy Brikman.
       </p>
-      {% if include.chapter.recommended_reading or include.chapter.recommended_other_resources %}
+      {% if include.chapter.books or include.chapter.other_resources %}
         <p>
-          Recommended learning resources:
+          Learning resources:
         </p>
         <ul class="thin">
-          {% if include.chapter.recommended_reading %}
-            <li><a href="#recommended-books">Books</a></li>
+          {% if include.chapter.books %}
+            <li><a href="#books">Books</a></li>
           {% endif %}
-          {% if include.chapter.recommended_other_resources %}
-            <li><a href="#recommended-other-resources">Other resources</a></li>
+          {% if include.chapter.other_resources %}
+            <li><a href="#other-resources">Other resources</a></li>
           {% endif %}
         </ul>
       {% endif %}
-      {% if include.chapter.recommended_tools %}
+      {% if include.chapter.tools %}
         <p>
-          Recommended tools:
+          Tools:
         </p>
         <ul class="thin">
-          {% for tool_type in include.chapter.recommended_tools %}
+          {% for tool_type in include.chapter.tools %}
             <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }}</a></li>
           {% endfor %}
         </ul>

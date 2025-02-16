@@ -8,7 +8,7 @@
     - Run an app locally
     - Run an app on Render
     - Run an app on an EC2 instance in AWS
-  recommended_reading:
+  books:
     - title: "Hello, Startup"
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
@@ -53,7 +53,7 @@
       author: "Gene Kim, Kevin Behr, George Spafford"
       publisher: "IT Revolution Press"
       url: "https://amzn.to/4hhGX0b"
-  recommended_other_resources:
+  other_resources:
     - title: "Continuously Deploying Culture"
       author: "Michael Rembetsy and Patrick McDonnell"
       url: "https://vimeo.com/51310058"
@@ -66,7 +66,7 @@
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/25/authenticate-to-aws-with-iam-identity-center/"
       type: "Blog post"
-  recommended_tools:
+  tools:
     - type: Platform as a Service (PaaS)
       tools:
         - name: Heroku
@@ -142,7 +142,7 @@
     - Use Ansible to deploy an EC2 instance
     - Use Packer to build an AMI
     - Use OpenTofu to deploy an EC2 instance
-  recommended_reading:
+  books:
     - title: "Terraform: Up & Running"
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
@@ -155,7 +155,7 @@
       author: "Jeff Geerling"
       publisher: "Midwestern Mac"
       url: "https://amzn.to/3UwLouj"
-  recommended_other_resources:
+  other_resources:
     - title: "Reusable, composable, battle-tested Terraform modules"
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/writing/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
@@ -176,7 +176,7 @@
       author: "KodeKloud"
       url: "https://kodekloud.com/learning-path/iac"
       type: "Online course"
-  recommended_tools:
+  tools:
     - type: Configuration Management
       tools:
         - name: Chef
@@ -252,7 +252,7 @@
     - Use OpenTofu to deploy an ASG and ALB
     - Deploy a Dockerized app in Kubernetes
     - Deploy a serverless app with AWS Lambda
-  recommended_reading:
+  books:
     - title: "Cloud Native Infrastructure"
       author: "Justin Garrison and Kris Nova"
       publisher: "O'Reilly"
@@ -289,7 +289,7 @@
       author: "Peter Sbarski"
       publisher: "Manning"
       url: "https://amzn.to/401RkyU"
-  recommended_tools:
+  tools:
     - type: Deployment Script
       tools:
         - name: Capistrano
@@ -417,7 +417,7 @@
     - Configure your build in NPM
     - Set up automated tests for a Node.js app
     - Set up automated tests for OpenTofu code
-  recommended_reading:
+  books:
     - title: "Growing Object-Oriented Software, Guided by Tests"
       author: "Steve Freeman and Nat Pryce"
       publisher: "Addison-Wesley Professional"
@@ -454,7 +454,7 @@
       author: "Scott Chacon and Ben Straub"
       publisher: "Apress"
       url: "https://amzn.to/4f1U8A2"
-  recommended_other_resources:
+  other_resources:
     - title: "Learn Git and GitHub in 15 Minutes"
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/20/learn-git-and-github-in-15-minutes/"
@@ -495,7 +495,7 @@
       author: "Google"
       type: "Policy"
       url: https://google.github.io/eng-practices/review/
-  recommended_tools:
+  tools:
     - type: Version Control System
       tools:
         - name: Git
@@ -587,7 +587,7 @@
     - Use OIDC with GitHub Actions and AWS
     - Run tests in GitHub Actions
     - Run deployments in GitHub Actions
-  recommended_reading:
+  books:
     - title: "Continuous Delivery"
       author: "Jez Humble and David Farley"
       publisher: "Addison-Wesley Professional"
@@ -596,7 +596,7 @@
       author: "Michael T. Nygard"
       publisher: "Pragmatic Bookshelf"
       url: "https://amzn.to/488b4mA"
-  recommended_other_resources:
+  other_resources:
     - title: "Agility Requires Safety"
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/writing/2016/02/14/agility-requires-safety/"
@@ -649,7 +649,7 @@
       author: OpenGitOps
       type: Standards
       url: https://opengitops.dev/
-  recommended_tools:
+  tools:
     - type: Self-Hosted CI Server
       tools:
         - name: Jenkins
@@ -739,7 +739,7 @@
     - Create multiple AWS accounts
     - Configure apps for multiple environments
     - Deploy microservices in Kubernetes
-  recommended_reading:
+  books:
     - title: "Production-Ready Microservices"
       author: "Susan J. Fowler"
       publisher: "O'Reilly"
@@ -760,7 +760,7 @@
       author: "Sam Newman"
       publisher: "O'Reilly"
       url: "https://amzn.to/3YjNv6N"
-  recommended_other_resources:
+  other_resources:
     - title: "Gruntwork DevOps Foundations"
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/devops-foundations-6a9adf96921b"
@@ -769,7 +769,7 @@
       author: "James Lewis and Martin Fowler"
       url: "https://martinfowler.com/articles/microservices.html"
       type: "Blog post"
-  recommended_tools:
+  tools:
     - type: Configuration Language
       tools:
         - name: Cue
@@ -815,7 +815,7 @@
     - Deploy a custom VPC in AWS
     - Use SSH to connect to a server
     - Use Istio as a service mesh with Kubernetes
-  recommended_reading:
+  books:
     - title: "Networking and Kubernetes"
       author: "James Strong, Vallery Lancey"
       publisher: "O'Reilly"
@@ -840,7 +840,7 @@
       author: "Razi Rais, Christina Morillo, Evan Gilman, Doug Barth"
       publisher: "O'Reilly"
       url: "https://amzn.to/3Yk1o4Z"
-  recommended_other_resources:
+  other_resources:
     - title: "No More Chewy Centers: Introducing The Zero Trust Model Of Information Security"
       author: John Kindervag"
       url: "https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf"
@@ -853,7 +853,7 @@
       author: "Rory Ward and Betsy Beyer"
       url: "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/"
       type: Article
-  recommended_tools:
+  tools:
     - type: Single Sign On (SSO)
       tools:
         - name: JumpCloud
@@ -999,7 +999,7 @@
     - Encrypt data with AES and RSA
     - Store secrets in AWS Secrets Manager
     - Set up HTTPS with LetsEncrypt
-  recommended_reading:
+  books:
     - title: "Real-World Cryptography"
       author: "David Wong"
       publisher: "Manning"
@@ -1032,7 +1032,7 @@
       author: "Ivan Ristić"
       publisher: "Feisty Duck"
       url: "https://amzn.to/4eI4HZr"
-  recommended_other_resources:
+  other_resources:
     - title: "A Guide to Threat Modelling for Developers"
       author: "Jim Gumbley"
       url: "https://martinfowler.com/articles/agile-threat-modelling.html"
@@ -1053,7 +1053,7 @@
       author: "the OWASP Foundation"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
       type: "Cheat sheet"
-  recommended_tools:
+  tools:
     - type: Cryptography
       tools:
         - name: Go crypto library
@@ -1229,7 +1229,7 @@
     - Configure RDS backup, replicas
     - Use Knex.js for schema migrations
     - Use S3 and CloudFront for static assets
-  recommended_reading:
+  books:
     - title: "Designing Data-Intensive Applications"
       author: "Martin Kleppmann"
       publisher: "O'Reilly"
@@ -1262,7 +1262,7 @@
       author: "Itzik Ben-Gan"
       publisher: "Microsoft Press"
       url: "https://amzn.to/3Yniei7"
-  recommended_other_resources:
+  other_resources:
     - title: "MapReduce: Simplified Data Processing on Large Clusters"
       author: "Jeffrey Dean and Sanjay Ghemawat"
       type: Article
@@ -1283,7 +1283,7 @@
       author: "Dan McKinley"
       type: Talk
       url: "https://boringtechnology.club/"
-  recommended_tools:
+  tools:
     - type: Network-Attached Hard Drive
       tools:
         - name: Amazon Elastic Block Store (EBS)
@@ -1569,7 +1569,7 @@
     - Create a dashboard in CloudWatch
     - Do structured logging with Node.js
     - Set up Route 53 health checks and alerts
-  recommended_reading:
+  books:
     - title: "Practical Monitoring"
       author: "Mike Julian"
       publisher: "O'Reilly"
@@ -1590,12 +1590,12 @@
       author: "Douglas W. Hubbard"
       publisher: "Wiley"
       url: "https://amzn.to/4f1hSo3"
-  recommended_other_resources:
+  other_resources:
     - title: "How long will your experiment take?"
       author: Dan McKinley
       type: Calculator
       url: http://www.experimentcalculator.com/
-  recommended_tools:
+  tools:
     - type: Logging
       tools:
         - name: Log4j
@@ -1856,7 +1856,7 @@
     - Generative AI
     - Shift left, supply chain security
     - Platform engineering
-  recommended_reading:
+  books:
     - title: "Platform Engineering"
       author: "Camille Fournier and Ian Nowland"
       publisher: "O'Reilly"
@@ -1865,7 +1865,7 @@
       author: "Cassie Crossley"
       publisher: "O'Reilly"
       url: "https://amzn.to/4i0VVao"
-  recommended_other_resources:
+  other_resources:
     - title: "Secure by Design"
       author: "CISA"
       url: "https://www.cisa.gov/securebydesign"
@@ -1874,7 +1874,7 @@
       author: "James Iry"
       url: "https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html"
       type: "Blog post"
-  recommended_tools:
+  tools:
     - type: Generative AI (GenAI, LLM)
       tools:
         - name: ChatGPT
