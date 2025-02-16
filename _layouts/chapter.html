@@ -5,7 +5,7 @@ layout: default
 {% assign chapter_index = page.path | replace: 'chapters/chapter-', '' | replace: '/index.html', '' | minus: 1 %}
 {% assign chapter = site.data.outline[chapter_index] %}
 
-{% include chapters-intro.html chapter=chapter chapter_index=chapter_index %}
+{% include chapter-intro.html chapter=chapter chapter_index=chapter_index %}
 
 {% assign all_sections = "" %}
 {% if chapter.books %}
