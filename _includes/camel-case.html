@@ -1,1 +1,1 @@
-{{ include.text | downcase | replace: ' ', '_' | replace: '(', '' | replace: ')', '' }}
+{{ include.text | downcase | replace: ' ', '_' | replace: '(', '' | replace: ')', '' | replace: '-', '_' }}
