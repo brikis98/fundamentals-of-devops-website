@@ -75,12 +75,60 @@
           url: https://render.com/
         - name: Fly.io
           url: https://fly.io/
+        - name: Vercel
+          url: https://vercel.com/
+        - name: Railway
+          url: https://railway.app/
+        - name: Firebase
+          url: https://firebase.google.com/
+        - name: Supabase
+          url: https://supabase.com/
+        - name: Platform.sh
+          url: https://platform.sh/
+        - name: Netlify
+          url: https://www.netlify.com/
+        - name: Dokku
+          url: https://dokku.com/
+        - name: Porter
+          url: https://www.porter.run/
+        - name: Adaptable
+          url: https://adaptable.io/
+        - name: Koyeb
+          url: https://www.koyeb.com/
+        - name: Digital Ocean App Platform
+          url: https://www.digitalocean.com/products/app-platform
+        - name: Aptible
+          url: https://www.aptible.com/
+    - type: Virtual Private Server (VPS)
+      tools:
+        - name: Hetzner
+          url: https://www.hetzner.com/
+        - name: DigitalOcean
+          url: https://www.digitalocean.com/
+        - name: Vultr
+          url: https://www.vultr.com/
+        - name: Akamai Connected Cloud
+          url: https://www.akamai.com/cloud-computing
+        - name: BuyVM
+          url: https://buyvm.net/
+        - name: First Root
+          url: https://www.first-root.com/
+        - name: OneProvider
+          url: https://oneprovider.com/
     - type: Infrastructure as a Service (IaaS)
       tools:
         - name: Amazon Web Services (AWS)
           url: https://aws.amazon.com/
         - name: Microsoft Azure
           url: https://azure.microsoft.com/
+        - name: Google Cloud Platform (GCP)
+          url: https://cloud.google.com/
+        - name: Alibaba Cloud
+          url: https://www.alibabacloud.com/
+        - name: IBM Cloud
+          url: https://www.ibm.com/cloud
+        - name: Oracle Cloud Infrastructure (OCI)
+          url: https://www.oracle.com/cloud/
 
 - title: How to Manage Your Infrastructure as Code
   icon: code
@@ -128,6 +176,69 @@
       author: "KodeKloud"
       url: "https://kodekloud.com/learning-path/iac"
       type: "Online course"
+  recommended_tools:
+    - type: Configuration Management
+      tools:
+        - name: Chef
+          url: https://www.chef.io/
+        - name: Puppet
+          url: https://www.puppet.com/
+        - name: Ansible
+          url: https://www.ansible.com/
+    - type: VM Hypervisor
+      tools:
+        - name: VMware vSphere
+          url: https://www.vmware.com/products/cloud-infrastructure/vsphere
+        - name: VirtualBox
+          url: https://www.virtualbox.org/
+        - name: Parallels
+          url: https://www.parallels.com/
+        - name: Nitro
+          url: https://aws.amazon.com/ec2/nitro/
+    - type: VM Image
+      tools:
+        - name: Packer
+          url: https://www.packer.io/
+        - name: Vagrant
+          url: https://www.vagrantup.com/
+    - type: Container Engine
+      tools:
+        - name: Docker
+          url: https://www.docker.com/
+        - name: Moby
+          url: https://github.com/moby/moby
+        - name: CRI-O
+          url: https://cri-o.io/
+        - name: Podman
+          url: https://podman.io/
+        - name: runc
+          url: https://github.com/opencontainers/runc
+        - name: buildkit
+          url: https://github.com/moby/buildkit?tab=readme-ov-file
+    - type: Provisioning
+      tools:
+        - name: OpenTofu
+          url: https://opentofu.org/
+        - name: Terraform
+          url: https://www.terraform.io/
+        - name: CloudFormation
+          url: https://aws.amazon.com/cloudformation/
+        - name: OpenStack Heat
+          url: https://wiki.openstack.org/wiki/Heat
+        - name: Pulumi
+          url: https://www.pulumi.com/
+    - type: Module Registry
+      tools:
+        - name: Ansible Galaxy
+          url: https://galaxy.ansible.com/ui/
+        - name: Docker Hub
+          url: https://hub.docker.com/
+        - name: OpenTofu Registry
+          url: https://search.opentofu.org/
+        - name: Terraform Registry
+          url: https://registry.terraform.io/
+        - name: Gruntwork Infrastructure as Code Library
+          url: https://gruntwork.io/infrastructure-as-code-library/
 
 - title: How to Manage Your Apps Using Orchestration Tools
   icon: cubes
@@ -178,6 +289,121 @@
       author: "Peter Sbarski"
       publisher: "Manning"
       url: "https://amzn.to/401RkyU"
+  recommended_tools:
+    - type: Deployment Script
+      tools:
+        - name: Capistrano
+          url: https://capistranorb.com/
+        - name: Deployer
+          url: https://deployer.org/
+        - name: Mina
+          url: http://nadarei.co/mina/
+        - name: Fabric
+          url: https://www.fabfile.org/
+        - name: Shipit
+          url: https://github.com/shipitjs/shipit
+    - type: Process Supervisor
+      tools:
+        - name: systemd
+          url: https://systemd.io/
+        - name: supervisord
+          url: http://supervisord.org/
+        - name: runit
+          url: https://smarden.org/runit/
+        - name: PM2
+          url: https://pm2.keymetrics.io/
+    - type: Load Balancer (Web Server)
+      tools:
+        - name: Apache
+          url: https://www.apache.org/
+        - name: Nginx
+          url: https://www.nginx.com/
+        - name: HAProxy
+          url: https://www.haproxy.org/
+        - name: Caddy
+          url: https://caddyserver.com/
+        - name: Varnish
+          url: https://varnish-cache.org/
+        - name: Lighttpd
+          url: https://www.lighttpd.net/
+        - name: Microsoft IIS
+          url: https://www.iis.net/
+        - name: AWS Elastic Load Balancer
+          url: https://aws.amazon.com/elasticloadbalancing/
+        - name: GCP Cloud Load Balancer
+          url: https://cloud.google.com/load-balancing?hl=en
+        - name: Azure Load Balancer
+          url: https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview
+    - type: VM Cluster
+      tools:
+        - name: Auto Scaling Groups (ASG)
+          url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
+        - name: Managed Instance Groups
+          url: https://cloud.google.com/compute/docs/instance-groups
+        - name: Scale Sets
+          url: https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview
+    - type: Container Orchestration
+      tools:
+        - name: Kubernetes
+          url: https://kubernetes.io/
+        - name: Nomad
+          url: https://www.nomadproject.io/
+        - name: Docker Swarm
+          url: https://docs.docker.com/engine/swarm/
+        - name: Amazon ECS
+          url: https://aws.amazon.com/ecs/
+        - name: Marathon
+          url: https://mesosphere.github.io/marathon/
+        - name: Mesos
+          url: https://mesos.apache.org/
+        - name: OpenShift
+          url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+    - type: Kubernetes Application Configuration
+      tools:
+        - name: Helm
+          url: https://helm.sh/
+        - name: OpenTofu
+          url: https://opentofu.org/
+        - name: Pulumi
+          url: https://www.pulumi.com/
+        - name: Kustomize
+          url: https://kustomize.io/
+        - name: kapp
+          url: https://carvel.dev/kapp/
+    - type: Container Registry
+      tools:
+        - name: Docker Hub
+          url: https://hub.docker.com/
+        - name: Amazon Elastic Container Registry (ECR)
+          url: https://aws.amazon.com/ecr/
+        - name: Azure Container Registry
+          url: https://azure.microsoft.com/en-us/products/container-registry
+        - name: Google Artifact Registry
+          url: https://cloud.google.com/artifact-registry
+        - name: JFrog Docker Registry
+          url: https://jfrog.com/integration/docker-registry/
+        - name: GitHub Container Registry
+          url: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+    - type: Serverless
+      tools:
+        - name: AWS Lambda
+          url: https://aws.amazon.com/lambda/
+        - name: GCP Cloud Functions
+          url: https://cloud.google.com/functions?hl=en
+        - name: Azure serverless
+          url: https://azure.microsoft.com/en-us/solutions/serverless
+        - name: CloudFlare Workers
+          url: https://workers.cloudflare.com/
+        - name: Vercel Functions
+          url: https://vercel.com/docs/functions
+        - name: AWS Fargate
+          url: https://aws.amazon.com/fargate/
+        - name: Amazon Aurora Serverless
+          url: https://aws.amazon.com/rds/aurora/serverless/
+        - name: Serverless Framework
+          url: https://www.serverless.com/
+        - name: SAM
+          url: https://aws.amazon.com/serverless/sam/
 
 - title: How to Version, Build, and Test Your Code
   icon: code-fork
@@ -253,6 +479,103 @@
       author: "Peter Cottle"
       url: "https://learngitbranching.js.org/"
       type: "Online course"
+    - title: How to Write a Good Commit Message
+      author: "Chris Beams"
+      url: https://cbea.ms/git-commit/
+      type: "Blog Post"
+    - title: Conventional Commits
+      author: "Conventional Commits"
+      url: https://www.conventionalcommits.org/
+      type: "Specification"
+    - title: Rewriting history in Git
+      author: "Atlassian"
+      type: "Blog post"
+      url: https://www.atlassian.com/git/tutorials/rewriting-history
+    - title: Google’s Code Review Guidelines
+      author: "Google"
+      type: "Policy"
+      url: https://google.github.io/eng-practices/review/
+  recommended_tools:
+    - type: Version Control System
+      tools:
+        - name: Git
+          url: https://git-scm.com/
+        - name: Mercurial
+          url: https://www.mercurial-scm.org/
+        - name: Perforce
+          url: https://www.perforce.com/
+        - name: Subversion
+          url: https://subversion.apache.org/
+        - name: CVS
+          url: https://cvs.nongnu.org/
+    - type: Git Hosting
+      tools:
+        - name: GitHub
+          url: https://github.com/
+        - name: GitLab
+          url: https://gitlab.com/
+        - name: BitBucket
+          url: https://bitbucket.org/
+    - type: Build System
+      tools:
+        - name: Rake
+          url: https://github.com/ruby/rake
+        - name: Gradle
+          url: https://gradle.org/
+        - name: Maven
+          url: https://maven.apache.org/
+        - name: SBT
+          url: https://www.scala-sbt.org/
+        - name: NPM
+          url: https://www.npmjs.com/
+        - name: Bazel
+          url: https://bazel.build/
+        - name: Just
+          url: https://github.com/casey/just
+        - name: Make
+          url: https://www.gnu.org/software/make/
+        - name: Yarn
+          url: https://yarnpkg.com/
+        - name: Turborepo
+          url: https://turbo.build/repo
+        - name: Lerna
+          url: https://lerna.js.org/
+        - name: PnPM
+          url: https://pnpm.io/
+        - name: Parcel
+          url: https://parceljs.org/
+    - type: Static Analysis
+      tools:
+        - name: ShellCheck
+          url: https://www.shellcheck.net/
+        - name: ESLint
+          url: https://eslint.org/
+        - name: JSLint
+          url: https://www.jslint.com/
+        - name: Prettier
+          url: https://prettier.io/
+        - name: SpotBugs
+          url: https://spotbugs.github.io/
+        - name: RuboCop
+          url: https://rubocop.org/
+        - name: Terrascan
+          url: https://runterrascan.io/
+        - name: Trivy
+          url: https://aquasecurity.github.io/trivy/
+    - type: Policy as Code
+      tools:
+        - name: Open Policy Agent (OPA)
+          url: https://www.openpolicyagent.org/
+        - name: Sentinel
+          url: https://www.hashicorp.com/sentinel
+        - name: Intercept
+          url: https://intercept.cc/
+    - type: Plan Testing
+      tools:
+        - name: Open Policy Agent
+          url: https://www.openpolicyagent.org/
+        - name: Terratest
+          url: https://terratest.gruntwork.io/
 
 - title: How to Set Up CI and CD
   icon: refresh
@@ -306,6 +629,10 @@
       author: "Rachel Potvin"
       url: "https://www.youtube.com/watch?v=W71BTkUbdqE"
       type: "Talk"
+    - title: Facebook uses trunk-based development
+      author: "Mateusz Machalica, Alex Samylkin, Meredith Porth, Satish Chandra"
+      url: https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/
+      type: "Blog post"
     - title: "What is Trunk-Based Development?"
       author: "Paul Hammant"
       url: "https://paulhammant.com/2013/04/05/what-is-trunk-based-development/"
@@ -318,6 +645,89 @@
       author: "Dan McKinley"
       url: "http://mcfunley.com/data-driven-products-now"
       type: "Talk"
+    - title: OpenGitOps
+      author: OpenGitOps
+      type: Standards
+      url: https://opengitops.dev/
+  recommended_tools:
+    - type: Self-Hosted CI Server
+      tools:
+        - name: Jenkins
+          url: https://www.jenkins.io/
+        - name: TeamCity
+          url: https://www.jetbrains.com/teamcity/
+        - name: Drone
+          url: https://www.drone.io/
+        - name: GitHub Enterprise Server
+          url: https://docs.github.com/en/enterprise-server@3.10/admin/overview/about-github-enterprise-server
+        - name: GitLab
+          url: https://about.gitlab.com/install/
+    - type: Kubernetes-Hosted CI Server
+      tools:
+        - name: Tekton
+          url: https://tekton.dev/
+        - name: Jenkins X
+          url: https://jenkins-x.io/
+    - type: CI as a Service
+      tools:
+        - name: CircleCi
+          url: https://circleci.com/
+        - name: Travis CI
+          url: https://www.travis-ci.com/
+        - name: GitLab
+          url: https://about.gitlab.com/
+        - name: GitHub Actions
+          url: https://github.com/features/actions
+        - name: AWS CodePipeline
+          url: https://aws.amazon.com/codepipeline/
+        - name: Azure Pipelines
+          url: https://azure.microsoft.com/en-us/products/devops/pipelines/
+        - name: Google Cloud Build
+          url: https://cloud.google.com/build
+    - type: Feature Flag
+      tools:
+        - name: growthbook
+          url: https://github.com/growthbook/growthbook/
+        - name: Flagsmith
+          url: https://www.flagsmith.com/
+        - name: flagr
+          url: https://github.com/openflagr/flagr
+        - name: OpenFeature
+          url: https://openfeature.dev/
+        - name: Split
+          url: https://www.split.io/
+        - name: LaunchDarkly
+          url: https://launchdarkly.com/
+        - name: ConfigCat
+          url: https://configcat.com/
+        - name: Statsig
+          url: https://statsig.com/
+        - name: AWS AppConfig
+          url: https://aws.amazon.com/systems-manager/features/appconfig/
+    - type: Deployment Server
+      tools:
+        - name: HashiCorp Cloud Platform
+          url: https://www.hashicorp.com/cloud
+        - name: Gruntwork Pipelines
+          url: https://www.gruntwork.io/platform/pipelines
+        - name: env0
+          url: https://www.env0.com/
+        - name: Scalr
+          url: https://www.scalr.com/
+        - name: Spacelift
+          url: https://spacelift.io/
+    - type: Kubernetes Deployment
+      tools:
+        - name: Argo CD
+          url: https://argo-cd.readthedocs.io/en/stable/
+        - name: Flux
+          url: https://fluxcd.io/
+    - type: Workflow Engine
+      tools:
+        - name: Dagger
+          url: https://dagger.io/
+        - name: Common Workflow Language
+          url: https://www.commonwl.org/
 
 - title: How to Work with Multiple Teams and Environments
   icon: users
@@ -359,6 +769,39 @@
       author: "James Lewis and Martin Fowler"
       url: "https://martinfowler.com/articles/microservices.html"
       type: "Blog post"
+  recommended_tools:
+    - type: Configuration Language
+      tools:
+        - name: Cue
+          url: https://cuelang.org/
+        - name: Jsonnet
+          url: https://jsonnet.org/
+        - name: Dhall
+          url: https://dhall-lang.org/
+    - type: Configuration Data Store
+      tools:
+        - name: Consul
+          url: https://www.consul.io/
+        - name: etcd
+          url: https://etcd.io/
+        - name: ZooKeeper
+          url: https://zookeeper.apache.org/
+    - type: AWS Account Clean Up
+      tools:
+        - name: AWS Resource Explorer
+          url: https://aws.amazon.com/resourceexplorer/
+        - name: Cloud Nuke
+          url: https://github.com/gruntwork-io/cloud-nuke
+    - type: Automatic Update
+      tools:
+        - name: DependaBot
+          url: https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide
+        - name: Renovate
+          url: https://docs.renovatebot.com/
+        - name: Snyk
+          url: https://snyk.io/
+        - name: Patcher
+          url: https://www.gruntwork.io/products/patcher
 
 - title: "How to Set Up Networking"
   icon: sitemap
@@ -397,6 +840,154 @@
       author: "Razi Rais, Christina Morillo, Evan Gilman, Doug Barth"
       publisher: "O'Reilly"
       url: "https://amzn.to/3Yk1o4Z"
+  recommended_other_resources:
+    - title: "No More Chewy Centers: Introducing The Zero Trust Model Of Information Security"
+      author: John Kindervag"
+      url: "https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf"
+      type: Blog post
+    - title: Zero Trust Architecture
+      author: NIST
+      type: Article
+      url: "https://www.nist.gov/publications/zero-trust-architecture"
+    - title: "BeyondCorp: A New Approach to Enterprise Security"
+      author: "Rory Ward and Betsy Beyer"
+      url: "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/"
+      type: Article
+  recommended_tools:
+    - type: Single Sign On (SSO)
+      tools:
+        - name: JumpCloud
+          url: https://jumpcloud.com/
+        - name: Okta
+          url: https://www.okta.com/
+        - name: OneLogin
+          url: https://www.onelogin.com/
+        - name: Duo
+          url: https://duo.com/
+        - name: Microsoft Entra ID
+          url: https://www.microsoft.com/en-ie/security/business/identity-access/microsoft-entra-id
+        - name: Ping Identity
+          url: https://www.pingidentity.com/en.html
+    - type: Mobile Device Management (MDM)
+      tools:
+        - name: JumpCloud
+          url: https://jumpcloud.com/
+        - name: Rippling
+          url: https://www.rippling.com/
+        - name: NinjaOne
+          url: https://www.ninjaone.com/
+        - name: Microsoft Intune
+          url: https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune
+        - name: Scalefusion
+          url: https://scalefusion.com/
+    - type: Infrastructure Access (SSH)
+      tools:
+        - name: Teleport
+          url: https://goteleport.com/
+        - name: Tailscale
+          url: https://tailscale.com/
+        - name: Boundary
+          url: https://www.boundaryproject.io/
+        - name: StrongDM
+          url: https://www.strongdm.com/
+        - name: EC2 instance connect
+          url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
+        - name: Systems Manager
+          url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-systems-manager-session-manager.html
+        - name: Metadata-managed SSH connections
+          url: https://cloud.google.com/compute/docs/instances/ssh
+    - type: VPN
+      tools:
+        - name: Cisco
+          url: https://www.cisco.com/c/en/us/products/security/vpn-endpoint-security-clients/index.html
+        - name: Palo Alto Networks
+          url: https://www.paloaltonetworks.com/sase/globalprotect
+        - name: Juniper Networks
+          url: https://www.juniper.net/
+        - name: Barracuda
+          url: https://www.barracuda.com/products/network-protection/cloudgen-firewall/use-cases/remote-vpn-access
+        - name: SonicWall
+          url: https://www.sonicwall.com/
+        - name: Fortinet
+          url: https://www.fortinet.com/
+        - name: OpenVPN
+          url: https://openvpn.net/
+        - name: WireGuard
+          url: https://www.wireguard.com/
+        - name: Tailscale
+          url: https://tailscale.com/
+        - name: AWS Client VPN
+          url: https://aws.amazon.com/vpn/client-vpn/
+        - name: Google Cloud VPN
+          url: https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview
+        - name: AWS Virtual Private Gateways
+          url: https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html
+    - type: Service Discovery
+      tools:
+        - name: Consul
+          url: https://www.consul.io/
+        - name: Curator
+          url: https://curator.apache.org/docs/about/
+        - name: ZooKeeper
+          url: https://zookeeper.apache.org/
+        - name: Eureka
+          url: https://github.com/Netflix/eureka
+        - name: gRPC with etcd
+          url: https://etcd.io/docs/v3.2/dev-guide/grpc_naming/
+        - name: Synapse
+          url: https://airbnb.io/projects/synapse/
+        - name: Envoy
+          url: https://www.envoyproxy.io/
+        - name: Kubernetes Service Discovery
+          url: https://kubernetes.io/docs/concepts/services-networking/service/
+        - name: Nomad Service Discovery
+          url: https://developer.hashicorp.com/nomad/docs/networking/service-discovery
+        - name: Mesos Service Discovery
+          url: https://mesosphere.github.io/marathon/docs/service-discovery-load-balancing.html
+    - type: Serialization
+      tools:
+        - name: Protocol Buffers
+          url: https://protobuf.dev/
+        - name: Cap’n Proto
+          url: https://capnproto.org/
+        - name: FlatBuffers
+          url: https://flatbuffers.dev/
+        - name: Thrift
+          url: https://thrift.apache.org/
+        - name: Avro
+          url: https://avro.apache.org/
+    - type: RPC
+      tools:
+        - name: gRPC
+          url: https://grpc.io/
+        - name: Connect RPC
+          url: https://connectrpc.com/
+        - name: drpc
+          url: https://github.com/storj/drpc
+        - name: Twirp
+          url: https://twitchtv.github.io/twirp/
+        - name: OpenAPI
+          url: https://www.openapis.org/
+    - type: Service Mesh
+      tools:
+        - name: Linkerd
+          url: https://linkerd.io/
+        - name: Istio
+          url: https://istio.io/
+        - name: Cilium
+          url: https://cilium.io/
+        - name: Traefik Mesh
+          url: https://traefik.io/traefik-mesh/
+        - name: AWS App Mesh
+          url: https://aws.amazon.com/app-mesh/
+        - name: Google Cloud Service Mesh
+          url: https://cloud.google.com/products/service-mesh?hl=en
+        - name: Consul service mesh
+          url: https://developer.hashicorp.com/consul/docs/connect
+        - name: Kuma
+          url: https://kuma.io/
+        - name: Kong Mesh
+          url: https://konghq.com/products/kong-mesh
 
 - title: How to Secure Communication and Storage
   icon: lock
@@ -446,6 +1037,14 @@
       author: "Jim Gumbley"
       url: "https://martinfowler.com/articles/agile-threat-modelling.html"
       type: "Blog post"
+    - title: Memo to the Amateur Cipher Designer
+      author: Bruce Schneier
+      type: Blog post
+      url: https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign
+    - title: Password Strength
+      author: Randall Munroe
+      type: Comic
+      url: https://xkcd.com/936/
     - title: "OWASP Top Ten"
       author: "the OWASP Foundation"
       url: "https://owasp.org/www-project-top-ten/"
@@ -454,6 +1053,169 @@
       author: "the OWASP Foundation"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
       type: "Cheat sheet"
+  recommended_tools:
+    - type: Cryptography
+      tools:
+        - name: Go crypto library
+          url: https://pkg.go.dev/crypto
+        - name: Java Cryptography Architecture
+          url: https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html
+        - name: GPG
+          url: https://gnupg.org/
+        - name: age
+          url: https://github.com/FiloSottile/age
+    - type: Payment Processing
+      tools:
+        - name: Stripe
+          url: https://stripe.com/
+        - name: PayPal
+          url: https://www.paypal.com/
+        - name: Square
+          url: https://squareup.com/
+        - name: Chargebee
+          url: https://www.chargebee.com/
+        - name: Recurly
+          url: https://recurly.com/
+    - type: Authentication
+      tools:
+        - name: Auth0
+          url: https://auth0.com/
+        - name: Okta
+          url: https://www.okta.com/
+        - name: Amazon Cognito
+          url: https://aws.amazon.com/cognito/
+        - name: Google Firebase Authentication
+          url: https://firebase.google.com/docs/auth
+        - name: Supabase Authentication
+          url: https://supabase.com/auth
+        - name: Stytch
+          url: https://stytch.com/
+        - name: Supertokens
+          url: https://supertokens.com/
+    - type: Password Manager
+      tools:
+        - name: 1Password
+          url: https://1password.com/
+        - name: Bitwarden
+          url: https://bitwarden.com/
+        - name: NordPass
+          url: https://nordpass.com/
+        - name: Dashlane
+          url: https://www.dashlane.com/
+        - name: Enpass
+          url: https://www.enpass.io/
+        - name: KeePassXC
+          url: https://keepassxc.org/
+        - name: macOS password manager
+          url: https://support.apple.com/en-ie/guide/mac-help/mchlf375f392/mac
+        - name: Windows Credential Manager
+          url: https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0
+        - name: Google Password Manager
+          url: https://passwords.google.com/
+        - name: Firefox Password Manager
+          url: https://support.mozilla.org/en-US/kb/password-manager-remember-delete-edit-logins
+    - type: Diceware
+      tools:
+        - name: Diceware Password Generator
+          url: https://diceware.dmuth.org/
+        - name: diceware
+          url: https://github.com/ulif/diceware
+    - type: KMS
+      tools:
+        - name: Thales
+          url: https://cpl.thalesgroup.com/encryption/hardware-security-modules
+        - name: Utimaco
+          url: https://utimaco.com/products/categories/hsms-general-purpose-use-cases
+        - name: Entrust
+          url: https://www.entrust.com/products/hsm
+        - name: Yubico
+          url: https://www.yubico.com/products/hardware-security-module/
+        - name: AWS KMS
+          url: https://aws.amazon.com/kms/
+        - name: Azure Key Vault
+          url: https://azure.microsoft.com/en-us/products/key-vault
+        - name: Google Cloud Key Management
+          url: https://cloud.google.com/security/products/security-key-management
+        - name: Akeyless
+          url: https://www.akeyless.io/encryption-kms/
+    - type: Secret Management
+      tools:
+        - name: HashiCorp Vault
+          url: https://www.vaultproject.io/
+        - name: OpenBao
+          url: https://openbao.org/
+        - name: Doppler
+          url: https://www.doppler.com/
+        - name: Infisical
+          url: https://infisical.com/
+        - name: Keywhiz
+          url: https://square.github.io/keywhiz
+        - name: AWS Secrets Manager
+          url: https://aws.amazon.com/secrets-manager/
+        - name: AWS Systems Manager Parameter Store
+          url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
+        - name: Google Cloud Secret Manager
+          url: https://cloud.google.com/security/products/secret-manager?hl=en
+        - name: Kubernetes Secrets
+          url: https://kubernetes.io/docs/concepts/configuration/secret/
+    - type: Transparent Disk Encryption (TDE)
+      tools:
+        - name: macOS FileVault
+          url: https://support.apple.com/en-ie/guide/mac-help/mh11785/mac
+        - name: Windows BitLocker
+          url: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
+        - name: Ubuntu Full Disk Encryption
+          url: https://ubuntu.com/core/docs/full-disk-encryption
+    - type: Free Certificate Authority (CA)
+      tools:
+        - name: LetsEncrypt
+          url: https://letsencrypt.org/
+        - name: Certbot
+          url: https://certbot.eff.org/
+        - name: ZeroSSL
+          url: https://zerossl.com/
+        - name: CloudFlare’s free tier
+          url: https://www.cloudflare.com/application-services/products/ssl/
+    - type: Cloud Provider Certificate Authority (CA)
+      tools:
+        - name: AWS Certificate Manager (ACM)
+          url: https://aws.amazon.com/certificate-manager/
+        - name: Google-managed SSL certificates
+          url: https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs
+    - type: Self-Managed Certificate Authority (CA)
+      tools:
+        - name: HashiCorp Vault
+          url: https://www.vaultproject.io/
+        - name: OpenBAO
+          url: https://openbao.org/
+        - name: step-ca
+          url: https://smallstep.com/docs/step-ca/index.html
+        - name: cfssl
+          url: https://github.com/cloudflare/cfssl
+        - name: Caddy
+          url: https://caddyserver.com/
+        - name: certstrap
+          url: https://github.com/square/certstrap
+        - name: EJBCA
+          url: https://www.ejbca.org/
+        - name: Dogtag Certificate System
+          url: https://www.dogtagpki.org/wiki/PKI_Main_Page
+        - name: OpenXPKI
+          url: https://www.openxpki.org/
+    - type: Private Certificate Authority (CA) Service
+      tools:
+        - name: Keyfactor
+          url: https://www.keyfactor.com/
+        - name: Entrust
+          url: https://www.entrust.com/products/pki/managed-services/pki-as-a-service
+        - name: Venafi
+          url: https://venafi.com/zero-touch-pki/
+        - name: AppViewX
+          url: https://appviewx.com/
+        - name: AWS Private CA
+          url: https://aws.amazon.com/private-ca/
+        - name: Google CA Service
+          url: https://cloud.google.com/security/products/certificate-authority-service?hl=en
 
 - title: "How to Store Data"
   icon: database
@@ -501,10 +1263,301 @@
       publisher: "Microsoft Press"
       url: "https://amzn.to/3Yniei7"
   recommended_other_resources:
+    - title: "MapReduce: Simplified Data Processing on Large Clusters"
+      author: "Jeffrey Dean and Sanjay Ghemawat"
+      type: Article
+      url: https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+    - title: "Bigtable: A Distributed Storage System for Structured Data"
+      author: "Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, Robert E. Gruber"
+      type: Article
+      url: https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf
+    - title: "Dynamo: Amazon's Highly Available Key-value Store "
+      author: "Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan Sivasubramanian, Peter Vosshall, and Werner Vogels"
+      url: https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
+      type: Article
     - title: "Distributed systems theory for the distributed systems engineer"
       author: "Paper Trail"
       url: "https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/"
       type: "Blog post"
+    - title: "Choose Boring Technology"
+      author: "Dan McKinley"
+      type: Talk
+      url: "https://boringtechnology.club/"
+  recommended_tools:
+    - type: Network-Attached Hard Drive
+      tools:
+        - name: Amazon Elastic Block Store (EBS)
+          url: https://aws.amazon.com/ebs/
+        - name: Google Persistent Disk
+          url: https://cloud.google.com/persistent-disk?hl=en
+        - name: Azure Disk Storage
+          url: https://azure.microsoft.com/en-us/products/storage/disks
+    - type: Shared Network-Attached Hard Drive
+      tools:
+        - name: Amazon Elastic File System (EFS)
+          url: https://aws.amazon.com/efs/
+        - name: Google Cloud Filestore
+          url: https://cloud.google.com/filestore?hl=en
+        - name: Azure Files
+          url: https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction
+    - type: Relational Database
+      tools:
+        - name: PostgreSQL
+          url: https://www.mysql.com/
+        - name: MySQL
+          url: https://www.mysql.com/
+        - name: SQLite
+          url: https://www.sqlite.org/
+        - name: MS SQL Server
+          url: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+        - name: Oracle
+          url: https://www.oracle.com/ie/database/
+    - type: Schema Management
+      tools:
+        - name: Flyway
+          url: https://www.red-gate.com/products/flyway/community/
+        - name: Liquibase
+          url: https://www.liquibase.com/
+        - name: Atlas
+          url: https://atlasgo.io/
+        - name: Bytebase
+          url: https://www.bytebase.com/
+        - name: Alembic
+          url: https://alembic.sqlalchemy.org/en/latest/
+        - name: migrate
+          url: https://github.com/golang-migrate/migrate
+        - name: Squitch
+          url: https://sqitch.org/
+        - name: ActiveRecord
+          url: https://guides.rubyonrails.org/active_record_basics.html
+        - name: Sequel
+          url: https://sequel.jeremyevans.net/
+        - name: Knex.js
+          url: https://knexjs.org/
+        - name: GORM
+          url: https://gorm.io/index.html
+    - type: Key-Value Store
+      tools:
+        - name: Redis
+          url: https://redis.io/
+        - name: Valkey
+          url: https://valkey.io/
+        - name: Memcached
+          url: https://memcached.org/
+        - name: Amazon DynamoDB
+          url: https://aws.amazon.com/dynamodb/
+        - name: Riak KV
+          url: https://riak.com/products/riak-kv/
+        - name: Redis Cloud
+          url: https://redis.io/cloud/
+        - name: Amazon ElastiCache
+          url: https://aws.amazon.com/elasticache/
+        - name: Google Cloud Memorystore
+          url: https://cloud.google.com/memorystore
+        - name: Azure Cache for Redis
+          url: https://azure.microsoft.com/en-us/products/cache
+        - name: Upstash
+          url: https://upstash.com/
+    - type: CDN
+      tools:
+        - name: CloudFlare
+          url: https://www.cloudflare.com/
+        - name: Akamai
+          url: https://www.akamai.com/
+        - name: Fastly
+          url: https://www.fastly.com/
+        - name: Imperva
+          url: https://www.imperva.com/
+        - name: Amazon CloudFront
+          url: https://aws.amazon.com/cloudfront/
+        - name: Google Cloud and Media CDN
+          url: https://cloud.google.com/cdn
+        - name: Azure CDN
+          url: https://azure.microsoft.com/en-us/products/cdn
+    - type: Object Store
+      tools:
+        - name: Amazon Simple Storage Service (S3)
+          url: https://aws.amazon.com/s3/
+        - name: Google Cloud Storage (GCS)
+          url: https://cloud.google.com/storage?hl=en
+        - name: Azure Blog Storage
+          url: https://azure.microsoft.com/en-us/products/storage/blobs
+        - name: CloudFlare R2
+          url: https://www.cloudflare.com/developer-platform/r2/
+        - name: Wasabi
+          url: https://wasabi.com/
+        - name: Backblaze
+          url: https://www.backblaze.com/
+    - type: Document Store
+      tools:
+        - name: MongoDB
+          url: https://www.mongodb.com/
+        - name: CouchDB
+          url: https://couchdb.apache.org/
+        - name: Couchbase
+          url: https://www.couchbase.com/
+        - name: Google Firestore
+          url: https://firebase.google.com/docs/firestore
+    - type: Search
+      tools:
+        - name: Elasticsearch
+          url: https://www.elastic.co/elasticsearch
+        - name: OpenSearch
+          url: https://opensearch.org/
+        - name: Amazon OpenSearch
+          url: https://aws.amazon.com/opensearch-service/
+        - name: Algolia
+          url: https://www.algolia.com/
+        - name: Apache Solr
+          url: https://solr.apache.org/
+        - name: Apache Lucene
+          url: https://lucene.apache.org/
+    - type: Columnar Database
+      tools:
+        - name: Cassandra
+          url: https://cassandra.apache.org/
+        - name: Google Bigtable
+          url: https://cloud.google.com/bigtable
+        - name: HBase
+          url: https://hbase.apache.org/
+        - name: Kudu
+          url: https://kudu.apache.org/
+    - type: Time-Series Database
+      tools:
+        - name: InfluxDB
+          url: https://www.influxdata.com/
+        - name: Amazon Timestream
+          url: https://aws.amazon.com/timestream/
+        - name: Prometheus
+          url: https://prometheus.io/
+        - name: Riak TS
+          url: https://riak.com/products/riak-ts/
+        - name: Timescale
+          url: https://www.timescale.com/
+    - type: Big Data
+      tools:
+        - name: Hadoop
+          url: https://hadoop.apache.org/
+        - name: Cloudera
+          url: https://www.cloudera.com/
+        - name: Amazon EMR
+          url: https://aws.amazon.com/emr/
+        - name: Google Dataproc
+          url: https://cloud.google.com/dataproc
+        - name: Azure HDInsight
+          url: https://azure.microsoft.com/en-us/products/hdinsight
+    - type: Fast Data
+      tools:
+        - name: Apache Spark
+          url: https://spark.apache.org/
+        - name: Apache Flink
+          url: https://flink.apache.org/
+        - name: Apache Storm
+          url: https://storm.apache.org/
+        - name: Apache Samza
+          url: https://samza.apache.org/
+        - name: Apache Beam
+          url: https://beam.apache.org/
+        - name: Apache Druid
+          url: https://druid.apache.org/
+        - name: Apache Pinot
+          url: https://pinot.apache.org/
+        - name: Amazon Data Firehose
+          url: https://aws.amazon.com/firehose/
+    - type: Data Warehouse
+      tools:
+        - name: Snowflake
+          url: https://www.snowflake.com/
+        - name: Amazon Redshift
+          url: https://aws.amazon.com/redshift/
+        - name: Google BigQuery
+          url: https://cloud.google.com/bigquery
+        - name: Azure Synapse Analytics
+          url: https://azure.microsoft.com/en-us/products/synapse-analytics
+        - name: Apache Hive
+          url: https://hive.apache.org/
+        - name: Oracle Enterprise Data Warehouse
+          url: https://www.oracle.com/ie/autonomous-database/enterprise-data-warehouse/
+        - name: Teradata
+          url: https://www.teradata.com/
+        - name: Informatica
+          url: https://www.informatica.com/
+        - name: Vertica
+          url: https://www.vertica.com/
+    - type: ETL
+      tools:
+        - name: Apache Airflow
+          url: https://airflow.apache.org/
+        - name: Oracle Data Integrator
+          url: https://www.oracle.com/uk/middleware/technologies/data-integrator.html
+        - name: SQL Server Integration Services
+          url: https://learn.microsoft.com/en-us/sql/integration-services/sql-server-integration-services
+        - name: AWS Glue
+          url: https://aws.amazon.com/glue/
+        - name: Azure Data Factory
+          url: https://learn.microsoft.com/en-us/azure/data-factory/
+        - name: Google Cloud Dataflow
+          url: https://cloud.google.com/products/dataflow
+        - name: Stitch
+          url: https://www.stitchdata.com/
+        - name: Qlik
+          url: https://www.qlik.com/us
+        - name: Informatica
+          url: https://www.informatica.com/
+        - name: Matillion
+          url: https://www.matillion.com/
+        - name: Integrate.io
+          url: https://www.integrate.io/
+    - type: Message Queue
+      tools:
+        - name: RabbitMQ
+          url: https://www.rabbitmq.com/
+        - name: ActiveMQ
+          url: https://activemq.apache.org/
+        - name: ZeroMQ
+          url: https://zeromq.org/
+        - name: Amazon Simple Queue Service (SQS)
+          url: https://aws.amazon.com/sqs/
+        - name: Google Cloud Tasks
+          url: https://cloud.google.com/tasks
+        - name: Azure Queue Storage
+          url: https://azure.microsoft.com/en-us/products/storage/queues
+    - type: Event Streaming
+      tools:
+        - name: Apache Kafka
+          url: https://kafka.apache.org/
+        - name: Confluent
+          url: https://www.confluent.io/
+        - name: Amazon Managed Streaming for Kafka (MSK)
+          url: https://aws.amazon.com/msk/
+        - name: Amazon Kinesis
+          url: https://aws.amazon.com/kinesis/
+        - name: Amazon EventBridge
+          url: https://aws.amazon.com/eventbridge/
+        - name: Google Cloud Managed Service for Kafka
+          url: https://cloud.google.com/products/managed-service-for-apache-kafka
+        - name: Google Cloud Pub/Sub
+          url: https://cloud.google.com/pubsub
+        - name: Azure HDInsight
+          url: https://azure.microsoft.com/en-us/products/hdinsight
+        - name: Apache Pulsar
+          url: https://pulsar.apache.org/
+        - name: NATS
+          url: https://nats.io/
+        - name: Redpanda
+          url: https://www.redpanda.com/
+    - type: NewSQL
+      tools:
+        - name: Google Spanner
+          url: https://cloud.google.com/spanner
+        - name: Amazon Aurora
+          url: https://aws.amazon.com/rds/aurora/
+        - name: CockroachDB
+          url: https://www.cockroachlabs.com/
+        - name: YugabyteDB
+          url: https://www.yugabyte.com/
+        - name: VoltDB
+          url: https://www.voltactivedata.com/
 
 - title: "How to Monitor Your Systems"
   icon: line-chart
@@ -537,6 +1590,264 @@
       author: "Douglas W. Hubbard"
       publisher: "Wiley"
       url: "https://amzn.to/4f1hSo3"
+  recommended_other_resources:
+    - title: "How long will your experiment take?"
+      author: Dan McKinley
+      type: Calculator
+      url: http://www.experimentcalculator.com/
+  recommended_tools:
+    - type: Logging
+      tools:
+        - name: Log4j
+          url: https://logging.apache.org/log4j
+        - name: Winston
+          url: https://github.com/winstonjs/winston
+        - name: zap
+          url: https://github.com/uber-go/zap
+        - name: Loguru
+          url: https://github.com/Delgan/loguru
+        - name: logrotate
+          url: https://github.com/logrotate/logrotate
+    - type: Log Aggregation
+      tools:
+        - name: Loggly
+          url: https://www.loggly.com/
+        - name: Papertrail
+          url: https://www.papertrail.com/
+        - name: Sumo Logic
+          url: https://www.sumologic.com/
+        - name: Splunk
+          url: https://www.splunk.com/
+        - name: Graylog
+          url: https://graylog.org/
+        - name: Elasticsearch
+          url: https://www.elastic.co/elasticsearch
+        - name: Logstash
+          url: https://www.elastic.co/logstash
+        - name: OpenSearch
+          url: https://opensearch.org/docs/latest/about/
+        - name: OpenSearch Logstash
+          url: https://opensearch.org/docs/latest/tools/logstash/index/
+        - name: Datadog
+          url: https://www.datadoghq.com/product/log-management/
+        - name: New Relic
+          url: https://newrelic.com/platform/log-management
+        - name: Amazon CloudWatch Logs
+          url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
+        - name: Google Cloud Logging
+          url: https://cloud.google.com/logging
+        - name: Azure Monitor Logs
+          url: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs
+        - name: Syslog
+          url: https://en.wikipedia.org/wiki/Syslog
+        - name: Fluentd
+          url: https://www.fluentd.org/
+        - name: Fluent Bit
+          url: https://fluentbit.io/
+        - name: Beats
+          url: https://www.elastic.co/beats
+        - name: Vector
+          url: https://vector.dev/
+        - name: OpenTelemetry Collector
+          url: https://opentelemetry.io/docs/collector/
+    - type: Availability Metrics
+      tools:
+        - name: Pingdom
+          url: https://www.pingdom.com/
+        - name: Uptime Robot
+          url: https://uptimerobot.com/
+        - name: Better Stack
+          url: https://betterstack.com/
+        - name: Uptime.com
+          url: https://uptime.com/
+        - name: Datadog Uptime Monitoring
+          url: https://www.datadoghq.com/monitoring/uptime-monitoring-tools/
+        - name: Amazon Route 53 Health Checks
+          url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html
+        - name: Google Cloud Uptime Checks
+          url: https://cloud.google.com/monitoring/uptime-checks
+    - type: Business Metrics
+      tools:
+        - name: Google Analytics
+          url: https://marketingplatform.google.com/about/analytics/
+        - name: KissMetrics
+          url: https://www.kissmetrics.io/
+        - name: MixPanel
+          url: https://mixpanel.com/
+        - name: PostHog
+          url: https://posthog.com/
+        - name: Fathom Analytics
+          url: https://usefathom.com/
+        - name: Overtracking
+          url: https://overtracking.com/
+        - name: Matomo
+          url: https://matomo.org/
+        - name: Simple Analytics
+          url: https://www.simpleanalytics.com/
+        - name: Cloudflare Web Analytics
+          url: https://www.cloudflare.com/web-analytics/
+        - name: Amplitude
+          url: https://amplitude.com/
+        - name: Heap
+          url: https://www.heap.io/
+    - type: Application Performance Monitoring (APM)
+      tools:
+        - name: Datadog
+          url: https://www.datadoghq.com/
+        - name: New Relic
+          url: https://newrelic.com/
+        - name: Dynatrace
+          url: https://www.dynatrace.com/
+        - name: AppDynamics
+          url: https://www.appdynamics.com/
+        - name: Amazon CloudWatch
+          url: https://aws.amazon.com/cloudwatch/
+        - name: Google Cloud Monitoring
+          url: https://cloud.google.com/monitoring
+        - name: Azure Monitor
+          url: https://learn.microsoft.com/en-us/azure/azure-monitor/overview
+    - type: Real User Monitoring (RUM)
+      tools:
+        - name: DataDog RUM
+          url: https://www.datadoghq.com/product/real-user-monitoring/
+        - name: New Relic Browser Monitoring
+          url: https://newrelic.com/platform/browser-monitoring
+        - name: Dynatrace RUM
+          url: https://www.dynatrace.com/platform/real-user-monitoring/
+        - name: AppDynamics Browser RUM
+          url: https://www.appdynamics.com/product/end-user-monitoring/browser-real-user-monitoring
+        - name: Sematext Experience
+          url: https://sematext.com/experience/
+        - name: Akamai mPulse
+          url: https://www.akamai.com/products/mpulse-real-user-monitoring
+        - name: Raygun RUM
+          url: https://raygun.com/platform/real-user-monitoring
+    - type: Server Metrics
+      tools:
+        - name: Nagios
+          url: https://www.nagios.org/
+        - name: Icinga
+          url: https://icinga.com/
+        - name: Zabbix
+          url: https://www.zabbix.com/
+        - name: Domotz
+          url: https://www.domotz.com/
+        - name: Sensu
+          url: https://sensu.io/
+    - type: Metrics Collection
+      tools:
+        - name: collectd
+          url: https://www.collectd.org/
+        - name: Fluent Bit
+          url: https://fluentbit.io/
+        - name: StatsD
+          url: https://github.com/statsd/statsd
+        - name: Telegraf
+          url: https://www.influxdata.com/time-series-platform/telegraf/
+        - name: Beats
+          url: https://www.elastic.co/beats
+        - name: OpenTelemetry
+          url: https://opentelemetry.io/
+    - type: Metrics Backend
+      tools:
+        - name: Open Time Series Database (OpenTSDB)
+          url: http://opentsdb.net/
+        - name: Prometheus
+          url: https://prometheus.io/
+        - name: Timescale
+          url: https://www.timescale.com/
+        - name: InfluxDB
+          url: https://www.influxdata.com/index/
+        - name: Graphite
+          url: https://graphiteapp.org/
+        - name: QuestDB
+          url: https://questdb.io/
+    - type: Metrics Frontend
+      tools:
+        - name: Grafana
+          url: https://grafana.com/
+        - name: Perses
+          url: https://perses.dev/
+        - name: Kibana
+          url: https://www.elastic.co/kibana
+        - name: OpenSearch Dashboards
+          url: https://opensearch.org/docs/latest/dashboards/
+    - type: Observability
+      tools:
+        - name: Honeycomb
+          url: https://www.honeycomb.io/
+        - name: SigNoz
+          url: https://signoz.io/
+        - name: Uptrace
+          url: https://uptrace.dev/
+        - name: ServiceNow Observability
+          url: https://www.servicenow.com/products/observability.html
+        - name: Chronosphere
+          url: https://chronosphere.io/
+        - name: OpenObserve
+          url: https://openobserve.ai/
+        - name: IBM Instana
+          url: https://www.ibm.com/products/instana
+    - type: Distributed Tracing
+      tools:
+        - name: Zipkin
+          url: https://zipkin.io/
+        - name: Jaeger
+          url: https://www.jaegertracing.io/
+        - name: AWS X-Ray
+          url: https://aws.amazon.com/xray/
+        - name: Google Cloud Trace
+          url: https://cloud.google.com/trace/docs
+    - type: On-Call
+      tools:
+        - name: PagerDuty
+          url: https://www.pagerduty.com/
+        - name: Splunk On-Call
+          url: https://www.splunk.com/en_us/products/on-call.html
+        - name: Opsgenie
+          url: https://www.atlassian.com/software/opsgenie
+        - name: Blameless
+          url: https://www.blameless.com/
+        - name: Squadcast
+          url: https://www.squadcast.com/
+        - name: All Quiet
+          url: https://allquiet.app/
+        - name: Rootly
+          url: https://rootly.com/
+    - type: Issue Tracker
+      tools:
+        - name: Jira
+          url: https://www.atlassian.com/software/jira
+        - name: Linear
+          url: https://linear.app/
+        - name: GitHub Issues
+          url: https://github.com/features/issues
+        - name: Asana
+          url: https://asana.com/
+    - type: Code Quality
+      tools:
+        - name: Codacy
+          url: https://www.codacy.com/
+        - name: SonarQube
+          url: https://www.sonarsource.com/products/sonarqube/
+        - name: Code Climate
+          url: https://codeclimate.com/
+        - name: Coverity
+          url: https://scan.coverity.com/
+        - name: Snyk
+          url: https://snyk.io/
+    - type: Developer Productivity
+      tools:
+        - name: Pluralsight
+          url: https://www.pluralsight.com/
+        - name: Faros AI
+          url: https://www.faros.ai/
+        - name: LinearB
+          url: https://linearb.io/
+        - name: Swarmia
+          url: https://www.swarmia.com/
+        - name: Oobeya
+          url: https://oobeya.io/
 
 - title: The Future of DevOps and Software Delivery
   icon: magic
@@ -563,6 +1874,170 @@
       author: "James Iry"
       url: "https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html"
       type: "Blog post"
+  recommended_tools:
+    - type: Generative AI (GenAI, LLM)
+      tools:
+        - name: ChatGPT
+          url: https://chatgpt.com/
+        - name: Dall-E
+          url: https://openai.com/index/dall-e/
+        - name: Gemini
+          url: https://gemini.google.com/
+        - name: Llama
+          url: https://www.llama.com/
+        - name: Microsoft Copilot
+          url: https://copilot.microsoft.com/
+        - name: GitHub Copilot
+          url: https://github.com/features/copilot
+        - name: Amazon Q Developer
+          url: https://aws.amazon.com/q/developer/
+        - name: Stable Diffusion
+          url: https://stability.ai/
+        - name: Midjourney
+          url: https://www.midjourney.com/
+        - name: Cursor
+          url: https://www.cursor.com/
+    - type: AI-Powered DevOps Tools
+      tools:
+        - name: Pulumi AI
+          url: https://www.pulumi.com/ai
+        - name: Honeycomb’s Query Assistant
+          url: https://www.honeycomb.io/blog/introducing-query-assistant
+        - name: Datadog Bits AI
+          url: https://www.datadoghq.com/product/platform/bits-ai/
+        - name: Datadog Watchdog
+          url: https://www.datadoghq.com/product/platform/watchdog/
+        - name: New Relic AI
+          url: https://newrelic.com/platform/new-relic-ai
+        - name: Splunk AI
+          url: https://www.splunk.com/en_us/solutions/splunk-artificial-intelligence.html
+        - name: Dynatrace Davis AI
+          url: https://www.dynatrace.com/platform/artificial-intelligence/
+        - name: Snyk DeepCode AI
+          url: https://snyk.io/platform/deepcode-ai/
+    - type: Static Application Security Testing (SAST)
+      tools:
+        - name: FindBugs
+          url: https://findbugs.sourceforge.net/
+        - name: Bandit
+          url: https://bandit.readthedocs.io/en/latest/
+        - name: Brakeman
+          url: https://brakemanscanner.org/
+        - name: Kubesec
+          url: https://kubesec.io/
+        - name: Snyk
+          url: https://snyk.io/
+        - name: SonarQube
+          url: https://www.sonarsource.com/products/sonarqube/
+        - name: Wiz
+          url: https://www.wiz.io/
+        - name: Open Policy Agent
+          url: https://www.openpolicyagent.org/
+        - name: Codacy
+          url: https://www.codacy.com/
+        - name: Coverity Scan
+          url: https://scan.coverity.com/
+        - name: Veracode
+          url: https://www.veracode.com/
+        - name: Trivy
+          url: https://trivy.dev/
+        - name: Mend
+          url: https://www.mend.io/
+    - type: Dynamic Application Security Testing (DAST)
+      tools:
+        - name: Zed Attack Proxy
+          url: https://www.zaproxy.org/
+        - name: Invicti
+          url: https://www.invicti.com/
+        - name: Veracode Dynamic Analysis
+          url: https://www.veracode.com/products/dynamic-analysis-dast
+        - name: PortSwigger
+          url: https://portswigger.net/
+        - name: Nuclei
+          url: https://docs.projectdiscovery.io/tools/nuclei/overview
+    - type: Supply Chain Security
+      tools:
+        - name: Chainguard
+          url: https://www.chainguard.dev/
+        - name: Snyk
+          url: https://snyk.io/
+        - name: Mend
+          url: https://www.mend.io/
+        - name: DependaBot
+          url: https://github.com/dependabot
+        - name: Patcher
+          url: https://www.gruntwork.io/platform/patcher
+        - name: ReversingLabs
+          url: https://www.reversinglabs.com/
+        - name: Ox Security
+          url: https://www.ox.security/
+        - name: GitGuardian
+          url: https://www.gitguardian.com/
+        - name: Anchore
+          url: https://anchore.com/
+        - name: Syft
+          url: https://github.com/anchore/syft
+        - name: Sonatype
+          url: https://www.sonatype.com/
+        - name: RapidFort
+          url: https://www.rapidfort.com/
+    - type: Secure Application Framework
+      tools:
+        - name: Tauri
+          url: https://v2.tauri.app/
+        - name: Deno
+          url: https://deno.com/
+        - name: WebAssembly System Interface
+          url: https://wasi.dev/
+    - type: Internal Developer Platform
+      tools:
+        - name: Backstage
+          url: https://backstage.io/
+        - name: Humanitec
+          url: https://humanitec.com/
+        - name: OpsLevel
+          url: https://www.opslevel.com/
+        - name: Cycloid
+          url: https://www.cycloid.io/
+        - name: Cortex
+          url: https://www.cortex.io/
+        - name: Roadie
+          url: https://roadie.io/
+        - name: Port
+          url: https://www.getport.io/
+        - name: Compass
+          url: https://www.atlassian.com/software/compass
+        - name: Qovery
+          url: https://www.qovery.com/
+    - type: Interactive Playbook
+      tools:
+        - name: RunDeck
+          url: https://www.rundeck.com/
+        - name: Runme
+          url: https://runme.dev/
+        - name: Stateful
+          url: https://stateful.com/
+        - name: SmartPlaybooks
+          url: https://www.smartplaybooks.io/
+        - name: Doctor Droid
+          url: https://drdroid.io/
+        - name: Jupyter Notebooks
+          url: https://jupyter.org/
+    - type: Infrastructure from Code (IFC)
+      tools:
+        - name: Ampt
+          url: https://getampt.com/
+        - name: Nitric
+          url: https://nitric.io/
+        - name: Modal
+          url: https://modal.com/
+        - name: Shuttle
+          url: https://www.shuttle.dev/
+        - name: Klotho
+          url: https://klo.dev/index.html
+        - name: Encore
+          url: https://encore.dev/
+
 
 - title: Open Source Code Samples
   icon: github
