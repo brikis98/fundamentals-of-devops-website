@@ -1292,8 +1292,6 @@
           url: https://cloud.google.com/persistent-disk?hl=en
         - name: Azure Disk Storage
           url: https://azure.microsoft.com/en-us/products/storage/disks
-    - type: Shared Network-Attached Hard Drive
-      tools:
         - name: Amazon Elastic File System (EFS)
           url: https://aws.amazon.com/efs/
         - name: Google Cloud Filestore
@@ -1388,7 +1386,7 @@
           url: https://wasabi.com/
         - name: Backblaze
           url: https://www.backblaze.com/
-    - type: Document Store
+    - type: Document Store and Search
       tools:
         - name: MongoDB
           url: https://www.mongodb.com/
@@ -1398,8 +1396,6 @@
           url: https://www.couchbase.com/
         - name: Google Firestore
           url: https://firebase.google.com/docs/firestore
-    - type: Search
-      tools:
         - name: Elasticsearch
           url: https://www.elastic.co/elasticsearch
         - name: OpenSearch
@@ -1412,7 +1408,7 @@
           url: https://solr.apache.org/
         - name: Apache Lucene
           url: https://lucene.apache.org/
-    - type: Columnar Database
+    - type: Columnar and Time-Series Database
       tools:
         - name: Cassandra
           url: https://cassandra.apache.org/
@@ -1422,8 +1418,6 @@
           url: https://hbase.apache.org/
         - name: Kudu
           url: https://kudu.apache.org/
-    - type: Time-Series Database
-      tools:
         - name: InfluxDB
           url: https://www.influxdata.com/
         - name: Amazon Timestream
