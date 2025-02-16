@@ -709,7 +709,7 @@
           url: https://statsig.com/
         - name: AWS AppConfig
           url: https://aws.amazon.com/systems-manager/features/appconfig/
-    - type: Deployment Server
+    - type: OpenTofu / Terraform Deployment
       tools:
         - name: HashiCorp Cloud Platform
           url: https://www.hashicorp.com/cloud
