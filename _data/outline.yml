@@ -403,6 +403,10 @@
           url: https://vercel.com/docs/functions
         - name: AWS Fargate
           url: https://aws.amazon.com/fargate/
+        - name: Lambda Function URLs
+          url: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
+        - name: Amazon API Gateway
+          url: https://aws.amazon.com/api-gateway/
         - name: Amazon Aurora Serverless
           url: https://aws.amazon.com/rds/aurora/serverless/
         - name: Serverless Framework
