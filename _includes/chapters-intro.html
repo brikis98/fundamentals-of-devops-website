@@ -18,6 +18,28 @@
         "{{ include.chapter.title }}" of the book
         <em><a href="{{ site.url }}">Fundamentals of DevOps and Software Delivery</a></em> by Yevgeniy Brikman.
       </p>
+      {% if chapter.key_ideas %}
+      <dt class="regular mt2">Key ideas you'll explore</dt>
+      <dd class="ml1">
+        <ul class="mt0 pl2">
+          {% for item in chapter.key_ideas %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+      {% endif %}
+
+      {% if chapter.examples %}
+      <dt class="regular mt2">Examples you'll try</dt>
+      <dd class="ml1">
+        <ul class="mt0 pl2">
+          {% for item in chapter.examples %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+      {% endif %}
+
       {% if include.chapter.books or include.chapter.other_resources %}
         <p>
           Learning resources:
