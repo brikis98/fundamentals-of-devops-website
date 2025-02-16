@@ -26,7 +26,7 @@ title: "Fundamentals of DevOps and Software Delivery Resources"
           {% unless chapter.skip_chapter_heading %}
             <tr>
               <td class="pr1 pb0 mb0 light-gray">Chapter {{ forloop.index }}:</td>
-              <td><a href="/chapters/chapter-{{ forloop.index | prepend: '00' | slice: -2, 2 }}">{{ chapter.title }}</a></td>
+              <td><a href="/chapters/chapter-{% include pad-with-zero.html text=forloop.index %}">{{ chapter.title }}</a></td>
             </tr>
           {% endunless %}
         {% endfor %}
