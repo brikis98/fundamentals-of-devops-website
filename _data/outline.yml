@@ -659,34 +659,30 @@
       type: Standards
       url: https://opengitops.dev/
   tools:
-    - type: Self-Hosted CI Server
+    - type: CI Server
       tools:
+        - name: GitHub Actions
+          url: https://github.com/features/actions
+        - name: GitLab
+          url: https://about.gitlab.com/
+        - name: CircleCi
+          url: https://circleci.com/
         - name: Jenkins
           url: https://www.jenkins.io/
+        - name: Jenkins X
+          url: https://jenkins-x.io/
         - name: TeamCity
           url: https://www.jetbrains.com/teamcity/
         - name: Drone
           url: https://www.drone.io/
         - name: GitHub Enterprise Server
           url: https://docs.github.com/en/enterprise-server@3.10/admin/overview/about-github-enterprise-server
-        - name: GitLab
+        - name: GitLab Self-Hosted
           url: https://about.gitlab.com/install/
-    - type: Kubernetes-Hosted CI Server
-      tools:
         - name: Tekton
           url: https://tekton.dev/
-        - name: Jenkins X
-          url: https://jenkins-x.io/
-    - type: CI as a Service
-      tools:
-        - name: CircleCi
-          url: https://circleci.com/
         - name: Travis CI
           url: https://www.travis-ci.com/
-        - name: GitLab
-          url: https://about.gitlab.com/
-        - name: GitHub Actions
-          url: https://github.com/features/actions
         - name: AWS CodePipeline
           url: https://aws.amazon.com/codepipeline/
         - name: Azure Pipelines
