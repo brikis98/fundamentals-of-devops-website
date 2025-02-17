@@ -1557,6 +1557,14 @@
           url: https://nats.io/
         - name: Redpanda
           url: https://www.redpanda.com/
+    - type: Graph Database
+      tools:
+        - name: Neo4j
+          url: https://neo4j.com/
+        - name: Amazon Neptune
+          url: https://aws.amazon.com/neptune/
+        - name: Aerospike
+          url: https://aerospike.com/products/graph-database/
     - type: NewSQL
       tools:
         - name: Google Spanner
