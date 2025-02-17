@@ -422,7 +422,7 @@
     - Dependency management
     - Automated testing
   examples:
-    - Store your code in GitHub and use PRs
+    - Store your code in GitHub
     - Configure your build in NPM
     - Set up automated tests for a Node.js app
     - Set up automated tests for OpenTofu code
