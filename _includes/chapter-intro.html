@@ -59,7 +59,7 @@
         </p>
         <ul class="thin">
           {% for tool_type in include.chapter.tools %}
-            <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }}</a></li>
+            <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }} Tools</a></li>
           {% endfor %}
         </ul>
       {% endif %}
