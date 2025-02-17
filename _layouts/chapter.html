@@ -23,7 +23,7 @@ layout: default
 {% endif %}
 
 {% for section in all_sections %}
-  <section class="py4 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
+  <section class="py4 px2 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
     <div class="max-width-3 mx-auto">
       {% if forloop.index0 >= tools_start_index %}
         {% include tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
