@@ -1171,7 +1171,7 @@
           url: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
         - name: Ubuntu Full Disk Encryption
           url: https://ubuntu.com/core/docs/full-disk-encryption
-    - type: Free Certificate Authority (CA)
+    - type: Public Certificate Authority (CA)
       tools:
         - name: LetsEncrypt
           url: https://letsencrypt.org/
@@ -1181,13 +1181,15 @@
           url: https://zerossl.com/
         - name: CloudFlare’s free tier
           url: https://www.cloudflare.com/application-services/products/ssl/
-    - type: Cloud Provider Certificate Authority (CA)
-      tools:
         - name: AWS Certificate Manager (ACM)
           url: https://aws.amazon.com/certificate-manager/
         - name: Google-managed SSL certificates
           url: https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs
-    - type: Self-Managed Certificate Authority (CA)
+        - name: DigiCert
+          url: https://www.digicert.com/tls-ssl/compare-certificates
+        - name: GoDaddy
+          url: https://www.godaddy.com/en-ie/web-security/ssl-certificate
+    - type: Private Certificate Authority (CA)
       tools:
         - name: HashiCorp Vault
           url: https://www.vaultproject.io/
@@ -1207,8 +1209,6 @@
           url: https://www.dogtagpki.org/wiki/PKI_Main_Page
         - name: OpenXPKI
           url: https://www.openxpki.org/
-    - type: Private Certificate Authority (CA) Service
-      tools:
         - name: Keyfactor
           url: https://www.keyfactor.com/
         - name: Entrust
