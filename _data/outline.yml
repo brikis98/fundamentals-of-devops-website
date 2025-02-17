@@ -1898,6 +1898,8 @@
       tools:
         - name: ChatGPT
           url: https://chatgpt.com/
+        - name: Claude
+          url: https://claude.ai/
         - name: Dall-E
           url: https://openai.com/index/dall-e/
         - name: Gemini
