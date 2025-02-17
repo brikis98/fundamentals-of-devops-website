@@ -859,6 +859,18 @@
       url: "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/"
       type: Article
   tools:
+    - type: Domain Name Registrars
+      tools:
+        - name: Amazon Route 53
+          url: https://aws.amazon.com/route53/
+        - name: Azure DNS
+          url: https://azure.microsoft.com/en-us/products/dns
+        - name: GoDaddy
+          url: https://www.godaddy.com/
+        - name: Namecheap
+          url: https://www.namecheap.com/
+        - name: CloudFlare DNS
+          url: https://www.cloudflare.com/application-services/products/dns/
     - type: Single Sign On (SSO)
       tools:
         - name: JumpCloud
