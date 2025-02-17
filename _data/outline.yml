@@ -201,6 +201,14 @@
           url: https://www.packer.io/
         - name: Vagrant
           url: https://www.vagrantup.com/
+    - type: Fast VMs
+      tools:
+        - name: Firecracker
+          url: https://firecracker-microvm.github.io/
+        - name: v8 isolates
+          url: https://developers.cloudflare.com/workers/reference/how-workers-works/#isolates
+        - name: WebAssembly
+          url: https://webassembly.org/
     - type: Container Engine
       tools:
         - name: Docker
