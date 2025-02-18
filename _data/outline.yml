@@ -595,6 +595,16 @@
           url: https://www.openpolicyagent.org/
         - name: Terratest
           url: https://terratest.gruntwork.io/
+    - type: Unit Testing
+      tools:
+        - name: testing (Golang)
+          url: https://golang.org/pkg/testing/
+        - name: unittest (Python)
+          url: https://docs.python.org/3/library/unittest.html
+        - name: JUnit (Java)
+          url: https://junit.org/junit5/
+        - name: Jest (JavaScript)
+          url: https://jestjs.io/
 
 - title: How to Set Up CI and CD
   icon: refresh
