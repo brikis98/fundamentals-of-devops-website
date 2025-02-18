@@ -411,6 +411,8 @@
           url: https://vercel.com/docs/functions
         - name: AWS Fargate
           url: https://aws.amazon.com/fargate/
+        - name: Knative
+          url: https://knative.dev/
         - name: Lambda Function URLs
           url: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
         - name: Amazon API Gateway
