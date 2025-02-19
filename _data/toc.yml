@@ -1,126 +1,308 @@
+- chapter: Preface
 - chapter: "1. How to Deploy Your App"
-  page: 27
-- section: "Example: Deploy the Sample App Locally"
-  page: 28
-- section: Deploying an App on a Server
-  page: 29
-- subsection: On-Prem and Cloud Hosting
-  page: 30
-- subsection: "Example: Deploy an App Using PaaS (Render)"
-  page: 30
-- subsection: "Example: Deploy an App Using IaaS (AWS)"
-  page: 33
-- section: "Comparing Deployment Options"
-  page: 41
-- subsection: On-Prem Versus Cloud
-  page: 41
-- subsection: IaaS Versus PaaS
-  page: 44
-- section: The Evolution of DevOps
-  page: 46
-- section: Adopting DevOps Practices
-  page: 56
-- section: Conclusion
-  page: 58
+- section: "1.1 Example: Deploy the Sample App Locally"
+- section: "1.2 Deploying an App on a Server"
+- subsection: "1.2.1 On-Prem and Cloud Hosting"
+- subsection: "1.2.2 Example: Deploy an App Using PaaS (Render)"
+- subsection: "1.2.3 Example: Deploy an App Using IaaS (AWS)"
+- section: "1.3 Comparing Deployment Options"
+- subsection: "1.3.1 On-Prem Versus Cloud"
+- subsubsection: "When to go with the cloud"
+- subsubsection: "When to go with on-prem"
+- subsubsection: "When to go with hybrid"
+- subsection: "1.3.2 IaaS Versus PaaS"
+- subsubsection: "When to go with PaaS"
+- subsubsection: "When to go with IaaS"
+- section: "1.4 The Evolution of DevOps"
+- section: "1.5 Adopting DevOps Practices"
+- section: "1.6 Conclusion"
 - chapter: "2. How to Manage Your Infrastructure as Code"
-  page: 61
-- section: The Benefits of IaC
-  page: 63
-- section: Ad Hoc Scripts
-  page: 64
-- subsection: "Example: Deploy an EC2 Instance Using a Bash Script"
-  page: 64
-- subsection: How Ad Hoc Scripts Stack Up
-  page: 67
-- section: Configuration Management Tools
-  page: 69
-- subsection: "Example: Deploy an EC2 Instance Using Ansible"
-  page: 70
-- subsection: "Example: Configure a Server Using Ansible"
-  page: 72
-- subsection: How Configuration Management Tools Stack Up
-  page: 76
-- section: Server Templating Tools
-  page: 79
-- subsection: "Example: Create a VM Image Using Packer"
-  page: 81
-- subsection: How Server Templating Tools Stack Up
-  page: 83
-- section: Provisioning Tools
-  page: 85
-- subsection: "Example: Deploy an EC2 Instance Using OpenTofu"
-  page: 85
-- subsection: "Example: Update and Destroy Infrastructure Using OpenTofu"
-  page: 90
-- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Module"
-  page: 92
-- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Registry Module"
-  page: 95
-- subsection: How Provisioning Tools Stack Up
-  page: 97
-- section: Using Multiple IaC Tools Together
-  page: 98
-- subsection: Provisioning Plus Configuration Management
-  page: 99
-- subsection: Provisioning Plus Server Templating
-  page: 99
-- subsection: Provisioning Plus Server Templating Plus Orchestration
-  page: 100
-- section: Adopting IaC
-  page: 100
-- section: Conclusion
-  page: 102
+- section: "2.1 The Benefits of IaC"
+- section: "2.2 Ad Hoc Scripts"
+- subsection: "2.2.1 Example: Deploy an EC2 Instance Using a Bash Script"
+- subsection: "2.2.2 How Ad Hoc Scripts Stack Up"
+- section: "2.3 Configuration Management Tools"
+- subsection: "2.3.1 Example: Deploy an EC2 Instance Using Ansible"
+- subsection: "2.3.2 Example: Configure a Server Using Ansible"
+- subsection: "2.3.3 How Configuration Management Tools Stack Up"
+- section: "2.4 Server Templating Tools"
+- subsection: "2.4.1 Example: Create a VM Image Using Packer"
+- subsection: "2.4.2 How Server Templating Tools Stack Up"
+- section: "2.5 Provisioning Tools"
+- subsection: "2.5.1 Example: Deploy an EC2 Instance Using OpenTofu"
+- subsection: "2.5.2 Example: Update and Destroy Infrastructure Using OpenTofu"
+- subsection: "2.5.3 Example: Deploy an EC2 Instance Using an OpenTofu Module"
+- subsection: "2.5.4 Example: Deploy an EC2 Instance Using an OpenTofu Registry Module"
+- subsection: "2.5.5 How Provisioning Tools Stack Up"
+- section: "2.6 Using Multiple IaC Tools Together"
+- subsection: "2.6.1 Provisioning Plus Configuration Management"
+- subsection: "2.6.2 Provisioning Plus Server Templating"
+- subsection: "2.6.3 Provisioning Plus Server Templating Plus Orchestration"
+- section: "2.7 Adopting IaC"
+- section: "2.8 Conclusion"
 - chapter: "3. How to Manage Your Apps Using Orchestration Tools"
-  page: 105
-- section: An Introduction to Orchestration
-  page: 112
-- section: Server Orchestration
-  page: 115
-- subsection: "Example: Deploy Multiple Servers in AWS Using Ansible"
-  page: 115
-- subsection: "Example: Deploy an App Securely and Reliably Using Ansible"
-  page: 117
-- subsection: "Example: Deploy a Load Balancer Using Ansible and Nginx"
-  page: 122
-- subsection: "Example: Roll Out Updates with Ansible"
-  page:  126
-- section: VM Orchestration
-  page: 127
-- subsection: "Example: Build a VM Image Using Packer"
-  page: 128
-- subsection: "Example: Deploy a VM Image in an Auto Scaling Group Using OpenTofu"
-  page: 130
-- subsection: "Example: Deploy an Application Load Balancer Using OpenTofu"
-  page: 133
-- subsection: "Example: Roll Out Updates with OpenTofu and Auto Scaling Groups"
-  page: 137
-- section: Container Orchestration
-  page: 141
-- subsection: "Example: A Crash Course on Docker"
-  page: 143
-- subsection: "Example: Create a Docker Image for a Node.js app"
-  page: 145
-- subsection: "Example: Deploy a Dockerized App with Kubernetes"
-  page: 148
-- subsection: "Example: Deploy a Load Balancer with Kubernetes"
-  page: 154
-- subsection: "Example: Roll Out Updates with Kubernetes"
-  page: 155
-- subsection: "Example: Deploy a Kubernetes Cluster in AWS Using EKS"
-  page: 157
-- subsection: "Example: Push a Docker Image to ECR"
-  page: 160
-- subsection: "Example: Deploy a Dockerized App into an EKS Cluster"
-  page: 162
-- section: Serverless Orchestration
-  page: 164
-- subsection: "Example: Deploy a Serverless Function with AWS Lambda"
-  page: 168
-- subsection: "Example: Create a Lambda Function URL"
-  page: 171
-- subsection: "Example: Roll Out Updates with AWS Lambda"
-  page: 173
-- section: Comparing Orchestration Options
-  page: 174
-- section: Conclusion
-  page: 179
+- section: "3.1 An Introduction to Orchestration"
+- section: "3.2 Server Orchestration"
+- subsection: "3.2.1 Example: Deploy an App Securely and Reliably Using Ansible"
+- subsection: "3.2.2 Example: Deploy a Load Balancer Using Ansible and Nginx"
+- subsection: "3.2.3 Example: Roll Out Updates with Ansible"
+- section: "3.3 VM Orchestration"
+- subsection: "3.3.1 Example: Build a VM Image Using Packer"
+- subsection: "3.3.2 Example: Deploy a VM Image in an Auto Scaling Group Using OpenTofu"
+- subsection: "3.3.3 Example: Deploy an Application Load Balancer Using OpenTofu"
+- subsection: "3.3.4 Example: Roll Out Updates with OpenTofu and Auto Scaling Groups"
+- section: "3.4 Container Orchestration"
+- subsection: "3.4.1 Example: A Crash Course on Docker"
+- subsection: "3.4.2 Example: Create a Docker Image for a Node.js app"
+- subsection: "3.4.3 Example: Deploy a Dockerized App with Kubernetes"
+- subsection: "3.4.4 Example: Deploy a Load Balancer with Kubernetes"
+- subsection: "3.4.5 Example: Roll Out Updates with Kubernetes"
+- subsection: "3.4.6 Example: Deploy a Kubernetes Cluster in AWS Using EKS"
+- subsection: "3.4.7 Example: Push a Docker Image to ECR"
+- subsection: "3.4.8 Example: Deploy a Dockerized App into an EKS Cluster"
+- section: "3.5 Serverless Orchestration"
+- subsection: "3.5.1 Example: Deploy a Serverless Function with AWS Lambda"
+- subsection: "3.5.2 Example: Create a Lambda Function  URL"
+- subsection: "3.5.3 Example: Roll Out Updates with AWS Lambda"
+- section: "3.6 Comparing Orchestration Options"
+- section: "3.7 Conclusion"
+- chapter: "4. How to Version, Build, and Test Your Code"
+- section: "4.1 Version Control"
+- subsection: "4.1.1 Example: Turn your Code into a Git Repo"
+- subsection: "4.1.2 Example: Store your Code in GitHub"
+- subsection: "4.1.3 Version Control Recommendations"
+- subsubsection: "Always use version control"
+- subsubsection: "Write good commit messages"
+- subsubsection: "Commit early and often"
+- subsubsection: "Use a code review process"
+- subsubsection: "Protect your code"
+- section: "4.2 Build System"
+- subsection: "4.2.1 Example: Configure your Build Using NPM"
+- subsection: "4.2.2 Dependency Management"
+- subsection: "4.2.3 Example: Add Dependencies in NPM"
+- section: "4.3 Automated Testing"
+- subsection: "4.3.1 Example: Add Automated Tests for the Node.js App"
+- subsection: "4.3.2 Example: Add Automated Tests for the OpenTofu Code"
+- subsection: "4.3.3 Testing Recommendations"
+- subsubsection: "The test pyramid"
+- subsubsection: "What to test"
+- subsubsection: "Test-Driven Development (TDD)"
+- section: "4.4 Conclusion"
+- chapter: "5. How to Set Up Continuous Integration (CI) and Continuous Delivery (CD)"
+- section: "5.1 Continuous Integration (CI)"
+- subsection: "5.1.1 Dealing with Merge Conflicts"
+- subsection: "5.1.2 Preventing Breakages with Self-Testing Builds"
+- subsection: "5.1.3 Making Large Changes"
+- subsubsection: "Branch by abstraction"
+- subsubsection: "Feature toggles"
+- subsection: "5.1.4 Example: Run Automated Tests for Apps in GitHub Actions"
+- subsection: "5.1.5 Machine User Credentials and Automatically-Provisioned Credentials"
+- subsubsection: "Machine user credentials"
+- subsubsection: "Automatically-provisioned credentials"
+- subsection: "5.1.6 Example: Configure OIDC with AWS and GitHub Actions"
+- subsection: "5.1.7 Example: Run Automated Tests for Infrastructure in GitHub Actions"
+- section: "5.2 Continuous Delivery (CD)"
+- subsection: "5.2.1 Deployment Strategies"
+- subsubsection: "Core deployment strategies"
+- subsubsection: "Comparing core deployment strategies"
+- subsubsection: "Add-on deployment strategies"
+- subsubsection: "Comparing add-on deployment strategies"
+- subsection: "5.2.2 Deployment Pipelines"
+- subsubsection: "Example: configure an automated GitOps pipeline in GitHub Actions"
+- subsubsection: "Example: use a backend for OpenTofu state"
+- subsubsection: "Example: add IAM roles for infrastructure deployments in GitHub Actions"
+- subsubsection: "Example: define a pipeline for infrastructure deployments"
+- subsection: "5.2.3 Deployment Pipeline Recommendations"
+- subsubsection: "Automate all the steps that can be automated"
+- subsubsection: "Deploy only from a deployment server"
+- subsubsection: "Protect the deployment server"
+- section: "5.3 Conclusion"
+- chapter: "6. How to Work with Multiple Teams and Environments"
+- section: "6.1 Breaking Up Your Deployments"
+- subsection: "6.1.1 Why Deploy Across Multiple Environments"
+- subsubsection: "Isolating tests"
+- subsubsection: "Isolating products and teams"
+- subsubsection: "Reducing latency"
+- subsubsection: "Complying with local laws and regulations"
+- subsubsection: "Increasing resiliency"
+- subsection: "6.1.2 How to Set Up Multiple Environments"
+- subsection: "6.1.3 Challenges with Multiple Environments"
+- subsubsection: "Increased operational overhead"
+- subsubsection: "Increased data storage complexity"
+- subsubsection: "Increased application configuration complexity"
+- subsection: "6.1.4 Example: Set Up Multiple AWS Accounts"
+- subsubsection: "Create child accounts"
+- subsubsection: "Access your child accounts"
+- subsubsection: "Deploy into your child accounts"
+- subsubsection: "Use different configurations for different environments"
+- subsubsection: "Close your child accounts"
+- section: "6.2 Breaking Up Your Codebase"
+- subsection: "6.2.1 Why Break Up Your Codebase"
+- subsubsection: "Managing complexity"
+- subsubsection: "Isolating products and teams"
+- subsubsection: "Handling different scaling requirements"
+- subsubsection: "Using different programming languages"
+- subsection: "6.2.2 How to Break Up Your Codebase"
+- subsubsection: "Breaking a codebase into multiple libraries"
+- subsubsection: "Breaking a codebase into multiple services"
+- subsection: "6.2.3 Challenges with Breaking Up Your Codebase"
+- subsubsection: "Challenges with managing multiple code bases"
+- subsubsection: "Challenges with integration"
+- subsubsection: "Challenges with managing multiple services"
+- subsection: "6.2.4 Example: Deploy Microservices in Kubernetes"
+- subsubsection: "Creating a backend sample app"
+- subsubsection: "Creating a frontend sample app"
+- section: "6.3 Conclusion"
+- chapter: "7. How to Set Up Networking"
+- section: "7.1 Public Networking"
+- subsection: "7.1.1 Public IP Addresses"
+- subsection: "7.1.2 Domain Name System (DNS)"
+- subsection: "7.1.3 Example: Register and Configure a Domain Name in Amazon Route 53"
+- subsubsection: "Register a domain name"
+- subsubsection: "Deploy EC2 instances"
+- subsubsection: "Configure DNS records"
+- section: "7.2 Private Networking"
+- subsection: "7.2.1 Physical Private Networks"
+- subsubsection: "Only authorized devices may connect to the private network"
+- subsubsection: "The private network uses private IP address ranges"
+- subsubsection: "The private network defines connectivity rules"
+- subsubsection: "Most devices in a private network access the public Internet through a gateway"
+- subsection: "7.2.2 Virtual Private Networks"
+- subsubsection: "Virtual networks in the cloud"
+- subsubsection: "Virtual networks in orchestration tools"
+- subsubsection: "Example: Create a VPC in AWS"
+- section: "7.3 Accessing Private Networks"
+- subsection: "7.3.1 Castle-and-Moat Model"
+- subsection: "7.3.2 Zero-Trust Model"
+- subsection: "7.3.3 SSH"
+- subsubsection: "How to use SSH"
+- subsubsection: "Example: SSH bastion host in AWS"
+- subsection: "7.3.4 RDP"
+- subsubsection: "How to use RDP"
+- subsection: "7.3.5 VPN"
+- subsubsection: "How to use VPN"
+- section: "7.4 Service Communication in Private Networks"
+- subsection: "7.4.1 Service Discovery"
+- subsubsection: "Service discovery tools"
+- subsubsection: "Service discovery tool comparison"
+- subsection: "7.4.2 Service Communication Protocol"
+- subsubsection: "Common protocols"
+- subsubsection: "Key factors to consider"
+- subsection: "7.4.3 Service Mesh"
+- subsection: "7.4.4 Example: Istio Service Mesh with Kubernetes Microservices"
+- section: "7.5 Conclusion"
+- chapter: "8. How to Secure Communication and Storage"
+- section: "8.1 Cryptography Primer"
+- subsection: "8.1.1 Encryption"
+- subsubsection: "Symmetric-key encryption"
+- subsubsection: "Asymmetric-key encryption"
+- subsubsection: "Hybrid encryption"
+- subsubsection: "Example: encryption and decryption with OpenSSL"
+- subsection: "8.1.2 Hashing"
+- subsubsection: "Verifying the integrity of messages and files"
+- subsubsection: "Message authentication codes (MAC)"
+- subsubsection: "Authenticated encryption"
+- subsubsection: "Digital signatures"
+- subsubsection: "Example: file integrity, HMAC, and signatures with OpenSSL"
+- section: "8.2 Secure Storage"
+- subsection: "8.2.1 Secrets Management"
+- subsubsection: "Personal secrets"
+- subsubsection: "Infrastructure secrets"
+- subsubsection: "Customer secrets and password storage"
+- subsection: "8.2.2 Encryption at Rest"
+- subsubsection: "Full-disk encryption"
+- subsubsection: "Data store encryption"
+- subsubsection: "Application-level encryption"
+- section: "8.3 Secure Communication"
+- subsection: "8.3.1 Transport Layer Security (TLS)"
+- subsection: "8.3.2 Example: HTTPS with LetsEncrypt and AWS Secrets Manager"
+- subsubsection: "Get a TLS certificate from LetsEncrypt"
+- subsubsection: "Store the TLS certificate in AWS Secrets Manager"
+- subsubsection: "Deploy EC2 instances that use the TLS certificate"
+- subsection: "8.3.3 End-to-End Encryption"
+- subsubsection: "What encryption key do you use for E2E encryption?"
+- subsubsection: "What data needs to be E2E encrypted and what doesn&#8217;t?"
+- subsubsection: "How do you establish trust with E2E-encrypted software?"
+- section: "8.4 Conclusion"
+- chapter: "9. How to Store Data"
+- section: "9.1 Local Storage: Hard Drives"
+- section: "9.2 Primary Data Store: Relational Databases"
+- subsection: "9.2.1 Reading and Writing Data"
+- subsection: "9.2.2 ACID Transactions"
+- subsection: "9.2.3 Schemas and Constraints"
+- subsection: "9.2.4 Example: PostgreSQL, Lambda, and Schema Migrations"
+- subsubsection: "Create an OpenTofu module"
+- subsubsection: "Create schema migrations"
+- subsubsection: "Create the Lambda function"
+- section: "9.3 Caching: Key-Value Stores and CDNs"
+- subsection: "9.3.1 Key-Value Stores"
+- subsection: "9.3.2 CDNs"
+- section: "9.4 File Storage: File Servers and Object Stores"
+- subsection: "9.4.1 File Servers"
+- subsection: "9.4.2 Object Stores"
+- subsection: "9.4.3 Example: Serving Files With S3 and CloudFront"
+- subsubsection: "Create an S3 bucket configured for website hosting"
+- subsubsection: "Upload static content to the S3 bucket"
+- subsubsection: "Deploy CloudFront as a CDN in front of the S3 bucket"
+- section: "9.5 Semi-Structured Data and Search: Document Stores"
+- subsection: "9.5.1 Reading and Writing Data"
+- subsection: "9.5.2 ACID Transactions"
+- subsection: "9.5.3 Schemas and Constraints"
+- section: "9.6 Analytics: Columnar Databases"
+- subsection: "9.6.1 Columnar Database Basics"
+- subsection: "9.6.2 Analytics Use Cases"
+- section: "9.7 Asynchronous Processing: Queues and Streams"
+- subsection: "9.7.1 Message Queues"
+- subsection: "9.7.2 Event Streams"
+- section: "9.8 Scalability and Availability"
+- subsection: "9.8.1 Relational Databases"
+- subsubsection: "Replication"
+- subsubsection: "Partitioning"
+- subsection: "9.8.2 NoSQL and NewSQL Databases"
+- subsection: "9.8.3 Distributed Systems"
+- section: "9.9 Backup and Recovery"
+- subsection: "9.9.1 Backup Strategies"
+- subsubsection: "Scheduled disk backups"
+- subsubsection: "Scheduled data store backups"
+- subsubsection: "Continuous data store backups"
+- subsubsection: "Data store replication"
+- subsection: "9.9.2 Backup Recommendations"
+- subsection: "9.9.3 Example: Backups and Read Replicas with PostgreSQL"
+- section: "9.10 Conclusion"
+- chapter: "10. How to Monitor Your Systems"
+- section: "10.1 Logs"
+- subsection: "10.1.1 Log Levels"
+- subsection: "10.1.2 Log Formatting"
+- subsection: "10.1.3 Structured Logging"
+- subsection: "10.1.4 Log Files and Rotation"
+- subsection: "10.1.5 Log Aggregation"
+- section: "10.2 Metrics"
+- subsection: "10.2.1 Types of Metrics"
+- subsubsection: "Availability metrics"
+- subsubsection: "Business metrics"
+- subsubsection: "Application metrics"
+- subsubsection: "Server metrics"
+- subsubsection: "Team metrics"
+- subsection: "10.2.2 Using Metrics"
+- subsubsection: "Collect metrics (instrumentation)"
+- subsubsection: "Store metrics"
+- subsubsection: "Visualize and analyze metrics"
+- subsection: "10.2.3 Example: Metrics in CloudWatch"
+- section: "10.3 Events"
+- subsection: "10.3.1 Observability"
+- subsection: "10.3.2 Tracing"
+- subsection: "10.3.3 Testing in Production (TIP)"
+- section: "10.4 Alerts"
+- subsection: "10.4.1 Triggers"
+- subsection: "10.4.2 Notifications"
+- subsection: "10.4.3 On-Call"
+- subsection: "10.4.4 Incident Response"
+- subsection: "10.4.5 Example: Alerts in CloudWatch"
+- section: "10.5 Conclusion"
+- chapter: "11. The Future of DevOps and Software Delivery"
+- section: "11.1 Infrastructureless"
+- section: "11.2 Generative AI"
+- section: "11.3 Secure by Default"
+- section: "11.4 Platform Engineering"
+- section: "11.5 The Future of Infrastructure Code"
+- section: "11.6 Conclusion"
