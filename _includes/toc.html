@@ -1,4 +1,4 @@
-<div class="border p2 mt1" style="height: 450px; overflow: scroll">
+<div class="border p2 mt1" style="height: 450px; overflow-y: scroll; overflow-x: hidden">
   <div class="right-align">
     <h3 class="mb3 mt0">Table of Contents</h3>
   </div>
@@ -9,10 +9,19 @@
           {% if item.chapter %}
             <td class="h5 bold">{{ item.chapter }}</td>
           {% elsif item.section %}
-            <td class="pl1 h5">{{ item.section }}</td>
+            <td class="h5 pl1">
+              {% assign substr = item.section | slice: 0, 7 %}
+              <span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}" style="width: 330px">
+                {{ item.section }}
+              </span>
+            </td>
           {% elsif item.subsection %}
             {% assign substr = item.subsection | slice: 0, 7 %}
-            <td class="pl2 h6"><span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}">{{ item.subsection }}</span></td>
+            <td class="h6 pl2">
+              <span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}" style="width: 320px">
+                {{ item.subsection }}
+              </span>
+            </td>
           {% endif %}
           <td class="h6">{{ item.page }}</td>
         </tr>
