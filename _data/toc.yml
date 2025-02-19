@@ -1,76 +1,77 @@
-- chapter: "1. An Introduction to DevOps & Software Delivery"
-  page: 19
-- section: A Primer on DevOps
-  page: 20
-- subsection: Where DevOps Came From
-  page: 21
-- subsection: The Evolution of DevOps
-  page: 23
-- subsection: Adopting DevOps Practices
+- chapter: "1. How to Deploy Your App"
+  page: 27
+- section: "Example: Deploy the Sample App Locally"
+  page: 28
+- section: Deploying an App on a Server
+  page: 29
+- subsection: On-Prem and Cloud Hosting
+  page: 30
+- subsection: "Example: Deploy an App Using PaaS (Render)"
+  page: 30
+- subsection: "Example: Deploy an App Using IaaS (AWS)"
   page: 33
-- section: An Introduction to Deploying Apps
-  page: 35
-- subsection: "Example: Run the Sample App Locally"
-  page: 35
-- subsection: Deploying an App on a Server
-  page: 37
-- subsection: Deploying On Prem Versus in the Cloud
-  page: 39
-- subsection: Deploying An App Using PaaS
-  page: 43
-- subsection: Deploying an App Using IaaS
-  page: 47
-- subsection: Comparing PaaS and IaaS
-  page: 60
+- section: "Comparing Deployment Options"
+  page: 41
+- subsection: On-Prem Versus Cloud
+  page: 41
+- subsection: IaaS Versus PaaS
+  page: 44
+- section: The Evolution of DevOps
+  page: 46
+- section: Adopting DevOps Practices
+  page: 56
 - section: Conclusion
-  page: 62
+  page: 58
 - chapter: "2. How to Manage Your Infrastructure as Code"
-  page: 65
+  page: 61
 - section: The Benefits of IaC
-  page: 67
+  page: 63
 - section: Ad Hoc Scripts
-  page: 69
+  page: 64
 - subsection: "Example: Deploy an EC2 Instance Using a Bash Script"
-  page: 70
+  page: 64
 - subsection: How Ad Hoc Scripts Stack Up
-  page: 72
+  page: 67
 - section: Configuration Management Tools
-  page: 74
+  page: 69
 - subsection: "Example: Deploy an EC2 Instance Using Ansible"
-  page: 75
+  page: 70
 - subsection: "Example: Configure a Server Using Ansible"
-  page: 77
+  page: 72
 - subsection: How Configuration Management Tools Stack Up
-  page: 82
+  page: 76
 - section: Server Templating Tools
-  page: 84
+  page: 79
 - subsection: "Example: Create a VM Image Using Packer"
-  page: 86
+  page: 81
 - subsection: How Server Templating Tools Stack Up
-  page: 89
+  page: 83
 - section: Provisioning Tools
-  page: 90
+  page: 85
 - subsection: "Example: Deploy an EC2 Instance Using OpenTofu"
-  page: 91
+  page: 85
 - subsection: "Example: Update and Destroy Infrastructure Using OpenTofu"
-  page: 97
+  page: 90
 - subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Module"
-  page: 99
-- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Module from GitHub"
-  page: 104
+  page: 92
+- subsection: "Example: Deploy an EC2 Instance Using an OpenTofu Registry Module"
+  page: 95
 - subsection: How Provisioning Tools Stack Up
-  page: 105
+  page: 97
 - section: Using Multiple IaC Tools Together
-  page: 107
+  page: 98
 - subsection: Provisioning Plus Configuration Management
-  page: 107
+  page: 99
 - subsection: Provisioning Plus Server Templating
-  page: 107
+  page: 99
 - subsection: Provisioning Plus Server Templating Plus Orchestration
-  page: 108
+  page: 100
+- section: Adopting IaC
+  page: 100
 - section: Conclusion
-- chapter: "3. How to Deploy Many Apps"
-  page: 111
+  page: 102
+- chapter: "3. How to Manage Your Apps Using Orchestration Tools"
+  page: 105
 - section: An Introduction to Orchestration
   page: 112
 - section: Server Orchestration
