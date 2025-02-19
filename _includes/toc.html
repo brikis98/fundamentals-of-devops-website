@@ -10,23 +10,29 @@
             <td class="h5 bold">{{ item.chapter }}</td>
           {% elsif item.section %}
             <td class="h5 pl1">
-              {% assign substr = item.section | slice: 0, 7 %}
-              <span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}" style="width: 330px">
+              {% assign section_substr = item.section | slice: 4, 7 %}
+              <span class="truncate{% if section_substr == "Example" %} bg-yellow{% endif %}" style="width: 350px">
                 {{ item.section }}
               </span>
             </td>
           {% elsif item.subsection %}
-            {% assign substr = item.subsection | slice: 0, 7 %}
             <td class="h6 pl2">
-              <span class="truncate{% if substr == "Example" %} bg-yellow{% endif %}" style="width: 320px">
+              {% assign subsection_substr = item.subsection | slice: 6, 7 %}
+              <span class="truncate{% if subsection_substr == "Example" %} bg-yellow{% endif %}" style="width: 340px">
                 {{ item.subsection }}
               </span>
             </td>
+          {% elsif item.subsubsection %}
+            <td class="h6 pl3">
+              {% assign subsubsection_substr = item.subsubsection | slice: 0, 7 %}
+              <span class="truncate{% if subsubsection_substr == "Example" %} bg-yellow{% endif %}" style="width: 340px">
+                {{ item.subsubsection }}
+              </span>
+            </td>
           {% endif %}
-          <td class="h6">{{ item.page }}</td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
-<p class="thin h6 mt1">A snippet of the table of contents highlighting a few of the hands-on examples in the book. Try scrolling down to see more!</p>
+<p class="thin h6 mt1">The book's table of contents, with hands-on examples highlighted.</p>
