@@ -40,7 +40,8 @@
   $('.tracked').on('click', trackOutboundLink);
 
   for (const jsReadMoreLink of document.getElementsByClassName('js-read-more')) {
-    jsReadMoreLink.onclick = () => {
+    jsReadMoreLink.onclick = (event) => {
+      event.preventDefault();
       const elementId = jsReadMoreLink.dataset.target;
       const element = document.getElementById(elementId);
       element.classList.toggle('read-more');
