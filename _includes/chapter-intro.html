@@ -11,13 +11,15 @@
       </a>
     </div>
     <div class="lg-col lg-col-7 lg-col-right p3">
-      <h3 class="mt0 mb0 light-gray thin">
+      <div class="mt0 mb0 light-gray thin">
         {% include chapter-pagination.html chapter_index=include.chapter_index %}
-      </h3>
+      </div>
       <h1 class="mt0 mb0">
         {% assign chapter_index_1 = include.chapter_index | plus: 1 %}
         Chapter {{ chapter_index_1 }}: {{ include.chapter.title }}
       </h1>
+
+
       {% if chapter.key_ideas %}
         <h4 class="mt2">Key ideas you'll explore in this chapter</h4>
         <ul class="mt0">
