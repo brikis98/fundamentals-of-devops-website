@@ -2,37 +2,8 @@
   <div class="right-align">
     <h3 class="mb3 mt0">Table of Contents</h3>
   </div>
-  <table>
-    <tbody>
-      {% for item in site.data.toc %}
-        <tr>
-          {% if item.chapter %}
-            <td class="h5 bold">{{ item.chapter }}</td>
-          {% elsif item.section %}
-            <td class="h5 pl1">
-              {% assign section_substr = item.section | slice: 4, 7 %}
-              <span class="truncate{% if section_substr == "Example" %} bg-yellow{% endif %}" style="width: 350px">
-                {{ item.section }}
-              </span>
-            </td>
-          {% elsif item.subsection %}
-            <td class="h6 pl2">
-              {% assign subsection_substr = item.subsection | slice: 6, 7 %}
-              <span class="truncate{% if subsection_substr == "Example" %} bg-yellow{% endif %}" style="width: 340px">
-                {{ item.subsection }}
-              </span>
-            </td>
-          {% elsif item.subsubsection %}
-            <td class="h6 pl3">
-              {% assign subsubsection_substr = item.subsubsection | slice: 0, 7 %}
-              <span class="truncate{% if subsubsection_substr == "Example" %} bg-yellow{% endif %}" style="width: 340px">
-                {{ item.subsubsection }}
-              </span>
-            </td>
-          {% endif %}
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  {% for item in site.data.toc %}
+    {% include toc-contents.html toc_item=item highlight=true %}
+  {% endfor %}
 </div>
 <p class="thin h6 mt1">The book's table of contents, with hands-on examples highlighted.</p>
