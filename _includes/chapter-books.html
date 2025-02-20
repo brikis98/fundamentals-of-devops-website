@@ -1,29 +1,19 @@
 <h2 id="books">Related Books</h2>
-<table class="border-collapse col-12">
-  <thead>
-    <tr>
-      {% assign header_class = "py2 align-top left-align border-bottom border-gray" %}
-      <th class="{{ header_class }} pr2 col-6">Title</th>
-      <th class="{{ header_class }} pr2 col-4">Author(s)</th>
-      <th class="{{ header_class }} col-2">Publisher</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for resource in include.chapter.books %}
-      {% assign row_class = "py2 align-top left-align" %}
-      {% unless forloop.last %}
-        {% assign row_class = row_class | append: " border-bottom border-gray" %}
-      {% endunless %}
-      <tr>
-        <td class="{{ row_class }} pr2">
-          <em><a href="{{ resource.url }}" target="_blank">{{ resource.title }}</a></em>
-          {% if resource.subtitle %}
-            <div class="light-gray thin h5"><em>{{ resource.subtitle }}</em></div>
-          {% endif %}
-        </td>
-        <td class="{{ row_class }} pr2 thin">{{ resource.author }}</td>
-        <td class="{{ row_class }} thin">{{ resource.publisher }}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% for resource in include.chapter.books %}
+  <div class="clearfix my2">
+    <div class="col col-3 pr2">
+      <a href="{{ resource.url }}" target="_blank">
+        {% capture image_path %}books/{% include dasherize.html text=resource.title %}.jpg{% endcapture %}
+        <img src="{% include image-url.html path=image_path %}" alt="{{ resource.title }}">
+      </a>
+    </div>
+    <div class="col col-5">
+      <h3 class="my0">
+        <a href="{{ resource.url }}" target="_blank">
+          {{ resource.title }}{% if resource.subtitle %}: {{ resource.subtitle }}{% endif %}
+        </a>
+      </h3>
+      <p class="thin my0">By {{ resource.author }} ({{ resource.publisher }})</p>
+    </div>
+  </div>
+{% endfor %}
