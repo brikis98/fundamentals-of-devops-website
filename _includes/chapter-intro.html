@@ -19,32 +19,49 @@
         Chapter {{ chapter_index_1 }}: {{ include.chapter.title }}
       </h1>
       {% if chapter.key_ideas %}
-      <dt class="regular mt2">Key ideas you'll explore in this chapter</dt>
-      <dd class="ml1">
-        <ul class="mt0 pl2">
+        <h4 class="mt2">Key ideas you'll explore in this chapter</h4>
+        <ul class="mt0">
           {% for item in chapter.key_ideas %}
             <li class="thin">{{ item }}</li>
           {% endfor %}
         </ul>
-      </dd>
       {% endif %}
 
       {% if chapter.examples %}
-      <dt class="regular mt2">Examples you'll try in this chapter</dt>
-      <dd class="ml1">
-        <ul class="mt0 pl2">
+        <h4 class="mt2">Examples you'll try in this chapter</h4>
+        <ul class="mt0">
           {% for item in chapter.examples %}
             <li class="thin">{{ item }}</li>
           {% endfor %}
         </ul>
-      </dd>
       {% endif %}
 
+      <h4 class="mt2">Full table of contents for this chapter:</h4>
+      <div id="chapter-toc" class="read-more mt0">
+        {% assign in_chapter = false %}
+        {% for item in site.data.toc %}
+          {% if item.chapter %}
+            {% assign chapter_num = item.chapter | split: "." | first | plus: 0 %}
+            {% assign desired_chapter_num = include.chapter_index | plus: 1 %}
+            {% if chapter_num == desired_chapter_num %}
+              {% assign in_chapter = true %}
+              {% continue %}
+            {% else %}
+              {% assign in_chapter = false %}
+            {% endif %}
+          {% endif %}
+          {% if in_chapter %}
+            {% include toc-contents.html toc_item=item %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="mt1 ml2 h6 thin">
+        <a href="#" class="js-read-more" data-target="chapter-toc">(show)</a>
+      </div>
+
       {% if include.chapter.books or include.chapter.other_resources %}
-        <p>
-          Learning resources:
-        </p>
-        <ul class="thin">
+        <h4 class="mt2">Learning resources:</h4>
+        <ul class="thin mt0">
           {% if include.chapter.books %}
             <li><a href="#books">Books</a></li>
           {% endif %}
@@ -54,10 +71,8 @@
         </ul>
       {% endif %}
       {% if include.chapter.tools %}
-        <p>
-          Tools:
-        </p>
-        <ul class="thin">
+        <h4 class="mt2">Tools:</h4>
+        <ul class="thin mt0">
           {% for tool_type in include.chapter.tools %}
             <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }} Tools</a></li>
           {% endfor %}
