@@ -7,12 +7,12 @@ layout: default
 
 {% include chapter-intro.html chapter=chapter chapter_index=chapter_index %}
 
-{% assign all_sections = "" %}
+{% assign all_sections = "chapter-overview.html" %}
 {% if chapter.books %}
-  {% assign all_sections = all_sections | append: "books.html" %}
+  {% assign all_sections = all_sections | append: ",chapter-books.html" %}
 {% endif %}
 {% if chapter.other_resources %}
-  {% assign all_sections = all_sections | append: ",other-resources.html" %}
+  {% assign all_sections = all_sections | append: ",chapter-other-resources.html" %}
 {% endif %}
 
 {% assign all_sections = all_sections | split: "," %}
@@ -26,7 +26,7 @@ layout: default
   <section class="py4 px2 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
     <div class="max-width-3 mx-auto">
       {% if forloop.index0 >= tools_start_index %}
-        {% include tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
+        {% include chapter-tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
       {% else %}
         {% include {{ section }} chapter=chapter chapter_index=chapter_index %}
       {% endif %}

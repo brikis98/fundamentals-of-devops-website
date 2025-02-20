@@ -1,0 +1,41 @@
+<h2 id="chapter-overview">Chapter {{ chapter_index | plus: 1 }} overview</h2>
+<div class="clearfix">
+  <div class="col col-6">
+    <h4>Key ideas you'll learn</h4>
+    <ul>
+      {% for item in chapter.key_ideas %}
+        <li class="thin">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col col-6">
+    <h4>Examples you'll try</h4>
+    <ul>
+      {% for item in chapter.examples %}
+        <li class="thin">{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<h4>Full table of contents</h4>
+<div id="chapter-toc" class="read-more">
+  {% assign in_chapter = false %}
+  {% for item in site.data.toc %}
+    {% if item.chapter %}
+      {% assign chapter_num = item.chapter | split: "." | first | plus: 0 %}
+      {% assign desired_chapter_num = include.chapter_index | plus: 1 %}
+      {% if chapter_num == desired_chapter_num %}
+        {% assign in_chapter = true %}
+        {% continue %}
+      {% else %}
+        {% assign in_chapter = false %}
+      {% endif %}
+    {% endif %}
+    {% if in_chapter %}
+      {% include toc-contents.html toc_item=item %}
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="mt1 ml2 h6 thin">
+  <a href="#" class="js-read-more" data-target="chapter-toc">(show)</a>
+</div>
