@@ -27,7 +27,7 @@ def fetch_book_info(title, subtitle, author)
 end
 
 def dasherize(str)
-  str.downcase.gsub(/[[:punct:]]/, '').gsub(/[\s_]/, '-')
+  str.downcase.gsub(/[(),&:!]/, '').gsub(/[\s_]/, '-')
 end
 
 def image_path(title)
