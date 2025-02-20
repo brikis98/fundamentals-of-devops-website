@@ -1,9 +1,9 @@
-<h2 id="chapter-overview">Chapter {{ chapter_index | plus: 1 }} overview</h2>
+<h2 id="chapter-overview">Chapter {{ include.chapter_index | plus: 1 }} overview</h2>
 <div class="clearfix">
   <div class="col col-6">
     <h4>Key ideas you'll learn</h4>
     <ul>
-      {% for item in chapter.key_ideas %}
+      {% for item in include.chapter.key_ideas %}
         <li class="thin">{{ item }}</li>
       {% endfor %}
     </ul>
@@ -11,7 +11,7 @@
   <div class="col col-6">
     <h4>Examples you'll try</h4>
     <ul>
-      {% for item in chapter.examples %}
+      {% for item in include.chapter.examples %}
         <li class="thin">{{ item }}</li>
       {% endfor %}
     </ul>
