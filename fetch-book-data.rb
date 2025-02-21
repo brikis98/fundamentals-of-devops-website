@@ -139,7 +139,7 @@ def add_element_to_book_yaml(title, outline_as_str, element_name, element_value)
   outline_as_str.gsub(/^(    - title: "#{title}")/, "\\1\n      #{element_name}: \"#{element_value}\"")
 end
 
-def process_outline(outline, outline_as_str)
+def process_outline(outline, outline_as_str, max_to_process)
   count = 0
   outline.each do |chapter|
     books = chapter['books']
@@ -167,8 +167,8 @@ def process_outline(outline, outline_as_str)
           outline_as_str = add_element_to_book_yaml(title, outline_as_str, 'image', image_file_path)
         end
 
-        if count >= 5
-          puts "Hit max count"
+        if max_to_process && count >= max_to_process
+          puts "Hit max count of #{max_to_process}, so will not process the outline further."
           return outline_as_str
         end
       end
@@ -180,6 +180,7 @@ outline_file_path = '_data/outline.yml'
 outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
-updated_outline_as_str = process_outline(outline, outline_as_str)
+max_to_process = 10
+updated_outline_as_str = process_outline(outline, outline_as_str, max_to_process)
 puts "Updating '#{outline_file_path}'"
 File.write(outline_file_path, updated_outline_as_str)
