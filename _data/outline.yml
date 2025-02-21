@@ -178,16 +178,7 @@
   books:
     - title: "Terraform: Up & Running"
       image: "assets/img/books/terraform-up--running.jpg"
-      description: "Terraform has emerged as a key player in the DevOps world for defining, launching, and managing infrastructure as code (IAC) across a variety of cloud and virtualization platforms, including AWS, Google Cloud, and Azure. This hands-on book is the fastest way to get up and running with Terraform. 	
-
-Gruntwork co-founder Yevgeniy (Jim) Brikman walks you through dozens of code examples that demonstrate how to use Terraform’s simple, declarative programming language to deploy and manage infrastructure with just a few commands. Whether you’re a novice developer, aspiring DevOps engineer, or veteran sysadmin, this book will take you from Terraform basics to running a full tech stack capable of supporting a massive amount of traffic and a large team of developers. 	
-
-	- Compare Terraform to other IAC tools, such as Chef, Puppet, Ansible, and Salt Stack 	
-	- Use Terraform to deploy server clusters, load balancers, and databases 	
-	- Learn how Terraform manages the state of your infrastructure and how it impacts file layout, isolation, and locking 	
-	- Create reusable infrastructure with Terraform modules 	
-	- Try out advanced Terraform syntax to implement loops, if-statements, and zero-downtime deployment 	
-	- Use Terraform as a team, including best practices for writing, testing, and versioning Terraform code"
+      description: "Terraform has emerged as a key player in the DevOps world for defining, launching, and managing infrastructure as code (IAC) across a variety of cloud and virtualization platforms, including AWS, Google Cloud, and Azure. This hands-on book is the fastest way to get up and running with Terraform. Gruntwork co-founder Yevgeniy (Jim) Brikman walks you through dozens of code examples that demonstrate how to use Terraform’s simple, declarative programming language to deploy and manage infrastructure with just a few commands. Whether you’re a novice developer, aspiring DevOps engineer, or veteran sysadmin, this book will take you from Terraform basics to running a full tech stack capable of supporting a massive amount of traffic and a large team of developers."
       subtitle: "Writing Infrastructure as Code"
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
@@ -201,8 +192,7 @@ Gruntwork co-founder Yevgeniy (Jim) Brikman walks you through dozens of code exa
       url: "https://amzn.to/3Yn0gxE"
     - title: "Ansible for DevOps"
       image: "assets/img/books/ansible-for-devops.jpg"
-      description: "Server and configuration management for
-humans"
+      description: "Ansible is a simple, but powerful, server and configuration management tool (with a few other tricks up its sleeve). This book will help those familiar with the command line and basic shell scripting start using Ansible to provision and manage anywhere from one to thousands of servers."
       subtitle: "Server and configuration management for humans"
       author: "Jeff Geerling"
       publisher: "Midwestern Mac"
@@ -314,6 +304,7 @@ humans"
     - Deploy a serverless app with AWS Lambda
   books:
     - title: "Cloud Native Infrastructure"
+      description: "Cloud native infrastructure is more than servers, network, and storage in the cloud—it is as much about operational hygiene as it is about elasticity and scalability. In this book, you’ll learn practices, patterns, and requirements for creating infrastructure that meets your needs, capable of managing the full life cycle of cloud native applications. Justin Garrison and Kris Nova reveal hard-earned lessons on architecting infrastructure from companies such as Google, Amazon, and Netflix. They draw inspiration from projects adopted by the Cloud Native Computing Foundation (CNCF), and provide examples of patterns seen in existing tools such as Kubernetes."
       image: "assets/img/books/cloud-native-infrastructure.jpg"
       subtitle: "Patterns for Scalable Infrastructure and Applications in a Dynamic Environment"
       author: "Justin Garrison and Kris Nova"
@@ -326,6 +317,7 @@ humans"
       publisher: "Manning"
       url: "https://amzn.to/402dml9"
     - title: "Cloud Native DevOps with Kubernetes"
+      description: "Kubernetes is the operating system of the cloud native world, providing a reliable and scalable platform for running containerized workloads. In this friendly, pragmatic book, cloud experts John Arundel and Justin Domingus show you what Kubernetes can do—and what you can do with it. You’ll learn all about the Kubernetes ecosystem, and use battle-tested solutions to everyday problems. You’ll build, step by step, an example cloud native application and its supporting infrastructure, along with a development environment and continuous deployment pipeline that you can use for your own applications."
       image: "assets/img/books/cloud-native-devops-with-kubernetes.jpg"
       subtitle: "Building, Deploying, and Scaling Modern Applications in the Cloud"
       author: "John Arundel and Justin Domingus"
@@ -340,13 +332,7 @@ humans"
       url: "https://amzn.to/3U6womk"
     - title: "Kubernetes: Up and Running"
       image: "assets/img/books/kubernetes-up-and-running.jpg"
-      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency.Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizatons—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers. 
-   Explore the distributed system challenges that Kubernetes addresses 
-   Dive into containerized application development, using containers such as Docker 
-   Create and run containers on Kubernetes, using the docker image format and container runtime 
-   Explore specialized objects essential for running applications in production 
-   Reliably roll out new software versions without downtime or errors 
-   Get examples of how to develop and deploy real-world applications in Kubernetes"
+      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency.Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizatons—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers."
       subtitle: "Dive into the Future of Infrastructure"
       author: "Kelsey Hightower, Brendan Burns, and Joe Beda"
       publisher: "O'Reilly"
@@ -374,7 +360,7 @@ humans"
       url: "https://amzn.to/3NpuUzU"
     - title: "Serverless Architectures on AWS"
       image: "assets/img/books/serverless-architectures-on-aws.jpg"
-      description: "SummaryServerless Architectures on AWS teaches you how to build, secure and manage serverless architectures that can power the most demanding web and mobile apps. Forewords by Patrick Debois (Founder of devopsdays) and Dr. Donald F. Ferguson (Columbia University).Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.About the TechnologyThere's a shift underway toward serverless cloud architectures. With the release of serverless computer technologies such as AWS Lambda, developers are now building entirely serverless platforms at scale. In these new architectures, traditional back-end servers are replaced with cloud functions acting as discrete single-purpose services. By composing and combining these serverless cloud functions together in a loose orchestration and adopting useful third-party services, developers can create powerful yet easy-to-understand applications.About the BookServerless Architectures on AWS teaches you how to build, secure, and manage serverless architectures that can power the most demanding web and mobile apps. You'll get going quickly with this book's ready-made real-world examples, code snippets, diagrams, and descriptions of architectures that can be readily applied. By the end, you'll be able to architect and build your own serverless applications on AWS.What's InsideFirst steps with serverless computingImportant patterns and architecturesWriting AWS Lambda functions and using the API GatewayComposing serverless applications using key services like Auth0 and FirebaseSecuring, deploying, and managing serverless architecturesAbout the ReaderThis book is for software developers interested in back end technologies. Experience with JavaScript (node.js) and AWS is useful but not required.About the AuthorDr. Peter Sbarski is a well-known AWS expert, VP of engineering at A Cloud Guru, and head of Serverlessconf.Table of ContentsPART 1 - FIRST STEPSGoing serverlessArchitectures and patternsBuilding a serverless applicationSetting up your cloudPART 2 - CORE IDEASAuthentication and authorizationLambda the orchestratorAPI GatewayPART 3 - GROWING YOUR ARCHITECTUREStorageDatabaseGoing the last mileAPPENDIXESServices for your serverless architectureInstallation and setupMore about authentication and authorizationLambda insiderModels and mapping"
+      description: "Serverless Architectures on AWS teaches you how to build, secure and manage serverless architectures that can power the most demanding web and mobile apps."
       subtitle: "With Examples Using AWS Lambda"
       author: "Peter Sbarski"
       publisher: "Manning"
@@ -520,13 +506,14 @@ humans"
     - Set up automated tests for OpenTofu code
   books:
     - title: "Growing Object-Oriented Software, Guided by Tests"
+      description: "Test-Driven Development (TDD) is now an established technique for delivering better software faster. TDD is based on a simple idea: Write tests for your code before you write the code itself. However, this 'simple' idea takes skill and judgment to do well. Now there's a practical guide to TDD that takes you beyond the basic concepts. Drawing on a decade of experience building real-world systems, two TDD pioneers show how to let tests guide your development and 'grow' software that is coherent, reliable, and maintainable. Steve Freeman and Nat Pryce describe the processes they use, the design principles they strive to achieve, and some of the tools that help them get the job done. Through an extended worked example, you’ll learn how TDD works at multiple levels, using tests to drive the features and the object-oriented structure of the code, and using Mock Objects to discover and then describe relationships between objects. Along the way, the book systematically addresses challenges that development teams encounter with TDD--from integrating TDD into your processes to testing your most difficult features."
       image: "assets/img/books/growing-object-oriented-software-guided-by-tests.jpg"
       author: "Steve Freeman and Nat Pryce"
       publisher: "Addison-Wesley Professional"
       url: "https://amzn.to/4f0sAeG"
     - title: "Working Effectively with Legacy Code"
       image: "assets/img/books/working-effectively-with-legacy-code.jpg"
-      description: ""
+      description: "This book provides programmers with the ability to cost effectively handle common legacy code problems without having to go through the hugely expensive task of rewriting all existing code. It describes a series of practical strategies that developers can employ to bring their existing software applications under control. The author provides useful guidance about how to use these strategies when refactoring or making functional changes to codebases. One of the book's key points is that it teaches developers to write tests that can be used to make sure they are not unintentionally changing the application as they optimize it. Examples are provided in Java, C++, and C sharp,and the book assumes that the reader has some knowledge of UML notation. Strategies using UML and code in C++ and Java primarily while language independent advice will be delivered in side bars and appendices for language specific users."
       author: "Michael Feathers"
       publisher: "Pearson"
       url: "https://amzn.to/3BG1I54"
@@ -565,14 +552,13 @@ humans"
       url: "https://amzn.to/4fkDJXZ"
     - title: "Extreme Programming Explained"
       image: "assets/img/books/extreme-programming-explained.jpg"
-      description: "'Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time.
-
-XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned.' 'You may love XP or you may hate it, but Extreme Programming Explained will force you to take a fresh look at how you develop software.'--BOOK JACKET."
+      description: "'Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned.' 'You may love XP or you may hate it, but Extreme Programming Explained will force you to take a fresh look at how you develop software.'--BOOK JACKET."
       subtitle: "Embrace Change"
       author: "Kent Beck and Cynthia Andres"
       publisher: "Addison-Wesley"
       url: "https://amzn.to/4eZOONR"
     - title: "Pro Git"
+      description: "Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro. Effective and well-implemented version control is a necessity for successful web projects, whether large or small. With this book you’ll learn how to master the world of distributed version workflow, use the distributed features of Git to the full, and extend Git to meet your every need."
       image: "assets/img/books/pro-git.jpg"
       author: "Scott Chacon and Ben Straub"
       publisher: "Apress"
@@ -884,27 +870,20 @@ XP recognizes that projects have to work to achieve this reduction in cost and e
       url: "https://amzn.to/3BKwaLu"
     - title: "Team Topologies"
       image: "assets/img/books/team-topologies.jpg"
-      description: "Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs?
-
-*Team Topologies* is a practical, step-by-step, adaptive model for organizational design and team interaction based on four fundamental team types and three team interaction patterns. It is a model that treats teams as the fundamental means of delivery, where team structures and communication pathways are able to evolve with technological and organizational maturity.
-
-In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help readers choose and evolve the right team patterns for their organization, making sure to keep the software healthy and optimize value streams.
-
-*Team Topologies* is a major step forward in organizational design for software, presenting a well-defined way for teams to interact and interrelate that helps make the resulting software architecture clearer and more sustainable, turning inter-team problems into valuable signals for the self-steering organization."
+      description: "Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs? *Team Topologies* is a practical, step-by-step, adaptive model for organizational design and team interaction based on four fundamental team types and three team interaction patterns. It is a model that treats teams as the fundamental means of delivery, where team structures and communication pathways are able to evolve with technological and organizational maturity. In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help readers choose and evolve the right team patterns for their organization, making sure to keep the software healthy and optimize value streams. *Team Topologies* is a major step forward in organizational design for software, presenting a well-defined way for teams to interact and interrelate that helps make the resulting software architecture clearer and more sustainable, turning inter-team problems into valuable signals for the self-steering organization."
       subtitle: "Organizing Business and Technology Teams for Fast Flow"
       author: "Matthew Skelton and Manuel Pais"
       publisher: "IT Revolution Press"
       url: "https://amzn.to/483JzdM"
     - title: "Microservices in Action"
+      description: "Microservices in Action teaches you how to write and maintain microservice-based applications. Created with day-to-day development in mind, this informative guide immerses you in real-world use cases from design to deployment. You'll discover how microservices enable an efficient continuous delivery pipeline, and explore examples using Kubernetes, Docker, and Google Container Engine."
       image: "assets/img/books/microservices-in-action.jpg"
       author: "Morgan Bruce and Paulo A. Pereira"
       publisher: "Manning"
       url: "https://amzn.to/48cDLPe"
     - title: "Microservices Patterns"
       image: "assets/img/books/microservices-patterns.jpg"
-      description: "The monolithic architecture works well for small, simple applications. However, successful applications have a habit of growing. Eventually the development team ends up in what is known as monolithic hell. All aspects of software development and deployment become painfully slow. The solution is to adopt the microservice architecture, which structures an application as a services, organized around business capabilities. This architecture accelerates software development and enables continuous delivery and deployment of complex software applications.
-
-Microservice Patterns teaches enterprise developers and architects how to build applications with the microservice architecture. Rather than simply advocating for the use the microservice architecture, this clearly-written guide takes a balanced, pragmatic approach. You'll discover that the microservice architecture is not a silver bullet and has both benefits and drawbacks. Along the way, you'll learn a pattern language that will enable you to solve the issues that arise when using the microservice architecture. This book also teaches you how to refactor a monolithic application to a microservice architecture."
+      description: "The monolithic architecture works well for small, simple applications. However, successful applications have a habit of growing. Eventually the development team ends up in what is known as monolithic hell. All aspects of software development and deployment become painfully slow. The solution is to adopt the microservice architecture, which structures an application as a services, organized around business capabilities. This architecture accelerates software development and enables continuous delivery and deployment of complex software applications. Microservice Patterns teaches enterprise developers and architects how to build applications with the microservice architecture. Rather than simply advocating for the use the microservice architecture, this clearly-written guide takes a balanced, pragmatic approach. You'll discover that the microservice architecture is not a silver bullet and has both benefits and drawbacks. Along the way, you'll learn a pattern language that will enable you to solve the issues that arise when using the microservice architecture. This book also teaches you how to refactor a monolithic application to a microservice architecture."
       subtitle: "With Examples in Java"
       author: "Chris Richardson"
       publisher: "Manning"
@@ -987,6 +966,7 @@ Microservice Patterns teaches enterprise developers and architects how to build 
       publisher: "O'Reilly"
       url: "https://amzn.to/3BReuOc"
     - title: "High Performance Browser Networking"
+      description: "How prepared are you to build fast and efficient web applications? This eloquent book provides what every web developer should know about the network, from fundamental limitations that affect performance to major innovations for building even more powerful browser applications, including HTTP 2.0 and XHR improvements, Server-Sent Events (SSE), WebSocket, and WebRTC. Author Ilya Grigorik, a web performance engineer at Google, demonstrates performance optimization best practices for TCP, UDP, and TLS protocols, and explains unique wireless and mobile network optimization requirements. You'll then dive into performance characteristics of technologies such as HTTP 2.0, client-side network scripting with XHR, real-time streaming with SSE and WebSocket, and P2P communication with WebRTC."
       image: "assets/img/books/high-performance-browser-networking.jpg"
       subtitle: "What every web developer should know about networking and web performance"
       author: "Ilya Grigorik"
@@ -1193,24 +1173,13 @@ Microservice Patterns teaches enterprise developers and architects how to build 
       url: "https://amzn.to/3zSZy1F"
     - title: "Serious Cryptography"
       image: "assets/img/books/serious-cryptography.jpg"
-      description: "This practical guide to modern encryption breaks down the fundamental mathematical concepts at the heart of cryptography without shying away from meaty discussions of how they work. You’ll learn about authenticated encryption, secure randomness, hash functions, block ciphers, and public-key techniques such as RSA and elliptic curve cryptography.
-
-You'll also learn:
-
-    Key concepts in cryptography, such as computational security, attacker models, and forward secrecy
-    The strengths and limitations of the TLS protocol behind HTTPS secure websites
-    Quantum computation and post-quantum cryptography
-    About various vulnerabilities by examining numerous code examples and use cases
-    How to choose the best algorithm or protocol and ask vendors the right questions
-
-Each chapter includes a discussion of common implementation mistakes using real-world examples and details what could go wrong and how to avoid these pitfalls.
-
-Whether you’re a seasoned practitioner or a beginner looking to dive into the field, Serious Cryptography will provide a complete survey of modern encryption and its applications."
+      description: "This practical guide to modern encryption breaks down the fundamental mathematical concepts at the heart of cryptography without shying away from meaty discussions of how they work. You’ll learn about authenticated encryption, secure randomness, hash functions, block ciphers, and public-key techniques such as RSA and elliptic curve cryptography."
       subtitle: "A Practical Introduction to Modern Encryption"
       author: "Jean-Philippe Aumasson"
       publisher: "No Starch Press"
       url: "https://amzn.to/3U5Mflc"
     - title: "Building Secure and Reliable Systems"
+      description: "Can a system be considered truly reliable if it isn't fundamentally secure? Or can it be considered secure if it's unreliable? Security is crucial to the design and operation of scalable systems in production, as it plays an important part in product quality, performance, and availability. In this book, experts from Google share best practices to help your organization design scalable and reliable systems that are fundamentally secure. Two previous O’Reilly books from Google―Site Reliability Engineering and The Site Reliability Workbook―demonstrated how and why a commitment to the entire service lifecycle enables organizations to successfully build, deploy, monitor, and maintain software systems. In this latest guide, the authors offer insights into system design, implementation, and maintenance from practitioners who specialize in security and reliability. They also discuss how building and adopting their recommended best practices requires a culture that’s supportive of such change."
       image: "assets/img/books/building-secure-and-reliable-systems.jpg"
       subtitle: "Best Practices for Designing, Implementing, and Maintaining Systems"
       author: "Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, and Adam Stubblefield"
@@ -1218,12 +1187,13 @@ Whether you’re a seasoned practitioner or a beginner looking to dive into the 
       url: "https://amzn.to/3XZViW2"
     - title: "Securing DevOps"
       image: "assets/img/books/securing-devops.jpg"
-      description: "SummarySecuring DevOps explores how the techniques of DevOps and security should be applied together to make cloud services safer. This introductory book reviews the latest practices used in securing web applications and their infrastructure and teaches you techniques to integrate security directly into your product. You'll also learn the core concepts of DevOps, such as continuous integration, continuous delivery, and infrastructure as a service.Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.About the TechnologyAn application running in the cloud can benefit from incredible efficiencies, but they come with unique security threats too. A DevOps team's highest priority is understanding those risks and hardening the system against them.About the BookSecuring DevOps teaches you the essential techniques to secure your cloud services. Using compelling case studies, it shows you how to build security into automated testing, continuous delivery, and other core DevOps processes. This experience-rich book is filled with mission-critical strategies to protect web applications against attacks, deter fraud attempts, and make your services safer when operating at scale. You'll also learn to identify, assess, and secure the unique vulnerabilities posed by cloud deployments and automation tools commonly used in modern infrastructures.What's insideAbout the ReaderReaders should be comfortable with Linux and standard DevOps practices like CI, CD, and unit testing.About the AuthorJulien Vehent is a security architect and DevOps advocate. He leads the Firefox Operations Security team at Mozilla, and is responsible for the security of Firefox's high-traffic cloud services and public websites.Table of Contents"
+      description: "Securing DevOps explores how the techniques of DevOps and security should be applied together to make cloud services safer. This introductory book reviews the latest practices used in securing web applications and their infrastructure and teaches you techniques to integrate security directly into your product. You'll also learn the core concepts of DevOps, such as continuous integration, continuous delivery, and infrastructure as a service.Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.About the TechnologyAn application running in the cloud can benefit from incredible efficiencies, but they come with unique security threats too. A DevOps team's highest priority is understanding those risks and hardening the system against them.About the BookSecuring DevOps teaches you the essential techniques to secure your cloud services. Using compelling case studies, it shows you how to build security into automated testing, continuous delivery, and other core DevOps processes. This experience-rich book is filled with mission-critical strategies to protect web applications against attacks, deter fraud attempts, and make your services safer when operating at scale. You'll also learn to identify, assess, and secure the unique vulnerabilities posed by cloud deployments and automation tools commonly used in modern infrastructures.What's insideAbout the ReaderReaders should be comfortable with Linux and standard DevOps practices like CI, CD, and unit testing.About the AuthorJulien Vehent is a security architect and DevOps advocate. He leads the Firefox Operations Security team at Mozilla, and is responsible for the security of Firefox's high-traffic cloud services and public websites.Table of Contents"
       subtitle: "Security in the Cloud"
       author: "Julien Vehent"
       publisher: "Manning"
       url: "https://amzn.to/4f42mYM"
     - title: "DevSecOps"
+      description: "A structured approach to integrating security capabilities into your engineering process is an essential requirement for producing secure software without compromising the integrity of the DevOps framework. DevSecOps provides a clear path to building systems and protocols that promotes taking ownership of software security and supports the DevOps philosophy."
       image: "assets/img/books/devsecops.jpg"
       subtitle: "A leader’s guide to producing secure software without compromising flow, feedback and continuous improvement"
       author: "Greg Wilson"
@@ -1237,12 +1207,13 @@ Whether you’re a seasoned practitioner or a beginner looking to dive into the 
       publisher: "O'Reilly"
       url: "https://amzn.to/3BSYsmV"
     - title: "Writing Secure Code"
+      description: "Keep black-hat hackers at bay with the tips and techniques in this entertaining, eye-opening book! Developers will learn how to padlock their applications throughout the entire development process—from designing secure applications to writing robust code that can withstand repeated attacks to testing applications for security flaws. Easily digested chapters reveal proven principles, strategies, and coding techniques. The authors—two battle-scarred veterans who have solved some of the industry’s toughest security problems—provide sample code in several languages. This edition includes updated information about threat modeling, designing a security process, international issues, file-system issues, adding privacy to applications, and performing security code reviews. It also includes enhanced coverage of buffer overruns, Microsoft® .NET security, and Microsoft ActiveX® development, plus practical checklists for developers, testers, and program managers."
       image: "assets/img/books/writing-secure-code.jpg"
-      description: "Excellent Book"
       author: "Michael Howard and David LeBlanc"
       publisher: "Microsoft Press"
       url: "https://amzn.to/3ZZo9fF"
     - title: "Bulletproof TLS and PKI"
+      description: "Bulletproof TLS and PKI is a complete guide to using TLS encryption and PKI to deploy secure servers and web applications. Written by Ivan Ristic, author of the popular SSL Labs web site, this book will teach you everything you need to know to protect your systems from eavesdropping and impersonation attacks. In this book, you'll find just the right mix of theory, protocol detail, vulnerability and weakness information, and deployment advice to get your job done."
       image: "assets/img/books/bulletproof-tls-and-pki.jpg"
       subtitle: "Understanding and Deploying SSL/TLS and PKI to Secure Servers and Web Applications"
       author: "Ivan Ristić"
@@ -1447,6 +1418,7 @@ Whether you’re a seasoned practitioner or a beginner looking to dive into the 
     - Use S3 and CloudFront for static assets
   books:
     - title: "Designing Data-Intensive Applications"
+      description: "Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such as scalability, consistency, reliability, efficiency, and maintainability. In addition, we have an overwhelming variety of tools, including relational databases, NoSQL datastores, stream or batch processors, and message brokers. What are the right choices for your application? How do you make sense of all these buzzwords? In this practical and comprehensive guide, author Martin Kleppmann helps you navigate this diverse landscape by examining the pros and cons of various technologies for processing and storing data. Software keeps changing, but the fundamental principles remain the same. With this book, software engineers and architects will learn how to apply those ideas in practice, and how to make full use of data in modern applications."
       image: "assets/img/books/designing-data-intensive-applications.jpg"
       subtitle: "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
       author: "Martin Kleppmann"
@@ -1495,8 +1467,8 @@ Whether you’re a seasoned practitioner or a beginner looking to dive into the 
       publisher: "Sams Publishing"
       url: "https://amzn.to/4fnUdyv"
     - title: "T-SQL Fundamentals"
+      description: "Master Transact-SQL's fundamentals, and write correct, robust code for querying and modifying data with modern Microsoft data technologies, including SQL Server 2022, Azure SQL Database, and Azure SQL Managed Instance. Long-time Microsoft Data Platform MVP Itzik Ben-Gan explains key T-SQL concepts, helping you apply your knowledge with hands-on exercises. Ben-Gan first introduces T-SQL's theory and underlying logic, illuminating it as both a language and a way of thinking. Next, he walks through core topics, including logical query processing, single table queries, joins, subqueries, table expressions, set operators, data analysis, data modifications, temporal tables, and transactions and concurrency. Building on this foundation, you'll enhance your coding capabilities, from programmatic constructs to the powerful new SQL Graph. Throughout, Ben-Gan presents reusable T-SQL sample code that works in cloud, on-premises, and hybrid environments."
       image: "assets/img/books/t-sql-fundamentals.jpg"
-      description: ""
       author: "Itzik Ben-Gan"
       publisher: "Microsoft Press"
       url: "https://amzn.to/3Yniei7"
@@ -1832,8 +1804,8 @@ Whether you’re a seasoned practitioner or a beginner looking to dive into the 
       publisher: "O'Reilly"
       url: "https://amzn.to/4f2fJIJ"
     - title: "The Site Reliability Workbook"
+      description: "In 2016, Google’s Site Reliability Engineering book ignited an industry discussion on what it means to run production services today—and why reliability considerations are fundamental to service design. Now, Google engineers who worked on that bestseller introduce The Site Reliability Workbook, a hands-on companion that uses concrete examples to show you how to put SRE principles and practices to work in your environment. This new workbook not only combines practical examples from Google’s experiences, but also provides case studies from Google’s Cloud Platform customers who underwent this journey. Evernote, The Home Depot, The New York Times, and other companies outline hard-won experiences of what worked for them and what didn’t. Dive into this workbook and learn how to flesh out your own SRE practice, no matter what size your company is."
       image: "assets/img/books/the-site-reliability-workbook.jpg"
-      description: "In 2016, Googleâ??s Site Reliability Engineering book ignited an industry discussion on what it means to run production services todayâ??and why reliability considerations are fundamental to service design. Now, Google engineers who worked on that bestseller introduce The Site Reliability Workbook , a hands-on companion that uses concrete examples to show you how to put SRE principles and practices to work in your environment. This new workbook not only combines practical examples from Googleâ??s experiences, but also provides case studies from Googleâ??s Cloud Platform customers who underwent this journey. Evernote, The Home Depot, The New York Times , and other companies outline hard-won experiences of what worked for them and what didnâ??t. Dive into this workbook and learn how to flesh out your own SRE practice, no matter what size your company is. Youâ??ll"
       subtitle: "Practical Ways to Implement SRE"
       author: "Betsy Beyer, Niall Murphy, David Rensin, Kent Kawahara, and Stephen Thorne"
       publisher: "O'Reilly"
