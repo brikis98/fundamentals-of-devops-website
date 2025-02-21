@@ -135,7 +135,7 @@ def add_element_to_book_yaml(title, outline_as_str, element_name, element_value)
   end
 
   puts "Adding '#{element_name}' to YAML for '#{title}'"
-  element_value = element_value.gsub('"', "'")
+  element_value = element_value.gsub('"', "'").gsub("\n", " ")
   outline_as_str.gsub(/^(    - title: "#{title}")/, "\\1\n      #{element_name}: \"#{element_value}\"")
 end
 
