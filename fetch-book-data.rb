@@ -174,6 +174,8 @@ def process_outline(outline, outline_as_str, max_to_process)
       end
     end
   end
+
+  outline_as_str
 end
 
 outline_file_path = '_data/outline.yml'
@@ -181,7 +183,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all books
-max_to_process = 10
+max_to_process = nil
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_to_process)
 puts "Updating '#{outline_file_path}'"
