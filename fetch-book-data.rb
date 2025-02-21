@@ -1,5 +1,4 @@
 require 'yaml'
-require 'net/http'
 require 'json'
 require 'open-uri'
 require 'nokogiri'
@@ -7,32 +6,52 @@ require 'nokogiri'
 def fetch_description_from_open_library(title, subtitle, author)
   query = URI.encode_www_form_component("#{title} #{subtitle || author}")
   base_url = "https://openlibrary.org/search.json?q=#{query}&limit=1"
-  response = Net::HTTP.get(URI(base_url))
-  data = JSON.parse(response)
+  response = make_http_request_with_retries(base_url)
+  data = JSON.parse(response.string)
 
   if data['docs'] && !data['docs'].empty?
     book = data['docs'].first
     olid = book['key']
 
     description_url = "https://openlibrary.org#{olid}.json"
-    description_response = Net::HTTP.get(URI(description_url))
+    description_response = make_http_request_with_retries(description_url)
 
-    extract_description(description_response, book)
+    extract_description(description_response.string, book)
   else
     puts "WARN: Did not get any data for book with title '#{title}'"
+  end
+end
+
+def make_http_request_with_retries(url)
+  max_retries = 3
+  sec_between_retries = 3
+  retries = 0
+
+  begin
+    URI.open(url)
+  rescue => error
+    puts "WARN: Got error while calling URL '#{url}': '#{error}'"
+    retries += 1
+    if retries < max_retries
+      puts "This was attempt #{retries}. Will sleep for #{sec_between_retries} and try again"
+      sleep(sec_between_retries)
+      retry
+    else
+      raise "Failed to call URL '#{url}' after #{retries} retries."
+    end
   end
 end
 
 def fetch_description_from_goodreads(title, subtitle, author)
   query = URI.encode_www_form_component("#{title} #{subtitle || author}")
   search_url = "https://www.goodreads.com/search?q=#{query}"
-  doc = Nokogiri::HTML(URI.open(search_url))
+  doc = Nokogiri::HTML(make_http_request_with_retries(search_url))
 
   first_result = doc.at_css("a.bookTitle")
   return nil unless first_result
 
   book_url = "https://www.goodreads.com" + first_result["href"]
-  book_page = Nokogiri::HTML(URI.open(book_url))
+  book_page = Nokogiri::HTML(make_http_request_with_retries(book_url))
 
   book_page.at_css("div.DetailsLayoutRightParagraph__widthConstrained")&.text&.strip
 end
@@ -72,8 +91,8 @@ def fetch_book_cover_image_from_open_library(title, subtitle, author)
 
   query = URI.encode_www_form_component("#{title} #{subtitle || author}")
   base_url = "https://openlibrary.org/search.json?q=#{query}&limit=1"
-  response = Net::HTTP.get(URI(base_url))
-  data = JSON.parse(response)
+  response = make_http_request_with_retries(base_url)
+  data = JSON.parse(response.string)
 
   if data['docs'] && !data['docs'].empty?
     book = data['docs'].first
@@ -134,12 +153,16 @@ def process_outline(outline, outline_as_str)
         image = book['image']
         description = book['description']
 
-        unless description
+        if description
+          puts "Book '#{title}' already has a description. Will not try to update it."
+        else
           description = fetch_description_from_open_library(title, subtitle, author) || fetch_description_from_goodreads(title, subtitle, author)
           outline_as_str = add_element_to_book_yaml(title, outline_as_str, 'description', description)
         end
 
-        unless image
+        if image
+          puts "Book '#{title}' already has an image. Will not try to update it."
+        else
           image_file_path = fetch_book_cover_image_from_open_library(title, author, description)
           outline_as_str = add_element_to_book_yaml(title, outline_as_str, 'image', image_file_path)
         end
@@ -158,5 +181,5 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 updated_outline_as_str = process_outline(outline, outline_as_str)
-puts "Updated outline YAML:"
-puts updated_outline_as_str
+puts "Updating '#{outline_file_path}'"
+File.write(outline_file_path, updated_outline_as_str)
