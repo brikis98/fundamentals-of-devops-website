@@ -83,7 +83,7 @@ def extract_description(description_response, book)
 end
 
 def fetch_book_cover_image_from_open_library(title, subtitle, author)
-  cover_image_path = image_path(title)
+  cover_image_path = book_image_path(title)
   if File.exist?(cover_image_path)
     puts "Already have a cover image for book '#{title}' at '#{cover_image_path}', will not download again"
     return cover_image_path
@@ -108,8 +108,12 @@ def dasherize(str)
   str.downcase.gsub(/[(),&:!]/, '').gsub(/[\s_]/, '-')
 end
 
-def image_path(title)
+def book_image_path(title)
   "assets/img/books/#{dasherize(title)}.jpg"
+end
+
+def other_resource_image_path(title)
+  "assets/img/other-resources/#{dasherize(title)}.jpg"
 end
 
 def download_cover(title, cover_id, cover_image_path)
@@ -120,10 +124,13 @@ def download_cover(title, cover_id, cover_image_path)
 
   url = "https://covers.openlibrary.org/b/id/#{cover_id}-M.jpg"
   puts "Downloading cover image for book '#{title}' to '#{cover_image_path}'"
-  download = open(url)
-  IO.copy_stream(download, cover_image_path)
+  download_image(url, cover_image_path)
+end
 
-  cover_image_path
+def download_image(image_url, image_file_path)
+  download = open(image_url)
+  IO.copy_stream(download, image_file_path)
+  image_file_path
 end
 
 # Ruby has no way to update YAML without completely changing the formatting, so to avoid turning outline.yaml into a
@@ -174,7 +181,7 @@ def extract_description_from_doc(doc)
   doc.at('meta[name="description"]')&.[]('content') || doc.at('meta[property="og:description"]')&.[]('content')
 end
 
-def fetch_image_for_doc(doc, url)
+def get_image_url_for_doc(doc, url)
   if url.include?("youtube.com") || url.include?("youtu.be")
     video_id = url[/v=([^&]+)/, 1] || url.split('/').last
     "https://img.youtube.com/vi/#{video_id}/hqdefault.jpg"
@@ -185,6 +192,23 @@ def fetch_image_for_doc(doc, url)
     json_data.first["thumbnail_large"]
   else
     doc.at('meta[property="og:image"]')&.[]('content')
+  end
+end
+
+def fetch_image_for_doc(doc, url, title)
+  image_path = other_resource_image_path(title)
+  if File.exist?(image_path)
+    puts "Already have an image for other resource '#{title}' at '#{image_path}', will not download again"
+    return image_path
+  end
+
+  image_url = get_image_url_for_doc(doc, url)
+  if image_url
+    puts "Downloading image for other resource '#{title}' to '#{image_path}'"
+    download_image(image_url, image_path)
+  else
+    puts "No image available for other resource '#{title}'"
+    nil
   end
 end
 
@@ -214,7 +238,7 @@ def process_other_resources(chapter, outline_as_str)
       if image
         puts "Other resource '#{title}' already has an image. Will not try to update it."
       else
-        image_file_path = fetch_image_for_doc(doc, url)
+        image_file_path = fetch_image_for_doc(doc, url, title)
         outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
       end
     end
