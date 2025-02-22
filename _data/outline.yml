@@ -200,7 +200,7 @@
   other_resources:
     - title: "Reusable, composable, battle-tested Terraform modules"
       author: "Yevgeniy Brikman"
-      url: "https://www.ybrikman.com/writing/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
+      url: "https://www.ybrikman.com/blog/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
       type: "Talk"
     - title: "5 Lessons Learned from Writing Over 300,000 Lines of Infrastructure Code"
       author: "Yevgeniy Brikman"
@@ -724,7 +724,7 @@
   other_resources:
     - title: "Agility Requires Safety"
       author: "Yevgeniy Brikman"
-      url: "https://www.ybrikman.com/writing/2016/02/14/agility-requires-safety/"
+      url: "https://www.ybrikman.com/blog/2016/02/14/agility-requires-safety/"
       type: "Talk"
     - title: "Cloud Adoption Fails"
       author: "Yevgeniy Brikman"
