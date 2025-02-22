@@ -269,7 +269,7 @@ def process_outline(outline, outline_as_str, max_chapters_to_process)
 
     chapters_processed +=1
 
-    if chapters_processed >= max_chapters_to_process
+    if max_chapters_to_process && chapters_processed >= max_chapters_to_process
       puts "Processed max allowed chapters (#{max_chapters_to_process}). Will not process any more."
       return outline_as_str
     end
@@ -283,7 +283,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all chapters
-max_chapters_to_process = 3
+max_chapters_to_process = nil
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_chapters_to_process)
 puts "Updating '#{outline_file_path}'"
