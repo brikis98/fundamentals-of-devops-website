@@ -31,12 +31,21 @@ See the [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.c
 
 The book's outline is defined in [`_data/outline.yml`](_data/outline.yml). Each chapter in the outline lists
 a number of related books, other learning resources, and tools. To fetch reasonable images and descriptions of each
-of these items, I wrote a script which uses various public APIs and a bit of screen scraping. You can run the script
-as follows:
+of these items, I wrote a script which uses various public APIs and a bit of screen scraping. 
 
-```bash
-ruby fetch-outline-data.rb
-```
+To use the script:
+
+1. Install Ruby.
+2. Install dependencies:
+
+    ```bash
+    brew install imagemagick
+    gem install mini_magick nokogiri
+    ```
+3. Run the script:
+   ```bash
+   ruby fetch-outline-data.rb
+   ```
 
 It is idempotent, so it won't fetch images or descriptions for anything that already has it. However, for anything
 that is missing that data, the script will do its best to find it, and then update `outline.yml` with this new data.

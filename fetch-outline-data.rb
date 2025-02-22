@@ -2,6 +2,8 @@ require 'yaml'
 require 'json'
 require 'open-uri'
 require 'nokogiri'
+require 'mini_magick'
+require 'fileutils'
 
 def fetch_book_description_from_open_library(title, subtitle, author)
   query = URI.encode_www_form_component("#{title} #{subtitle || author}")
@@ -191,7 +193,7 @@ def get_image_url_for_doc(doc, url)
     json_data = JSON.parse(make_http_request_with_retries(vimeo_api_url).read)
     json_data.first["thumbnail_large"]
   else
-    doc.at('meta[property="og:image"]')&.[]('content').strip
+    doc.at('meta[property="og:image"]')&.[]('content')&.strip
   end
 end
 
@@ -206,10 +208,18 @@ def fetch_image_for_doc(doc, url, title)
   if image_url
     puts "Downloading image for other resource '#{title}' from '#{image_url}' to '#{image_path}'"
     download_image(image_url, image_path)
+    resize_image(image_path)
   else
     puts "No image available for other resource '#{title}'"
     nil
   end
+end
+
+def resize_image(image_path)
+  image = MiniMagick::Image.open(image_path)
+  image.resize "180x"
+  image.write(image_path)
+  image_path
 end
 
 def process_other_resources(chapter, outline_as_str)
@@ -269,7 +279,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all chapters
-max_chapters_to_process = 1
+max_chapters_to_process = 3
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_chapters_to_process)
 puts "Updating '#{outline_file_path}'"
