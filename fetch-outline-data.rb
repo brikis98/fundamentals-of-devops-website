@@ -62,7 +62,6 @@ def extract_description(description_response, book)
   description_data = JSON.parse(description_response)
 
   description = description_data['description']
-  description = description['value'] if description &&
   if description
     if description.is_a?(Hash)
       return description['value']
@@ -180,7 +179,9 @@ def process_books(chapter, outline_as_str)
 end
 
 def extract_description_from_doc(doc)
-  doc.at('meta[name="description"]')&.[]('content') || doc.at('meta[property="og:description"]')&.[]('content')
+  doc.at('meta[property="og:description"]')&.[]('content') ||
+    doc.at('meta[property="twitter:description"]')&.[]('content') ||
+    doc.at('meta[name="description"]')&.[]('content')
 end
 
 def get_image_url_for_doc(doc, url)
