@@ -31,7 +31,7 @@ def make_http_request_with_retries(url)
   retries = 0
 
   begin
-    URI.open(url, "User-Agent" => "Mozilla/5.0")
+    URI.open(url, :read_timeout => 5, "User-Agent" => "Mozilla/5.0")
   rescue => error
     # https://stackoverflow.com/a/39160567
     # URI.open doesn't allow redirecting https to http... So this is a massive hack to allow it manually by
@@ -171,7 +171,7 @@ def add_element_to_outline_yaml(title, outline_as_str, element_name, element_val
 
   puts "Adding '#{element_name}' to YAML for '#{title}'"
   element_value = element_value.gsub('"', "'").gsub("\n", " ")
-  updated_outline = outline_as_str.gsub(/^(    - title: "#{Regexp.escape(title)}")/, "\\1\n      #{element_name}: \"#{element_value}\"")
+  updated_outline = outline_as_str.gsub(/^(\s*?)(- title: "#{Regexp.escape(title)}")/, "\\1\\2\n\\1  #{element_name}: \"#{element_value}\"")
   if outline_as_str == updated_outline
     raise "Something went wrong with hack regex replace when updating the outline. Tried to update '#{title}' with element '#{element_name}', but there was no diff."
   end
@@ -301,36 +301,69 @@ def resize_image(image_path)
 end
 
 def process_other_resources(chapter, outline_as_str)
-  other_resources = chapter['other_resources']
-  unless other_resources
-    return outline_as_str
-  end
+  other_resources = chapter['other_resources'] || []
 
   other_resources.each do |other_resource|
-    title = other_resource['title']
-    image = other_resource['image']
-    description = other_resource['description']
-    url = other_resource['url']
+    outline_as_str = find_image_and_descriptions_for_resource(other_resource, "Other resource", outline_as_str)
+  end
 
-    if description && image
-      puts "Other resource '#{title}' already has a description and image. Will not try to update them."
+  outline_as_str
+end
+
+def should_skip(title, url)
+  # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
+  # them. You'll have to put these entries into the outline manually.
+  domains_to_skip = %w[akamai.com azure.microsoft.com oracle.com]
+  domains_to_skip.each do |domain_to_skip|
+    if url.include?(domain_to_skip)
+      return true
+    end
+  end
+
+  false
+end
+
+def find_image_and_descriptions_for_resource(resource, resource_type, outline_as_str)
+  title = resource['title']
+  url = resource['url']
+  image = resource['image']
+  description = resource['description']
+
+  if description && image
+    puts "#{resource_type} '#{title}' already has a description and image. Will not try to update them."
+  elsif should_skip(title, url)
+    puts "WARN: #{resource_type} '#{title}' at URL '#{url}' is on the to skip list. Will not process. You'll have to fill this one in manually."
+  else
+    html = make_http_request_with_retries(url).read
+    doc = Nokogiri::HTML(html)
+
+    if description
+      puts "#{resource_type} '#{title}' already has a description. Will not try to update it."
     else
-      html = make_http_request_with_retries(url).read
-      doc = Nokogiri::HTML(html)
+      description = extract_description_from_doc(doc)
+      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'description', description)
+    end
 
-      if description
-        puts "Other resource '#{title}' already has a description. Will not try to update it."
-      else
-        description = extract_description_from_doc(doc)
-        outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'description', description)
-      end
+    if image
+      puts "#{resource_type} '#{title}' already has an image. Will not try to update it."
+    else
+      image_file_path = fetch_image_for_doc(doc, url, title)
+      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
+    end
+  end
 
-      if image
-        puts "Other resource '#{title}' already has an image. Will not try to update it."
-      else
-        image_file_path = fetch_image_for_doc(doc, url, title)
-        outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
-      end
+  outline_as_str
+end
+
+def process_tools(chapter, outline_as_str)
+  tools = chapter['tools'] || []
+
+  tools.each do |tool_category|
+    tool_type = tool_category['type']
+    tools = tool_category['tools']
+
+    tools.each do |tool|
+      outline_as_str = find_image_and_descriptions_for_resource(tool, "Tool #{tool_type}", outline_as_str)
     end
   end
 
@@ -343,6 +376,7 @@ def process_outline(outline, outline_as_str, max_chapters_to_process)
     outline.each do |chapter|
       outline_as_str = process_books(chapter, outline_as_str)
       outline_as_str = process_other_resources(chapter, outline_as_str)
+      outline_as_str = process_tools(chapter, outline_as_str)
 
       chapters_processed +=1
 
@@ -363,7 +397,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all chapters
-max_chapters_to_process = nil
+max_chapters_to_process = 1
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_chapters_to_process)
 puts "Updating '#{outline_file_path}'"
