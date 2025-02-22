@@ -123,8 +123,8 @@ def book_image_path(title)
   "assets/img/books/#{dasherize(title)}.jpg"
 end
 
-def other_resource_image_path(title)
-  "assets/img/other-resources/#{dasherize(title)}.jpg"
+def other_resource_image_base_path(title)
+  "assets/img/other-resources/#{dasherize(title)}"
 end
 
 def download_cover(title, cover_id, cover_image_path)
@@ -211,15 +211,32 @@ def get_image_url_for_doc(doc, url)
   end
 end
 
+def check_if_image_exists_given_base_path(image_base_path)
+  image_extensions = %w[png jpg jpeg gif]
+  Dir.glob("#{image_base_path}.{#{image_extensions.join(',')}}").first
+end
+
+def get_image_extension_from_image_url(image_url)
+  ext = File.extname(URI.parse(image_url).path)
+  if ext.empty?
+    puts "WARN: no file extension on '#{image_url}', so falling back to a guess of JPG"
+    ".jpg"
+  else
+    ext
+  end
+end
+
 def fetch_image_for_doc(doc, url, title)
-  image_path = other_resource_image_path(title)
-  if File.exist?(image_path)
+  image_base_path = other_resource_image_base_path(title)
+  if image_path = check_if_image_exists_given_base_path(image_base_path)
     puts "Already have an image for other resource '#{title}' at '#{image_path}', will not download again"
     return image_path
   end
 
   image_url = get_image_url_for_doc(doc, url)
   if image_url
+    image_extension = get_image_extension_from_image_url(image_url)
+    image_path = "#{image_base_path}#{image_extension}"
     puts "Downloading image for other resource '#{title}' from '#{image_url}' to '#{image_path}'"
     download_image(image_url, image_path)
     resize_image(image_path)
@@ -272,17 +289,21 @@ def process_other_resources(chapter, outline_as_str)
 end
 
 def process_outline(outline, outline_as_str, max_chapters_to_process)
-  chapters_processed = 0
-  outline.each do |chapter|
-    outline_as_str = process_books(chapter, outline_as_str)
-    outline_as_str = process_other_resources(chapter, outline_as_str)
+  begin
+    chapters_processed = 0
+    outline.each do |chapter|
+      outline_as_str = process_books(chapter, outline_as_str)
+      outline_as_str = process_other_resources(chapter, outline_as_str)
 
-    chapters_processed +=1
+      chapters_processed +=1
 
-    if max_chapters_to_process && chapters_processed >= max_chapters_to_process
-      puts "Processed max allowed chapters (#{max_chapters_to_process}). Will not process any more."
-      return outline_as_str
+      if max_chapters_to_process && chapters_processed >= max_chapters_to_process
+        raise "Processed max allowed chapters (#{max_chapters_to_process}). Will not process any more."
+      end
     end
+  rescue => error
+    # Catch all errors, but return the outline at the end anyway so as to save progress
+    puts "ERROR: Caught error while processing outline: #{error}"
   end
 
   outline_as_str
