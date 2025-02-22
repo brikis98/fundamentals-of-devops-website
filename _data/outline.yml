@@ -1,4 +1,4 @@
-- title: How to Deploy Your App
+- title: "How to Deploy Your App"
   icon: rocket
   key_ideas:
     - Personal computers vs servers
@@ -169,7 +169,7 @@
         - name: Oracle Cloud Infrastructure (OCI)
           url: https://www.oracle.com/cloud/
 
-- title: How to Manage Your Infrastructure as Code
+- title: "How to Manage Your Infrastructure as Code"
   icon: code
   key_ideas:
     - Ad hoc scripts
@@ -306,7 +306,7 @@
         - name: Gruntwork Infrastructure as Code Library
           url: https://gruntwork.io/infrastructure-as-code-library/
 
-- title: How to Manage Your Apps Using Orchestration Tools
+- title: "How to Manage Your Apps Using Orchestration Tools"
   icon: cubes
   key_ideas:
     - Server orchestration
@@ -510,7 +510,7 @@
         - name: SAM
           url: https://aws.amazon.com/serverless/sam/
 
-- title: How to Version, Build, and Test Your Code
+- title: "How to Version, Build, and Test Your Code"
   icon: code-fork
   key_ideas:
     - Version control
@@ -626,7 +626,7 @@
       type: "Blog Post"
     - title: "Conventional Commits"
       image: "assets/img/other-resources/conventional-commits.png"
-      description: "/en/"
+      description: "A specification for adding human and machine readable meaning to commit messages"
       author: "Conventional Commits"
       url: https://www.conventionalcommits.org/
       type: "Specification"
@@ -734,7 +734,7 @@
         - name: Jest (JavaScript)
           url: https://jestjs.io/
 
-- title: How to Set Up CI and CD
+- title: "How to Set Up CI and CD"
   icon: refresh
   key_ideas:
     - Trunk-based development
@@ -808,7 +808,7 @@
       author: "Rachel Potvin"
       url: "https://www.youtube.com/watch?v=W71BTkUbdqE"
       type: "Talk"
-    - title: Facebook uses trunk-based development
+    - title: "Facebook uses trunk-based development"
       author: "Mateusz Machalica, Alex Samylkin, Meredith Porth, Satish Chandra"
       url: https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/
       type: "Blog post"
@@ -830,7 +830,7 @@
       author: "Dan McKinley"
       url: "http://mcfunley.com/data-driven-products-now"
       type: "Talk"
-    - title: OpenGitOps
+    - title: "OpenGitOps"
       author: OpenGitOps
       type: Standards
       url: https://opengitops.dev/
@@ -910,7 +910,7 @@
         - name: Common Workflow Language
           url: https://www.commonwl.org/
 
-- title: How to Work with Multiple Teams and Environments
+- title: "How to Work with Multiple Teams and Environments"
   icon: users
   key_ideas:
     - Multiple environments
@@ -1063,7 +1063,7 @@
       author: John Kindervag"
       url: "https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf"
       type: Blog post
-    - title: Zero Trust Architecture
+    - title: "Zero Trust Architecture"
       author: NIST
       type: Article
       url: "https://www.nist.gov/publications/zero-trust-architecture"
@@ -1221,7 +1221,7 @@
         - name: Kong Mesh
           url: https://konghq.com/products/kong-mesh
 
-- title: How to Secure Communication and Storage
+- title: "How to Secure Communication and Storage"
   icon: lock
   key_ideas:
     - Cryptography
@@ -1293,11 +1293,11 @@
       author: "Jim Gumbley"
       url: "https://martinfowler.com/articles/agile-threat-modelling.html"
       type: "Blog post"
-    - title: Memo to the Amateur Cipher Designer
+    - title: "Memo to the Amateur Cipher Designer"
       author: Bruce Schneier
       type: Blog post
       url: https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign
-    - title: Password Strength
+    - title: "Password Strength"
       author: Randall Munroe
       type: Comic
       url: https://xkcd.com/936/
@@ -2158,7 +2158,7 @@
         - name: Oobeya
           url: https://oobeya.io/
 
-- title: The Future of DevOps and Software Delivery
+- title: "The Future of DevOps and Software Delivery"
   icon: magic
   key_ideas:
     - Infrastructureless
@@ -2360,7 +2360,7 @@
           url: https://encore.dev/
 
 
-- title: Open Source Code Samples
+- title: "Open Source Code Samples"
   icon: github
   skip_chapter_heading: true
   summary: |
