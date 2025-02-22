@@ -2,7 +2,7 @@
 layout: resource
 title: "How to manage state and environments with OpenTofu"
 description: "Learn about OpenTofu's powerful features for managing state, and how they differ from Terraform, including how to store state, encrypt state, and how to manage state across multiple environments."
-image: "/resources/how-to-manage-state-and-environments-with-opentofu/tofu-state-envs.png"
+thumbnail_path: "/resources/how-to-manage-state-and-environments-with-opentofu/tofu-state-envs.png"
 ---
 
 By default, [OpenTofu](https://opentofu.org/) and [Terraform ](https://www.terraform.io/) record information about what 

@@ -1,6 +1,6 @@
 {% capture image_path %}{% if page.thumbnail_path %}{{ page.thumbnail_path }}{% else %}{{ site.thumbnail_path }}{% endif %}{% endcapture %}
 {% capture image_url %}{% include image-url.html path=image_path absolute=true %}{% endcapture %}
-{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ page.description | default: site.description }}{% endif %}{% endcapture %}
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="{{ site.contact_urls.twitter.username }}" />

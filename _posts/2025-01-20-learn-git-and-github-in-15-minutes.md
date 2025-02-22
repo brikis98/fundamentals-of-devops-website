@@ -2,7 +2,7 @@
 layout: resource
 title: "Learn Git and GitHub in 15 Minutes"
 description: "Learn the basics of Git and GitHub in 15 minutes with this hands-on tutorial. Topics include version control, repositories, branches, commits, merges, pull requests, and more."
-image: "/resources/learn-git-in-5-minutes/git-github.png"
+thumbnail_path: "/resources/learn-git-in-5-minutes/git-github.png"
 ---
 
 A _version control system (VCS)_ is a tool that allows you to store source code, share it with your team, integrate

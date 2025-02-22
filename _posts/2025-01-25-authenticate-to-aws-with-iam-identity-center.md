@@ -2,7 +2,7 @@
 layout: resource
 title: "How to authenticate to AWS with IAM Identity Center"
 description: "Learn the modern and secure way to authenticate to AWS, both on the web and the command line, using IAM Identity Center."
-image: "/resources/authenticate-to-aws-with-iam-identity-center/aws-iam-identity-center.png"
+thumbnail_path: "/resources/authenticate-to-aws-with-iam-identity-center/aws-iam-identity-center.png"
 ---
 
 For many years, the main way to authenticate to AWS was to use _[Identity and Access Management 
