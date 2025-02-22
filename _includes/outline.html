@@ -36,18 +36,12 @@
             {{ chapter.summary }}
           </p>
         {% endif %}
-        {% if chapter.key_ideas or chapter.examples %}
-          <dl class="light-gray thin left-align">
-            {% if chapter.key_ideas %}
-              <dd class="ml1">
-                <ul class="mt0 pl2">
-                  {% for item in chapter.key_ideas %}
-                    <li>{{ item }}</li>
-                  {% endfor %}
-                </ul>
-              </dd>
-            {% endif %}
-          </dl>
+        {% if chapter.key_ideas %}
+          <ul class="mt0 pl2 light-gray thin left-align">
+            {% for item in chapter.key_ideas %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
         {% endif %}
       </div>
       {% unless chapter.skip_chapter_heading %}
