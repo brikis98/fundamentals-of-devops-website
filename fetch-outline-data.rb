@@ -247,6 +247,12 @@ def fetch_image_for_doc(doc, url, title)
 end
 
 def resize_image(image_path)
+  resizable_extensions = %w[.jpg .jpeg .png .gif]
+  unless resizable_extensions.include?(File.extname(image_path))
+    puts "WARN: Image '#{image_path}' is not one I know how to resize, so skipping."
+    return
+  end
+
   image = MiniMagick::Image.open(image_path)
   image.resize "180x"
   image.write(image_path)
