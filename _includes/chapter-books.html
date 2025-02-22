@@ -1,35 +1,4 @@
 <h2 id="books">Related Books</h2>
 {% for resource in include.chapter.books %}
-  <div class="clearfix my3">
-    <div class="col col-3 pr2">
-      <a href="{{ resource.url }}" target="_blank">
-        {% if resource.image %}
-          <img src="/{{ resource.image }}" alt="{{ resource.title }}">
-        {% else %}
-          <div class="border border-silver center align-middle gray h1" style="height: 180px; line-height: 180px">
-            A
-          </div>
-        {% endif %}
-      </a>
-    </div>
-    <div class="col col-9">
-      <h3 class="my0">
-        <a href="{{ resource.url }}" target="_blank">
-          {{ resource.title }}{% if resource.subtitle %}: {{ resource.subtitle }}{% endif %}
-        </a>
-      </h3>
-      <p class="thin my0 light-gray">By {{ resource.author }} ({{ resource.publisher }})</p>
-      {% if resource.description %}
-        <p id="description-{% include dasherize.html text=resource.title %}" class="mb0 thin read-more">
-          {{ resource.description }}
-        </p>
-        {% assign description_length = resource.description | size %}
-        {% if description_length >= 260 %}
-          <div class="h6 thin">
-            <a href="#" class="js-read-more" data-target="description-{% include dasherize.html text=resource.title %}">(show)</a>
-          </div>
-        {% endif %}
-      {% endif %}
-    </div>
-  </div>
+  {% include chapter-resource.html title=resource.title subtitle=resource.subtitle description=resource.description url=resource.url image=resource.image author=resource.author publisher=resource.publisher %}
 {% endfor %}

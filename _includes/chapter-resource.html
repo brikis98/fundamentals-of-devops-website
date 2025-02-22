@@ -1,0 +1,34 @@
+<div class="clearfix my3">
+  <div class="col col-3 pr2">
+    <a href="{{ include.url }}" target="_blank">
+      {% if include.image %}
+        <img src="/{{ include.image }}" alt="{{ include.title }}">
+      {% else %}
+        <div class="border border-silver center align-middle gray h1" style="height: 180px; line-height: 180px">
+          A
+        </div>
+      {% endif %}
+    </a>
+  </div>
+  <div class="col col-9">
+    <h3 class="my0">
+      <a href="{{ include.url }}" target="_blank">
+        {{ include.title }}{% if include.subtitle %}: {{ include.subtitle }}{% endif %}
+      </a>
+    </h3>
+    {% if include.author %}
+      <p class="thin my0 light-gray">By {{ include.author }}{% if include.publisher %} ({{ include.publisher }}){% endif %}</p>
+    {% endif %}
+    {% if include.description %}
+      <p id="description-{% include dasherize.html text=include.title %}" class="mb0 thin read-more">
+        {{ include.description }}
+      </p>
+      {% assign description_length = include.description | size %}
+      {% if description_length >= 260 %}
+        <div class="h6 thin">
+          <a href="#" class="js-read-more" data-target="description-{% include dasherize.html text=include.title %}">(show)</a>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
