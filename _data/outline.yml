@@ -632,7 +632,7 @@
       type: "Specification"
     - title: "Rewriting history in Git"
       image: "assets/img/other-resources/rewriting-history-in-git.png"
-      description: "Common use cases for overwriting committed snapshots in Git. History rewriting commands: git commit--amend, git rebase, git rebase -i and git reflog. "
+      description: "Common use cases for overwriting committed snapshots in Git. History rewriting commands: git commit--amend, git rebase, git rebase -i and git reflog."
       author: "Atlassian"
       type: "Blog post"
       url: https://www.atlassian.com/git/tutorials/rewriting-history
@@ -816,7 +816,7 @@
       type: "Blog post"
     - title: "What is Trunk-Based Development?"
       image: "assets/img/other-resources/what-is-trunk-based-development.png"
-      description: "                What is Trunk-Based Development?            "
+      description: "Trunk-Based Development (TBD) is where all developers (for a particular deployable unit) commit to one shared branch under source-control. That branch is going to be colloquially known as trunk, perhaps even named “trunk”. Devs may, on their own dev workstations, do some multi-branch development (say with Git), but when they are “done” with a change or a bug fix, it should go back to the shared trunk. It is not “done” if it is not there - watch for that little lie of omission."
       author: "Paul Hammant"
       url: "https://paulhammant.com/2013/04/05/what-is-trunk-based-development/"
       type: "Blog post"
@@ -1063,8 +1063,9 @@
       url: "https://amzn.to/3Yk1o4Z"
   other_resources:
     - title: "No More Chewy Centers: Introducing The Zero Trust Model Of Information Security"
+      description: "There’s an old saying in information security: “We want our network to be like an M&M, with a hard crunchy outside and a soft chewy center.” For a generation of information security professionals, this was the motto we grew up with. It was a motto based on trust and the assumption that malicious individuals wouldn’t get past the “hard crunchy outside.” In today’s new threat landscape, this is no longer an effective way of enforcing security. Once an attacker gets past the shell, he has access to all the resources in our network. We’ve built strong perimeters, but well-organized cybercriminals have recruited insiders and developed new attack methods that easily pierce our current security protections. To confront these new threats, information security professionals must eliminate the soft chewy center by making security ubiquitous throughout the network, not just at the perimeter. To help security professionals do this effectively, Forrester has developed a new model for information security, called Zero Trust. This report, the first in a series, will introduce the necessity and key concepts of the Zero Trust Model."
       image: "assets/img/other-resources/no-more-chewy-centers-introducing-the-zero-trust-model-of-information-security.png"
-      author: John Kindervag"
+      author: "John Kindervag"
       url: "https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf"
       type: Blog post
     - title: "Zero Trust Architecture"
@@ -1319,7 +1320,7 @@
       type: "Cheat sheet"
     - title: "OWASP Password Cheat Sheet"
       image: "assets/img/other-resources/owasp-password-cheat-sheet.png"
-      description: "Website with the collection of all the cheat sheets of the project."
+      description: "This cheat sheet advises you on the proper methods for storing passwords for authentication. When passwords are stored, they must be protected from an attacker even if the application or database is compromised. Fortunately, a majority of modern languages and frameworks provide built-in functionality to help store passwords safely."
       author: "the OWASP Foundation"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
       type: "Cheat sheet"
@@ -1557,16 +1558,19 @@
       url: "https://amzn.to/3Yniei7"
   other_resources:
     - title: "MapReduce: Simplified Data Processing on Large Clusters"
+      description: "MapReduce is a programming model and an associated implementation for processing and generating large data sets. Users specify a map function that processes a key/value pair to generate a set of intermediate key/value pairs, and a reduce function that merges all intermediate values associated with the same intermediate key. Many real world tasks are expressible in this model, as shown in the paper."
       image: "assets/img/other-resources/mapreduce-simplified-data-processing-on-large-clusters.png"
       author: "Jeffrey Dean and Sanjay Ghemawat"
       type: Article
       url: https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
     - title: "Bigtable: A Distributed Storage System for Structured Data"
+      description: "Bigtable is a distributed storage system for managing structured data that is designed to scale to a very large size: petabytes of data across thousands of commodity servers. Many projects at Google store data in Bigtable, including web indexing, Google Earth, and Google Finance. These applications place very different demands on Bigtable, both in terms of data size (from URLs to web pages to satellite imagery) and latency requirements (from backend bulk processing to real-time data serving). Despite these varied demands, Bigtable has successfully provided a flexible, high-performance solution for all of these Google products. In this paper we describe the simple data model provided by Bigtable, which gives clients dynamic control over data layout and format, and we describe the design and implementation of Bigtable."
       image: "assets/img/other-resources/bigtable-a-distributed-storage-system-for-structured-data.png"
       author: "Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, Robert E. Gruber"
       type: Article
       url: https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf
-    - title: "Dynamo: Amazon's Highly Available Key-value Store "
+    - title: "Dynamo: Amazon's Highly Available Key-value Store"
+      description: "This paper presents the design and implementation of Dynamo, a highly available key-value storage system that some of Amazon’s core services use to provide an “always-on” experience. To achieve this level of availability, Dynamo sacrifices consistency under certain failure scenarios. It makes extensive use of object versioning and application-assisted conflict resolution in a manner that provides a novel interface for developers to use."
       image: "assets/img/other-resources/dynamo-amazon's-highly-available-key-value-store-.png"
       author: "Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan Sivasubramanian, Peter Vosshall, and Werner Vogels"
       url: https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
@@ -2193,7 +2197,7 @@
   other_resources:
     - title: "Secure by Design"
       image: "assets/img/other-resources/secure-by-design.png"
-      description: "Secure by Design | CISA"
+      description: "It's time to build cybersecurity into the design and manufacture of technology products."
       author: "CISA"
       url: "https://www.cisa.gov/securebydesign"
       type: "Blog post"
