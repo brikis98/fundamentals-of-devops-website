@@ -39,8 +39,8 @@ To use the script:
 2. Install dependencies:
 
     ```bash
-    brew install imagemagick
-    gem install mini_magick nokogiri
+    brew install imagemagick chromedriver
+    gem install mini_magick nokogiri selenium-webdriver
     ```
 3. Run the script:
    ```bash

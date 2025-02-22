@@ -4,6 +4,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'mini_magick'
 require 'fileutils'
+require 'selenium-webdriver'
 
 def fetch_book_description_from_open_library(title, subtitle, author)
   query = URI.encode_www_form_component("#{title} #{subtitle || author}")
@@ -222,8 +223,7 @@ def get_image_url_for_doc(doc, url)
     json_data.first["thumbnail_large"]
   else
     doc.at('meta[property="og:image"]')&.[]('content')&.strip ||
-      doc.at('meta[property="twitter:image"]')&.[]('content')&.strip ||
-      doc.at('img')&.attr('src') # Fall back to first image on the page
+      doc.at('meta[property="twitter:image"]')&.[]('content')&.strip
   end
 end
 
@@ -257,9 +257,30 @@ def fetch_image_for_doc(doc, url, title)
     download_image(image_url, url, image_path)
     resize_image(image_path)
   else
-    puts "No image available for other resource '#{title}'"
-    nil
+    image_path = "#{image_base_path}.png"
+    capture_screenshot(url, image_path)
+    resize_image(image_path)
   end
+end
+
+def capture_screenshot(url, image_path)
+  puts "Taking screenshot of page at '#{url}' and writing to '#{image_path}'"
+
+  options = Selenium::WebDriver::Chrome::Options.new
+  options.add_argument('--headless')
+  options.add_argument('--window-size=1280,800')
+
+  driver = Selenium::WebDriver.for :chrome, capabilities: [options]
+
+  begin
+    driver.navigate.to url
+    sleep 3  # Wait for the page to load
+    driver.save_screenshot(image_path)
+  ensure
+    driver.quit  # Close the browser
+  end
+
+  image_path
 end
 
 def resize_image(image_path)
@@ -336,7 +357,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all chapters
-max_chapters_to_process = nil
+max_chapters_to_process = 4
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_chapters_to_process)
 puts "Updating '#{outline_file_path}'"
