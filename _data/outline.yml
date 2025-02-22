@@ -809,6 +809,8 @@
       url: "https://www.youtube.com/watch?v=W71BTkUbdqE"
       type: "Talk"
     - title: "Facebook uses trunk-based development"
+      image: "assets/img/other-resources/facebook-uses-trunk-based-development.gif"
+      description: "To develop new product features and updates efficiently, we use a trunk-based development model for changes to our codebase. Once an engineer’s code change has been accepted into the main bra…"
       author: "Mateusz Machalica, Alex Samylkin, Meredith Porth, Satish Chandra"
       url: https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/
       type: "Blog post"
@@ -831,6 +833,8 @@
       url: "http://mcfunley.com/data-driven-products-now"
       type: "Talk"
     - title: "OpenGitOps"
+      image: "assets/img/other-resources/opengitops.png"
+      description: "OpenGitOps is a set of open-source standards and best practices."
       author: OpenGitOps
       type: Standards
       url: https://opengitops.dev/
@@ -1064,6 +1068,8 @@
       url: "https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf"
       type: Blog post
     - title: "Zero Trust Architecture"
+      image: "assets/img/other-resources/zero-trust-architecture.png"
+      description: "Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network- based perimeters to focus on users, assets"
       author: NIST
       type: Article
       url: "https://www.nist.gov/publications/zero-trust-architecture"
@@ -1294,10 +1300,14 @@
       url: "https://martinfowler.com/articles/agile-threat-modelling.html"
       type: "Blog post"
     - title: "Memo to the Amateur Cipher Designer"
+      image: "assets/img/other-resources/memo-to-the-amateur-cipher-designer.png"
+      description: "In this issue: Steganography: Truths and Fictions TriStrata Counterpane Systems - Featured Research News Counterpane Systems News The Doghouse: Rapid Remote Memo to the Amateur Cipher Designer About 'CRYPTO-GRAM'"
       author: Bruce Schneier
       type: Blog post
       url: https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign
     - title: "Password Strength"
+      image: "assets/img/other-resources/password-strength.png"
+      description: "xkcd: Password Strength"
       author: Randall Munroe
       type: Comic
       url: https://xkcd.com/936/
