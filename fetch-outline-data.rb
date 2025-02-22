@@ -32,6 +32,16 @@ def make_http_request_with_retries(url)
   begin
     URI.open(url, "User-Agent" => "Mozilla/5.0")
   rescue => error
+    # https://stackoverflow.com/a/39160567
+    # URI.open doesn't allow redirecting https to http... So this is a massive hack to allow it manually by
+    # updating the URL to the http one and trying again.
+    # The error message will be:
+    #
+    # redirection forbidden: HTTPS_URL -> HTTP_URL
+    if match = error.message.match(/redirection forbidden: http.+ -> (.+)/)
+      url = match.captures[0]
+      puts "WARN: Got redirection error, updating URI to '#{url}'"
+    end
     puts "WARN: Got error while calling URL '#{url}': '#{error}'"
     retries += 1
     if retries < max_retries
@@ -129,7 +139,7 @@ def download_cover(title, cover_id, cover_image_path)
 end
 
 def download_image(image_url, image_file_path)
-  download = open(image_url)
+  download = make_http_request_with_retries(image_url)
   IO.copy_stream(download, image_file_path)
   image_file_path
 end
