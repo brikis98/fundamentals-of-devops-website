@@ -1,2 +1,1 @@
-{% assign first_char = include.path | slice: 0 %}
-{% capture full_path %}{% if include.external %}{{ include.path }}{% else %}/assets/img{% unless first_char == "/" %}/{% endunless %}{{ include.path }}{% endif %}{% endcapture %}{% if include.absolute %}{{ site.url }}{{ full_path }}{% else %}{{ full_path }}{% endif %}
+{% assign first_char = include.path | slice: 0 %}{% capture full_path %}{% if include.external %}{{ include.path }}{% else %}/assets/img{% unless first_char == "/" %}/{% endunless %}{{ include.path }}{% endif %}{% endcapture %}{% if include.absolute %}{{ site.url }}{{ full_path }}{% else %}{{ full_path }}{% endif %}
