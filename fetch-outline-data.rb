@@ -181,7 +181,8 @@ end
 def extract_description_from_doc(doc)
   doc.at('meta[property="og:description"]')&.[]('content') ||
     doc.at('meta[property="twitter:description"]')&.[]('content') ||
-    doc.at('meta[name="description"]')&.[]('content')
+    doc.at('meta[name="description"]')&.[]('content') ||
+    doc.at('title')&.text # Fall back to page title
 end
 
 def get_image_url_for_doc(doc, url)
@@ -194,7 +195,9 @@ def get_image_url_for_doc(doc, url)
     json_data = JSON.parse(make_http_request_with_retries(vimeo_api_url).read)
     json_data.first["thumbnail_large"]
   else
-    doc.at('meta[property="og:image"]')&.[]('content')&.strip
+    doc.at('meta[property="og:image"]')&.[]('content')&.strip ||
+      doc.at('meta[property="twitter:image"]')&.[]('content')&.strip ||
+      doc.at('img')&.attr('src') # Fall back to first image on the page
   end
 end
 
