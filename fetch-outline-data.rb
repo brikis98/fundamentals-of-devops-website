@@ -171,7 +171,11 @@ def add_element_to_outline_yaml(title, outline_as_str, element_name, element_val
 
   puts "Adding '#{element_name}' to YAML for '#{title}'"
   element_value = element_value.gsub('"', "'").gsub("\n", " ")
-  outline_as_str.gsub(/^(    - title: "#{Regexp.escape(title)}")/, "\\1\n      #{element_name}: \"#{element_value}\"")
+  updated_outline = outline_as_str.gsub(/^(    - title: "#{Regexp.escape(title)}")/, "\\1\n      #{element_name}: \"#{element_value}\"")
+  if outline_as_str == updated_outline
+    raise "Something went wrong with hack regex replace when updating the outline. Tried to update '#{title}' with element '#{element_name}', but there was no diff."
+  end
+  updated_outline
 end
 
 def process_books(chapter, outline_as_str)
