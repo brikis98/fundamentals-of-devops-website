@@ -191,7 +191,7 @@ def get_image_url_for_doc(doc, url)
     json_data = JSON.parse(make_http_request_with_retries(vimeo_api_url).read)
     json_data.first["thumbnail_large"]
   else
-    doc.at('meta[property="og:image"]')&.[]('content')
+    doc.at('meta[property="og:image"]')&.[]('content').strip
   end
 end
 
@@ -204,7 +204,7 @@ def fetch_image_for_doc(doc, url, title)
 
   image_url = get_image_url_for_doc(doc, url)
   if image_url
-    puts "Downloading image for other resource '#{title}' to '#{image_path}'"
+    puts "Downloading image for other resource '#{title}' from '#{image_url}' to '#{image_path}'"
     download_image(image_url, image_path)
   else
     puts "No image available for other resource '#{title}'"
