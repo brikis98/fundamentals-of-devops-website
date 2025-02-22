@@ -107,7 +107,7 @@ def fetch_book_cover_image_from_open_library(title, subtitle, author)
 end
 
 def dasherize(str)
-  str.downcase.gsub(/[(),&:!]/, '').gsub(/[\s_]/, '-')
+  str.downcase.gsub(/[(),&:!?]/, '').gsub(/[\s_]/, '-')
 end
 
 def book_image_path(title)
