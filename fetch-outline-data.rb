@@ -312,7 +312,9 @@ def process_other_resources(chapter, outline_as_str)
     description = other_resource['description']
     url = other_resource['url']
 
-    unless description && image
+    if description && image
+      puts "Other resource '#{title}' already has a description and image. Will not try to update them."
+    else
       html = make_http_request_with_retries(url).read
       doc = Nokogiri::HTML(html)
 
