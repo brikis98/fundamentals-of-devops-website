@@ -50,7 +50,7 @@ def make_http_request_with_retries(url)
       sleep(sec_between_retries)
       retry
     else
-      raise "Failed to call URL '#{url}' after #{retries} retries."
+      raise "Failed to call URL '#{url}' after #{retries} retries. Most recent error: '#{error}'"
     end
   end
 end
@@ -258,13 +258,22 @@ def fetch_image_for_doc(doc, url, title)
     image_extension = get_image_extension_from_image_url(image_url)
     image_path = "#{image_base_path}#{image_extension}"
     puts "Downloading image for other resource '#{title}' from '#{image_url}' to '#{image_path}'"
-    download_image(image_url, url, image_path)
-    resize_image(image_path)
-  else
-    image_path = "#{image_base_path}.png"
-    capture_screenshot(url, image_path)
-    resize_image(image_path)
+    begin
+      download_image(image_url, url, image_path)
+      return resize_image(image_path)
+    rescue => error
+      if error.message.include?("404 Not Found")
+        puts "WARN: Got a 404 when trying to download image for '#{title}' from '#{image_url}'. Will fall back to screenshot."
+      else
+        raise error
+      end
+    end
   end
+
+  # Fall back to screenshot
+  image_path = "#{image_base_path}.png"
+  capture_screenshot(url, image_path)
+  resize_image(image_path)
 end
 
 def capture_screenshot(url, image_path)
@@ -397,7 +406,7 @@ outline = YAML.load_file(outline_file_path)
 outline_as_str = File.read(outline_file_path)
 
 # Set to nil to process all chapters
-max_chapters_to_process = 1
+max_chapters_to_process = nil
 
 updated_outline_as_str = process_outline(outline, outline_as_str, max_chapters_to_process)
 puts "Updating '#{outline_file_path}'"
