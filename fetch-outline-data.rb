@@ -135,10 +135,26 @@ def download_cover(title, cover_id, cover_image_path)
 
   url = "https://covers.openlibrary.org/b/id/#{cover_id}-M.jpg"
   puts "Downloading cover image for book '#{title}' to '#{cover_image_path}'"
-  download_image(url, cover_image_path)
+  download_image(url, 'https://covers.openlibrary.org', cover_image_path)
 end
 
-def download_image(image_url, image_file_path)
+def turn_to_absolute_url(url, source_website_url)
+  if url.start_with?("http")
+    url
+  elsif url.start_with?("//")
+    "https:#{url}"
+  elsif url.start_with?("/")
+    source_website_uri = URI.parse(source_website_url)
+    "https://#{source_website_uri.host}#{url}"
+  elsif url.start_with?("../")
+    URI.join(source_website_url, url).to_s
+  else
+    "#{source_website_url}/#{url}"
+  end
+end
+
+def download_image(image_url, source_website_url, image_file_path)
+  image_url = turn_to_absolute_url(image_url, source_website_url)
   download = make_http_request_with_retries(image_url)
   IO.copy_stream(download, image_file_path)
   image_file_path
@@ -238,7 +254,7 @@ def fetch_image_for_doc(doc, url, title)
     image_extension = get_image_extension_from_image_url(image_url)
     image_path = "#{image_base_path}#{image_extension}"
     puts "Downloading image for other resource '#{title}' from '#{image_url}' to '#{image_path}'"
-    download_image(image_url, image_path)
+    download_image(image_url, url, image_path)
     resize_image(image_path)
   else
     puts "No image available for other resource '#{title}'"
