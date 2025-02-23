@@ -168,32 +168,42 @@ end
 
 # Ruby has no way to update YAML without completely changing the formatting, so to avoid turning outline.yaml into a
 # hot mess, this is a hacky method that uses regex to insert YAML elements.
-def add_element_to_outline_yaml(title, outline_as_str, element_name, element_value)
+def add_element_to_outline_yaml(title, outline_as_str, element_name, element_value, value_type = :string)
   unless element_value
     puts "WARN: did not find a '#{element_name}' for '#{title}'"
     return outline_as_str
   end
 
   puts "Adding '#{element_name}' to YAML for '#{title}'"
-  element_value = element_value.gsub('"', "'").gsub("\n", " ")
-  updated_outline = outline_as_str.gsub(/^(\s*?)(- title: "#{Regexp.escape(title)}")/, "\\1\\2\n\\1  #{element_name}: \"#{element_value}\"")
+  formatted_value = format_value_for_yaml(element_value, value_type)
+  updated_outline = outline_as_str.gsub(/^(\s*?)(- title: "#{Regexp.escape(title)}")/, "\\1\\2\n\\1  #{element_name}: #{formatted_value}")
   if outline_as_str == updated_outline
     raise "Something went wrong with hack regex replace when updating the outline. Tried to update '#{title}' with element '#{element_name}', but there was no diff."
   end
   updated_outline
 end
 
-def process_books(chapter, outline_as_str)
-  books = chapter['books']
-  unless books
-    return outline_as_str
+def format_value_for_yaml(value, value_type)
+  case value_type
+  when :string
+    "\"#{value.gsub('"', "'").gsub("\n", " ")}\""
+  when :number
+    value.to_s
+  else
+    raise "Unsupported value type '#{value_type}' with value '#{value}'"
   end
+end
+
+def process_books(chapter, outline_as_str)
+  books = chapter['books'] || []
 
   books.each do |book|
     title = book['title']
     subtitle = book['subtitle']
     author = book['author']
     image = book['image']
+    image_width = book['image_width']
+    image_height = book['image_height']
     description = book['description']
 
     if description
@@ -209,9 +219,24 @@ def process_books(chapter, outline_as_str)
       image_file_path = fetch_book_cover_image_from_open_library(title, author, description)
       outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
     end
+
+    if image_width && image_height
+      puts "Book '#{title}' already has an image width and height. Will not try to update it."
+    elsif image
+      image_width, image_height = get_image_dimensions(image)
+      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image_height', image_height, :number)
+      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image_width', image_width, :number)
+    else
+      puts "Book '#{title}' has no image, so can't fill in image width and height."
+    end
   end
 
   outline_as_str
+end
+
+def get_image_dimensions(image_file_path)
+  image = MiniMagick::Image.open(image_file_path)
+  return image.width, image.height
 end
 
 def extract_description_from_doc(doc)
@@ -337,6 +362,8 @@ def find_image_and_descriptions_for_resource(resource, resource_type, image_subf
   url = resource['url']
   image = resource['image']
   description = resource['description']
+  image_width = resource['image_width']
+  image_height = resource['image_height']
 
   if description && image
     puts "#{resource_type} '#{title}' already has a description and image. Will not try to update them."
@@ -356,9 +383,19 @@ def find_image_and_descriptions_for_resource(resource, resource_type, image_subf
     if image
       puts "#{resource_type} '#{title}' already has an image. Will not try to update it."
     else
-      image_file_path = fetch_image_for_doc(doc, url, title, image_subfolder)
-      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
+      image = fetch_image_for_doc(doc, url, title, image_subfolder)
+      outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image)
     end
+  end
+
+  if image_width && image_height
+    puts "#{resource_type} '#{title}' already has an image width and height. Will not try to update it."
+  elsif image
+    image_width, image_height = get_image_dimensions(image)
+    outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image_height', image_height, :number)
+    outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image_width', image_width, :number)
+  else
+    puts "#{resource_type} '#{title}' has no image, so can't fill in image width and height."
   end
 
   outline_as_str
@@ -407,6 +444,7 @@ def process_outline(outline, outline_as_str, max_chapters_to_process)
   rescue => error
     # Catch all errors, but return the outline at the end anyway so as to save progress
     puts "ERROR: Caught error while processing outline: #{error}"
+    puts error.backtrace
   end
 
   outline_as_str
