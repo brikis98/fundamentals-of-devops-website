@@ -1501,7 +1501,9 @@
       author: "Jez Humble"
       url: "https://www.youtube.com/watch?v=skLJuksCRTw"
       type: "Talk"
+      description: "Businesses rely on getting valuable new software into the hands of users as fast as possible, while making sure that they keep their production environments stable. Continuous Delivery is a revolutionary and scalable agile methodology that enables any team, including teams within enterprise IT organizations, to achieve rapid, reliable releases through better collaboration between developers, testers, DBAs and operations, and automation of the build, deploy, test and release process. I'll start by discussing the value of CD to the business, inspired by the lean startup movement. I'll then present the principles and practices involved in continuous delivery, including value stream mapping, the deployment pipeline, acceptance test driven development, zero-downtime releases, and incremental development. I'll cover how CD is enabled by an ecosystem including Devops, cloud computing, agile testing, and continuous deployment. Finally I'll talk about how continuous delivery can co-exist with ITIL and compliance in an enterprise environment."
     - title: "Why Google Stores Billions of Lines of Code in a Single Repository"
+      description: "This talk will outline the scale of Google’s codebase, describe Google’s custom-built monolithic source repository, and discuss the reasons behind choosing this model of source control management. It will include background on the systems and workflows used at Google that make managing and working productively with a large repository feasible, in addition to a discussion of the advantages and trade-offs of this approach."
       image_width: 180
       image_height: 135
       image: "assets/img/other-resources/why-google-stores-billions-of-lines-of-code-in-a-single-repository.jpg"
@@ -1536,7 +1538,7 @@
       image_width: 180
       image_height: 180
       image: "assets/img/other-resources/data-driven-products-now.jpg"
-      description: "Dan McKinley :: Data Driven Products Now!"
+      description: "Back when I was at Etsy, I did a presentation internally about the craft of sizing opportunities. I finally got around to writing a public incarnation of that talk."
       author: "Dan McKinley"
       url: "http://mcfunley.com/data-driven-products-now"
       type: "Talk"
@@ -1579,7 +1581,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/jenkins-x.png"
-          description: "Documentation, guides and support for Jenkins X."
+          description: "All In One CI/CD including everything you need to start exploring Kubernetes. Multi-cluster GitOps, Tekton pipelines, Secrets management, Pull Request ChatOps and Preview Environments."
           url: https://jenkins-x.io/
         - title: "TeamCity"
           image_width: 180
@@ -1597,7 +1599,7 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/github-enterprise-server.png"
-          description: "Find out if GitHub Enterprise Server is right for your business."
+          description: "GitHub Enterprise Server is a self-hosted version of the GitHub platform. Your business can benefit from increased control and avoid issues associated the public cloud, while your developers can benefit from familiar features and workflows from GitHub.com."
           url: https://docs.github.com/en/enterprise-server@3.10/admin/overview/about-github-enterprise-server
         - title: "GitLab Self-Hosted"
           image_width: 180
@@ -1625,6 +1627,10 @@
           url: https://aws.amazon.com/codepipeline/
         - title: "Azure Pipelines"
           url: https://azure.microsoft.com/en-us/products/devops/pipelines/
+          description: "Continuously build, test, and deploy to any platform and cloud."
+          image: "assets/img/tools/azure-pipelines.png"
+          image_width: 180
+          image_height: 180
         - title: "Google Cloud Build"
           image_width: 180
           image_height: 95
@@ -1637,7 +1643,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/growthbook.jpg"
-          description: "Open Source Feature Flagging and A/B Testing Platform - growthbook/growthbook."
+          description: "Open Source Feature Flagging and A/B Testing Platform."
           url: https://github.com/growthbook/growthbook/
         - title: "Flagsmith"
           image_width: 1200
