@@ -48,4 +48,16 @@
       jsReadMoreLink.innerText = jsReadMoreLink.innerText === "(show)" ? "(hide)" : "(show)";
     };
   }
+
+  const enableAnchors = () => {
+    anchors.add('h2');
+  };
+
+  if (document.readyState !== 'loading') {
+    enableAnchors();
+  } else {
+    document.addEventListener('DOMContentLoaded', function(event) {
+      enableAnchors();
+    });
+  }
 })();
