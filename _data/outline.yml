@@ -913,7 +913,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-artifact-registry.png"
-          description: "A universal package manager for all your build artifacts and dependencies. Fast, scalable, reliable and secure. ."
+          description: "A universal package manager for all your build artifacts and dependencies. Fast, scalable, reliable and secure."
           url: https://cloud.google.com/artifact-registry
         - title: "JFrog Docker Registry"
           image_width: 180
@@ -999,7 +999,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/sam.png"
-          description: "Simplify how you build, deploy, deliver, and share serverless applications on AWS. ."
+          description: "Simplify how you build, deploy, deliver, and share serverless applications on AWS."
           url: https://aws.amazon.com/serverless/sam/
 
 - title: "How to Version, Build, and Test Your Code"
@@ -1261,7 +1261,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/bazel.png"
-          description: "Use the Bazel Open Source Project to scalably build and test massive, multi-language, multi-platform codebases. ."
+          description: "Use the Bazel Open Source Project to scalably build and test massive, multi-language, multi-platform codebases."
           url: https://github.com/bazelbuild/bazel/
         - title: "Just"
           image_width: 180
@@ -2465,7 +2465,7 @@
     - title: "Writing Secure Code"
       image_width: 180
       image_height: 222
-      description: "Keep black-hat hackers at bay with the tips and techniques in this entertaining, eye-opening book! Developers will learn how to padlock their applications throughout the entire development process—from designing secure applications to writing robust code that can withstand repeated attacks to testing applications for security flaws. Easily digested chapters reveal proven principles, strategies, and coding techniques. The authors—two battle-scarred veterans who have solved some of the industry’s toughest security problems—provide sample code in several languages. This edition includes updated information about threat modeling, designing a security process, international issues, file-system issues, adding privacy to applications, and performing security code reviews. It also includes enhanced coverage of buffer overruns, Microsoft® .NET security, and Microsoft ActiveX® development, plus practical checklists for developers, testers, and program managers."
+      description: "Keep black-hat hackers at bay with the tips and techniques in this entertaining, eye-opening book! Developers will learn how to padlock their applications throughout the entire development process—from designing secure applications to writing robust code that can withstand repeated attacks to testing applications for security flaws. Easily digested chapters reveal proven principles, strategies, and coding techniques. The authors—two battle-scarred veterans who have solved some of the industry’s toughest security problems—provide sample code in several languages. This edition includes updated information about threat modeling, designing a security process, international issues, file-system issues, adding privacy to applications, and performing security code reviews."
       image: "assets/img/books/writing-secure-code.jpg"
       author: "Michael Howard and David LeBlanc"
       publisher: "Microsoft Press"
@@ -2492,7 +2492,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/memo-to-the-amateur-cipher-designer.png"
-      description: "In this issue: Steganography: Truths and Fictions TriStrata Counterpane Systems - Featured Research News Counterpane Systems News The Doghouse: Rapid Remote Memo to the Amateur Cipher Designer About 'CRYPTO-GRAM'."
+      description: "Congratulations. You’ve just invented this great new cipher, and you want to do something with it. You’re new in the field; no one’s heard of you, and you don’t have any credentials as a cryptanalyst. You want to get well-known cryptographers to look at your work. What can you do?"
       author: Bruce Schneier
       type: Blog post
       url: https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign
@@ -2527,21 +2527,22 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/go-crypto-library.png"
-          description: "crypto package - crypto - Go Packages."
+          description: "Package crypto collects common cryptographic constants."
           url: https://pkg.go.dev/crypto
         - title: "Java Cryptography Architecture"
           url: https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html
+          description: "The Java platform strongly emphasizes security, including language safety, cryptography, public key infrastructure, authentication, secure communication, and access control. The JCA is a major piece of the platform, and contains a 'provider' architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few. These APIs allow developers to easily integrate security into their application code."
         - title: "GPG"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/gpg.png"
-          description: "The GNU Privacy Guard."
+          description: "GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP). GnuPG allows you to encrypt and sign your data and communications; it features a versatile key management system, along with access modules for all kinds of public key directories. GnuPG, also known as GPG, is a command line tool with features for easy integration with other applications. A wealth of frontend applications and libraries are available. GnuPG also provides support for S/MIME and Secure Shell (ssh)."
           url: https://gnupg.org/
         - title: "age"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/age.jpg"
-          description: "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability. - FiloSottile/age."
+          description: "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability."
           url: https://github.com/FiloSottile/age
     - type: Payment Processing
       tools:
@@ -2594,11 +2595,12 @@
           image_height: 95
           image: "assets/img/tools/amazon-cognito.png"
           url: https://aws.amazon.com/cognito/
+          description: "Implement a secure, scalable, and customized sign-up and sign-in experience in minutes."
         - title: "Google Firebase Authentication"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/google-firebase-authentication.png"
-          description: "Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and onboarding in just a few lines of code. ."
+          description: "Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and onboarding in just a few lines of code."
           url: https://firebase.google.com/docs/auth
         - title: "Supabase Authentication"
           image_width: 180
@@ -2654,16 +2656,17 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/keepassxc.png"
-          description: "KeePassXC Password Manager."
+          description: "Let KeePassXC safely store your passwords and auto-fill them into your favorite apps, so you can forget all about them. We do the heavy lifting in a no-nonsense, ad-free, tracker-free, and cloud-free manner. Free and open source."
           url: https://keepassxc.org/
         - title: "macOS password manager"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/macos-password-manager.png"
-          description: "Learn what’s new in macOS, how to get started with your Mac and use it with your Apple devices, and how to control privacy and security on macOS."
-          url: https://support.apple.com/en-ie/guide/mac-help/mchlf375f392/mac
+          image_height: 180
+          image: "assets/img/tools/mac-os-passwords.png"
+          description: "Use Passwords on your Mac to find all your passwords in one place, across all your devices."
+          url: https://support.apple.com/en-ie/guide/passwords/welcome/mac
         - title: "Windows Credential Manager"
           url: https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0
+          description: "Credential Manager lets you view and delete your saved credentials for signing in to websites, connected applications, and networks."
         - title: "Google Password Manager"
           image_width: 180
           image_height: 93
@@ -2688,7 +2691,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/diceware.jpg"
-          description: "Passphrases to remember. Contribute to ulif/diceware development by creating an account on GitHub."
+          description: "diceware is a passphrase generator following the proposals of Arnold G. Reinhold on http://diceware.com . It generates passphrases by concatenating words randomly picked from wordlists."
           url: https://github.com/ulif/diceware
     - type: KMS
       tools:
@@ -2706,19 +2709,28 @@
           url: https://utimaco.com/products/categories/hsms-general-purpose-use-cases
         - title: "Entrust"
           url: https://www.entrust.com/products/hsm
+          description: "Entrust's hardware security modules provide unmatched protection for your cryptographic keys and secure the most critical aspects of your infrastructure."
+          image: "assets/img/tools/entrust.png"
+          image_width: 180
+          image_height: 50
         - title: "Yubico"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/yubico.png"
           description: "The world’s smallest HSM secures modern infrastructures and is ultra portable at an affordable price while securing a wide range of use cases."
           url: https://www.yubico.com/products/hardware-security-module/
-        - title: "AWS KMS"
+        - title: "AWS Key Management Service (KMS)"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/aws-kms.png"
           url: https://aws.amazon.com/kms/
+          description: "Create and control keys used to encrypt or digitally sign your data."
         - title: "Azure Key Vault"
           url: https://azure.microsoft.com/en-us/products/key-vault
+          description: "Safeguard cryptographic keys and other secrets used by cloud apps and services."
+          image: "assets/img/tools/azure-key-vault.png"
+          image_width: 180
+          image_height: 95
         - title: "Google Cloud Key Management"
           image_width: 180
           image_height: 95
@@ -2768,6 +2780,7 @@
           image_height: 93
           image: "assets/img/tools/aws-secrets-manager.png"
           url: https://aws.amazon.com/secrets-manager/
+          description: "Centrally manage the lifecycle of secrets."
         - title: "AWS Systems Manager Parameter Store"
           image_width: 180
           image_height: 93
@@ -2796,10 +2809,8 @@
           url: https://support.apple.com/en-ie/guide/mac-help/mh11785/mac
         - title: "Windows BitLocker"
           url: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
+          description: "BitLocker is a Windows security feature that provides encryption for entire volumes, addressing the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices."
         - title: "Ubuntu Full Disk Encryption"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/ubuntu-full-disk-encryption.png"
           description: "Ubuntu is an open source software operating system that runs from the desktop, to the cloud, to all your internet connected things."
           url: https://ubuntu.com/core/docs/full-disk-encryption
     - type: Public Certificate Authority (CA)
@@ -2808,13 +2819,13 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/letsencrypt.png"
-          description: "Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG). Read all about our nonprofit work this year in our 2024 Annual Report. ."
+          description: "Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG)."
           url: https://letsencrypt.org/
         - title: "Certbot"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/certbot.png"
-          description: "Tagline."
+          description: "Certbot is a free, open source software tool for automatically using Let’s Encrypt certificates on manually-administrated websites to enable HTTPS."
           url: https://certbot.eff.org/
         - title: "ZeroSSL"
           image_width: 180
@@ -2833,6 +2844,7 @@
           image_height: 93
           image: "assets/img/tools/aws-certificate-manager-acm.png"
           url: https://aws.amazon.com/certificate-manager/
+          description: "Provision and manage SSL/TLS certificates with AWS services and connected resources."
         - title: "Google-managed SSL certificates"
           image_width: 180
           image_height: 95
@@ -2847,6 +2859,10 @@
           url: https://www.digicert.com/tls-ssl/compare-certificates
         - title: "GoDaddy"
           url: https://www.godaddy.com/en-ie/web-security/ssl-certificate
+          description: "Your all in one solution to grow online. Start a free trial to create a beautiful website, get a domain name, fast hosting, online marketing and award-winning 24/7 support."
+          image: "assets/img/tools/godaddy.png"
+          image_width: 180
+          image_height: 37
     - type: Private Certificate Authority (CA)
       tools:
         - title: "HashiCorp Vault"
@@ -2865,13 +2881,13 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/step-ca.png"
-          description: "Learn about step-ca."
+          description: "step-ca is an online Certificate Authority (CA) for secure, automated X.509 and SSH certificate management. It's the server counterpart to step CLI. It is secured with TLS, and it offers several configurable certificate provisioners, flexible certificate templating, and pluggable database backends to suit a wide variety of contexts and workflows. It employs sane default algorithms and attributes, so you don't have to be a security engineer to use it securely."
           url: https://smallstep.com/docs/step-ca/index.html
         - title: "cfssl"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/cfssl.jpg"
-          description: "CFSSL: Cloudflare's PKI and TLS toolkit. Contribute to cloudflare/cfssl development by creating an account on GitHub."
+          description: "CFSSL is CloudFlare's PKI/TLS swiss army knife. It is both a command line tool and an HTTP API server for signing, verifying, and bundling TLS certificates."
           url: https://github.com/cloudflare/cfssl
         - title: "Caddy"
           image_width: 180
@@ -2898,25 +2914,30 @@
           image_height: 93
           image: "assets/img/tools/dogtag-certificate-system.png"
           url: https://www.dogtagpki.org/wiki/PKI_Main_Page
+          description: "The Dogtag Certificate System is an enterprise-class open source Certificate Authority (CA). It is a full-featured system, and has been hardened by real-world deployments. It supports all aspects of certificate lifecycle management, including key archival, OCSP and smartcard management, and much more. The Dogtag Certificate System can be downloaded for free and set up in less than an hour."
         - title: "OpenXPKI"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/openxpki.png"
-          description: ""
+          description: "OpenXPKI is an enterprise-grade PKI/Trustcenter software for customizable and scaleable management of X.509v3 certificates, known for its flexibility, web-based management interface, workflow support, and active Open Source community."
           url: https://www.openxpki.org/
         - title: "Keyfactor"
           image_width: 180
           image_height: 101
           image: "assets/img/tools/keyfactor.png"
-          description: "Protect every device and workload with the most trusted PKI and machine identity management platform — Keyfactor."
+          description: "Protect every device and workload with the most trusted PKI and machine identity management platform."
           url: https://www.keyfactor.com/
         - title: "Entrust"
           url: https://www.entrust.com/products/pki/managed-services/pki-as-a-service
+          description: "A highly secure PKI that’s quick to deploy, scales on-demand, and runs where you do business."
+          image: "assets/img/tools/entrust.png"
+          image_width: 180
+          image_height: 50
         - title: "Venafi"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/venafi.jpg"
-          description: "Kickstart your digital transformation with Venafi Zero Touch PKI! This PKI solution is simple, seamless and secure--and customizable. Chat with an expert to learn more!"
+          description: "Kickstart your digital transformation with Venafi Zero Touch PKI! This PKI solution is simple, seamless and secure--and customizable."
           url: https://venafi.com/zero-touch-pki/
         - title: "AppViewX"
           image_width: 180
@@ -2929,6 +2950,7 @@
           image_height: 93
           image: "assets/img/tools/aws-private-ca.png"
           url: https://aws.amazon.com/private-ca/
+          description: "Use AWS Private Certificate Authority (AWS Private CA) to securely issue and manage private certificates for your connected resources in one place."
         - title: "Google CA Service"
           image_width: 180
           image_height: 95
@@ -3527,7 +3549,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. ."
+          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets."
           url: https://www.informatica.com/
         - title: "Vertica"
           image_width: 180
@@ -3576,7 +3598,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. ."
+          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets."
           url: https://www.informatica.com/
         - title: "Matillion"
           image_width: 180
@@ -4336,7 +4358,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-trace.png"
-          description: "A distributed tracing system that collects latency data from your applications and displays it in the Google Cloud console. ."
+          description: "A distributed tracing system that collects latency data from your applications and displays it in the Google Cloud console."
           url: https://cloud.google.com/trace/docs
     - type: On-Call
       tools:
@@ -4890,7 +4912,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/jupyter-notebooks.png"
-          description: "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media. ."
+          description: "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media."
           url: https://jupyter.org/
     - type: Infrastructure from Code (IFC)
       tools:
