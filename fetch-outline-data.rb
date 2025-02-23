@@ -31,7 +31,7 @@ def make_http_request_with_retries(url)
   retries = 0
 
   begin
-    URI.open(url, :read_timeout => 5, "User-Agent" => "Mozilla/5.0")
+    URI.open(url, :read_timeout => 5, "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
   rescue => error
     # https://stackoverflow.com/a/39160567
     # URI.open doesn't allow redirecting https to http... So this is a massive hack to allow it manually by
@@ -322,7 +322,7 @@ end
 def should_skip(title, url)
   # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
   # them. You'll have to put these entries into the outline manually.
-  domains_to_skip = %w[akamai.com azure.microsoft.com oracle.com]
+  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com]
   domains_to_skip.each do |domain_to_skip|
     if url.include?(domain_to_skip)
       return true
