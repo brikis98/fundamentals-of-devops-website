@@ -2,7 +2,7 @@
   <div class="col col-3 pr2">
     <a href="{{ include.url }}" target="_blank">
       {% if include.image %}
-        <img src="/{{ include.image }}" alt="{{ include.title }}">
+        <img src="/{{ include.image }}" alt="{{ include.title }}" width="{{ include.image_width }}" height="{{ include.image_height }}" loading="lazy">
       {% else %}
         <div class="border border-silver center align-middle gray h1" style="height: 180px; line-height: 180px">
           A
