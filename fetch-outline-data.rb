@@ -122,7 +122,7 @@ def fetch_book_cover_image_from_open_library(title, subtitle, author)
 end
 
 def dasherize(str)
-  str.downcase.gsub(/[(),&:!?]/, '').gsub(/[\s_]/, '-')
+  str.downcase.gsub(/[(),&:!?\/\\]/, '').gsub(/[\s_]/, '-')
 end
 
 def book_image_path(title)
@@ -308,9 +308,14 @@ def resize_image(image_path)
     return image_path
   end
 
+  begin
   image = MiniMagick::Image.open(image_path)
   image.resize "180x"
   image.write(image_path)
+  rescue => error
+    puts "WARN: failed to resize image at '#{image_path}' due to error: '#{error}'"
+  end
+
   image_path
 end
 
@@ -327,7 +332,7 @@ end
 def should_skip(title, url)
   # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
   # them. You'll have to put these entries into the outline manually.
-  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com]
+  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com entrust.com mysql.com]
   domains_to_skip.each do |domain_to_skip|
     if url.include?(domain_to_skip)
       return true
