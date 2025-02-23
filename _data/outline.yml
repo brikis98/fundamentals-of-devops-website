@@ -129,7 +129,7 @@
       image_width: 180
       image_height: 90
       image: "assets/img/other-resources/how-to-authenticate-to-aws-with-iam-identity-center.png"
-      description: "For many years, the main way to authenticate to AWS was to use Identity and Access Management (IAM), but in the last few years, AWS has been pushing users towards the newer IAM Identity Center (formerly known as AWS SSO), which offers a more secure and convenient way to authenticate. This blog post is a guide to how to  set up IAM Identity Center and use it to authenticate to AWS, both on the web and the command line. Here’s an outline of what this post will cover:"
+      description: "For many years, the main way to authenticate to AWS was to use Identity and Access Management (IAM), but in the last few years, AWS has been pushing users towards the newer IAM Identity Center (formerly known as AWS SSO), which offers a more secure and convenient way to authenticate. This blog post is a guide to how to set up IAM Identity Center and use it to authenticate to AWS, both on the web and the command line."
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/25/authenticate-to-aws-with-iam-identity-center/"
       type: "Blog post"
@@ -276,7 +276,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/amazon-web-services-aws.png"
-          description: "Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use."
+          description: "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use."
           url: https://aws.amazon.com/
         - title: "Microsoft Azure"
           description: "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure’s open and flexible cloud computing platform."
@@ -653,7 +653,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/production-kubernetes.jpg"
-      description: "Kubernetes has become the dominant container orchestrator, but many organizations that have recently adopted this system are still struggling to run actual production workloads. In this practical book, four software engineers from VMware bring their shared experiences running Kubernetes in production and provide insight on key challenges and best practices. The brilliance of Kubernetes is how configurable and extensible the system is, from pluggable runtimes to storage integrations. For platform engineers, software developers, infosec, network engineers, storage engineers, and others, this book examines how the path to success with Kubernetes involves a variety of technology, pattern, and abstraction considerations. With this book, you"
+      description: "Kubernetes has become the dominant container orchestrator, but many organizations that have recently adopted this system are still struggling to run actual production workloads. In this practical book, four software engineers from VMware bring their shared experiences running Kubernetes in production and provide insight on key challenges and best practices. The brilliance of Kubernetes is how configurable and extensible the system is, from pluggable runtimes to storage integrations. For platform engineers, software developers, infosec, network engineers, storage engineers, and others, this book examines how the path to success with Kubernetes involves a variety of technology, pattern, and abstraction considerations."
       subtitle: "Building Successful Application Platforms"
       author: "Josh Rosso, Rich Lander, Alex Brand, John Harris"
       publisher: "O'Reilly"
@@ -681,7 +681,7 @@
       tools:
         - title: "Capistrano"
           image_width: 180
-          image_height: 93
+          image_height: 45
           image: "assets/img/tools/capistrano.png"
           description: "A remote server automation and deployment tool written in Ruby."
           url: https://capistranorb.com/
@@ -692,22 +692,22 @@
           description: "Deployer is a tool for deploying PHP applications to a remote server."
           url: https://deployer.org/
         - title: "Mina"
-          image_width: 180
-          image_height: 93
+          image_width: 162
+          image_height: 180
           image: "assets/img/tools/mina.png"
-          description: "Mina"
+          description: "Really fast deployer and server automation tool."
           url: http://nadarei.co/mina/
         - title: "Fabric"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/fabric.png"
-          description: "Welcome to Fabric! — Fabric  documentation"
+          image_width: 150
+          image_height: 117
+          image: "assets/img/tools/fabric.webp"
+          description: "Fabric is a high level Python (2.7, 3.4+) library designed to execute shell commands remotely over SSH, yielding useful Python objects in return."
           url: https://www.fabfile.org/
         - title: "Shipit"
           image_width: 180
-          image_height: 90
-          image: "assets/img/tools/shipit.jpg"
-          description: "Universal automation and deployment tool ⛵️. Contribute to shipitjs/shipit development by creating an account on GitHub."
+          image_height: 180
+          image: "assets/img/tools/shipit.png"
+          description: "Universal automation and deployment tool ⛵️."
           url: https://github.com/shipitjs/shipit
     - type: Process Supervisor
       tools:
@@ -715,18 +715,19 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/systemd.png"
-          description: "System and Service Manager"
+          description: "systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
           url: https://systemd.io/
         - title: "supervisord"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/supervisord.png"
           url: http://supervisord.org/
+          description: "Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems. It shares some of the same goals of programs like launchd, daemontools, and runit. Unlike some of these programs, it is not meant to be run as a substitute for init as “process id 1”. Instead it is meant to be used to control processes related to a project or a customer, and is meant to start like any other program at boot time."
         - title: "runit"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/runit.png"
-          description: "runit - a UNIX init scheme with service supervision"
+          description: "runit is a cross-platform Unix init scheme with service supervision, a replacement for sysvinit, and other init schemes. It runs on GNU/Linux, *BSD, MacOSX, Solaris, and can easily be adapted to other Unix operating systems."
           url: https://smarden.org/runit/
         - title: "PM2"
           image_width: 180
@@ -736,22 +737,23 @@
           url: https://pm2.keymetrics.io/
     - type: Load Balancer (Web Server)
       tools:
-        - title: "Apache"
+        - title: "Apache HTTP Server"
           image_width: 180
-          image_height: 93
+          image_height: 69
           image: "assets/img/tools/apache.png"
-          description: "Home page of The Apache Software Foundation"
-          url: https://www.apache.org/
+          description: "The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards."
+          url: https://httpd.apache.org/
         - title: "Nginx"
           image_width: 180
           image_height: 101
           image: "assets/img/tools/nginx.png"
           url: https://www.nginx.com/
+          description: "Optimize, deliver, and secure apps across the entire enterprise with NGINX."
         - title: "HAProxy"
           image_width: 180
-          image_height: 93
+          image_height: 43
           image: "assets/img/tools/haproxy.png"
-          description: "Reliable, High Performance TCP/HTTP Load Balancer"
+          description: "Reliable, High Performance TCP/HTTP Load Balancer."
           url: https://www.haproxy.org/
         - title: "Caddy"
           image_width: 180
@@ -759,25 +761,26 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/caddy.png"
-          description: "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go"
+          description: "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go."
           url: https://caddyserver.com/
         - title: "Varnish"
-          image_width: 180
-          image_height: 93
+          image_width: 119
+          image_height: 180
           image: "assets/img/tools/varnish.png"
-          description: "Varnish HTTP Cache — Varnish HTTP Cache"
+          description: "Varnish Cache is a web application accelerator also known as a caching HTTP reverse proxy. You install it in front of any server that speaks HTTP and configure it to cache the contents. Varnish Cache is really, really fast. It typically speeds up delivery with a factor of 300 - 1000x, depending on your architecture."
           url: https://varnish-cache.org/
         - title: "Lighttpd"
-          image_width: 180
-          image_height: 93
+          image_width: 170
+          image_height: 168
           image: "assets/img/tools/lighttpd.png"
-          description: "Home - Lighttpd - fly light"
+          description: "lighttpd (pronounced /lighty/) is a secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments. lighttpd uses memory and CPU efficiently and has lower resource use than other popular web servers. Its advanced feature-set (FastCGI, CGI, Auth, Output-Compression, URL-Rewriting and much more) make lighttpd the perfect web server for all systems, small and large. lighttpd is released under the Open Source revised BSD license."
           url: https://www.lighttpd.net/
         - title: "Microsoft IIS"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/microsoft-iis.png"
           url: https://www.iis.net/
+          description: "Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks."
         - title: "AWS Elastic Load Balancer"
           image_width: 180
           image_height: 95
@@ -791,8 +794,11 @@
           description: "High performance, scalable global load balancing on Google’s worldwide network, with support for HTTP(S), TCP/SSL, UDP, and autoscaling."
           url: https://cloud.google.com/load-balancing?hl=en
         - title: "Azure Load Balancer"
-          description: "Get an overview of Azure Load Balancer features, architecture, and implementation. Learn how the service works and how to use it in the cloud."
+          description: "Azure Load Balancer operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. The service distributes inbound flows that arrive at the load balancer's frontend to backend pool instances. These flows are distributed according to configured load-balancing rules and health probes. The backend pool instances can be Azure virtual machines (VMs) or virtual machine scale sets."
           url: https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview
+          image: "assets/img/tools/azure-load-balancer.png"
+          image_width: 180
+          image_height: 95
     - type: VM Cluster
       tools:
         - title: "Auto Scaling Groups (ASG)"
@@ -805,11 +811,14 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/managed-instance-groups.png"
-          description: "Instance groups  |  Compute Engine Documentation  |  Google Cloud"
+          description: "An instance group is a collection of virtual machine (VM) instances that you can manage as a single entity."
           url: https://cloud.google.com/compute/docs/instance-groups
         - title: "Scale Sets"
-          description: "Learn about Azure Virtual Machine Scale Sets and how to automatically scale your applications"
+          description: "Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule."
           url: https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview
+          image: "assets/img/tools/azure-scale-sets.png"
+          image_width: 180
+          image_height: 180
     - type: Container Orchestration
       tools:
         - title: "Kubernetes"
@@ -828,7 +837,7 @@
           image_width: 2400
           image_height: 1260
           image: "assets/img/tools/docker-swarm.webp"
-          description: "Docker Engine Swarm mode overview"
+          description: "Swarm mode is an advanced feature for managing a cluster of Docker daemons. Use Swarm mode if you intend to use Swarm as a production runtime environment."
           url: https://docs.docker.com/engine/swarm/
         - title: "Amazon ECS"
           image_width: 180
@@ -838,9 +847,9 @@
           url: https://aws.amazon.com/ecs/
         - title: "Mesos"
           image_width: 180
-          image_height: 180
+          image_height: 80
           image: "assets/img/tools/mesos.png"
-          description: "Apache Mesos abstracts resources away from machines,                    enabling fault-tolerant and elastic distributed systems                    to easily be built and run effectively."
+          description: "Apache Mesos abstracts resources away from machines, enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
           url: https://mesos.apache.org/
         - title: "OpenShift"
           image_width: 180
@@ -852,8 +861,8 @@
       tools:
         - title: "Helm"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/helm.png"
+          image_height: 180
+          image: "assets/img/tools/helm.svg"
           description: "Helm - The Kubernetes Package Manager."
           url: https://helm.sh/
         - title: "OpenTofu"
@@ -872,13 +881,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/kustomize.png"
-          description: "Kustomize - Kubernetes native configuration management"
+          description: "Kubernetes native configuration management."
           url: https://kustomize.io/
         - title: "kapp"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/kapp.png"
-          description: ""
+          description: "Deploy and view groups of Kubernetes resources as 'applications'. Apply changes safely and predictably, watching resources as they converge."
           url: https://carvel.dev/kapp/
     - type: Container Registry
       tools:
@@ -896,6 +905,10 @@
           url: https://aws.amazon.com/ecr/
         - title: "Azure Container Registry"
           url: https://azure.microsoft.com/en-us/products/container-registry
+          description: "A registry of Docker and Open Container Initiative (OCI) images, with support for all OCI artifacts."
+          image: "assets/img/tools/azure-container-registry.png"
+          image_width: 180
+          image_height: 95
         - title: "Google Artifact Registry"
           image_width: 180
           image_height: 95
@@ -930,11 +943,15 @@
           url: https://cloud.google.com/functions?hl=en
         - title: "Azure serverless"
           url: https://azure.microsoft.com/en-us/solutions/serverless
+          description: "Build, deploy, and operate serverless apps with end-to-end Azure serverless solutions. Focus on solving business problems instead of managing infrastructure."
+          image: "assets/img/tools/azure-serverless.png"
+          image_width: 180
+          image_height: 180
         - title: "CloudFlare Workers"
           image_width: 180
-          image_height: 93
+          image_height: 62
           image: "assets/img/tools/cloudflare-workers.png"
-          description: "Build your next application with Cloudflare Workers"
+          description: "Deploy serverless code instantly across the globe to give it exceptional performance, reliability, and scale."
           url: https://workers.cloudflare.com/
         - title: "Vercel Functions"
           image_width: 180
@@ -950,9 +967,9 @@
           url: https://aws.amazon.com/fargate/
         - title: "Knative"
           image_width: 180
-          image_height: 93
+          image_height: 145
           image: "assets/img/tools/knative.png"
-          description: "Redirecting"
+          description: "Knative is an open-source enterprise-level solution to build serverless and event driven applications."
           url: https://knative.dev/
         - title: "Lambda Function URLs"
           image_width: 180
@@ -1035,7 +1052,7 @@
       image_width: 180
       image_height: 226
       image: "assets/img/books/the-art-of-unit-testing.jpg"
-      description: "Unit testing is more than just a collection of tools and practices—it’s a state of mind! This bestseller reveals the master’s secrets for delivering robust, maintainable, and trustworthy code. Thousands of developers have learned to hone their code quality under the tutelage of The Art of Unit Testing. This revised third edition updates an international bestseller to reflect modern development tools and practices, as well as to cover JavaScript.  Inside The Art of Unit Testing, Third Edition you will learn how   Create readable, maintainable, and trustworthy tests Work with fakes, stubs, mock objects, and isolation frameworks Apply simple dependency injection techniques Refactor legacy code with confidence Test both frontend and backend code Effective unit tests streamline your software development process and ensure you deliver consistent high-quality code every time. With practical examples in JavaScript and Node, this hands-on guide takes you from your very first unit tests all the way to comprehensive test suites, naming standards, and refactoring techniques. You’ll explore test patterns and organization, working with legacy code and even “untestable” code. The many tool-agnostic examples are presented in JavaScript and carefully designed so that they apply to code written in any language."
+      description: "Unit testing is more than just a collection of tools and practices—it’s a state of mind! This bestseller reveals the master’s secrets for delivering robust, maintainable, and trustworthy code. Thousands of developers have learned to hone their code quality under the tutelage of The Art of Unit Testing. This revised third edition updates an international bestseller to reflect modern development tools and practices, as well as to cover JavaScript."
       subtitle: "With Examples in JavaScript"
       author: "Roy Osherove"
       publisher: "Manning"
@@ -1306,7 +1323,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/jslint.png"
-          description: "JSLint, The JavaScript Code Quality and Coverage Tool.         This file allows JSLint to be run from a web browser.         It can accept a source program and analyze it         without sending it over the network."
+          description: "JSLint, The JavaScript Code Quality and Coverage Tool."
           url: https://www.jslint.com/
         - title: "Prettier"
           image_width: 180
@@ -1448,7 +1465,7 @@
       image_width: 180
       image_height: 111
       image: "assets/img/other-resources/how-to-manage-state-and-environments-with-opentofu.png"
-      description: "By default, OpenTofu and Terraform  record information about what infrastructure they created in a state file on your local file system called terraform.tfstate. For personal projects, this works just fine, but for professional projects with a team, you need a way to manage state that supports collaboration, locking, encryption, and multiple environments. A few years ago, I wrote a guide to managing state with Terraform and managing multiple environments with Terraform. Since then,OpenTofu has added several important features that provide new ways to solve these problems. This blog post is a tutorial on how to manage state and environments with OpenTofu in a way that is more secure and more convenient than what you can do with Terraform."
+      description: "By default, OpenTofu and Terraform record information about what infrastructure they created in a state file on your local file system called terraform.tfstate. For personal projects, this works just fine, but for professional projects with a team, you need a way to manage state that supports collaboration, locking, encryption, and multiple environments. A few years ago, I wrote a guide to managing state with Terraform and managing multiple environments with Terraform. Since then, OpenTofu has added several important features that provide new ways to solve these problems. This blog post is a tutorial on how to manage state and environments with OpenTofu in a way that is more secure and more convenient than what you can do with Terraform."
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/28/how-to-manage-state-and-environments-with-opentofu/"
       type: "Blog post"
@@ -1713,7 +1730,7 @@
           image_width: 180
           image_height: 116
           image: "assets/img/tools/flux.png"
-          description: "Flux is a set of continuous and progressive delivery solutions for Kubernetes, and they are open and extensible.  The APIs of Flux are stable now. "
+          description: "Flux is a set of continuous and progressive delivery solutions for Kubernetes, and they are open and extensible."
           url: https://fluxcd.io/
     - type: Workflow Engine
       tools:
@@ -2105,7 +2122,6 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/metadata-managed-ssh-connections.png"
-          description: "About SSH connections  |  Compute Engine Documentation  |  Google Cloud"
           url: https://cloud.google.com/compute/docs/instances/ssh
     - type: VPN
       tools:
@@ -2172,7 +2188,6 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-vpn.png"
-          description: "Cloud VPN overview  |  Google Cloud"
           url: https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview
         - title: "AWS Virtual Private Gateways"
           image_width: 180
@@ -2640,7 +2655,7 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/diceware-password-generator.jpg"
-          description: "Tired of forgetting passwords?  We got you covered!  All passwords consist of real words, chosen at random."
+          description: "Tired of forgetting passwords? We got you covered! All passwords consist of real words, chosen at random."
           url: https://diceware.dmuth.org/
         - title: "diceware"
           image_width: 180
@@ -2855,7 +2870,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/dogtag-certificate-system.png"
-          description: "Overview — Dogtag PKI  documentation"
           url: https://www.dogtagpki.org/wiki/PKI_Main_Page
         - title: "OpenXPKI"
           image_width: 180
@@ -3615,7 +3629,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-managed-service-for-kafka.png"
-          description: "Apache Kafka made easy. Learn about the managed service for Apache Kafka that automates Kafka operations and security on Google Cloud.  "
+          description: "Apache Kafka made easy. Learn about the managed service for Apache Kafka that automates Kafka operations and security on Google Cloud."
           url: https://cloud.google.com/products/managed-service-for-apache-kafka
         - title: "Google Cloud Pub/Sub"
           image_width: 180
@@ -3951,7 +3965,6 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-uptime-checks.png"
-          description: "Create public uptime checks  |  Cloud Monitoring  |  Google Cloud"
           url: https://cloud.google.com/monitoring/uptime-checks
     - type: Business Metrics
       tools:
@@ -4506,7 +4519,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/stable-diffusion.png"
-          description: "Activating humanity's potential through generative AI.  Open models in every modality, for everyone, everywhere."
+          description: "Activating humanity's potential through generative AI. Open models in every modality, for everyone, everywhere."
           url: https://stability.ai/
         - title: "Midjourney"
           url: https://www.midjourney.com/
@@ -4578,7 +4591,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/bandit.png"
-          description: "Welcome to Bandit — Bandit  documentation"
           url: https://bandit.readthedocs.io/en/latest/
         - title: "Brakeman"
           image_width: 180
