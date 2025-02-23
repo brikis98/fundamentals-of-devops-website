@@ -113,7 +113,7 @@
       image_width: 180
       image_height: 100
       image: "assets/img/other-resources/continuously-deploying-culture.jpg"
-      description: "Michael Rembetsy and Patrick McDonnell walk us through the cultural evolution of Etsy's technology organization's cultural evolution from slow and siloed…"
+      description: "Michael Rembetsy and Patrick McDonnell walk us through the cultural evolution of Etsy's technology organization's cultural evolution from slow and siloed…."
       author: "Michael Rembetsy and Patrick McDonnell"
       url: "https://vimeo.com/51310058"
       type: "Talk"
@@ -121,7 +121,7 @@
       image_width: 180
       image_height: 135
       image: "assets/img/other-resources/10+-deploys-per-day-dev-and-ops-cooperation-at-flickr.jpg"
-      description: "John Allspaw (Flickr/Yahoo!) and Paul Hammond (Flickr)'10+ Deploys Per Day: Dev and Ops Cooperation at Flickr'"
+      description: "John Allspaw (Flickr/Yahoo!) and Paul Hammond (Flickr)'10+ Deploys Per Day: Dev and Ops Cooperation at Flickr'."
       author: "John Allspaw and Paul Hammond"
       url: "https://www.youtube.com/watch?v=LdOe18KhtT4"
       type: "Talk"
@@ -218,7 +218,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/digital-ocean-app-platform.jpeg"
-          description: "Build, deploy, and scale apps quickly using a simple, cost-effective solution. Go from code to production in just a few clicks"
+          description: "Build, deploy, and scale apps quickly using a simple, cost-effective solution. Go from code to production in just a few clicks."
           url: https://www.digitalocean.com/products/app-platform
         - title: "Aptible"
           image_width: 180
@@ -354,7 +354,7 @@
       image_width: 180
       image_height: 95
       image: "assets/img/other-resources/reusable-composable-battle-tested-terraform-modules.png"
-      description: "Listen up, developers. You are not special. Your infrastructure is not a beautiful and unique snowflake. You have the same tech debt as everyone else. So why are you reinventing the wheel? Why are you building the same infrastructure, from scratch, over and over again?"
+      description: "Listen up, developers. You are not special. Your infrastructure is not a beautiful and unique snowflake. You have the same tech debt as everyone else. So why are you reinventing the wheel? Why are you building the same infrastructure, from scratch, over and over again?."
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/blog/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
       type: "Talk"
@@ -457,7 +457,7 @@
           image_width: 180
           image_height: 85
           image: "assets/img/tools/firecracker.png"
-          description: "Secure and fast microVMs for serverless computing"
+          description: "Secure and fast microVMs for serverless computing."
           url: https://firecracker-microvm.github.io/
         - title: "v8 isolates"
           image_width: 180
@@ -489,7 +489,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/cri-o.png"
-          description: "Lightweight Container Runtime for Kubernetes"
+          description: "Lightweight Container Runtime for Kubernetes."
           url: https://cri-o.io/
         - title: "Podman"
           image_width: 180
@@ -913,13 +913,13 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-artifact-registry.png"
-          description: "A universal package manager for all your build artifacts and dependencies. Fast, scalable, reliable and secure. "
+          description: "A universal package manager for all your build artifacts and dependencies. Fast, scalable, reliable and secure. ."
           url: https://cloud.google.com/artifact-registry
         - title: "JFrog Docker Registry"
           image_width: 180
           image_height: 94
           image: "assets/img/tools/jfrog-docker-registry.png"
-          description: "Manage your Docker images within a private Docker registry, with high availability, in a single Artifactory and unlimited image pulls"
+          description: "Manage your Docker images within a private Docker registry, with high availability, in a single Artifactory and unlimited image pulls."
           url: https://jfrog.com/integration/docker-registry/
         - title: "GitHub Container Registry"
           image_width: 180
@@ -999,7 +999,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/sam.png"
-          description: "Simplify how you build, deploy, deliver, and share serverless applications on AWS. "
+          description: "Simplify how you build, deploy, deliver, and share serverless applications on AWS. ."
           url: https://aws.amazon.com/serverless/sam/
 
 - title: "How to Version, Build, and Test Your Code"
@@ -1035,7 +1035,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/full-stack-testing.jpg"
-      description: "Testing is a critical discipline for any organization looking to deliver high-quality software. This practical book provides software developers and QA engineers with a comprehensive one-stop guide to testing skills in 10 different categories. You'll learn appropriate strategies, concepts, and practical implementation knowledge you can apply from both a development and testing perspective for web and mobile applications. Author Gayathri Mohan offers examples of more than 40 tools you can use immediately. You'll acquire the skills to conduct exploratory testing, test automation, cross-functional testing, data testing, mobile testing, and visual testing, as well as tests for performance, security, and accessibility. You'll learn to integrate them in continuous integration pipelines to gain faster feedback. Once you dive into this guide, you'll be able to tackle challenging development workflows with a focus on quality. With this book, you will:"
+      description: "Testing is a critical discipline for any organization looking to deliver high-quality software. This practical book provides software developers and QA engineers with a comprehensive one-stop guide to testing skills in 10 different categories. You'll learn appropriate strategies, concepts, and practical implementation knowledge you can apply from both a development and testing perspective for web and mobile applications. Author Gayathri Mohan offers examples of more than 40 tools you can use immediately. You'll acquire the skills to conduct exploratory testing, test automation, cross-functional testing, data testing, mobile testing, and visual testing, as well as tests for performance, security, and accessibility. You'll learn to integrate them in continuous integration pipelines to gain faster feedback. Once you dive into this guide, you'll be able to tackle challenging development workflows with a focus on quality."
       subtitle: "A Practical Guide for Delivering High Quality Software"
       author: "Gayathri Mohan"
       publisher: "O'Reilly"
@@ -1069,7 +1069,7 @@
       image_width: 180
       image_height: 238
       image: "assets/img/books/clean-code.jpg"
-      description: "You are reading this book for two reasons. First, you are a programmer. Second, you want to be a better programmer. Good. We need better programmers."
+      description: "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way. Noted software expert Robert C. Martin, presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin, who has helped bring agile principles from a practitioner’s point of view to tens of thousands of programmers, has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of software craftsman, and make you a better programmer―but only if you work at it. What kind of work will you be doing? You’ll be reading code―lots of code. And you will be challenged to think about what’s right about that code, and what’s wrong with it. More importantly you will be challenged to reassess your professional values and your commitment to your craft."
       subtitle: "A Handbook of Agile Software Craftsmanship"
       author: "Robert C. Martin"
       publisher: "Pearson"
@@ -1152,7 +1152,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/conventional-commits.png"
-      description: "A specification for adding human and machine readable meaning to commit messages"
+      description: "A specification for adding human and machine readable meaning to commit messages."
       author: "Conventional Commits"
       url: https://www.conventionalcommits.org/
       type: "Specification"
@@ -1160,7 +1160,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/rewriting-history-in-git.png"
-      description: "Common use cases for overwriting committed snapshots in Git. History rewriting commands: git commit--amend, git rebase, git rebase -i and git reflog."
+      description: "This tutorial will cover various methods of rewriting and altering Git history. Git uses a few different methods to record changes. We will discuss the strengths and weaknesses of the different methods and give examples of how to work with them. This tutorial discusses some of the most common reasons for overwriting committed snapshots and shows you how to avoid the pitfalls of doing so."
       author: "Atlassian"
       type: "Blog post"
       url: https://www.atlassian.com/git/tutorials/rewriting-history
@@ -1168,7 +1168,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/google’s-code-review-guidelines.png"
-      description: "Google’s Engineering Practices documentation"
+      description: "A code review is a process where someone other than the author(s) of a piece of code examines that code. At Google, we use code review to maintain the quality of our code and products. This documentation is the canonical description of Google’s code review processes and policies."
       author: "Google"
       type: "Policy"
       url: https://google.github.io/eng-practices/review/
@@ -1177,33 +1177,33 @@
       tools:
         - title: "Git"
           image_width: 180
-          image_height: 93
+          image_height: 75
           image: "assets/img/tools/git.png"
-          description: "Git"
+          description: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows."
           url: https://git-scm.com/
         - title: "Mercurial"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/mercurial.png"
-          description: "Mercurial SCM"
+          image_width: 98
+          image_height: 114
+          image: "assets/img/tools/mercurial.svg"
+          description: "Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface."
           url: https://www.mercurial-scm.org/
         - title: "Perforce"
           image_width: 180
           image_height: 94
           image: "assets/img/tools/perforce.jpg"
-          description: "Perforce Software provides enterprise-scale development tools. This includes version control, application lifecycle management, agile planning, and static analysis. Perforce Software is also the parent company of Perfecto and Rogue Wave."
+          description: "Perforce Software provides enterprise-scale development tools. This includes version control, application lifecycle management, agile planning, and static analysis."
           url: https://www.perforce.com/
         - title: "Subversion"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/subversion.png"
-          description: "Apache Subversion"
+          image_height: 36
+          image: "assets/img/tools/subversion.svg"
+          description: "Subversion is an open source version control system. Founded in 2000 by CollabNet, Inc., the Subversion project and software have seen incredible success over the past decade. Subversion has enjoyed and continues to enjoy widespread adoption in both the open source arena and the corporate world."
           url: https://subversion.apache.org/
         - title: "CVS"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/cvs.png"
-          description: "CVS - Open Source Version Control"
+          description: "CVS is a version control system, an important component of Source Configuration Management (SCM). Using it, you can record the history of sources files, and documents."
           url: https://cvs.nongnu.org/
     - type: Git Hosting
       tools:
@@ -1221,8 +1221,8 @@
           url: https://gitlab.com/
         - title: "BitBucket"
           image_width: 180
-          image_height: 107
-          image: "assets/img/tools/bitbucket.png"
+          image_height: 55
+          image: "assets/img/tools/bitbucket.svg"
           description: "Bitbucket Cloud is a Git-based code and CI/CD tool optimized for teams using Jira."
           url: https://bitbucket.org/
     - type: Build System
@@ -1231,7 +1231,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/rake.png"
-          description: "Rake -- Ruby Make"
+          description: "Rake is a Make-like program implemented in Ruby. Tasks and dependencies are specified in standard Ruby syntax."
           url: https://ruby.github.io/rake/
         - title: "Gradle"
           image_width: 180
@@ -1241,27 +1241,27 @@
           url: https://gradle.org/
         - title: "Maven"
           image_width: 180
-          image_height: 93
+          image_height: 86
           image: "assets/img/tools/maven.png"
-          description: "Welcome to Apache Maven – Maven"
+          description: "Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information."
           url: https://maven.apache.org/
         - title: "SBT"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/sbt.png"
+          image_height: 103
+          image: "assets/img/tools/sbt.svg"
           description: "sbt is a simple build tool for Scala, Java, and more. Define your tasks in Scala. Run them in parallel from the interactive shell."
           url: https://www.scala-sbt.org/
         - title: "NPM"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/npm.png"
-          description: "npm | Home"
+          description: "Relied upon by more than 17 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than two million packages, the largest software registry in the world."
           url: https://www.npmjs.com/
         - title: "Bazel"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/bazel.png"
-          description: "Use the Bazel Open Source Project to scalably build and test massive, multi-language, multi-platform codebases. "
+          description: "Use the Bazel Open Source Project to scalably build and test massive, multi-language, multi-platform codebases. ."
           url: https://github.com/bazelbuild/bazel/
         - title: "Just"
           image_width: 180
@@ -1273,13 +1273,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/make.png"
-          description: "Make - GNU Project - Free Software Foundation"
+          description: "GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files."
           url: https://www.gnu.org/software/make/
         - title: "Yarn"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/yarn.png"
-          description: "Yarn, the modern JavaScript package manager"
+          description: "Yarn, the modern JavaScript package manager."
           url: https://yarnpkg.com/
         - title: "Turborepo"
           image_width: 180
@@ -1297,7 +1297,7 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/pnpm.png"
-          description: "Fast, disk space efficient package manager"
+          description: "Fast, disk space efficient package manager."
           url: https://pnpm.io/
         - title: "Parcel"
           image_width: 180
@@ -1311,13 +1311,13 @@
           image_width: 180
           image_height: 51
           image: "assets/img/tools/shellcheck.png"
-          description: "ShellCheck finds bugs in your shell scripts"
+          description: "ShellCheck finds bugs in your shell scripts."
           url: https://www.shellcheck.net/
         - title: "ESLint"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/eslint.png"
-          description: "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease. "
+          description: "A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease."
           url: https://eslint.org/
         - title: "JSLint"
           image_width: 180
@@ -1329,17 +1329,17 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/prettier.png"
-          description: "Opinionated Code Formatter"
+          description: "Opinionated Code Formatter."
           url: https://prettier.io/
         - title: "SpotBugs"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/spotbugs.png"
-          description: "SpotBugs"
+          description: "SpotBugs is a program which uses static analysis to look for bugs in Java code. It is free software, distributed under the terms of the GNU Lesser General Public License."
           url: https://spotbugs.github.io/
         - title: "RuboCop"
           image_width: 180
-          image_height: 93
+          image_height: 58
           image: "assets/img/tools/rubocop.png"
           description: "A Ruby static code analyzer and formatter, based on the community Ruby style guide."
           url: https://rubocop.org/
@@ -1347,21 +1347,21 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/terrascan.png"
-          description: "Terrascan detects security vulnerabilities and compliance violations across your Cloud Native Infrastructure"
+          description: "Terrascan detects security vulnerabilities and compliance violations across your Cloud Native Infrastructure."
           url: https://runterrascan.io/
         - title: "Trivy"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/trivy.png"
-          description: "Redirecting"
+          description: "Use Trivy to find vulnerabilities (CVE) & misconfigurations (IaC) across code repositories, binary artifacts, container images, Kubernetes clusters, and more. All in one tool!"
           url: https://aquasecurity.github.io/trivy/
     - type: Policy as Code
       tools:
         - title: "Open Policy Agent (OPA)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/open-policy-agent-opa.png"
-          description: "Policy-based control for cloud native environments"
+          image_height: 60
+          image: "assets/img/tools/open-policy-agent.png"
+          description: "Policy-based control for cloud native environments."
           url: https://www.openpolicyagent.org/
         - title: "Sentinel"
           image_width: 180
@@ -1373,7 +1373,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/intercept.png"
-          description: "Policy as Code Engine"
+          description: "Policy as Code Engine."
           url: https://intercept.cc/
     - type: Plan Testing
       tools:
@@ -1381,7 +1381,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/open-policy-agent.png"
-          description: "Policy-based control for cloud native environments"
+          description: "Policy-based control for cloud native environments."
           url: https://www.openpolicyagent.org/
         - title: "Terratest"
           image_width: 180
@@ -1395,24 +1395,25 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/testing-golang.png"
-          description: "testing package - testing - Go Packages"
+          description: "Package testing provides support for automated testing of Go packages."
           url: https://golang.org/pkg/testing/
         - title: "unittest (Python)"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/unittest-python.png"
           url: https://docs.python.org/3/library/unittest.html
+          description: "The unittest unit testing framework was originally inspired by JUnit and has a similar flavor as major unit testing frameworks in other languages. It supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from the reporting framework."
         - title: "JUnit (Java)"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/junit-java.png"
-          description: "✅ The 5th major version of the programmer-friendly testing framework for Java and the JVM"
+          description: "✅ The 5th major version of the programmer-friendly testing framework for Java and the JVM."
           url: https://junit.org/junit5/
         - title: "Jest (JavaScript)"
           image_width: 180
           image_height: 94
           image: "assets/img/tools/jest-javascript.png"
-          description: "Jest · 🃏 Delightful JavaScript Testing"
+          description: "Jest · 🃏 Delightful JavaScript Testing."
           url: https://jestjs.io/
 
 - title: "How to Set Up CI and CD"
@@ -1511,7 +1512,7 @@
       image_width: 180
       image_height: 101
       image: "assets/img/other-resources/facebook-uses-trunk-based-development.gif"
-      description: "To develop new product features and updates efficiently, we use a trunk-based development model for changes to our codebase. Once an engineer’s code change has been accepted into the main bra…"
+      description: "To develop new product features and updates efficiently, we use a trunk-based development model for changes to our codebase. Once an engineer’s code change has been accepted into the main bra…."
       author: "Mateusz Machalica, Alex Samylkin, Meredith Porth, Satish Chandra"
       url: https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/
       type: "Blog post"
@@ -1572,13 +1573,13 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/jenkins.png"
-          description: "Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software"
+          description: "Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software."
           url: https://www.jenkins.io/
         - title: "Jenkins X"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/jenkins-x.png"
-          description: "Documentation, guides and support for Jenkins X"
+          description: "Documentation, guides and support for Jenkins X."
           url: https://jenkins-x.io/
         - title: "TeamCity"
           image_width: 180
@@ -1590,7 +1591,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/drone.jpg"
-          description: "Drone is a self-service Continuous Delivery platform for busy development teams"
+          description: "Drone is a self-service Continuous Delivery platform for busy development teams."
           url: https://www.drone.io/
         - title: "GitHub Enterprise Server"
           image_width: 180
@@ -1608,7 +1609,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/tekton.jpeg"
-          description: "Cloud Native CI/CD"
+          description: "Cloud Native CI/CD."
           url: https://tekton.dev/
         - title: "Travis CI"
           image_width: 180
@@ -1636,7 +1637,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/growthbook.jpg"
-          description: "Open Source Feature Flagging and A/B Testing Platform - growthbook/growthbook"
+          description: "Open Source Feature Flagging and A/B Testing Platform - growthbook/growthbook."
           url: https://github.com/growthbook/growthbook/
         - title: "Flagsmith"
           image_width: 1200
@@ -1724,7 +1725,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/argo-cd.png"
-          description: "Argo CD - Declarative GitOps CD for Kubernetes"
+          description: "Argo CD - Declarative GitOps CD for Kubernetes."
           url: https://argo-cd.readthedocs.io/en/stable/
         - title: "Flux"
           image_width: 180
@@ -1738,7 +1739,7 @@
           image_width: 2048
           image_height: 857
           image: "assets/img/tools/dagger.webp"
-          description: "Powerful, programmable CI/CD engine that runs your pipelines in containers — pre-push on your local machine and/or post-push in CI"
+          description: "Powerful, programmable CI/CD engine that runs your pipelines in containers — pre-push on your local machine and/or post-push in CI."
           url: https://dagger.io/
         - title: "Common Workflow Language"
           image_width: 180
@@ -1807,7 +1808,7 @@
       image_width: 180
       image_height: 163
       image: "assets/img/other-resources/gruntwork-devops-foundations.png"
-      description: "Fast, secure, reliable AWS environments using Terraform"
+      description: "Fast, secure, reliable AWS environments using Terraform."
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/devops-foundations-6a9adf96921b"
       type: "Blog post"
@@ -1815,7 +1816,7 @@
       image_width: 180
       image_height: 96
       image: "assets/img/other-resources/microservices.png"
-      description: "Defining the microservices architectural style by describing their nine common characteristics"
+      description: "Defining the microservices architectural style by describing their nine common characteristics."
       author: "James Lewis and Martin Fowler"
       url: "https://martinfowler.com/articles/microservices.html"
       type: "Blog post"
@@ -1838,7 +1839,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/dhall.png"
-          description: "Maintainable configuration files"
+          description: "Maintainable configuration files."
           url: https://dhall-lang.org/
     - type: Configuration Data Store
       tools:
@@ -1852,13 +1853,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/etcd.png"
-          description: "A distributed, reliable key-value store for the most critical data of a distributed system Learn more Quickstart What is etcd? etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node. Learn more"
+          description: "A distributed, reliable key-value store for the most critical data of a distributed system Learn more Quickstart What is etcd? etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node. Learn more."
           url: https://etcd.io/
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zookeeper.png"
-          description: "Apache ZooKeeper"
+          description: "Apache ZooKeeper."
           url: https://zookeeper.apache.org/
     - type: AWS Account Clean Up
       tools:
@@ -1872,7 +1873,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/cloud-nuke.jpg"
-          description: "A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it - gruntwork-io/cloud-nuke"
+          description: "A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it - gruntwork-io/cloud-nuke."
           url: https://github.com/gruntwork-io/cloud-nuke
     - type: Automatic Update
       tools:
@@ -1927,7 +1928,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/cloud-native-data-center-networking.jpg"
-      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable. Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible. In the context of a cloud native data center, you’ll Clos topologyNetwork disaggregationNetwork operating system choicesRouting protocol choicesContainer networkingNetwork virtualization and EVPNNetwork automation"
+      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable. Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible. In the context of a cloud native data center, you’ll Clos topologyNetwork disaggregationNetwork operating system choicesRouting protocol choicesContainer networkingNetwork virtualization and EVPNNetwork automation."
       subtitle: "Architecture, Protocols, and Tools"
       author: "Dinesh Dutt"
       publisher: "O'Reilly"
@@ -1981,7 +1982,7 @@
       image_width: 180
       image_height: 101
       image: "assets/img/other-resources/zero-trust-architecture.png"
-      description: "Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network- based perimeters to focus on users, assets"
+      description: "Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network- based perimeters to focus on users, assets."
       author: NIST
       type: Article
       url: "https://www.nist.gov/publications/zero-trust-architecture"
@@ -1989,7 +1990,7 @@
       image_width: 180
       image_height: 95
       image: "assets/img/other-resources/beyondcorp-a-new-approach-to-enterprise-security.jpg"
-      description: "BeyondCorp: A New Approach to Enterprise Security"
+      description: "BeyondCorp: A New Approach to Enterprise Security."
       author: "Rory Ward and Betsy Beyer"
       url: "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/"
       type: Article
@@ -2016,7 +2017,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/cloudflare-dns.png"
-          description: "With Cloudflare DNS you have the fastest response time of any DNS provider. Our DNS has unparalleled redundancy and built-in security. "
+          description: "With Cloudflare DNS you have the fastest response time of any DNS provider. Our DNS has unparalleled redundancy and built-in security. ."
           url: https://www.cloudflare.com/application-services/products/dns/
     - type: Single Sign On (SSO)
       tools:
@@ -2147,7 +2148,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/barracuda.jpg"
-          description: "Remote VPN Access | Barracuda Networks"
+          description: "Remote VPN Access | Barracuda Networks."
           url: https://www.barracuda.com/products/network-protection/cloudgen-firewall/use-cases/remote-vpn-access
         - title: "SonicWall"
           image_width: 180
@@ -2170,7 +2171,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/wireguard.png"
-          description: "WireGuard: fast, modern, secure VPN tunnel"
+          description: "WireGuard: fast, modern, secure VPN tunnel."
           url: https://www.wireguard.com/
         - title: "Tailscale"
           image_width: 180
@@ -2207,19 +2208,19 @@
           image_width: 180
           image_height: 75
           image: "assets/img/tools/curator.png"
-          description: "What is Curator?"
+          description: "What is Curator?."
           url: https://curator.apache.org/docs/about/
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zookeeper.png"
-          description: "Apache ZooKeeper"
+          description: "Apache ZooKeeper."
           url: https://zookeeper.apache.org/
         - title: "Eureka"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/eureka.jpg"
-          description: "AWS Service registry for resilient mid-tier load balancing and failover. - Netflix/eureka"
+          description: "AWS Service registry for resilient mid-tier load balancing and failover. - Netflix/eureka."
           url: https://github.com/Netflix/eureka
         - title: "gRPC with etcd"
           image_width: 180
@@ -2231,13 +2232,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/synapse.png"
-          description: "Airbnb Engineering & Data Science"
+          description: "Airbnb Engineering & Data Science."
           url: https://airbnb.io/projects/synapse/
         - title: "Envoy"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/envoy.png"
-          description: "Envoy proxy - home"
+          description: "Envoy proxy - home."
           url: https://www.envoyproxy.io/
         - title: "Kubernetes Service Discovery"
           image_width: 180
@@ -2263,19 +2264,19 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/cap’n-proto.png"
-          description: "Cap'n Proto: Introduction"
+          description: "Cap'n Proto: Introduction."
           url: https://capnproto.org/
         - title: "FlatBuffers"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/flatbuffers.png"
-          description: "FlatBuffers Docs"
+          description: "FlatBuffers Docs."
           url: https://flatbuffers.dev/
         - title: "Thrift"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/thrift.png"
-          description: "Apache Thrift - Home"
+          description: "Apache Thrift - Home."
           url: https://thrift.apache.org/
         - title: "Avro"
           image_width: 180
@@ -2289,7 +2290,7 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/grpc.png"
-          description: "A high-performance, open source universal RPC framework"
+          description: "A high-performance, open source universal RPC framework."
           url: https://grpc.io/
         - title: "Connect RPC"
           image_width: 180
@@ -2332,7 +2333,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/cilium.jpg"
-          description: "Cloud Native, eBPF-based Networking, Observability, and Security"
+          description: "Cloud Native, eBPF-based Networking, Observability, and Security."
           url: https://cilium.io/
         - title: "Traefik Mesh"
           image_width: 180
@@ -2362,7 +2363,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/kuma.jpg"
-          description: "Build, Secure and Observe your modern Service Mesh"
+          description: "Build, Secure and Observe your modern Service Mesh."
           url: https://kuma.io/
         - title: "Kong Mesh"
           image_width: 180
@@ -2465,7 +2466,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/memo-to-the-amateur-cipher-designer.png"
-      description: "In this issue: Steganography: Truths and Fictions TriStrata Counterpane Systems - Featured Research News Counterpane Systems News The Doghouse: Rapid Remote Memo to the Amateur Cipher Designer About 'CRYPTO-GRAM'"
+      description: "In this issue: Steganography: Truths and Fictions TriStrata Counterpane Systems - Featured Research News Counterpane Systems News The Doghouse: Rapid Remote Memo to the Amateur Cipher Designer About 'CRYPTO-GRAM'."
       author: Bruce Schneier
       type: Blog post
       url: https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign
@@ -2473,7 +2474,7 @@
       image_width: 180
       image_height: 146
       image: "assets/img/other-resources/password-strength.png"
-      description: "xkcd: Password Strength"
+      description: "xkcd: Password Strength."
       author: Randall Munroe
       type: Comic
       url: https://xkcd.com/936/
@@ -2500,7 +2501,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/go-crypto-library.png"
-          description: "crypto package - crypto - Go Packages"
+          description: "crypto package - crypto - Go Packages."
           url: https://pkg.go.dev/crypto
         - title: "Java Cryptography Architecture"
           url: https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html
@@ -2508,13 +2509,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/gpg.png"
-          description: "The GNU Privacy Guard"
+          description: "The GNU Privacy Guard."
           url: https://gnupg.org/
         - title: "age"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/age.jpg"
-          description: "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability. - FiloSottile/age"
+          description: "A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability. - FiloSottile/age."
           url: https://github.com/FiloSottile/age
     - type: Payment Processing
       tools:
@@ -2571,7 +2572,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/google-firebase-authentication.png"
-          description: "Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and onboarding in just a few lines of code. "
+          description: "Firebase Authentication lets you add an end-to-end identity solution to your app for easy user authentication, sign-in, and onboarding in just a few lines of code. ."
           url: https://firebase.google.com/docs/auth
         - title: "Supabase Authentication"
           image_width: 180
@@ -2621,13 +2622,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/enpass.png"
-          description: "With Enpass, choose where your passwords and passkeys are secured and synced – on your personal or business clouds (or even offline). Not on our servers"
+          description: "With Enpass, choose where your passwords and passkeys are secured and synced – on your personal or business clouds (or even offline). Not on our servers."
           url: https://www.enpass.io/
         - title: "KeePassXC"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/keepassxc.png"
-          description: "KeePassXC Password Manager"
+          description: "KeePassXC Password Manager."
           url: https://keepassxc.org/
         - title: "macOS password manager"
           image_width: 180
@@ -2641,7 +2642,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/google-password-manager.png"
-          description: "Safely save and organize your passwords, anywhere you use your Google Account"
+          description: "Safely save and organize your passwords, anywhere you use your Google Account."
           url: https://passwords.google.com/
         - title: "Firefox Password Manager"
           image_width: 180
@@ -2675,7 +2676,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/utimaco.jpg"
-          description: "Hardware-based crypto security for a wide range of business applications"
+          description: "Hardware-based crypto security for a wide range of business applications."
           url: https://utimaco.com/products/categories/hsms-general-purpose-use-cases
         - title: "Entrust"
           url: https://www.entrust.com/products/hsm
@@ -2734,7 +2735,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/keywhiz.png"
-          description: "A file-based secret management and distribution system"
+          description: "A file-based secret management and distribution system."
           url: https://square.github.io/keywhiz
         - title: "AWS Secrets Manager"
           image_width: 180
@@ -2781,13 +2782,13 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/letsencrypt.png"
-          description: "Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG). Read all about our nonprofit work this year in our 2024 Annual Report. "
+          description: "Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG). Read all about our nonprofit work this year in our 2024 Annual Report. ."
           url: https://letsencrypt.org/
         - title: "Certbot"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/certbot.png"
-          description: "Tagline"
+          description: "Tagline."
           url: https://certbot.eff.org/
         - title: "ZeroSSL"
           image_width: 180
@@ -2838,7 +2839,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/step-ca.png"
-          description: "Learn about step-ca"
+          description: "Learn about step-ca."
           url: https://smallstep.com/docs/step-ca/index.html
         - title: "cfssl"
           image_width: 180
@@ -2852,13 +2853,13 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/caddy.png"
-          description: "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go"
+          description: "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go."
           url: https://caddyserver.com/
         - title: "certstrap"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/certstrap.jpg"
-          description: "Tools to bootstrap CAs, certificate requests, and signed certificates. - square/certstrap"
+          description: "Tools to bootstrap CAs, certificate requests, and signed certificates. - square/certstrap."
           url: https://github.com/square/certstrap
         - title: "EJBCA"
           image_width: 180
@@ -2895,7 +2896,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/appviewx.png"
-          description: "AppViewX certificate lifecycle management automation solution for Certificates and keys PKI-as-a-Service"
+          description: "AppViewX certificate lifecycle management automation solution for Certificates and keys PKI-as-a-Service."
           url: https://appviewx.com/
         - title: "AWS Private CA"
           image_width: 180
@@ -3022,7 +3023,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/distributed-systems-theory-for-the-distributed-systems-engineer.png"
-      description: "Writing about distributed systems, compilers, virtual machines, databases and research papers from SOSP, ATC, NSDI, OSDI, EuroSys and others"
+      description: "Writing about distributed systems, compilers, virtual machines, databases and research papers from SOSP, ATC, NSDI, OSDI, EuroSys and others."
       author: "Paper Trail"
       url: "https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/"
       type: "Blog post"
@@ -3030,7 +3031,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/choose-boring-technology.png"
-      description: "Choose Boring Technology"
+      description: "Choose Boring Technology."
       author: "Dan McKinley"
       type: Talk
       url: "https://boringtechnology.club/"
@@ -3073,7 +3074,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/sqlite.png"
-          description: "SQLite Home Page"
+          description: "SQLite Home Page."
           url: https://www.sqlite.org/
         - title: "MS SQL Server"
           url: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
@@ -3097,7 +3098,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/atlas.jpg"
-          description: "Atlas | Manage your database schema as code"
+          description: "Atlas | Manage your database schema as code."
           url: https://atlasgo.io/
         - title: "Bytebase"
           image_width: 180
@@ -3157,13 +3158,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/valkey.png"
-          description: "Valkey"
+          description: "Valkey."
           url: https://valkey.io/
         - title: "Memcached"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/memcached.png"
-          description: "memcached"
+          description: "memcached."
           url: https://memcached.org/
         - title: "Amazon DynamoDB"
           image_width: 180
@@ -3174,7 +3175,7 @@
           image_width: 480
           image_height: 153
           image: "assets/img/tools/riak-kv.png"
-          description: "Riak KV"
+          description: "Riak KV."
           url: https://riak.com/products/riak-kv/
         - title: "Redis Cloud"
           image_width: 518
@@ -3281,7 +3282,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/couchdb.png"
-          description: "Apache CouchDB"
+          description: "Apache CouchDB."
           url: https://couchdb.apache.org/
         - title: "Couchbase"
           image_width: 180
@@ -3348,13 +3349,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/hbase.png"
-          description: "Apache HBase – Apache HBase® Home"
+          description: "Apache HBase – Apache HBase® Home."
           url: https://hbase.apache.org/
         - title: "Kudu"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/kudu.png"
-          description: "A new open source Apache Hadoop ecosystem project, Apache Kudu completes Hadoop's storage layer to enable fast analytics on fast data"
+          description: "A new open source Apache Hadoop ecosystem project, Apache Kudu completes Hadoop's storage layer to enable fast analytics on fast data."
           url: https://kudu.apache.org/
         - title: "InfluxDB"
           image_width: 180
@@ -3377,7 +3378,7 @@
           image_width: 480
           image_height: 153
           image: "assets/img/tools/riak-ts.jpg"
-          description: "Riak TS"
+          description: "Riak TS."
           url: https://riak.com/products/riak-ts/
         - title: "Timescale"
           image_width: 180
@@ -3408,7 +3409,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-dataproc.png"
-          description: "Dataproc is a fast, easy-to-use, fully managed cloud service for running Apache Spark and Apache Hadoop clusters in a simpler, more cost-efficient way"
+          description: "Dataproc is a fast, easy-to-use, fully managed cloud service for running Apache Spark and Apache Hadoop clusters in a simpler, more cost-efficient way."
           url: https://cloud.google.com/dataproc
         - title: "Azure HDInsight"
           url: https://azure.microsoft.com/en-us/products/hdinsight
@@ -3430,13 +3431,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/apache-storm.png"
-          description: "Apache Storm"
+          description: "Apache Storm."
           url: https://storm.apache.org/
         - title: "Apache Samza"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/apache-samza.png"
-          description: "Samza "
+          description: "Samza ."
           url: https://samza.apache.org/
         - title: "Apache Beam"
           image_width: 180
@@ -3448,13 +3449,13 @@
           image_width: 180
           image_height: 62
           image: "assets/img/tools/apache-druid.png"
-          description: "Apache Druid | Apache® Druid"
+          description: "Apache Druid | Apache® Druid."
           url: https://druid.apache.org/
         - title: "Apache Pinot"
           image_width: 180
           image_height: 86
           image: "assets/img/tools/apache-pinot.png"
-          description: "Realtime distributed OLAP datastore"
+          description: "Realtime distributed OLAP datastore."
           url: https://pinot.apache.org/
         - title: "Amazon Data Firehose"
           image_width: 180
@@ -3500,7 +3501,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
+          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. ."
           url: https://www.informatica.com/
         - title: "Vertica"
           image_width: 180
@@ -3537,7 +3538,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/stitch.png"
-          description: "Stitch - A Qlik product"
+          description: "Stitch - A Qlik product."
           url: https://www.stitchdata.com/
         - title: "Qlik"
           image_width: 180
@@ -3549,7 +3550,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
+          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. ."
           url: https://www.informatica.com/
         - title: "Matillion"
           image_width: 180
@@ -3569,19 +3570,19 @@
           image_width: 1814
           image_height: 500
           image: "assets/img/tools/rabbitmq.svg"
-          description: "RabbitMQ: One broker to queue them all | RabbitMQ"
+          description: "RabbitMQ: One broker to queue them all | RabbitMQ."
           url: https://www.rabbitmq.com/
         - title: "ActiveMQ"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/activemq.png"
-          description: "ActiveMQ"
+          description: "ActiveMQ."
           url: https://activemq.apache.org/
         - title: "ZeroMQ"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zeromq.png"
-          description: "An open-source universal messaging library"
+          description: "An open-source universal messaging library."
           url: https://zeromq.org/
         - title: "Amazon Simple Queue Service (SQS)"
           image_width: 180
@@ -3635,7 +3636,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-pubsub.png"
-          description: "Ingest events into Pub/Sub to stream to BigQuery, data lakes and databases; messaging middleware for streaming analytics and service integrations"
+          description: "Ingest events into Pub/Sub to stream to BigQuery, data lakes and databases; messaging middleware for streaming analytics and service integrations."
           url: https://cloud.google.com/pubsub
         - title: "Azure HDInsight"
           url: https://azure.microsoft.com/en-us/products/hdinsight
@@ -3723,7 +3724,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/practical-monitoring.jpg"
-      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you. Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company. This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool. Practical Monitoring covers essential topics Monitoring antipatternsPrinciples of monitoring designHow to build an effective on-call rotationGetting metrics and logs out of your application"
+      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you. Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company. This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool. Practical Monitoring covers essential topics Monitoring antipatternsPrinciples of monitoring designHow to build an effective on-call rotationGetting metrics and logs out of your application."
       subtitle: "Effective Strategies for the Real World"
       author: "Mike Julian"
       publisher: "O'Reilly"
@@ -3769,7 +3770,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/how-long-will-your-experiment-take.png"
-      description: "How long will your experiment take?"
+      description: "How long will your experiment take?."
       author: Dan McKinley
       type: Calculator
       url: http://www.experimentcalculator.com/
@@ -3780,7 +3781,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/log4j.png"
-          description: "Apache Log4j :: Apache Log4j"
+          description: "Apache Log4j :: Apache Log4j."
           url: https://logging.apache.org/log4j
         - title: "Winston"
           image_width: 180
@@ -3804,7 +3805,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/logrotate.jpg"
-          description: "The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files. - logrotate/logrotate"
+          description: "The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files. - logrotate/logrotate."
           url: https://github.com/logrotate/logrotate
     - type: Log Aggregation
       tools:
@@ -3860,7 +3861,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/opensearch-logstash.png"
-          description: "Logstash"
+          description: "Logstash."
           url: https://opensearch.org/docs/latest/tools/logstash/index/
         - title: "Datadog"
           image_width: 180
@@ -3892,13 +3893,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/syslog.png"
-          description: "Syslog - Wikipedia"
+          description: "Syslog - Wikipedia."
           url: https://en.wikipedia.org/wiki/Syslog
         - title: "Fluentd"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/fluentd.png"
-          description: "Fluentd | Open Source Data Collector | Unified Logging Layer"
+          description: "Fluentd | Open Source Data Collector | Unified Logging Layer."
           url: https://www.fluentd.org/
         - title: "Fluent Bit"
           image_width: 180
@@ -3915,7 +3916,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/vector.png"
-          description: "A lightweight, ultra-fast tool for building observability pipelines"
+          description: "A lightweight, ultra-fast tool for building observability pipelines."
           url: https://vector.dev/
         - title: "OpenTelemetry Collector"
           image_width: 180
@@ -3929,7 +3930,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/pingdom.png"
-          description: "Website Monitoring Service - Availability and Performance | Pingdom"
+          description: "Website Monitoring Service - Availability and Performance | Pingdom."
           url: https://www.pingdom.com/
         - title: "Uptime Robot"
           image_width: 180
@@ -4119,7 +4120,7 @@
           image_width: 1024
           image_height: 595
           image: "assets/img/tools/nagios.webp"
-          description: "Don't miss your chance to attend the 2025 Nagios World Conference Sept 29th-Oct 2nd. Meet IT experts from around the world, increase your IT knowledge, up"
+          description: "Don't miss your chance to attend the 2025 Nagios World Conference Sept 29th-Oct 2nd. Meet IT experts from around the world, increase your IT knowledge, up."
           url: https://www.nagios.org/
         - title: "Icinga"
           image_width: 180
@@ -4143,7 +4144,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/sensu.png"
-          description: "The Observability Pipeline that delivers monitoring as code on any cloud"
+          description: "The Observability Pipeline that delivers monitoring as code on any cloud."
           url: https://sensu.io/
     - type: Metrics Collection
       tools:
@@ -4151,7 +4152,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/collectd.png"
-          description: "The system statistics collection daemon"
+          description: "The system statistics collection daemon."
           url: https://www.collectd.org/
         - title: "Fluent Bit"
           image_width: 180
@@ -4180,7 +4181,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/opentelemetry.png"
-          description: "High-quality, ubiquitous, and portable telemetry to enable effective observability"
+          description: "High-quality, ubiquitous, and portable telemetry to enable effective observability."
           url: https://opentelemetry.io/
     - type: Metrics Backend
       tools:
@@ -4188,7 +4189,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/open-time-series-database-opentsdb.png"
-          description: "OpenTSDB - A Distributed, Scalable Monitoring System"
+          description: "OpenTSDB - A Distributed, Scalable Monitoring System."
           url: http://opentsdb.net/
         - title: "Prometheus"
           image_width: 180
@@ -4232,7 +4233,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/perses.png"
-          description: "Perses - Perses"
+          description: "Perses - Perses."
           url: https://perses.dev/
         - title: "Kibana"
           image_width: 180
@@ -4244,7 +4245,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/opensearch-dashboards.png"
-          description: "OpenSearch Dashboards"
+          description: "OpenSearch Dashboards."
           url: https://opensearch.org/docs/latest/dashboards/
     - type: Observability
       tools:
@@ -4292,13 +4293,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zipkin.png"
-          description: "A distributed tracing system"
+          description: "A distributed tracing system."
           url: https://zipkin.io/
         - title: "Jaeger"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/jaeger.png"
-          description: "Monitor and troubleshoot workflows in complex distributed systems"
+          description: "Monitor and troubleshoot workflows in complex distributed systems."
           url: https://www.jaegertracing.io/
         - title: "AWS X-Ray"
           image_width: 180
@@ -4309,7 +4310,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/google-cloud-trace.png"
-          description: "A distributed tracing system that collects latency data from your applications and displays it in the Google Cloud console. "
+          description: "A distributed tracing system that collects latency data from your applications and displays it in the Google Cloud console. ."
           url: https://cloud.google.com/trace/docs
     - type: On-Call
       tools:
@@ -4391,7 +4392,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/code-climate.png"
-          description: "Code Climate is a Software Engineering Intelligence (SEI) solutions partner to engineering executives at enterprise organizations. We empower leaders to…"
+          description: "Code Climate is a Software Engineering Intelligence (SEI) solutions partner to engineering executives at enterprise organizations. We empower leaders to…."
           url: https://codeclimate.com/
         - title: "Coverity"
           image_width: 180
@@ -4490,7 +4491,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/claude.png"
-          description: "Talk with Claude, an AI assistant from Anthropic"
+          description: "Talk with Claude, an AI assistant from Anthropic."
           url: https://claude.ai/
         - title: "Dall-E"
           url: https://openai.com/index/dall-e/
@@ -4585,7 +4586,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/findbugs.png"
-          description: "FindBugs™ - Find Bugs in Java Programs"
+          description: "FindBugs™ - Find Bugs in Java Programs."
           url: https://findbugs.sourceforge.net/
         - title: "Bandit"
           image_width: 180
@@ -4625,7 +4626,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/open-policy-agent.png"
-          description: "Policy-based control for cloud native environments"
+          description: "Policy-based control for cloud native environments."
           url: https://www.openpolicyagent.org/
         - title: "Codacy"
           url: https://www.codacy.com/
@@ -4645,7 +4646,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/trivy.png"
-          description: "Redirecting"
+          description: "Redirecting."
           url: https://trivy.dev/
         - title: "Mend"
           image_width: 180
@@ -4665,7 +4666,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/invicti.png"
-          description: "Get accurate, automated application security testing that scales like no other solution. Secure 1000s of web assets with less manual effort. Reduce your risk with the only…"
+          description: "Get accurate, automated application security testing that scales like no other solution. Secure 1000s of web assets with less manual effort. Reduce your risk with the only…."
           url: https://www.invicti.com/
         - title: "Veracode Dynamic Analysis"
           image_width: 180
@@ -4683,7 +4684,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/nuclei.jpg"
-          description: "A fast and customisable vulnerability scanner powered by simple YAML-based templates"
+          description: "A fast and customisable vulnerability scanner powered by simple YAML-based templates."
           url: https://docs.projectdiscovery.io/tools/nuclei/overview
     - type: Supply Chain Security
       tools:
@@ -4737,7 +4738,7 @@
           image_width: 180
           image_height: 96
           image: "assets/img/tools/syft.jpg"
-          description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems - anchore/syft"
+          description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems - anchore/syft."
           url: https://github.com/anchore/syft
         - title: "Sonatype"
           image_width: 180
@@ -4757,7 +4758,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/tauri.png"
-          description: "The cross-platform app building toolkit"
+          description: "The cross-platform app building toolkit."
           url: https://v2.tauri.app/
         - title: "Deno"
           image_width: 180
@@ -4777,7 +4778,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/backstage.png"
-          description: "Backstage Software Catalog and Developer Platform"
+          description: "Backstage Software Catalog and Developer Platform."
           url: https://backstage.io/
         - title: "Humanitec"
           image_width: 180
@@ -4807,7 +4808,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/roadie.png"
-          description: "Roadie is the most customizable Internal Developer Portal with built-in best practices, automated workflows, actionable insights built on Backstage"
+          description: "Roadie is the most customizable Internal Developer Portal with built-in best practices, automated workflows, actionable insights built on Backstage."
           url: https://roadie.io/
         - title: "Port"
           image_width: 180
@@ -4851,19 +4852,19 @@
           image_width: 180
           image_height: 188
           image: "assets/img/tools/smartplaybooks.png"
-          description: "Discover the art of automation with Business Playbooks and Runbooks. Simplify complex tasks, optimize processes, and achieve business excellence. %"
+          description: "Discover the art of automation with Business Playbooks and Runbooks. Simplify complex tasks, optimize processes, and achieve business excellence. %."
           url: https://www.smartplaybooks.io/
         - title: "Doctor Droid"
           image_width: 180
           image_height: 67
           image: "assets/img/tools/doctor-droid.png"
-          description: "Automated Investigations by Doctor Droid"
+          description: "Automated Investigations by Doctor Droid."
           url: https://drdroid.io/
         - title: "Jupyter Notebooks"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/jupyter-notebooks.png"
-          description: "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media. "
+          description: "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media. ."
           url: https://jupyter.org/
     - type: Infrastructure from Code (IFC)
       tools:
@@ -4895,7 +4896,7 @@
           image_width: 1200
           image_height: 628
           image: "assets/img/tools/klotho.webp"
-          description: "Klotho is a modern developer-first infrastructure-as-code tool for public cloud"
+          description: "Klotho is a modern developer-first infrastructure-as-code tool for public cloud."
           url: https://klo.dev/index.html
         - title: "Encore"
           image_width: 180
