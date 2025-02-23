@@ -1814,7 +1814,7 @@
       image_width: 180
       image_height: 163
       image: "assets/img/other-resources/gruntwork-devops-foundations.png"
-      description: "Fast, secure, reliable AWS environments using Terraform."
+      description: "Fast, secure, reliable AWS environments using Terraform/OpenTofu."
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/devops-foundations-6a9adf96921b"
       type: "Blog post"
@@ -1859,13 +1859,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/etcd.png"
-          description: "A distributed, reliable key-value store for the most critical data of a distributed system Learn more Quickstart What is etcd? etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node. Learn more."
+          description: "etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines. It gracefully handles leader elections during network partitions and can tolerate machine failure, even in the leader node."
           url: https://etcd.io/
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zookeeper.png"
-          description: "Apache ZooKeeper."
+          description: "ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications. Each time they are implemented there is a lot of work that goes into fixing the bugs and race conditions that are inevitable. Because of the difficulty of implementing these kinds of services, applications initially usually skimp on them, which make them brittle in the presence of change and difficult to manage. Even when done correctly, different implementations of these services lead to management complexity when the applications are deployed."
           url: https://zookeeper.apache.org/
     - type: AWS Account Clean Up
       tools:
@@ -1879,7 +1879,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/cloud-nuke.jpg"
-          description: "A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it - gruntwork-io/cloud-nuke."
+          description: "A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it."
           url: https://github.com/gruntwork-io/cloud-nuke
     - type: Automatic Update
       tools:
@@ -1887,14 +1887,14 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/dependabot.png"
-          description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability. This guide will help get you started on enabling Dependabot for a repository, and exploring reported alerts."
+          description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability."
           url: https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide
         - title: "Renovate"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/renovate.png"
-          description: "Renovate documentation."
-          url: https://docs.renovatebot.com/
+          image_height: 180
+          image: "assets/img/tools/renovate.svg"
+          description: "Mend Renovate products help developers automate dependency updates by detecting newer package versions and providing updates directly to the application code."
+          url: https://www.mend.io/renovate/
         - title: "Snyk"
           image_width: 180
           image_height: 95
@@ -1905,7 +1905,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/patcher.png"
-          description: "Keep infrastructure up to date."
+          description: "Keep IaC up to date, even with breaking changes."
           url: https://www.gruntwork.io/platform/patcher
 
 - title: "How to Set Up Networking"
