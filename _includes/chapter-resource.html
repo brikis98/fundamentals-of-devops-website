@@ -17,7 +17,11 @@
       </a>
     </h3>
     {% if include.author %}
-      <p class="thin mt0 mb1 light-gray">By {{ include.author }}{% if include.publisher %} ({{ include.publisher }}){% endif %}</p>
+      <p class="thin mt0 mb1 light-gray">
+        By {{ include.author }}
+        {% if include.publisher %}({{ include.publisher }}){% endif %}
+        {% if include.type %}({{ include.type }}){% endif %}
+      </p>
     {% endif %}
     {% if include.description %}
       <p id="description-{% include dasherize.html text=include.title %}" class="mt1 mb0 thin read-more">
