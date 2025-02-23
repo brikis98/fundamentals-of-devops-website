@@ -129,7 +129,7 @@
       image_width: 180
       image_height: 90
       image: "assets/img/other-resources/how-to-authenticate-to-aws-with-iam-identity-center.png"
-      description: "For many years, the main way to authenticate to AWS was to use Identity and Access Management (IAM), but in the last few years, AWS has been pushing users towards the newer IAM Identity Center (formerly known as AWS SSO), which offers a more secureand convenient way to authenticate. This blog post is a guide to how to  set up IAM Identity Center and use it to authenticate to AWS, both on the web and the command line. Here’s an outline of what this post will cover:"
+      description: "For many years, the main way to authenticate to AWS was to use Identity and Access Management (IAM), but in the last few years, AWS has been pushing users towards the newer IAM Identity Center (formerly known as AWS SSO), which offers a more secure and convenient way to authenticate. This blog post is a guide to how to  set up IAM Identity Center and use it to authenticate to AWS, both on the web and the command line. Here’s an outline of what this post will cover:"
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/25/authenticate-to-aws-with-iam-identity-center/"
       type: "Blog post"
@@ -626,7 +626,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/kubernetes-up-and-running.jpg"
-      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency. Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizatons—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers."
+      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency. Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizations—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers."
       subtitle: "Dive into the Future of Infrastructure"
       author: "Kelsey Hightower, Brendan Burns, and Joe Beda"
       publisher: "O'Reilly"
@@ -1079,7 +1079,7 @@
       image_width: 180
       image_height: 29
       image: "assets/img/other-resources/learn-git-and-github-in-15-minutes.png"
-      description: "A version control system (VCS) is a tool that allows you to store source code, share it with your team, integrateyour work together, and track changes over time. A VCS is a central part of every modern software delivery process, and yet, I still frequently come across developers who don’t know how or why to use version control. If you’re one of these developers, it’s nothing to be ashamed of, and you’ll find that if you take a small amount of time to learn it now, it’s one of those skills that will benefit you for years to come. This tutorial will teach you the basics of how to use two of the most popular version control tools available today, Git and GitHub, through a series of hands-on exercises that take about 15 minutes."
+      description: "A version control system (VCS) is a tool that allows you to store source code, share it with your team, integrate your work together, and track changes over time. A VCS is a central part of every modern software delivery process, and yet, I still frequently come across developers who don’t know how or why to use version control. If you’re one of these developers, it’s nothing to be ashamed of, and you’ll find that if you take a small amount of time to learn it now, it’s one of those skills that will benefit you for years to come. This tutorial will teach you the basics of how to use two of the most popular version control tools available today, Git and GitHub, through a series of hands-on exercises that take about 15 minutes."
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/20/learn-git-and-github-in-15-minutes/"
       type: "Blog post"
@@ -1413,7 +1413,7 @@
       image_width: 180
       image_height: 240
       image: "assets/img/books/continuous-delivery.jpg"
-      description: "Winner of the 2011 Jolt Excellence Award! Getting software released to users is often a painful, risky, and time-consuming process. This groundbreaking new book sets out the principles and technical practices that enable rapid, incremental delivery of high quality, valuable new functionality to users. Through automation of the build, deployment, and testing process, and improved collaboration between developers, testers, and operations, delivery teams can get changes released in a matter of hours—sometimes even minutes–no matter what the size of a project or the complexity of its code base. Jez Humble and David Farley begin by presenting the foundations of a rapid, reliable, low-risk delivery process. Next, they introduce the “deployment pipeline,” an automated process for managing all changes, from check-in to release. Finally, they discuss the “ecosystem” needed tosupport continuous delivery, from infrastructure, data and configuration management to governance. The authors introduce state-of-the-art techniques, including automated infrastructure management and data migration, and the use of virtualization. For each, they review key issues, identify best practices, and demonstrate how to mitigate risks."
+      description: "Winner of the 2011 Jolt Excellence Award! Getting software released to users is often a painful, risky, and time-consuming process. This groundbreaking new book sets out the principles and technical practices that enable rapid, incremental delivery of high quality, valuable new functionality to users. Through automation of the build, deployment, and testing process, and improved collaboration between developers, testers, and operations, delivery teams can get changes released in a matter of hours—sometimes even minutes–no matter what the size of a project or the complexity of its code base. Jez Humble and David Farley begin by presenting the foundations of a rapid, reliable, low-risk delivery process. Next, they introduce the “deployment pipeline,” an automated process for managing all changes, from check-in to release. Finally, they discuss the “ecosystem” needed to support continuous delivery, from infrastructure, data and configuration management to governance. The authors introduce state-of-the-art techniques, including automated infrastructure management and data migration, and the use of virtualization. For each, they review key issues, identify best practices, and demonstrate how to mitigate risks."
       subtitle: "Reliable Software Releases through Build, Test, and Deployment Automation"
       author: "Jez Humble and David Farley"
       publisher: "Addison-Wesley Professional"
@@ -1422,7 +1422,7 @@
       image_width: 180
       image_height: 215
       image: "assets/img/books/release-it.jpg"
-      description: "Whether it's in Java, .NET, or Ruby on Rails, getting your application ready to ship is only half the battle. Did you design your system to survivef a sudden rush of visitors from Digg or Slashdot? Or an influx of real world customers from 100 different countries? Are you ready for a world filled with flakey networks, tangled databases, and impatient users? If you're a developer and don't want to be on call for 3AM for the rest of your life, this book will help. In Release It!, Michael T. Nygard shows you how to design and architect your application for the harsh realities it will face. You'll learn how to design your application for maximum uptime, performance, and return on investment. Mike explains that many problems with systems today start with the design."
+      description: "Whether it's in Java, .NET, or Ruby on Rails, getting your application ready to ship is only half the battle. Did you design your system to survive a sudden rush of visitors from Digg or Slashdot? Or an influx of real world customers from 100 different countries? Are you ready for a world filled with flakey networks, tangled databases, and impatient users? If you're a developer and don't want to be on call for 3AM for the rest of your life, this book will help. In Release It!, Michael T. Nygard shows you how to design and architect your application for the harsh realities it will face. You'll learn how to design your application for maximum uptime, performance, and return on investment. Mike explains that many problems with systems today start with the design."
       subtitle: "Design and Deploy Production-Ready Software"
       author: "Michael T. Nygard"
       publisher: "Pragmatic Bookshelf"
@@ -1432,7 +1432,7 @@
       image_width: 180
       image_height: 101
       image: "assets/img/other-resources/agility-requires-safety.png"
-      description: "To go faster in a car, you need not only a powerful engine, but also safetymechanisms like brakes, air bags, and seat belts. This is a talk I did as part ofNerdWallet’s NerdTalks Serieswhere I discuss the safety mechanisms that allow you to build software faster."
+      description: "To go faster in a car, you need not only a powerful engine, but also safety mechanisms like brakes, air bags, and seat belts. This is a talk I did as part of NerdWallet’s NerdTalks Series where I discuss the safety mechanisms that allow you to build software faster."
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/blog/2016/02/14/agility-requires-safety/"
       type: "Talk"
@@ -1631,7 +1631,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/flagr.jpg"
-          description: "Flagr is a feature flagging, A/B testing and dynamic configuration microservice - openflagr/flagr"
+          description: "Flagr is a feature flagging, A/B testing and dynamic configuration microservice."
           url: https://github.com/openflagr/flagr
         - title: "OpenFeature"
           image_width: 180
@@ -2286,19 +2286,18 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/drpc.jpg"
-          description: "drpc is a lightweight, drop-in replacement for gRPC - storj/drpc"
+          description: "drpc is a lightweight, drop-in replacement for gRPC."
           url: https://github.com/storj/drpc
         - title: "Twirp"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/twirp.png"
-          description: "Simple RPC framework powered by protobuf"
+          description: "Simple RPC framework powered by protobuf."
           url: https://twitchtv.github.io/twirp/
         - title: "OpenAPI"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/openapi.png"
-          description: "Home - OpenAPI Initiative"
           url: https://www.openapis.org/
     - type: Service Mesh
       tools:
