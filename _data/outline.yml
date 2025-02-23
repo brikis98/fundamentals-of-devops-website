@@ -13,7 +13,7 @@
       image_width: 180
       image_height: 270
       image: "assets/img/books/hello-startup.jpg"
-      description: "At this very moment, somewhere in the world, two programmers are sitting in a garage and creating our future, one line of code at a time. We are in the era of the high tech startup.This book is the 'Hello, World' tutorial for building products, technologies, and teams in a startup environment. It's based on the experiences of the author, Yevgeniy Brikman, as well as interviews with programmers from some of the most successful startups of the last decade, including Google, Facebook, LinkedIn, Twitter, GitHub, Stripe, Instagram, AdMob, Pinterest, and many others.If you're at all interested in startups—whether you're a programmer at the beginning of your career, a seasoned developer bored with the politics of large companies, a manager trying to figure out how to motivate your engineers, or just someone trying to figure out what this startup thing is all about—this book is for you. For more info, see http: //www.hello-startup.net'"
+      description: "At this very moment, somewhere in the world, two programmers are sitting in a garage and creating our future, one line of code at a time. We are in the era of the high tech startup.This book is the 'Hello, World' tutorial for building products, technologies, and teams in a startup environment. It's based on the experiences of the author, Yevgeniy Brikman, as well as interviews with programmers from some of the most successful startups of the last decade, including Google, Facebook, LinkedIn, Twitter, GitHub, Stripe, Instagram, AdMob, Pinterest, and many others.If you're at all interested in startups—whether you're a programmer at the beginning of your career, a seasoned developer bored with the politics of large companies, a manager trying to figure out how to motivate your engineers, or just someone trying to figure out what this startup thing is all about—this book is for you."
       subtitle: "A Programmer's Guide to Building Products, Technologies, and Teams"
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
@@ -31,7 +31,7 @@
       image_width: 180
       image_height: 235
       image: "assets/img/books/the-practice-of-cloud-system-administration.jpg"
-      description: "'There's an incredible amount of depth and thinking in the practicesdescribed here, and it's impressive to see it all in one place.' ' -Win Treese, coauthor of Designing Systems for Internet Commerce ' ' The Practice of Cloud System Administration, Volume 2, ' focuses on 'distributed' or 'cloud' computing and brings a DevOps/SRE sensibility to the practice of system administration. Unsatisfied with books that cover either design or operations in isolation, the authors created this authoritative reference centered on a comprehensive approach. Case studies and examples from Google, Etsy, Twitter, Facebook, Netflix, Amazon, and other industry giants are explained in practical ways that are useful to all enterprises. The new companion to the best-selling first volume, 'The Practice of System and Network Administration, Second Edition, ' this guide offers expert coverage of the following and many other crucial Designing and building modern web and distributed systemsFundamentals of large system designUnderstand the new software engineering implications of cloud administrationMake systems that are resilient to failure and grow and scale dynamicallyImplement DevOps principles and cultural changesIaaS/PaaS/SaaS and virtual platform selection Operating and running systems using the latest DevOps/SRE strategiesUpgrade production systems with zero down-timeWhat and how to automate; how to decide what not to automateOn-call best practices that improve uptimeWhy distributed systems require fundamentally different system administration techniquesIdentify and resolve resiliency problems before they surprise you Assessing and evaluating your team's operational effectivenessManage the scientific process of continuous improvementA forty-page, pain-free assessment system you can start using today"
+      description: "The Practice of Cloud System Administration, Volume 2, focuses on 'distributed' or 'cloud' computing and brings a DevOps/SRE sensibility to the practice of system administration. Unsatisfied with books that cover either design or operations in isolation, the authors created this authoritative reference centered on a comprehensive approach. Case studies and examples from Google, Etsy, Twitter, Facebook, Netflix, Amazon, and other industry giants are explained in practical ways that are useful to all enterprises."
       subtitle: "Designing and Operating Large Distributed Systems"
       author: "Thomas Limoncelli, Strata Chalup, and Christina Hogan"
       publisher: "Addison-Wesley Professional"
@@ -49,7 +49,7 @@
       image_width: 180
       image_height: 238
       image: "assets/img/books/implementing-lean-software-development.jpg"
-      description: "'This remarkable book combines practical advice, ready-to-use techniques, and a deep understanding of why this is the right way to develop software. I have seen software teams transformed by the ideas in this book.' --Mike Cohn, author of Agile Estimating and Planning 'As a lean practitioner myself, I have loved and used their first book for years. When this second book came out, I was delighted that it was even better. If you are interested in how lean principles can be useful for software development organizations, this is the book you are looking for. The Poppendiecks offer a beautiful blend of history, theory, and practice.' --Alan Shalloway, coauthor of Design Patterns Explained 'I've enjoyed reading the book very much. I feel it might even be better than the first lean book by Tom and Mary, while that one was already exceptionally good! Mary especially has a lot of knowledge related to lean techniques in product development and manufacturing. It's rare that these techniques are actually translated into software. This is something no other book does well(except their first book).' --Bas Vodde 'The new book by Mary and Tom Poppendieck provides a well-written and comprehensive introduction to lean principles and selected practices for software managers and engineers. It illustrates the application of the values and practices with well-suited success stories. I enjoyed reading it.' --Roman Pichler ' In Implementing Lean Software Development, the Poppendiecks explore more deeply the themes they introduced in Lean Software Development. They begin with a compelling history of lean thinking, then move to key areas such as value, waste, and people. Each chapter includes exercises to help you apply key points. If you want a better understanding of how lean ideas can work with software, this book is for you.' --Bill Wake, independent consultant In 2003, Mary and Tom Poppendieck's Lean Software Development introduced breakthrough development techniques that leverage Lean principles to deliver unprecedented agility and value. Now their widely anticipated sequel and companion guide shows exactly how to implement Lean software development, hands-on. This new book draws on the Poppendiecks' unparalleled experience helping development organizations optimize the entire software value stream. You'll discover the right questions to ask, the key issues to focus on, and techniques proven to work. The authors present case studies from leading-edge software organizations and offer practical exercises for jumpstarting your own Lean initiatives. Implementing Lean Software Development is indispensable to anyone who wants more effective development processes--managers, project leaders, senior developers, and architects in enterprise IT and software companies alike."
+      description: "In 2003, Mary and Tom Poppendieck's Lean Software Development introduced breakthrough development techniques that leverage Lean principles to deliver unprecedented agility and value. Now their widely anticipated sequel and companion guide shows exactly how to implement Lean software development, hands-on. This new book draws on the Poppendiecks' unparalleled experience helping development organizations optimize the entire software value stream. You'll discover the right questions to ask, the key issues to focus on, and techniques proven to work. The authors present case studies from leading-edge software organizations and offer practical exercises for jumpstarting your own Lean initiatives. Implementing Lean Software Development is indispensable to anyone who wants more effective development processes--managers, project leaders, senior developers, and architects in enterprise IT and software companies alike."
       subtitle: "From Concept to Cash"
       author: "Mary Poppendieck and Tom Poppendieck"
       publisher: "Addison-Wesley Professional"
@@ -58,7 +58,7 @@
       image_width: 180
       image_height: 275
       image: "assets/img/books/the-devops-handbook.jpg"
-      description: "'Increase profitability, elevate work culture, and exceed productivity goals through DevOps practices. More than ever, the effective management of technology is critical for business competitiveness. For decades, technology leaders have struggled to balance agility, reliability, and security. The consequences of failure have never been greater--whether it's the healthcare.gov debacle, cardholder data breaches, or missing the boat with Big Data in the cloud. And yet, high performers using DevOps principles, such as Google, Amazon, Facebook, Etsy, and Netflix, are routinely and reliably deploying code into production hundreds, or even thousands, of times per day. Following in the footsteps of The Phoenix Project, The DevOps Handbook shows leaders how to replicate these incredible outcomes, by showing how to integrate Product Management, Development, QA, IT Operations, and Information Security to elevate your company and win in the marketplace'--"
+      description: "Increase profitability, elevate work culture, and exceed productivity goals through DevOps practices. More than ever, the effective management of technology is critical for business competitiveness. For decades, technology leaders have struggled to balance agility, reliability, and security. The consequences of failure have never been greater--whether it's the healthcare.gov debacle, cardholder data breaches, or missing the boat with Big Data in the cloud. And yet, high performers using DevOps principles, such as Google, Amazon, Facebook, Etsy, and Netflix, are routinely and reliably deploying code into production hundreds, or even thousands, of times per day. Following in the footsteps of The Phoenix Project, The DevOps Handbook shows leaders how to replicate these incredible outcomes, by showing how to integrate Product Management, Development, QA, IT Operations, and Information Security to elevate your company and win in the marketplace."
       subtitle: "How to Create World-Class Agility, Reliability, & Security in Technology Organizations"
       author: "Gene Kim, Jez Humble, Patrick Debois, and John Willis"
       publisher: "IT Revolution Press"
@@ -67,7 +67,7 @@
       image_width: 180
       image_height: 254
       image: "assets/img/books/visible-ops-handbook.jpg"
-      description: "The Core of Visible Ops Visible Ops is a methodology designed to jumpstart implementation of controls and process improvement in IT organizations needing to increase service levels, security, and auditability while managing costs. Visible Ops is comprised of four prescriptive and self-fueling steps that take an organization from any starting point to a continually improving process. Making ITIL Actionable Although the Information Technology Infrastructure Library (ITIL) provides a wealth of best practices, it lacks prescriptive guidance: What do you implement first, and how do you do it? Moreover, the ITIL books remain relatively expensive to distribute. Other information, publicly available from a variety of sources, is too general and vague to effectively aid organizations that need to start or enhance process improvement efforts. The Visible Ops booklet provides a prescriptive roadmap for organizations beginning or continuing their IT process improvement journey. Why Do You Need Visible Ops? The Visible Ops methodology was developed because there was not a satisfactory answer to the question: “I believe in the need for IT process improvement, but where do I start?” Since 2000, Gene Kim and Kevin Behr have met with hundreds of IT organizations and identified eight high-performing IT organizations with the highest service levels, best security, and best efficiencies. For years, they studied these high-performing organizations to figure out the secrets to their success. Visible Ops codifies how these organizations achieved their transformation from good to great, showing how interested organizations can replicate the key processes of these high-performing organizations in just four steps: 1. Stabilize Patient, Modify First Response – Almost 80% of outages are self-inflicted. The first step is to control risky changes and reduce MTTR by addressing how changes are managed and how problems are resolved. 2. Catch and Release, Find Fragile Artifacts – Often, infrastructure exists that cannot be repeatedly replicated. In this step, we inventory assets, configurations and services, to identify those with the lowest change success rates, highest MTTR and highest business downtime costs. 3. Establish Repeatable Build Library – The highest return on investment is implementing effective release management processes. This step creates repeatable builds for the most critical assets and services, to make it “cheaper to rebuild than to repair.” 4. Enable Continuous Improvement – The previous steps have progressively built a closed-loop between the Release, Control and Resolution processes. This step implements metrics to allow continuous improvement of all of these process areas, to best ensure that business objectives are met."
+      description: "Visible Ops is a methodology designed to jumpstart implementation of controls and process improvement in IT organizations needing to increase service levels, security, and auditability while managing costs. Visible Ops is comprised of four prescriptive and self-fueling steps that take an organization from any starting point to a continually improving process."
       subtitle: "Implementing ITIL in 4 Practical and Auditable Steps"
       author: "Kevin Behr, Gene Kim, and George Spafford"
       publisher: "Information Technology Process Institute"
@@ -85,7 +85,7 @@
       image_width: 180
       image_height: 280
       image: "assets/img/books/leading-the-transformation.jpg"
-      description: "'Software is becoming more and more important across a broad range of industries, yet most technology executives struggle to deliver software improvements their businesses require. Leading-edge companies like Amazon and Google are applying DevOps and Agile principles to deliver large software projects faster than anyone thought possible. But most executives don't understand how to transform their current legacy systems and processes to scale these principles across their organizations. Leading the Transformation is an executive guide, providing a clear framework for improving development and delivery. Instead of the traditional Agile and DevOps approaches that focus on improving the effectiveness of teams, this book targets the coordination of work across teams in large organizations -- an improvement that executives are uniquely positioned to lead.'--"
+      description: "Software is becoming more and more important across a broad range of industries, yet most technology executives struggle to deliver software improvements their businesses require. Leading-edge companies like Amazon and Google are applying DevOps and Agile principles to deliver large software projects faster than anyone thought possible. But most executives don't understand how to transform their current legacy systems and processes to scale these principles across their organizations. Leading the Transformation is an executive guide, providing a clear framework for improving development and delivery. Instead of the traditional Agile and DevOps approaches that focus on improving the effectiveness of teams, this book targets the coordination of work across teams in large organizations -- an improvement that executives are uniquely positioned to lead."
       subtitle: "Applying Agile and DevOps Principles at Scale"
       author: "Gary Gruver and Tommy Mouser"
       publisher: "IT Revolution Press"
@@ -94,7 +94,7 @@
       image_width: 180
       image_height: 275
       image: "assets/img/books/lean-enterprise.jpg"
-      description: "How well does your organization respond to changing market conditions, customer needs, and emerging technologies when building software-based products? This practical guide presents Lean and Agile principles and patterns to help you move fast at scale—and demonstrates why and how to apply these methodologies throughout your organization, rather than with just one department or team.Through case studies, you’ll learn how successful enterprises have rethought everything from governance and financial management to systems architecture and organizational culture in the pursuit of radically improved performance. Adopting Lean will take time and commitment, but it’s vital for harnessing the cultural and technical forces that are accelerating the rate of innovation.* Discover how Lean focuses on people and teamwork at every level, in contrast to traditional management practices* Approach problem-solving experimentally, by exploring solutions, testing assumptions, and getting feedback from real users* Lead and manage large-scale programs in a way that empowers employees, increases the speed and quality of delivery, and lowers costs* Learn how to implement ideas from the DevOps and Lean Startup movements even in complex, regulated environments"
+      description: "How well does your organization respond to changing market conditions, customer needs, and emerging technologies when building software-based products? This practical guide presents Lean and Agile principles and patterns to help you move fast at scale—and demonstrates why and how to apply these methodologies throughout your organization, rather than with just one department or team.Through case studies, you’ll learn how successful enterprises have rethought everything from governance and financial management to systems architecture and organizational culture in the pursuit of radically improved performance. Adopting Lean will take time and commitment, but it’s vital for harnessing the cultural and technical forces that are accelerating the rate of innovation."
       subtitle: "How High Performance Organizations Innovate at Scale"
       author: "Jez Humble, Joanne Molesky, Barry O'Reilly"
       publisher: "O'Reilly"
@@ -152,7 +152,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/fly.io.png"
-          description: " Deploy app servers close to your users      · Fly"
+          description: "Deploy app servers close to your users."
           url: https://fly.io/
         - title: "Vercel"
           image_width: 180
@@ -194,7 +194,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/dokku.png"
-          description: ""
+          description: "Dokku helps you build and manage the lifecycle of applications from building to scaling."
           url: https://dokku.com/
         - title: "Porter"
           image_width: 180
@@ -232,7 +232,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/hetzner.png"
-          description: "Dein Partner für systemübergreifendes Hosting von Cloud bis Dedicated Server. Wir bieten aktuellste Technik zum besten Preis innerhalb von Minuten."
+          description: "Hetzner Online, with hundreds of thousands of servers in operation, is one of the largest data center operators in Europe. Since its founding in 1997, Hetzner has provided private and business customers with powerful hosting products and reliable IT infrastructure."
           url: https://www.hetzner.com/
         - title: "DigitalOcean"
           image_width: 180
@@ -244,21 +244,25 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/vultr.png"
-          description: "Vultr Global Cloud Hosting - Brilliantly Fast SSD VPS Cloud Servers. 100% KVM Virtualization"
+          description: "Global, automated cloud infrastructure from the broadest array of AMD and NVIDIA GPUs to virtual CPUs, bare metal, Kubernetes, storage, and networking solutions."
           url: https://www.vultr.com/
         - title: "Akamai Connected Cloud"
+          description: "Akamai Connected Cloud brings core cloud computing and edge computing together, along with industry-leading security — all on the most distributed network on the planet. You get the global scale, speed, performance, and flexibility you need to build more engaging and resilient applications, reach more users in more places, and optimize your cloud spend."
           url: https://www.akamai.com/cloud-computing
+          image: "assets/img/tools/akamai-connected-cloud.svg"
+          image_width: 180
+          image_height: 186
         - title: "BuyVM"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/buyvm.png"
-          description: ""
+          description: "Fast, secure, and reliable virtual servers."
           url: https://buyvm.net/
         - title: "First Root"
           image_width: 180
           image_height: 60
           image: "assets/img/tools/first-root.png"
-          description: "Our virtual servers based on KVM and OpenVZ are available in five editions and each with four plans to meet the wide variety of requirements. If you are still unsure we advise you in the live chat. By the way: we also offer domains with more than 400 types."
+          description: "Virtual servers, domains, and other services."
           url: https://www.first-root.com/
         - title: "OneProvider"
           image_width: 180
@@ -275,7 +279,11 @@
           description: "Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use."
           url: https://aws.amazon.com/
         - title: "Microsoft Azure"
+          description: "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure’s open and flexible cloud computing platform."
           url: https://azure.microsoft.com/
+          image: "assets/img/tools/microsoft-azure.png"
+          width: 180
+          height: 52
         - title: "Google Cloud Platform (GCP)"
           image_width: 180
           image_height: 95
@@ -296,6 +304,10 @@
           url: https://www.ibm.com/cloud
         - title: "Oracle Cloud Infrastructure (OCI)"
           url: https://www.oracle.com/cloud/
+          description: "Maximize efficiency and save with a cloud solution that’s designed specifically for your industry and available anywhere you need it."
+          image: "assets/img/tools/oracle-cloud-infrastructure.jpg"
+          image_width: 180
+          image_height: 94
 
 - title: "How to Manage Your Infrastructure as Code"
   icon: code
@@ -411,7 +423,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/virtualbox.png"
-          description: "       Oracle VirtualBox     "
+          description: "Oracle VirtualBox"
           url: https://www.virtualbox.org/
         - title: "Parallels"
           image_width: 180
@@ -776,7 +788,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/microsoft-iis.png"
-          description: " Home : The Official Microsoft IIS Site "
           url: https://www.iis.net/
         - title: "AWS Elastic Load Balancer"
           image_width: 180
@@ -1070,7 +1081,7 @@
       image_width: 128
       image_height: 161
       image: "assets/img/books/extreme-programming-explained.jpg"
-      description: "'Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned.' 'You may love XP or you may hate it, but Extreme Programming Explained will force you to take a fresh look at how you develop software.'--BOOK JACKET."
+      description: "Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned.' 'You may love XP or you may hate it, but Extreme Programming Explained will force you to take a fresh look at how you develop software."
       subtitle: "Embrace Change"
       author: "Kent Beck and Cynthia Andres"
       publisher: "Addison-Wesley"
@@ -1456,7 +1467,7 @@
       image_width: 180
       image_height: 135
       image: "assets/img/other-resources/cloud-adoption-fails.jpg"
-      description: "'All happy cloud deployments are alike; each unhappy cloud deployment is unhappy in its own way.' — Leo Tolstoy, Site Reliability EngineerAt Gruntwork, I've ..."
+      description: "At Gruntwork, I've had the chance to see the cloud adoption journeys of hundreds of companies, from tiny startups to Fortune 50 giants. I've seen those journeys go well. I've seen those journeys go poorly. In this talk, I discuss a few of the ways cloud adoption can go horribly wrong (massive cost overruns, endless death marches, security disasters), and more importantly, how you can get it right. To help you get it right, we looked at the cloud journeys that were successful and extracted from them the patterns they had in common. We distilled all this experience down into something called the Gruntwork Production Framework, which defines five concrete steps you can follow to adopt the cloud at your own company—and hopefully, to end up with your very own happy cloud deployment."
       author: "Yevgeniy Brikman"
       url: "https://www.youtube.com/watch?v=sYzhlBayRpU"
       type: "Talk"
@@ -1464,7 +1475,7 @@
       image_width: 180
       image_height: 111
       image: "assets/img/other-resources/how-to-manage-state-and-environments-with-opentofu.png"
-      description: "By default, OpenTofu and Terraform  record information about what infrastructure they created in a state file on your local file system called terraform.tfstate. For personal projects, this works just fine, but for professional projects with a team, you need a way to manage state that supports collaboration, locking, encryption, and multiple environments. A few years ago, I wrote a guide to managing state with Terraform and managing multiple environments with Terraform. Since then,OpenTofu has added several important features that provide new ways to solve these problems. This blog post is a tutorial on how to manage state and environments with OpenTofu in a way that is more secure and more convenient than what you can do with Terraform. Here’s an outline of what I’ll cover:"
+      description: "By default, OpenTofu and Terraform  record information about what infrastructure they created in a state file on your local file system called terraform.tfstate. For personal projects, this works just fine, but for professional projects with a team, you need a way to manage state that supports collaboration, locking, encryption, and multiple environments. A few years ago, I wrote a guide to managing state with Terraform and managing multiple environments with Terraform. Since then,OpenTofu has added several important features that provide new ways to solve these problems. This blog post is a tutorial on how to manage state and environments with OpenTofu in a way that is more secure and more convenient than what you can do with Terraform."
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/28/how-to-manage-state-and-environments-with-opentofu/"
       type: "Blog post"
@@ -1776,7 +1787,7 @@
       image_width: 180
       image_height: 269
       image: "assets/img/books/team-topologies.jpg"
-      description: "Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs? *Team Topologies* is a practical, step-by-step, adaptive model for organizational design and team interaction based on four fundamental team types and three team interaction patterns. It is a model that treats teams as the fundamental means of delivery, where team structures and communication pathways are able to evolve with technological and organizational maturity. In *Team Topologies*, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help readers choose and evolve the right team patterns for their organization, making sure to keep the software healthy and optimize value streams. *Team Topologies* is a major step forward in organizational design for software, presenting a well-defined way for teams to interact and interrelate that helps make the resulting software architecture clearer and more sustainable, turning inter-team problems into valuable signals for the self-steering organization."
+      description: "Effective software teams are essential for any organization to deliver value continuously and sustainably. But how do you build the best team organization for your specific goals, culture, and needs? Team Topologies is a practical, step-by-step, adaptive model for organizational design and team interaction based on four fundamental team types and three team interaction patterns. It is a model that treats teams as the fundamental means of delivery, where team structures and communication pathways are able to evolve with technological and organizational maturity. In Team Topologies, IT consultants Matthew Skelton and Manuel Pais share secrets of successful team patterns and interactions to help readers choose and evolve the right team patterns for their organization, making sure to keep the software healthy and optimize value streams. Team Topologies is a major step forward in organizational design for software, presenting a well-defined way for teams to interact and interrelate that helps make the resulting software architecture clearer and more sustainable, turning inter-team problems into valuable signals for the self-steering organization."
       subtitle: "Organizing Business and Technology Teams for Fast Flow"
       author: "Matthew Skelton and Manuel Pais"
       publisher: "IT Revolution Press"
@@ -2412,7 +2423,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/kong-mesh.png"
-          description: " Kong Mesh is an enterprise-ready service mesh that provides security, reliability and observability for Kubernetes environments. Accelerate deployments today!"
+          description: "Kong Mesh is an enterprise-ready service mesh that provides security, reliability and observability for Kubernetes environments. Accelerate deployments today!"
           url: https://konghq.com/products/kong-mesh
 
 - title: "How to Secure Communication and Storage"
@@ -4424,7 +4435,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zipkin.png"
-          description: "            OpenZipkin · A distributed tracing system        "
+          description: "A distributed tracing system"
           url: https://zipkin.io/
         - title: "Jaeger"
           image_width: 180
