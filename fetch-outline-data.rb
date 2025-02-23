@@ -332,7 +332,7 @@ end
 def should_skip(title, url)
   # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
   # them. You'll have to put these entries into the outline manually.
-  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com entrust.com mysql.com]
+  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com entrust.com mysql.com servicenow.com rootly.com codacy.com chatgpt.com openai.com llama.com midjourney.com reversinglabs.com ox.security]
   domains_to_skip.each do |domain_to_skip|
     if url.include?(domain_to_skip)
       return true
