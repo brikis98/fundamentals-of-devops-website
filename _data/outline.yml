@@ -13,7 +13,7 @@
       image_width: 180
       image_height: 270
       image: "assets/img/books/hello-startup.jpg"
-      description: "At this very moment, somewhere in the world, two programmers are sitting in a garage and creating our future, one line of code at a time. We are in the era of the high tech startup.This book is the 'Hello, World' tutorial for building products, technologies, and teams in a startup environment. It's based on the experiences of the author, Yevgeniy Brikman, as well as interviews with programmers from some of the most successful startups of the last decade, including Google, Facebook, LinkedIn, Twitter, GitHub, Stripe, Instagram, AdMob, Pinterest, and many others.If you're at all interested in startups—whether you're a programmer at the beginning of your career, a seasoned developer bored with the politics of large companies, a manager trying to figure out how to motivate your engineers, or just someone trying to figure out what this startup thing is all about—this book is for you."
+      description: "At this very moment, somewhere in the world, two programmers are sitting in a garage and creating our future, one line of code at a time. We are in the era of the high tech startup. This book is the 'Hello, World' tutorial for building products, technologies, and teams in a startup environment. It's based on the experiences of the author, Yevgeniy Brikman, as well as interviews with programmers from some of the most successful startups of the last decade, including Google, Facebook, LinkedIn, Twitter, GitHub, Stripe, Instagram, AdMob, Pinterest, and many others. If you're at all interested in startups—whether you're a programmer at the beginning of your career, a seasoned developer bored with the politics of large companies, a manager trying to figure out how to motivate your engineers, or just someone trying to figure out what this startup thing is all about—this book is for you."
       subtitle: "A Programmer's Guide to Building Products, Technologies, and Teams"
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
@@ -94,7 +94,7 @@
       image_width: 180
       image_height: 275
       image: "assets/img/books/lean-enterprise.jpg"
-      description: "How well does your organization respond to changing market conditions, customer needs, and emerging technologies when building software-based products? This practical guide presents Lean and Agile principles and patterns to help you move fast at scale—and demonstrates why and how to apply these methodologies throughout your organization, rather than with just one department or team.Through case studies, you’ll learn how successful enterprises have rethought everything from governance and financial management to systems architecture and organizational culture in the pursuit of radically improved performance. Adopting Lean will take time and commitment, but it’s vital for harnessing the cultural and technical forces that are accelerating the rate of innovation."
+      description: "How well does your organization respond to changing market conditions, customer needs, and emerging technologies when building software-based products? This practical guide presents Lean and Agile principles and patterns to help you move fast at scale—and demonstrates why and how to apply these methodologies throughout your organization, rather than with just one department or team. Through case studies, you’ll learn how successful enterprises have rethought everything from governance and financial management to systems architecture and organizational culture in the pursuit of radically improved performance. Adopting Lean will take time and commitment, but it’s vital for harnessing the cultural and technical forces that are accelerating the rate of innovation."
       subtitle: "How High Performance Organizations Innovate at Scale"
       author: "Jez Humble, Joanne Molesky, Barry O'Reilly"
       publisher: "O'Reilly"
@@ -335,7 +335,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/infrastructure-as-code.jpg"
-      description: "Just five years ago, infrastructure as code was a new concept for many companies. Today, even banks, governments, and other highly regulated organizations are moving to the cloud, leading teams everywhere to build up large, complex infrastructure codebases. With this practical book, Kief Morris of ThoughtWorks shows you how to effectively use principles, practices, and patterns pioneered by infrastructure and development teams to manage cloud age infrastructure.Ideal for system administrators, infrastructure engineers, software developers, team leads, and architects, this insightful second edition demonstrates the tools you need for implementing infrastructure as code. You'll learn about the platforms and tooling involved in creating and configuring infrastructure elements, patterns for using these tools, and practices for making infrastructure as code work in your environment."
+      description: "Just five years ago, infrastructure as code was a new concept for many companies. Today, even banks, governments, and other highly regulated organizations are moving to the cloud, leading teams everywhere to build up large, complex infrastructure codebases. With this practical book, Kief Morris of ThoughtWorks shows you how to effectively use principles, practices, and patterns pioneered by infrastructure and development teams to manage cloud age infrastructure. Ideal for system administrators, infrastructure engineers, software developers, team leads, and architects, this insightful second edition demonstrates the tools you need for implementing infrastructure as code. You'll learn about the platforms and tooling involved in creating and configuring infrastructure elements, patterns for using these tools, and practices for making infrastructure as code work in your environment."
       subtitle: "Dynamic Systems for the Cloud Age"
       author: "Kief Morris"
       publisher: "O'Reilly"
@@ -378,7 +378,7 @@
       image_width: 180
       image_height: 101
       image: "assets/img/other-resources/what-is-infrastructure-as-code.png"
-      description: "What is Infrastructure as Code? In this article you will learn all about Infrastructure as Code. I will start with an overview of the general concepts, and then I will show you how to implement Infrastructure as Code with three different labs. The la..."
+      description: "What is Infrastructure as Code? In this article you will learn all about Infrastructure as Code. I will start with an overview of the general concepts, and then I will show you how to implement Infrastructure as Code with three different labs."
       author: "Beau Carnes"
       url: "https://www.freecodecamp.org/news/what-is-infrastructure-as-code/"
       type: "Online course"
@@ -514,9 +514,6 @@
         - title: "OpenTofu"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/opentofu.png"
           image: "assets/img/tools/opentofu.png"
           description: "The open source infrastructure as code tool."
           url: https://opentofu.org/
@@ -541,9 +538,6 @@
         - title: "Pulumi"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/pulumi.png"
           image: "assets/img/tools/pulumi.png"
           description: "Pulumi is an infrastructure management platform to automate through infrastructure as code, secure with secrets management, and manage infrastructure with AI."
           url: https://www.pulumi.com/
@@ -558,9 +552,6 @@
         - title: "Docker Hub"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/docker-hub.png"
           image: "assets/img/tools/docker-hub.png"
           description: "Welcome to the world's largest container registry built for developers and open source contributors to find, use, and share their container images. Build, push and pull."
           url: https://hub.docker.com/
@@ -609,7 +600,7 @@
       image_width: 180
       image_height: 225
       image: "assets/img/books/kubernetes-in-action.jpg"
-      description: "With Kubernetes, users don't have to worry about which specific machine in their data center their application is running on. Each layer in their application is decoupled from other layers so they can scale, update, and maintain them independently.Kubernetes in Action teaches developers how to use Kubernetes to deploy self-healing scalable distributed applications. By the end, readers will be able to build and deploy applications in a proper way to take full advantage of the Kubernetes platform.Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications."
+      description: "With Kubernetes, users don't have to worry about which specific machine in their data center their application is running on. Each layer in their application is decoupled from other layers so they can scale, update, and maintain them independently. Kubernetes in Action teaches developers how to use Kubernetes to deploy self-healing scalable distributed applications. By the end, readers will be able to build and deploy applications in a proper way to take full advantage of the Kubernetes platform."
       author: "Marko Luksa"
       publisher: "Manning"
       url: "https://amzn.to/402dml9"
@@ -635,7 +626,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/kubernetes-up-and-running.jpg"
-      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency.Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizatons—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers."
+      description: "Legend has it that Google deploys over two billion application containers a week. How’s that possible? Google revealed the secret through a project called Kubernetes, an open source cluster orchestrator (based on its internal Borg system) that radically simplifies the task of building, deploying, and maintaining scalable distributed systems in the cloud. This practical guide shows you how Kubernetes and container technology can help you achieve new levels of velocity, agility, reliability, and efficiency. Authors Kelsey Hightower, Brendan Burns, and Joe Beda—who’ve worked on Kubernetes at Google and other organizatons—explain how this system fits into the lifecycle of a distributed application. You will learn how to use tools and APIs to automate scalable distributed systems, whether it is for online services, machine-learning applications, or a cluster of Raspberry Pi computers."
       subtitle: "Dive into the Future of Infrastructure"
       author: "Kelsey Hightower, Brendan Burns, and Joe Beda"
       publisher: "O'Reilly"
@@ -644,7 +635,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/docker-up-and-running.jpg"
-      description: "Docker is quickly changing the way that organizations are deploying software at scale. But understanding how Linux containers fit into your workflow--and getting the integration details right--are not trivial tasks. With this practical guide, you'll learn how to use Docker to package your applications with all of their dependencies, and then test, ship, scale, and support your containers in production.Two Lead Site Reliability Engineers at New Relic share much of what they have learned from using Docker in production since shortly after its initial release. Their goal is to help you reap the benefits of this technology while avoiding the many setbacks they experienced.Learn how Docker simplifies dependency management and deployment workflow for your applicationsStart working with Docker images, containers, and command line toolsUse practical techniques to deploy and test Docker-based Linux containers in productionDebug containers by understanding their composition and internal processesDeploy production containers at scale inside your data center or cloud environmentExplore advanced Docker topics, including deployment tools, networking, orchestration, security, and configuration"
+      description: "Docker is quickly changing the way that organizations are deploying software at scale. But understanding how Linux containers fit into your workflow--and getting the integration details right--are not trivial tasks. With this practical guide, you'll learn how to use Docker to package your applications with all of their dependencies, and then test, ship, scale, and support your containers in production. Two Lead Site Reliability Engineers at New Relic share much of what they have learned from using Docker in production since shortly after its initial release. Their goal is to help you reap the benefits of this technology while avoiding the many setbacks they experienced."
       subtitle: "Shipping Reliable Containers in Production"
       author: "Karl Matthias and Sean P. Kane"
       publisher: "O'Reilly"
@@ -653,7 +644,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/kubernetes-patterns.jpg"
-      description: "The way developers design, build, and run software has changed significantly with the evolution of microservices and containers. These modern architectures use new primitives that require a different set of practices than most developers, tech leads, and architects are accustomed to. With this focused guide, Bilgin Ibryam and Roland Huß from Red Hat provide common reusable elements, patterns, principles, and practices for designing and implementing cloud-native applications on Kubernetes.Each pattern includes a description of the problem and a proposed solution with Kubernetes specifics. Many patterns are also backed by concrete code examples. This book is ideal for developers already familiar with basic Kubernetes concepts who want to learn common cloud-native patterns.You'll learn about the following pattern categories:Foundational patterns cover the core principles and practices for building container-based cloud-native applications.Behavioral patterns explore finer-grained concepts for managing various types of container and platform interactions.Structural patterns help you organize containers within a pod, the atom of the Kubernetes platform.Configuration patterns provide insight into how application configurations can be handled in Kubernetes.Advanced patterns cover more advanced topics such as extending the platform with operators."
+      description: "The way developers design, build, and run software has changed significantly with the evolution of microservices and containers. These modern architectures use new primitives that require a different set of practices than most developers, tech leads, and architects are accustomed to. With this focused guide, Bilgin Ibryam and Roland Huß from Red Hat provide common reusable elements, patterns, principles, and practices for designing and implementing cloud-native applications on Kubernetes. Each pattern includes a description of the problem and a proposed solution with Kubernetes specifics. Many patterns are also backed by concrete code examples. This book is ideal for developers already familiar with basic Kubernetes concepts who want to learn common cloud-native patterns."
       subtitle: "Reusable Elements for Designing Cloud Native Applications"
       author: "Bilgin Ibryam and Roland Huß"
       publisher: "O'Reilly"
@@ -730,7 +721,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/supervisord.png"
-          description: "Supervisor: A Process Control System — Supervisor 4.2.5 documentation"
           url: http://supervisord.org/
         - title: "runit"
           image_width: 180
@@ -756,7 +746,6 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/nginx.png"
-          description: "NIGINX is part of F5, and all previous NGINX.com links now redirect to content on F5.com. Don't worry, we still have all your needs covered to navigate to the pages you're looking for."
           url: https://www.nginx.com/
         - title: "HAProxy"
           image_width: 180
@@ -870,18 +859,12 @@
         - title: "OpenTofu"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/opentofu.png"
           image: "assets/img/tools/opentofu.png"
           description: "The open source infrastructure as code tool."
           url: https://opentofu.org/
         - title: "Pulumi"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/pulumi.png"
           image: "assets/img/tools/pulumi.png"
           description: "Pulumi is an infrastructure management platform to automate through infrastructure as code, secure with secrets management, and manage infrastructure with AI."
           url: https://www.pulumi.com/
@@ -902,9 +885,6 @@
         - title: "Docker Hub"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/docker-hub.png"
           image: "assets/img/tools/docker-hub.png"
           description: "Welcome to the world's largest container registry built for developers and open source contributors to find, use, and share their container images. Build, push and pull."
           url: https://hub.docker.com/
@@ -1055,7 +1035,7 @@
       image_width: 180
       image_height: 226
       image: "assets/img/books/the-art-of-unit-testing.jpg"
-      description: "Unit testing is more than just a collection of tools and practices—it’s a state of mind! This bestseller reveals the master’s secrets for delivering robust, maintainable, and trustworthy code.Thousands of developers have learned to hone their code quality under the tutelage of The Art of Unit Testing. This revised third edition updates an international bestseller to reflect modern development tools and practices, as well as to cover JavaScript.  Inside The Art of Unit Testing, Third Edition you will learn how   Create readable, maintainable, and trustworthy tests Work with fakes, stubs, mock objects, and isolation frameworks Apply simple dependency injection techniques Refactor legacy code with confidence Test both frontend and backend code Effective unit tests streamline your software development process and ensure you deliver consistent high-quality code every time. With practical examples in JavaScript and Node, this hands-on guide takes you from your very first unit tests all the way to comprehensive test suites, naming standards, and refactoring techniques. You’ll explore test patterns and organization, working with legacy code and even “untestable” code. The many tool-agnostic examples are presented in JavaScript and carefully designed so that they apply to code written in any language.  About the technology  The art of unit testing is more than just learning the right collection of tools and practices. It’s about understanding what makes great tests tick, finding the right strategy for each unique situation, and knowing what to do when the testing process gets messy. This book delivers insights and advice that will transform the way you test your software.  About the book  The Art of Unit Testing, Third Edition shows you how to create readable and maintainable tests. It goes well beyond basic test creation into organization-wide test strategies, troubleshooting, working with legacy code, and “merciless” refactoring. You’ll love the practical examples and familiar scenarios that make testing come alive as you read. This third edition has been updated with techniques specific to object-oriented, functional, and modular coding styles. The examples use JavaScript.  What's inside  Deciding on test types and strategies Test Entry & Exit Points Refactoring legacy code Fakes, stubs, mock objects, and isolation frameworks Object-Oriented, Functional, and Modular testing styles About the reader  Examples use JavaScript, TypeScript, and Node.js.  About the author  Roy Osherove is an internationally-recognized expert in unit testing and agile software methodology. Vladimir Khorikov is the author of Manning’s Unit Testing Principles, Practices, and Patterns, a Pluralsight author, and a Microsoft MVP.  Table of Contents  PART 1 1 The basics of unit testing 2 A first unit test PART 2 3 Breaking dependencies with stubs 4 Interaction testing using mock objects 5 Isolation frameworks 6 Unit testing asynchronous code"
+      description: "Unit testing is more than just a collection of tools and practices—it’s a state of mind! This bestseller reveals the master’s secrets for delivering robust, maintainable, and trustworthy code. Thousands of developers have learned to hone their code quality under the tutelage of The Art of Unit Testing. This revised third edition updates an international bestseller to reflect modern development tools and practices, as well as to cover JavaScript.  Inside The Art of Unit Testing, Third Edition you will learn how   Create readable, maintainable, and trustworthy tests Work with fakes, stubs, mock objects, and isolation frameworks Apply simple dependency injection techniques Refactor legacy code with confidence Test both frontend and backend code Effective unit tests streamline your software development process and ensure you deliver consistent high-quality code every time. With practical examples in JavaScript and Node, this hands-on guide takes you from your very first unit tests all the way to comprehensive test suites, naming standards, and refactoring techniques. You’ll explore test patterns and organization, working with legacy code and even “untestable” code. The many tool-agnostic examples are presented in JavaScript and carefully designed so that they apply to code written in any language."
       subtitle: "With Examples in JavaScript"
       author: "Roy Osherove"
       publisher: "Manning"
@@ -1081,7 +1061,7 @@
       image_width: 128
       image_height: 161
       image: "assets/img/books/extreme-programming-explained.jpg"
-      description: "Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned.' 'You may love XP or you may hate it, but Extreme Programming Explained will force you to take a fresh look at how you develop software."
+      description: "Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned."
       subtitle: "Embrace Change"
       author: "Kent Beck and Cynthia Andres"
       publisher: "Addison-Wesley"
@@ -1219,11 +1199,7 @@
         - title: "GitLab"
           image_width: 180
           image_height: 126
-          image_width: 180
-          image_height: 126
           image: "assets/img/tools/gitlab.png"
-          image: "assets/img/tools/gitlab.png"
-          description: "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster."
           description: "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster."
           url: https://gitlab.com/
         - title: "BitBucket"
@@ -1360,7 +1336,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/trivy.png"
-          image: "assets/img/tools/trivy.png"
           description: "Redirecting"
           url: https://aquasecurity.github.io/trivy/
     - type: Policy as Code
@@ -1389,7 +1364,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/open-policy-agent.png"
-          image: "assets/img/tools/open-policy-agent.png"
           description: "Policy-based control for cloud native environments"
           url: https://www.openpolicyagent.org/
         - title: "Terratest"
@@ -1410,7 +1384,6 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/unittest-python.png"
-          description: "Source code: Lib/unittest/__init__.py(If you are already familiar with the basic concepts of testing, you might want to skip to the list of assert methods.) The unittest unit testing framework was ..."
           url: https://docs.python.org/3/library/unittest.html
         - title: "JUnit (Java)"
           image_width: 180
@@ -1440,7 +1413,7 @@
       image_width: 180
       image_height: 240
       image: "assets/img/books/continuous-delivery.jpg"
-      description: "Winner of the 2011 Jolt Excellence Award! Getting software released to users is often a painful, risky, and time-consuming process.This groundbreaking new book sets out the principles and technical practices that enablerapid, incremental delivery of high quality, valuable new functionality to users. Throughautomation of the build, deployment, and testing process, and improved collaboration betweendevelopers, testers, and operations, delivery teams can get changes released in a matter of hours—sometimes even minutes–no matter what the size of a project or the complexity of its code base. Jez Humble and David Farley begin by presenting the foundations of a rapid, reliable, low-riskdelivery process. Next, they introduce the “deployment pipeline,” an automated process formanaging all changes, from check-in to release. Finally, they discuss the “ecosystem” needed tosupport continuous delivery, from infrastructure, data and configuration management to governance. The authors introduce state-of-the-art techniques, including automated infrastructure managementand data migration, and the use of virtualization. For each, they review key issues, identify bestpractices, and demonstrate how to mitigate risks. Coverage includes • Automating all facets of building, integrating, testing, and deploying software• Implementing deployment pipelines at team and organizational levels• Improving collaboration between developers, testers, and operations• Developing features incrementally on large and distributed teams• Implementing an effective configuration management strategy• Automating acceptance testing, from analysis to implementation• Testing capacity and other non-functional requirements• Implementing continuous deployment and zero-downtime releases• Managing infrastructure, data, components and dependencies• Navigating risk management, compliance, and auditing Whether you’re a developer, systems administrator, tester, or manager, this book will help yourorganization move from idea to release faster than ever—so you can deliver value to your businessrapidly and reliably. "
+      description: "Winner of the 2011 Jolt Excellence Award! Getting software released to users is often a painful, risky, and time-consuming process. This groundbreaking new book sets out the principles and technical practices that enable rapid, incremental delivery of high quality, valuable new functionality to users. Through automation of the build, deployment, and testing process, and improved collaboration between developers, testers, and operations, delivery teams can get changes released in a matter of hours—sometimes even minutes–no matter what the size of a project or the complexity of its code base. Jez Humble and David Farley begin by presenting the foundations of a rapid, reliable, low-risk delivery process. Next, they introduce the “deployment pipeline,” an automated process for managing all changes, from check-in to release. Finally, they discuss the “ecosystem” needed tosupport continuous delivery, from infrastructure, data and configuration management to governance. The authors introduce state-of-the-art techniques, including automated infrastructure management and data migration, and the use of virtualization. For each, they review key issues, identify best practices, and demonstrate how to mitigate risks."
       subtitle: "Reliable Software Releases through Build, Test, and Deployment Automation"
       author: "Jez Humble and David Farley"
       publisher: "Addison-Wesley Professional"
@@ -1507,7 +1480,6 @@
       image_width: 180
       image_height: 135
       image: "assets/img/other-resources/adopting-continuous-delivery.jpg"
-      description: "Jez Humble on Continuous DeliveryBusinesses rely on getting valuable new software into the hands of users as fast as possible, while making sure that they ke..."
       author: "Jez Humble"
       url: "https://www.youtube.com/watch?v=skLJuksCRTw"
       type: "Talk"
@@ -1515,7 +1487,6 @@
       image_width: 180
       image_height: 135
       image: "assets/img/other-resources/why-google-stores-billions-of-lines-of-code-in-a-single-repository.jpg"
-      description: "This talk will outline the scale of Google’s codebase, describe Google’s custom-built monolithic source repository, and discuss the reasons behind choosing t..."
       author: "Rachel Potvin"
       url: "https://www.youtube.com/watch?v=W71BTkUbdqE"
       type: "Talk"
@@ -1571,11 +1542,7 @@
         - title: "GitLab"
           image_width: 180
           image_height: 126
-          image_width: 180
-          image_height: 126
           image: "assets/img/tools/gitlab.png"
-          image: "assets/img/tools/gitlab.png"
-          description: "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster."
           description: "From planning to production, bring teams together in one application. Ship secure code more efficiently to deliver value faster."
           url: https://about.gitlab.com/
         - title: "CircleCi"
@@ -1778,7 +1745,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/production-ready-microservices.jpg"
-      description: "One of the biggest challenges for organizations that have adopted microservice architecture is the lack of architectural, operational, and organizational standardization. After splitting a monolithic application or building a microservice ecosystem from scratch, many engineers are left wondering what s next. In this practical book, author Susan Fowler presents a set of microservice standards in depth, drawing from her experience standardizing over a thousand microservices at Uber. You ll learn how to design microservices that are stable, reliable, scalable, fault tolerant, performant, monitored, documented, and prepared for any catastrophe.Explore production-readiness standards, including:Stability and Reliability:  develop, deploy, introduce, and deprecate microservices; protect against dependency failuresScalability and Performance:  learn essential components for achieving greater microservice efficiencyFault Tolerance and Catastrophe Preparedness:  ensure availability by actively pushing microservices to fail in real timeMonitoring:  learn how to monitor, log, and display key metrics; establish alerting and on-call proceduresDocumentation and Understanding:  mitigate tradeoffs that come with microservice adoption, including organizational sprawl and technical debt'"
+      description: "One of the biggest challenges for organizations that have adopted microservice architecture is the lack of architectural, operational, and organizational standardization. After splitting a monolithic application or building a microservice ecosystem from scratch, many engineers are left wondering what s next. In this practical book, author Susan Fowler presents a set of microservice standards in depth, drawing from her experience standardizing over a thousand microservices at Uber. You ll learn how to design microservices that are stable, reliable, scalable, fault tolerant, performant, monitored, documented, and prepared for any catastrophe."
       subtitle: "Building Standardized Systems Across an Engineering Organization"
       author: "Susan J. Fowler"
       publisher: "O'Reilly"
@@ -1813,7 +1780,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/building-microservices.jpg"
-      description: "Distributed systems have become more fine-grained in the past 10 years, shifting from code-heavy monolithic applications to smaller, self-contained microservices. But developing these systems brings its own set of headaches. With lots of examples and practical advice, this book takes a holistic view of the topics that system architects and administrators must consider when building, managing, and evolving microservice architectures.Microservice technologies are moving quickly. Author Sam Newman provides you with a firm grounding in the concepts while diving into current solutions for modeling, integrating, testing, deploying, and monitoring your own autonomous services. You'll follow a fictional company throughout the book to learn how building a microservice architecture affects a single domain.Discover how microservices allow you to align your system design with your organization's goalsLearn options for integrating a service with the rest of your systemTake an incremental approach when splitting monolithic codebasesDeploy individual microservices through continuous integrationExamine the complexities of testing and monitoring distributed servicesManage security with user-to-service and service-to-service modelsUnderstand the challenges of scaling microservice architectures"
+      description: "Distributed systems have become more fine-grained in the past 10 years, shifting from code-heavy monolithic applications to smaller, self-contained microservices. But developing these systems brings its own set of headaches. With lots of examples and practical advice, this book takes a holistic view of the topics that system architects and administrators must consider when building, managing, and evolving microservice architectures. Microservice technologies are moving quickly. Author Sam Newman provides you with a firm grounding in the concepts while diving into current solutions for modeling, integrating, testing, deploying, and monitoring your own autonomous services. You'll follow a fictional company throughout the book to learn how building a microservice architecture affects a single domain."
       subtitle: "Designing Fine-Grained Systems"
       author: "Sam Newman"
       publisher: "O'Reilly"
@@ -1842,7 +1809,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/cue.png"
-          description: "Configure Unify Execute Validate, define, and use dynamic and text‑based data Learn more Get started with CUE CUE makes it easy to validate data, write schemas, and ensure configurations align with policies. Get started learning about CUE with these links .. Let's begin Introduction Take a tour Language Tour Download and install Install GitHub Infinite possibilities CUE is an open source language, with a rich set of APIs and tooling, for defining, generating, and validating all kinds of data: configuration, APIs, database schemas, code, ."
+          description: "CUE makes it easy to validate data, write schemas, and ensure configurations align with policies."
           url: https://cuelang.org/
         - title: "Jsonnet"
           image_width: 180
@@ -1861,9 +1828,6 @@
         - title: "Consul"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/consul.png"
           image: "assets/img/tools/consul.png"
           description: "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime."
           url: https://www.consul.io/
@@ -1876,9 +1840,6 @@
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/zookeeper.png"
           image: "assets/img/tools/zookeeper.png"
           description: "Apache ZooKeeper"
           url: https://zookeeper.apache.org/
@@ -1902,7 +1863,6 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/dependabot.png"
-          image: "assets/img/tools/dependabot.png"
           description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability. This guide will help get you started on enabling Dependabot for a repository, and exploring reported alerts."
           url: https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide
         - title: "Renovate"
@@ -1915,15 +1875,11 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
           description: "Enable developers to build securely from the start while giving security teams complete visibility and comprehensive controls."
           url: https://snyk.io/
         - title: "Patcher"
           image_width: 180
           image_height: 94
-          image: "assets/img/tools/patcher.png"
           image: "assets/img/tools/patcher.png"
           description: "Keep infrastructure up to date."
           url: https://www.gruntwork.io/platform/patcher
@@ -1945,7 +1901,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/networking-and-kubernetes.jpg"
-      description: "Kubernetes has become an essential part of the daily work for most system, network, and cluster administrators today. But to work effectively together on a production-scale Kubernetes system, they must be able to speak the same language. This book provides a clear guide to the layers of complexity and abstraction that come with running a Kubernetes network.Authors James Strong and Vallery Lancey bring you up to speed on the intricacies that Kubernetes has to offer for large container deployments. If you're to be effective in troubleshooting and maintaining a production cluster, you need to be well versed in the abstraction provided at each layer. This practical book shows you how.Learn the Kubernetes networking modelChoose the best interface for your clusters from the CNCF Container Network Interface projectExplore the networking and Linux primitives that power KubernetesQuickly troubleshoot networking issues and prevent downtimeExamine cloud networking and Kubernetes using the three major Amazon Web Services, Google Cloud, and Microsoft AzureLearn the pros and cons of various network tools--and how to select the best ones for your stack"
+      description: "Kubernetes has become an essential part of the daily work for most system, network, and cluster administrators today. But to work effectively together on a production-scale Kubernetes system, they must be able to speak the same language. This book provides a clear guide to the layers of complexity and abstraction that come with running a Kubernetes network. Authors James Strong and Vallery Lancey bring you up to speed on the intricacies that Kubernetes has to offer for large container deployments. If you're to be effective in troubleshooting and maintaining a production cluster, you need to be well versed in the abstraction provided at each layer."
       subtitle: "A Layered Approach"
       author: "James Strong, Vallery Lancey"
       publisher: "O'Reilly"
@@ -1954,7 +1910,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/cloud-native-data-center-networking.jpg"
-      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable.Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible.In the context of a cloud native data center, you’ll Clos topologyNetwork disaggregationNetwork operating system choicesRouting protocol choicesContainer networkingNetwork virtualization and EVPNNetwork automation"
+      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable. Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible. In the context of a cloud native data center, you’ll Clos topologyNetwork disaggregationNetwork operating system choicesRouting protocol choicesContainer networkingNetwork virtualization and EVPNNetwork automation"
       subtitle: "Architecture, Protocols, and Tools"
       author: "Dinesh Dutt"
       publisher: "O'Reilly"
@@ -1972,7 +1928,7 @@
       image_width: 180
       image_height: 233
       image: "assets/img/books/computer-networking.jpg"
-      description: "Building on the successful top-down approach of previous editions, the Fourth Edition of Computer Networking continues with an early emphasis on application-layer paradigms and application programming interfaces, encouraging a hands-on experience with protocols and networking concepts. With this edition, Kurose and Ross bring the issues of network security to the forefront, along with integration of the most current and relevant networking technologies.Computer Networks and the Internet; Application Layer; Transport Layer; The Network Layer; The Link Layer and Local Area Networks; Wireless and Mobile Networks; Multimedia Networking; Security in Computer Networks; Network Management.For all readers interested in computer networking technologies."
+      description: "Building on the successful top-down approach of previous editions, the Fourth Edition of Computer Networking continues with an early emphasis on application-layer paradigms and application programming interfaces, encouraging a hands-on experience with protocols and networking concepts. With this edition, Kurose and Ross bring the issues of network security to the forefront, along with integration of the most current and relevant networking technologies."
       subtitle: "A Top-Down Approach"
       author: "James Kurose and Keith Ross"
       publisher: "Pearson"
@@ -1981,7 +1937,7 @@
       image_width: 180
       image_height: 233
       image: "assets/img/books/network-basics-for-hackers.jpg"
-      description: "Following the success of Linux Basics for Hackers, OccupytheWeb does what he did for Linux to Networks. Networks of all types, including TCP/IP, Bluetooth Networks, Car Networks, W-iFi Networks, Radio Frequency Networks, SCADA/ICS Networks, and more. In his inimitable style, Master OTW makes the seemingly complex, simple.This book is designed for beginner to intermediate cybersecurity professionals. It begins with the basics of networks and networking, examines network analysis with Wireshark and tcpdump, offers one of the most complete and in-depth analyses of Wi-Fi and Bluetooth networks, then progresses through the various protocols such as DNS, ARP, SMTP, and others. The reader will be led through the building of those applications in Linux, such as an EXIM server for email or a BIND server for DNS. Then OTW leads the reader through the major vulnerabilities of that protocol/application.In the final chapters, OTW leads the reader through some of the networks on the leading-edge of cybersecurity, such as Car, Radio, and Industrial networks. There has never been book quite like this one!"
+      description: "Following the success of Linux Basics for Hackers, OccupytheWeb does what he did for Linux to Networks. Networks of all types, including TCP/IP, Bluetooth Networks, Car Networks, W-iFi Networks, Radio Frequency Networks, SCADA/ICS Networks, and more. In his inimitable style, Master OTW makes the seemingly complex, simple. This book is designed for beginner to intermediate cybersecurity professionals. It begins with the basics of networks and networking, examines network analysis with Wireshark and tcpdump, offers one of the most complete and in-depth analyses of Wi-Fi and Bluetooth networks, then progresses through the various protocols such as DNS, ARP, SMTP, and others. The reader will be led through the building of those applications in Linux, such as an EXIM server for email or a BIND server for DNS. Then OTW leads the reader through the major vulnerabilities of that protocol/application. In the final chapters, OTW leads the reader through some of the networks on the leading-edge of cybersecurity, such as Car, Radio, and Industrial networks. There has never been book quite like this one!"
       subtitle: "How Networks Work and How They Break"
       author: "Master OccupytheWeb"
       publisher: "Independently published"
@@ -2050,19 +2006,12 @@
         - title: "JumpCloud"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
           image: "assets/img/tools/jumpcloud.png"
-          image: "assets/img/tools/jumpcloud.png"
-          description: "JumpCloud makes it simple to manage Windows, Apple, Linux, and Android devices and to deliver secure access with SSO, MFA, Zero Trust, RADIUS, and more."
           description: "JumpCloud makes it simple to manage Windows, Apple, Linux, and Android devices and to deliver secure access with SSO, MFA, Zero Trust, RADIUS, and more."
           url: https://jumpcloud.com/
         - title: "Okta"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/okta.jpg"
           image: "assets/img/tools/okta.jpg"
           description: "The Okta and Auth0 Platforms enable secure access, authentication, and automation—putting Identity at the heart of business security and growth."
           url: https://www.okta.com/
@@ -2091,11 +2040,7 @@
         - title: "JumpCloud"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
           image: "assets/img/tools/jumpcloud.png"
-          image: "assets/img/tools/jumpcloud.png"
-          description: "JumpCloud makes it simple to manage Windows, Apple, Linux, and Android devices and to deliver secure access with SSO, MFA, Zero Trust, RADIUS, and more."
           description: "JumpCloud makes it simple to manage Windows, Apple, Linux, and Android devices and to deliver secure access with SSO, MFA, Zero Trust, RADIUS, and more."
           url: https://jumpcloud.com/
         - title: "Rippling"
@@ -2129,11 +2074,7 @@
         - title: "Tailscale"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/tailscale.jpg"
-          image: "assets/img/tools/tailscale.jpg"
-          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
           description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
           url: https://tailscale.com/
         - title: "Boundary"
@@ -2218,11 +2159,7 @@
         - title: "Tailscale"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/tailscale.jpg"
-          image: "assets/img/tools/tailscale.jpg"
-          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
           description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
           url: https://tailscale.com/
         - title: "AWS Client VPN"
@@ -2248,9 +2185,6 @@
         - title: "Consul"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/consul.png"
           image: "assets/img/tools/consul.png"
           description: "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime."
           url: https://www.consul.io/
@@ -2263,9 +2197,6 @@
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/zookeeper.png"
           image: "assets/img/tools/zookeeper.png"
           description: "Apache ZooKeeper"
           url: https://zookeeper.apache.org/
@@ -2279,7 +2210,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/grpc-with-etcd.png"
-          description: "etcd provides a gRPC resolver to support an alternative name system that fetches endpoints from etcd for discovering gRPC services. The underlying mechanism is based on watching updates to keys prefixed with the service name. Using etcd discovery with go-grpc The etcd client provides a gRPC resolver for resolving gRPC endpoints with an etcd backend. The resolver is initialized with an etcd client and given a target for resolution: import ( 'github.com/coreos/etcd/clientv3' etcdnaming 'github.com/coreos/etcd/clientv3/naming' 'google.golang.org/grpc' ) ... cli, cerr := clientv3.NewFromURL('http://localhost:2379') r := &etcdnaming.GRPCResolver{Client: cli} b := grpc.RoundRobin(r) conn, gerr := grpc.Dial('my-service', grpc.WithBalancer(b)) Managing service endpoints The etcd resolver treats all keys under the prefix of the resolution target following a “/” (e.g., “my-service/”) with JSON-encoded go-grpc naming.Update values as potential service endpoints. Endpoints are added to the service by creating new keys and removed from the service by deleting keys."
+          description: "etcd provides a gRPC resolver to support an alternative name system that fetches endpoints from etcd for discovering gRPC services. The underlying mechanism is based on watching updates to keys prefixed with the service name."
           url: https://etcd.io/docs/v3.2/dev-guide/grpc_naming/
         - title: "Synapse"
           image_width: 180
@@ -2467,7 +2398,7 @@
       image_width: 180
       image_height: 225
       image: "assets/img/books/securing-devops.jpg"
-      description: "Securing DevOps explores how the techniques of DevOps and security should be applied together to make cloud services safer. This introductory book reviews the latest practices used in securing web applications and their infrastructure and teaches you techniques to integrate security directly into your product. You'll also learn the core concepts of DevOps, such as continuous integration, continuous delivery, and infrastructure as a service.Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.About the TechnologyAn application running in the cloud can benefit from incredible efficiencies, but they come with unique security threats too. A DevOps team's highest priority is understanding those risks and hardening the system against them.About the BookSecuring DevOps teaches you the essential techniques to secure your cloud services. Using compelling case studies, it shows you how to build security into automated testing, continuous delivery, and other core DevOps processes. This experience-rich book is filled with mission-critical strategies to protect web applications against attacks, deter fraud attempts, and make your services safer when operating at scale. You'll also learn to identify, assess, and secure the unique vulnerabilities posed by cloud deployments and automation tools commonly used in modern infrastructures.What's insideAbout the ReaderReaders should be comfortable with Linux and standard DevOps practices like CI, CD, and unit testing.About the AuthorJulien Vehent is a security architect and DevOps advocate. He leads the Firefox Operations Security team at Mozilla, and is responsible for the security of Firefox's high-traffic cloud services and public websites.Table of Contents"
+      description: "Securing DevOps explores how the techniques of DevOps and security should be applied together to make cloud services safer. This introductory book reviews the latest practices used in securing web applications and their infrastructure and teaches you techniques to integrate security directly into your product. You'll also learn the core concepts of DevOps, such as continuous integration, continuous delivery, and infrastructure as a service."
       subtitle: "Security in the Cloud"
       author: "Julien Vehent"
       publisher: "Manning"
@@ -2614,9 +2545,6 @@
         - title: "Okta"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/okta.jpg"
           image: "assets/img/tools/okta.jpg"
           description: "The Okta and Auth0 Platforms enable secure access, authentication, and automation—putting Identity at the heart of business security and growth."
           url: https://www.okta.com/
@@ -2767,11 +2695,7 @@
         - title: "HashiCorp Vault"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/hashicorp-vault.png"
-          image: "assets/img/tools/hashicorp-vault.png"
-          description: "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets critical in modern computing."
           description: "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets critical in modern computing."
           url: https://www.vaultproject.io/
         - title: "OpenBao"
@@ -2887,11 +2811,7 @@
         - title: "HashiCorp Vault"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/hashicorp-vault.png"
-          image: "assets/img/tools/hashicorp-vault.png"
-          description: "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets critical in modern computing."
           description: "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets critical in modern computing."
           url: https://www.vaultproject.io/
         - title: "OpenBAO"
@@ -3002,7 +2922,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/database-reliability-engineering.jpg"
-      description: "The infrastructure-as-code revolution in IT is also affecting database administration. With this practical book, developers, system administrators, and junior to mid-level DBAs will learn how the modern practice of site reliability engineering applies to the craft of database architecture and operations. Authors Laine Campbell and Charity Majors provide a framework for professionals looking to join the ranks of today’s database reliability engineers (DBRE).You’ll begin by exploring core operational concepts that DBREs need to master. Then you’ll examine a wide range of database persistence options, including how to implement key technologies to provide resilient, scalable, and performant data storage and retrieval. With a firm foundation in database reliability engineering, you’ll be ready to dive into the architecture and operations of any modern database.This book Service-level requirements and risk managementBuilding and evolving an architecture for operational visibilityInfrastructure engineering and infrastructure managementHow to facilitate the release management processData storage, indexing, and replicationIdentifying datastore characteristics and best use casesDatastore architectural components and data-driven architectures"
+      description: "The infrastructure-as-code revolution in IT is also affecting database administration. With this practical book, developers, system administrators, and junior to mid-level DBAs will learn how the modern practice of site reliability engineering applies to the craft of database architecture and operations. Authors Laine Campbell and Charity Majors provide a framework for professionals looking to join the ranks of today’s database reliability engineers (DBRE). You’ll begin by exploring core operational concepts that DBREs need to master. Then you’ll examine a wide range of database persistence options, including how to implement key technologies to provide resilient, scalable, and performant data storage and retrieval. With a firm foundation in database reliability engineering, you’ll be ready to dive into the architecture and operations of any modern database."
       subtitle: "Designing and Operating Resilient Database Systems"
       author: "Laine Campbell and Charity Majors"
       publisher: "O'Reilly"
@@ -3038,7 +2958,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/sql-cookbook.jpg"
-      description: "You may know SQL basics, but are you taking advantage of its expressive power? This second edition applies a highly practical approach to Structured Query Language (SQL) so you can create and manipulate large stores of data. Based on real-world examples, this updated cookbook provides a framework to help you construct solutions and executable examples in severalflavors of SQL, including Oracle, DB2, SQL Server, MySQL, andPostgreSQL.SQL programmers, analysts, data scientists, database administrators, and even relatively casual SQL users will find SQL Cookbook to be a valuable problem-solving guide for everyday issues. No other resource offers recipes in this unique format to help you tackle nagging day-to-day conundrums with SQL.The second edition includes:Fully revised recipes that recognize the greater adoption of window functions in SQL implementationsAdditional recipes that reflect the widespread adoption of common table expressions (CTEs) for more readable, easier-to-implement solutionsNew recipes to make SQL more useful for people who aren't database experts, including data scientistsExpanded solutions for working with numbers and stringsUp-to-date SQL recipes throughout the book to guide you through the basics"
+      description: "You may know SQL basics, but are you taking advantage of its expressive power? This second edition applies a highly practical approach to Structured Query Language (SQL) so you can create and manipulate large stores of data. Based on real-world examples, this updated cookbook provides a framework to help you construct solutions and executable examples in severalflavors of SQL, including Oracle, DB2, SQL Server, MySQL, andPostgreSQL. SQL programmers, analysts, data scientists, database administrators, and even relatively casual SQL users will find SQL Cookbook to be a valuable problem-solving guide for everyday issues. No other resource offers recipes in this unique format to help you tackle nagging day-to-day conundrums with SQL."
       subtitle: "Query Solutions and Techniques for All SQL Users"
       author: "Anthony Molinaro and Robert de Graaf"
       publisher: "O'Reilly"
@@ -3047,7 +2967,7 @@
       image_width: 180
       image_height: 270
       image: "assets/img/books/sql-in-10-minutes-a-day.jpg"
-      description: "Just the parts of SQL you need to know from simple data retrieval to the use of SQL joins, subqueries, stored procedures, cursors, triggers, and table constraintsDesigned for anyone interacting with databases, this SQL book methodically, systematically, and simply teaches you in lessons that each take 10 minutes or less to complete. Lessons includeSQL statements, including complex SQL statements using multiple clauses and operators Data retrieve, sort, and format database contents, including inserting, updating, and deleting Data Pinpoint the data you need using a variety of filtering techniques and aggregate functions to summarize data create, alter, and join database tables Views Stored procedures Expert trainer and popular author Ben Forta created this book for most of us who just need to learn SQL and do not need to understand database design and normalization to relational database theory and administrative concerns.Each lesson includesFull-color code examples to help you understand how SQL statements are structured Tips that point out shortcuts and solutions Cautions to help you avoid common pitfalls Notes that explain additional concepts, and provide additional information"
+      description: "Just the parts of SQL you need to know from simple data retrieval to the use of SQL joins, subqueries, stored procedures, cursors, triggers, and table constraintsDesigned for anyone interacting with databases, this SQL book methodically, systematically, and simply teaches you in lessons that each take 10 minutes or less to complete. Lessons includeSQL statements, including complex SQL statements using multiple clauses and operators Data retrieve, sort, and format database contents, including inserting, updating, and deleting Data Pinpoint the data you need using a variety of filtering techniques and aggregate functions to summarize data create, alter, and join database tables Views Stored procedures Expert trainer and popular author Ben Forta created this book for most of us who just need to learn SQL and do not need to understand database design and normalization to relational database theory and administrative concerns."
       subtitle: "Sams Teach Yourself"
       author: "Ben Forta"
       publisher: "Sams Publishing"
@@ -3176,7 +3096,6 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/alembic.png"
-          description: "Welcome to Alembic’s documentation! — Alembic 1.14.1 documentation"
           url: https://alembic.sqlalchemy.org/en/latest/
         - title: "migrate"
           image_width: 180
@@ -3194,7 +3113,6 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/activerecord.jpg"
-          description: "Active Record BasicsThis guide is an introduction to Active Record.After reading this guide, you will know: How Active Record fits into the Model-View-Controller (MVC) paradigm. What Object Relational Mapping and Active Record patterns are and how they are used in Rails. How to use Active Record models to manipulate data stored in a relational database. Active Record schema naming conventions. The concepts of database migrations, validations, callbacks, and associations."
           url: https://guides.rubyonrails.org/active_record_basics.html
         - title: "Sequel"
           image_width: 180
@@ -3367,18 +3285,12 @@
         - title: "Elasticsearch"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/elasticsearch.png"
-          image: "assets/img/tools/elasticsearch.png"
-          description: "Elasticsearch is the leading distributed, RESTful, open source search and analytics engine designed for speed, horizontal scalability, reliability, and easy management. Get started for free...."
+          description: "Elasticsearch is the leading distributed, RESTful, open source search and analytics engine designed for speed, horizontal scalability, reliability, and easy management. Get started for free."
           url: https://www.elastic.co/elasticsearch
         - title: "OpenSearch"
           image_width: 180
           image_height: 120
-          image_width: 180
-          image_height: 120
-          image: "assets/img/tools/opensearch.png"
           image: "assets/img/tools/opensearch.png"
           description: "OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, search, visualize, and analyze data."
           url: https://opensearch.org/
@@ -3434,9 +3346,6 @@
         - title: "InfluxDB"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
-          image: "assets/img/tools/influxdb.png"
           image: "assets/img/tools/influxdb.png"
           description: "Manage all types of time series data in a single, purpose-built database. Optimized for speed in any environment in the cloud, on-premises, or at the edge."
           url: https://www.influxdata.com/
@@ -3448,9 +3357,6 @@
         - title: "Prometheus"
           image_width: 180
           image_height: 180
-          image_width: 180
-          image_height: 180
-          image: "assets/img/tools/prometheus.png"
           image: "assets/img/tools/prometheus.png"
           description: "An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach."
           url: https://prometheus.io/
@@ -3463,9 +3369,6 @@
         - title: "Timescale"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/timescale.png"
           image: "assets/img/tools/timescale.png"
           description: "Engineered to handle demanding workloads, like time series, vector, events, and analytics data. Built on PostgreSQL, with expert support at no extra charge."
           url: https://www.timescale.com/
@@ -3583,11 +3486,7 @@
         - title: "Informatica"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/informatica.png"
-          image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
           description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
           url: https://www.informatica.com/
         - title: "Vertica"
@@ -3636,11 +3535,7 @@
         - title: "Informatica"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/informatica.png"
-          image: "assets/img/tools/informatica.png"
-          description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
           description: "Informatica is an Enterprise Cloud Data Management leader that brings data to life by empowering businesses to realize the transformative power of their most critical assets. "
           url: https://www.informatica.com/
         - title: "Matillion"
@@ -3815,7 +3710,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/practical-monitoring.jpg"
-      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you.Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company.This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool.Practical Monitoring covers essential topics Monitoring antipatternsPrinciples of monitoring designHow to build an effective on-call rotationGetting metrics and logs out of your application"
+      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you. Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company. This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool. Practical Monitoring covers essential topics Monitoring antipatternsPrinciples of monitoring designHow to build an effective on-call rotationGetting metrics and logs out of your application"
       subtitle: "Effective Strategies for the Real World"
       author: "Mike Julian"
       publisher: "O'Reilly"
@@ -3824,7 +3719,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/observability-engineering.jpg"
-      description: "Observability is critical for engineering, managing, and improving complex business-critical systems. Through this process, any software engineering team can gain a deeper understanding of system performance, so you can perform ongoing maintenance and ship the features your customers need. This practical book explains the value of observable systems and shows you how to build an observability-driven development practice.Authors Charity Majors, Liz Fong-Jones, and George Miranda from Honeycomb explain what constitutes good observability, show you how to make improvements from what you're doing today, and provide practical dos and don'ts for migrating from legacy tooling, such as metrics monitoring and log management. You'll also learn the impact observability has on organization culture.You'll explore:The value of practicing observability when delivering and managing complex cloud native applications and systemsThe impact observability has across the entire software engineering cycleSoftware ownership: how different functional teams help achieve system SLOsHow software developers contribute to customer experience and business impactHow to produce quality code for context-aware system debugging and maintenanceHow data-rich analytics can help you find answers quickly when maintaining site reliability"
+      description: "Observability is critical for engineering, managing, and improving complex business-critical systems. Through this process, any software engineering team can gain a deeper understanding of system performance, so you can perform ongoing maintenance and ship the features your customers need. This practical book explains the value of observable systems and shows you how to build an observability-driven development practice. Authors Charity Majors, Liz Fong-Jones, and George Miranda from Honeycomb explain what constitutes good observability, show you how to make improvements from what you're doing today, and provide practical dos and don'ts for migrating from legacy tooling, such as metrics monitoring and log management. You'll also learn the impact observability has on organization culture."
       subtitle: "Achieving Production Excellence"
       author: "Charity Majors, Liz Fong-Jones, George Miranda"
       publisher: "O'Reilly"
@@ -3851,7 +3746,7 @@
       image_width: 180
       image_height: 268
       image: "assets/img/books/how-to-measure-anything.jpg"
-      description: "Praise for How to Measure Finding the Value of Intangibles in Business'I love this book. Douglas Hubbard helps us create a path to know the answer to almost any question in business, in science, or in life . . . Hubbard helps us by showing us that when we seek metrics to solve problems, we are really trying to know something better than we know it now. How to Measure Anything provides just the tools most of us need to measure anything better, to gain that insight, to make progress, and to succeed.'-Peter Tippett, PhD, M.D.Chief Technology Officer at CyberTrustand inventor of the first antivirus software'Doug Hubbard has provided an easy-to-read, demystifying explanation of how managers can inform themselves to make less risky, more profitable business decisions. We encourage our clients to try his powerful, practical techniques.'-Peter SchayEVP and COO ofThe Advisory Council'As a reader you soon realize that actually everything can be measured while learning how to measure only what matters. This book cuts through conventional clichés and business rhetoric and offers practical steps to using measurements as a tool for better decision making. Hubbard bridges the gaps to make college statistics relevant and valuable for business decisions.'-Ray GilbertEVP Lucent'This book is remarkable in its range of measurement applications and its clarity of style. A must-read for every professional who has ever exclaimed, 'Sure, that concept is important, but can we measure it?''-Dr. Jack StennerCofounder and CEO of MetraMetrics, Inc."
+      description: "This book is remarkable in its range of measurement applications and its clarity of style. A must-read for every professional who has ever exclaimed, 'Sure, that concept is important, but can we measure it?''-Dr. Jack StennerCofounder and CEO of MetraMetrics, Inc."
       subtitle: "Finding the Value of Intangibles in Business"
       author: "Douglas W. Hubbard"
       publisher: "Wiley"
@@ -3922,8 +3817,7 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/splunk.jpg"
-          description: "Splunk is the key to enterprise resilience. Our platform enables organizations around the world to prevent major issues, absorb shocks and accelerate digital transformation.
- "
+          description: "Splunk is the key to enterprise resilience. Our platform enables organizations around the world to prevent major issues, absorb shocks and accelerate digital transformation."
           url: https://www.splunk.com/
         - title: "Graylog"
           image_width: 180
@@ -3934,24 +3828,18 @@
         - title: "Elasticsearch"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/elasticsearch.png"
-          image: "assets/img/tools/elasticsearch.png"
-          description: "Elasticsearch is the leading distributed, RESTful, open source search and analytics engine designed for speed, horizontal scalability, reliability, and easy management. Get started for free...."
+          description: "Elasticsearch is the leading distributed, RESTful, open source search and analytics engine designed for speed, horizontal scalability, reliability, and easy management. Get started for free."
           url: https://www.elastic.co/elasticsearch
         - title: "Logstash"
           image_width: 180
           image_height: 120
           image: "assets/img/tools/logstash.png"
-          description: "Logstash (part of the Elastic Stack) integrates data from any source, in any format with this flexible, open source collection, parsing, and enrichment pipeline. Download for free...."
+          description: "Logstash (part of the Elastic Stack) integrates data from any source, in any format with this flexible, open source collection, parsing, and enrichment pipeline. Download for free."
           url: https://www.elastic.co/logstash
         - title: "OpenSearch"
           image_width: 180
           image_height: 120
-          image_width: 180
-          image_height: 120
-          image: "assets/img/tools/opensearch.png"
           image: "assets/img/tools/opensearch.png"
           description: "OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, search, visualize, and analyze data."
           url: https://opensearch.org/docs/latest/about/
@@ -3964,21 +3852,13 @@
         - title: "Datadog"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/datadog.png"
-          image: "assets/img/tools/datadog.png"
-          description: "See metrics from all of your apps, tools & services in one place with Datadog's cloud monitoring as a service solution. Try it for free."
           description: "Datadog Log Management enables you to collect, monitor, manage, and analyze large volumes of logs as well as unify metrics and traces all in one platform."
           url: https://www.datadoghq.com/product/log-management/
         - title: "New Relic"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/new-relic.png"
-          image: "assets/img/tools/new-relic.png"
-          description: "Sign up for free, no credit card required. Get Instant Observability with New Relic One and Quickstarts that make it easy to instrument in a few clicks."
           description: "Deploying log management in context and at scale has never been faster, easier, or more attainable."
           url: https://newrelic.com/platform/log-management
         - title: "Amazon CloudWatch Logs"
@@ -4010,22 +3890,13 @@
         - title: "Fluent Bit"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
           image: "assets/img/tools/fluent-bit.png"
-          image: "assets/img/tools/fluent-bit.png"
-          description: ""
-          description: ""
           url: https://fluentbit.io/
         - title: "Beats"
           image_width: 180
           image_height: 113
-          image_width: 180
-          image_height: 113
           image: "assets/img/tools/beats.png"
-          image: "assets/img/tools/beats.png"
-          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana...."
-          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana...."
+          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana."
           url: https://www.elastic.co/beats
         - title: "Vector"
           image_width: 180
@@ -4095,7 +3966,7 @@
           image_width: 180
           image_height: 158
           image: "assets/img/tools/kissmetrics.png"
-          description: "Unlock unlimited revenue potential Simple analytics that track human behavior to increase revenue Get Started Request Demo Track Human Behavior Improve Engagement Drive Revenue Growth Trusted By Keep It Super Simple We’ve made it simple to track behavior, find bottlenecks, reduce customer churn, and increase revenue https://www.kissmetrics.io/wp-content/uploads/2023/05/KM_Preview_compressed.mov Tie Every Action To A HumanTying every action […]"
+          description: "Simple analytics that track human behavior to increase revenue."
           url: https://www.kissmetrics.io/
         - title: "MixPanel"
           image_width: 180
@@ -4156,21 +4027,13 @@
         - title: "Datadog"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
           image: "assets/img/tools/datadog.png"
-          image: "assets/img/tools/datadog.png"
-          description: "See metrics from all of your apps, tools & services in one place with Datadog's cloud monitoring as a service solution. Try it for free."
           description: "Datadog Log Management enables you to collect, monitor, manage, and analyze large volumes of logs as well as unify metrics and traces all in one platform."
           url: https://www.datadoghq.com/
         - title: "New Relic"
           image_width: 180
           image_height: 101
-          image_width: 180
-          image_height: 101
           image: "assets/img/tools/new-relic.png"
-          image: "assets/img/tools/new-relic.png"
-          description: "Sign up for free, no credit card required. Get Instant Observability with New Relic One and Quickstarts that make it easy to instrument in a few clicks."
           description: "Deploying log management in context and at scale has never been faster, easier, or more attainable."
           url: https://newrelic.com/
         - title: "Dynatrace"
@@ -4281,12 +4144,7 @@
         - title: "Fluent Bit"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
           image: "assets/img/tools/fluent-bit.png"
-          image: "assets/img/tools/fluent-bit.png"
-          description: ""
-          description: ""
           url: https://fluentbit.io/
         - title: "StatsD"
           image_width: 180
@@ -4303,12 +4161,8 @@
         - title: "Beats"
           image_width: 180
           image_height: 113
-          image_width: 180
-          image_height: 113
           image: "assets/img/tools/beats.png"
-          image: "assets/img/tools/beats.png"
-          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana...."
-          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana...."
+          description: "The open source platform for building shippers for log, network, infrastructure data, and more — and integrates with Elasticsearch, Logstash & Kibana."
           url: https://www.elastic.co/beats
         - title: "OpenTelemetry"
           image_width: 180
@@ -4327,27 +4181,18 @@
         - title: "Prometheus"
           image_width: 180
           image_height: 180
-          image_width: 180
-          image_height: 180
-          image: "assets/img/tools/prometheus.png"
           image: "assets/img/tools/prometheus.png"
           description: "An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach."
           url: https://prometheus.io/
         - title: "Timescale"
           image_width: 180
           image_height: 95
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/timescale.png"
           image: "assets/img/tools/timescale.png"
           description: "Engineered to handle demanding workloads, like time series, vector, events, and analytics data. Built on PostgreSQL, with expert support at no extra charge."
           url: https://www.timescale.com/
         - title: "InfluxDB"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
-          image: "assets/img/tools/influxdb.png"
           image: "assets/img/tools/influxdb.png"
           description: "Manage all types of time series data in a single, purpose-built database. Optimized for speed in any environment in the cloud, on-premises, or at the edge."
           url: https://www.influxdata.com/index/
@@ -4381,7 +4226,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/kibana.png"
-          description: "Download Kibana or the complete Elastic Stack for free and start visualizing, analyzing, and exploring your data with Elastic in minutes...."
+          description: "Download Kibana or the complete Elastic Stack for free and start visualizing, analyzing, and exploring your data with Elastic in minutes."
           url: https://www.elastic.co/kibana
         - title: "OpenSearch Dashboards"
           image_width: 180
@@ -4421,7 +4266,7 @@
           image_width: 1291
           image_height: 265
           image: "assets/img/tools/openobserve.svg"
-          description: "Logs, Metrics, Traces and more in one platform.Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes. 140x lower storage cost than your existing observability tools"
+          description: "Logs, Metrics, Traces and more in one platform. Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes. 140x lower storage cost than your existing observability tools."
           url: https://openobserve.ai/
         - title: "IBM Instana"
           image_width: 180
@@ -4527,9 +4372,6 @@
         - title: "SonarQube"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
-          image: "assets/img/tools/sonarqube.png"
           image: "assets/img/tools/sonarqube.png"
           description: "Empower development teams with a code quality & security solution that deeply integrates into your enterprise environment that enables you to deploy Clean Code securely, consistently and reliably."
           url: https://www.sonarsource.com/products/sonarqube/
@@ -4548,9 +4390,6 @@
         - title: "Snyk"
           image_width: 180
           image_height: 95
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
           image: "assets/img/tools/snyk.jpg"
           description: "Enable developers to build securely from the start while giving security teams complete visibility and comprehensive controls."
           url: https://snyk.io/
@@ -4599,7 +4438,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/platform-engineering.jpg"
-      description: "Until recently, infrastructure was the backbone of organizations operating software they developed in-house. But now that cloud vendors run the computers, companies can finally bring the benefits of agile custom-centricity to their own developers. Adding product management to infrastructure organizations is now all the rage.But how's that possible when infrastructure is still the operational layer of the company?This practical book guides engineers, managers, product managers, and leaders through the shifts that modern platform-led organizations require. You'll learn what platform engineering is—and isn't—and what benefits and value it brings to developers and teams. You'll understand what it means to approach a platform as a product and learn some of the most common technical and managerial barriers to success.With this book, you'Cultivate a platform-as-product, developer-centric mindsetLearn what platform engineering teams are and are notStart the process of adopting platform engineering within your organizationDiscover what it takes to become a product manager for a platform teamUnderstand the challenges that emerge when you scale platformsAutomate processes and self-service infrastructure to speed development and improve developer experienceBuild out, hire, manage, and advocate for a platform team"
+      description: "Until recently, infrastructure was the backbone of organizations operating software they developed in-house. But now that cloud vendors run the computers, companies can finally bring the benefits of agile custom-centricity to their own developers. Adding product management to infrastructure organizations is now all the rage. But how's that possible when infrastructure is still the operational layer of the company? This practical book guides engineers, managers, product managers, and leaders through the shifts that modern platform-led organizations require. You'll learn what platform engineering is—and isn't—and what benefits and value it brings to developers and teams. You'll understand what it means to approach a platform as a product and learn some of the most common technical and managerial barriers to success."
       subtitle: "A Guide for Technical, Product, and People Leaders"
       author: "Camille Fournier and Ian Nowland"
       publisher: "O'Reilly"
@@ -4608,7 +4447,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/software-supply-chain-security.jpg"
-      description: "Trillions of lines of code help us in our lives, companies, and organizations. But just a single software cybersecurity vulnerability can stop entire companies from doing business and cause billions of dollars in revenue loss and business recovery. Securing the creation and deployment of software, also known as software supply chain security, goes well beyond the software development process.This practical book gives you a comprehensive look at security risks and identifies the practical controls you need to incorporate into your end-to-end software supply chain. Author Cassie Crossley demonstrates how and why everyone involved in the supply chain needs to participate if your organization is to improve the security posture of its software, firmware, and hardware.With this book, you'll learn how Pinpoint the cybersecurity risks in each part of your organization's software supply chainIdentify the roles that participate in the supply chain—including IT, development, operations, manufacturing, and procurementDesign initiatives and controls for each part of the supply chain using existing frameworks and referencesImplement secure development lifecycle, source code security, software build management, and software transparency practicesEvaluate third-party risk in your supply chain"
+      description: "Trillions of lines of code help us in our lives, companies, and organizations. But just a single software cybersecurity vulnerability can stop entire companies from doing business and cause billions of dollars in revenue loss and business recovery. Securing the creation and deployment of software, also known as software supply chain security, goes well beyond the software development process. This practical book gives you a comprehensive look at security risks and identifies the practical controls you need to incorporate into your end-to-end software supply chain. Author Cassie Crossley demonstrates how and why everyone involved in the supply chain needs to participate if your organization is to improve the security posture of its software, firmware, and hardware."
       subtitle: "Securing the End-to-End Supply Chain for Software, Firmware, and Hardware"
       author: "Cassie Crossley"
       publisher: "O'Reilly"
@@ -4626,7 +4465,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/a-brief-incomplete-and-mostly-wrong-history-of-programming-languages.png"
-      description: "1801 - Joseph Marie Jacquard uses punch cards to instruct a loom to weave 'hello, world' into a tapestry.  Redditers of the time are not imp..."
+      description: "1801 - Joseph Marie Jacquard uses punch cards to instruct a loom to weave 'hello, world' into a tapestry."
       author: "James Iry"
       url: "https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html"
       type: "Blog post"
@@ -4752,23 +4591,16 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/kubesec.png"
-          description: "kubesec.io"
           url: https://kubesec.io/
         - title: "Snyk"
           image_width: 180
           image_height: 95
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
           image: "assets/img/tools/snyk.jpg"
           description: "Enable developers to build securely from the start while giving security teams complete visibility and comprehensive controls."
           url: https://snyk.io/
         - title: "SonarQube"
           image_width: 180
           image_height: 94
-          image_width: 180
-          image_height: 94
-          image: "assets/img/tools/sonarqube.png"
           image: "assets/img/tools/sonarqube.png"
           description: "Empower development teams with a code quality & security solution that deeply integrates into your enterprise environment that enables you to deploy Clean Code securely, consistently and reliably."
           url: https://www.sonarsource.com/products/sonarqube/
@@ -4781,7 +4613,6 @@
         - title: "Open Policy Agent"
           image_width: 180
           image_height: 93
-          image: "assets/img/tools/open-policy-agent.png"
           image: "assets/img/tools/open-policy-agent.png"
           description: "Policy-based control for cloud native environments"
           url: https://www.openpolicyagent.org/
@@ -4803,17 +4634,12 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/trivy.png"
-          image: "assets/img/tools/trivy.png"
           description: "Redirecting"
           url: https://trivy.dev/
         - title: "Mend"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
           image: "assets/img/tools/mend.png"
-          image: "assets/img/tools/mend.png"
-          description: "Mend.io gives you all the tools you need to build a mature, proactive AppSec program that effectively manages application risk."
           description: "Mend.io gives you all the tools you need to build a mature, proactive AppSec program that effectively manages application risk."
           url: https://www.mend.io/
     - type: Dynamic Application Security Testing (DAST)
@@ -4860,32 +4686,23 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
-          image: "assets/img/tools/snyk.jpg"
           description: "Enable developers to build securely from the start while giving security teams complete visibility and comprehensive controls."
           url: https://snyk.io/
         - title: "Mend"
           image_width: 180
           image_height: 93
-          image_width: 180
-          image_height: 93
           image: "assets/img/tools/mend.png"
-          image: "assets/img/tools/mend.png"
-          description: "Mend.io gives you all the tools you need to build a mature, proactive AppSec program that effectively manages application risk."
           description: "Mend.io gives you all the tools you need to build a mature, proactive AppSec program that effectively manages application risk."
           url: https://www.mend.io/
         - title: "DependaBot"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/dependabot.png"
-          image: "assets/img/tools/dependabot.png"
           description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability. This guide will help get you started on enabling Dependabot for a repository, and exploring reported alerts."
           url: https://github.com/dependabot
         - title: "Patcher"
           image_width: 180
           image_height: 94
-          image: "assets/img/tools/patcher.png"
           image: "assets/img/tools/patcher.png"
           description: "Keep infrastructure up to date."
           url: https://www.gruntwork.io/platform/patcher
