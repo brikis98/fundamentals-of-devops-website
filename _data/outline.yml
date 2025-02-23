@@ -335,7 +335,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/infrastructure-as-code.jpg"
-      description: "Just five years ago, infrastructure as code was a new concept for many companies. Today, even banks, governments, and other highly regulated organizations are moving to the cloud, leading teams everywhere to build up large, complex infrastructure codebases. With this practical book, Kief Morris of ThoughtWorks shows you how to effectively use principles, practices, and patterns pioneered by infrastructure and development teams to manage cloud age infrastructure.Ideal for system administrators, infrastructure engineers, software developers, team leads, and architects, this insightful second edition demonstrates the tools you need for implementing infrastructure as code. You'll learn about the platforms and tooling involved in creating and configuring infrastructure elements, patterns for using these tools, and practices for making infrastructure as code work in your environment.In four parts, this book covers:Foundations:  Understand how to use Infrastructure as Code to drive continuous change and raise the bar of operational quality. These chapters lay out a framework for the various tools and technologies involved in building platforms to run software in the cloud.Working with infrastructure stacks:  These chapters introduce practical patterns and approaches for defining, provisioning, testing, and continuously delivering changes to infrastructure resources. This includes managing and configuring environments and sharing infrastructure code.Working With Servers And Other Application Runtime Platforms:  Discover patterns for provisioning and configuring servers and clusters for deploying applications.Working With Larger Systems and Teams:  When you have multiple teams building and using cloud infrastructure, you need to consider workflows and governance, as well as architectural patterns for creating and managing many different infrastructure elements."
+      description: "Just five years ago, infrastructure as code was a new concept for many companies. Today, even banks, governments, and other highly regulated organizations are moving to the cloud, leading teams everywhere to build up large, complex infrastructure codebases. With this practical book, Kief Morris of ThoughtWorks shows you how to effectively use principles, practices, and patterns pioneered by infrastructure and development teams to manage cloud age infrastructure.Ideal for system administrators, infrastructure engineers, software developers, team leads, and architects, this insightful second edition demonstrates the tools you need for implementing infrastructure as code. You'll learn about the platforms and tooling involved in creating and configuring infrastructure elements, patterns for using these tools, and practices for making infrastructure as code work in your environment."
       subtitle: "Dynamic Systems for the Cloud Age"
       author: "Kief Morris"
       publisher: "O'Reilly"
@@ -362,7 +362,7 @@
       image_width: 180
       image_height: 101
       image: "assets/img/other-resources/5-lessons-learned-from-writing-over-300000-lines-of-infrastructure-code.png"
-      description: "A concise masterclass on how to write infrastructure code"
+      description: "This October, I gave a talk at HashiConf 2018 where I shared 5 key lessons we learned at Gruntwork while creating and maintaining a library of over 300,000 lines of infrastructure code that’s used in production by hundreds of companies. In this blog post, I’ll share with you the video and slides from the talk, as well as a condensed, written version of the 5 key lessons."
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1"
       type: "Talk, blog post"
@@ -370,7 +370,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/infrastructure-as-code-best-practices.png"
-      description: "SE Radio 405: Yevgeniy Brikman on Infrastructure as Code Best Practices – Software Engineering Radio"
+      description: "Yevgeniy Brikman, author of Terraform: Up & Running and co-founder of Gruntwork talks with host Robert Blumen about how to apply best practices from software engineering to the development of infrastructure as code, primarily with Terraform. The discussion covers similarities and differences between conventional software engineering and code-driven infrastructure; factoring code into modules; layering; terraform code organization for micro-services; releases and tagging; code reviews; unit testing infrastructure; deployment of infrastructure; ownership and code structure models; and open source and re-usable libraries."
       author: "Yevgeniy Brikman"
       url: "https://se-radio.net/2020/04/episode-405-yevgeniy-brikman-on-infrastructure-as-code-best-practices/"
       type: "Podcast"
@@ -401,16 +401,16 @@
           url: https://www.chef.io/
         - title: "Puppet"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/puppet.jpg"
+          image_height: 91
+          image: "assets/img/tools/puppet.svg"
           description: "Puppet is the industry-leading automation solution for configuration management, compliance, CI/CD, patch management, IT automation, and more."
           url: https://www.puppet.com/
         - title: "Ansible"
-          image_width: 180
-          image_height: 95
-          image: "assets/img/tools/ansible.jpg"
-          description: "Ansible Collaborative"
-          url: https://www.ansible.com/
+          image_width: 146
+          image_height: 180
+          image: "assets/img/tools/ansible.png"
+          description: "Ansible offers open-source automation that is simple, flexible, and powerful."
+          url: https://docs.ansible.com/
     - type: VM Hypervisor
       tools:
         - title: "VMware vSphere"
@@ -421,9 +421,9 @@
           url: https://www.vmware.com/products/cloud-infrastructure/vsphere
         - title: "VirtualBox"
           image_width: 180
-          image_height: 93
+          image_height: 180
           image: "assets/img/tools/virtualbox.png"
-          description: "Oracle VirtualBox"
+          description: "VirtualBox is a general-purpose full virtualization software, targeted at laptop, desktop, server and embedded use."
           url: https://www.virtualbox.org/
         - title: "Parallels"
           image_width: 180
@@ -451,24 +451,24 @@
           image: "assets/img/tools/vagrant.png"
           description: "Vagrant enables users to create and configure lightweight, reproducible, and portable development environments."
           url: https://www.vagrantup.com/
-    - type: Fast VMs
+    - type: Micro VMs
       tools:
         - title: "Firecracker"
           image_width: 180
-          image_height: 93
+          image_height: 85
           image: "assets/img/tools/firecracker.png"
-          description: "Firecracker"
+          description: "Secure and fast microVMs for serverless computing"
           url: https://firecracker-microvm.github.io/
         - title: "v8 isolates"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/v8-isolates.png"
-          description: "The difference between the Workers runtime versus traditional browsers and Node.js."
+          description: "Lightweight contexts that provide your code with variables it can access and a safe environment to be executed within. You could even consider an isolate a sandbox for your function to run in."
           url: https://developers.cloudflare.com/workers/reference/how-workers-works/#isolates
         - title: "WebAssembly"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/webassembly.jpg"
+          image_height: 93
+          image: "assets/img/tools/webassembly.svg"
           description: "WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications."
           url: https://webassembly.org/
     - type: Container Engine
@@ -483,7 +483,7 @@
           image_width: 180
           image_height: 90
           image: "assets/img/tools/moby.jpg"
-          description: "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems - moby/moby"
+          description: "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems."
           url: https://github.com/moby/moby
         - title: "CRI-O"
           image_width: 180
@@ -493,21 +493,21 @@
           url: https://cri-o.io/
         - title: "Podman"
           image_width: 180
-          image_height: 93
+          image_height: 60
           image: "assets/img/tools/podman.png"
-          description: "Podman"
+          description: "Manage containers, pods, and images with Podman. Seamlessly work with containers and Kubernetes from your local environment."
           url: https://podman.io/
         - title: "runc"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/runc.jpg"
-          description: "CLI tool for spawning and running containers according to the OCI specification - opencontainers/runc"
+          description: "CLI tool for spawning and running containers according to the OCI specification."
           url: https://github.com/opencontainers/runc
         - title: "buildkit"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/buildkit.jpg"
-          description: "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit - moby/buildkit"
+          description: "Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit."
           url: https://github.com/moby/buildkit?tab=readme-ov-file
     - type: Provisioning
       tools:
@@ -536,7 +536,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/openstack-heat.png"
-          description: "Heat - OpenStack"
+          description: "Heat is the main project in the OpenStack Orchestration program. It implements an orchestration engine to launch multiple composite cloud applications based on templates in the form of text files that can be treated like code."
           url: https://wiki.openstack.org/wiki/Heat
         - title: "Pulumi"
           image_width: 180
@@ -550,10 +550,10 @@
     - type: Module Registry
       tools:
         - title: "Ansible Galaxy"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/ansible-galaxy.png"
-          description: "Ansible Galaxy"
+          image_width: 146
+          image_height: 180
+          image: "assets/img/tools/ansible.png"
+          description: "Jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work known to Ansible as roles and collections. Content from roles and collections can be referenced in Ansible playbooks and immediately put to work. You'll find content for provisioning infrastructure, deploying applications, and all of the tasks you do everyday."
           url: https://galaxy.ansible.com/ui/
         - title: "Docker Hub"
           image_width: 180
@@ -574,13 +574,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/terraform-registry.png"
-          description: ""
+          description: "Discover Terraform providers that power all of Terraform's resource types, or find modules for quickly deploying common infrastructure configurations."
           url: https://registry.terraform.io/
         - title: "Gruntwork Infrastructure as Code Library"
           image_width: 180
           image_height: 94
           image: "assets/img/tools/gruntwork-infrastructure-as-code-library.png"
-          description: "Use battle-tested best practices."
+          description: "Production-ready IaC modules for AWS. Leverage a catalog of 300+ battle-tested Terraform/OpenTofu modules to set up your AWS foundations, run apps, and store data."
           url: https://www.gruntwork.io/platform/iac-library
 
 - title: "How to Manage Your Apps Using Orchestration Tools"
