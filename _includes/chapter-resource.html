@@ -17,10 +17,10 @@
       </a>
     </h3>
     {% if include.author %}
-      <p class="thin my0 light-gray">By {{ include.author }}{% if include.publisher %} ({{ include.publisher }}){% endif %}</p>
+      <p class="thin mt0 mb1 light-gray">By {{ include.author }}{% if include.publisher %} ({{ include.publisher }}){% endif %}</p>
     {% endif %}
     {% if include.description %}
-      <p id="description-{% include dasherize.html text=include.title %}" class="mb0 thin read-more">
+      <p id="description-{% include dasherize.html text=include.title %}" class="mt1 mb0 thin read-more">
         {{ include.description }}
       </p>
       {% assign description_length = include.description | size %}
