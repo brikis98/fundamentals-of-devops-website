@@ -1,0 +1,972 @@
+
+<!doctype html>
+<html class="no-js"  xmlns="http://www.w3.org/1999/xhtml" prefix="" lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/content/themes/basho-v2/dist/images/favicon.ico" />
+    
+<!-- BEGIN Metadata added by the Add-Meta-Tags WordPress plugin -->
+<link rel="alternate" hreflang="en-US" href="/index.html" />
+<meta name="description" content="Riak provides NoSQL database solutions, enabling distributed systems to scale large amounts of unstructured data. Learn more about our NoSQL solutions!" />
+<meta name="keywords" content="nosql, big data platform, distributed nosql, cloud storage, scalable database, distributed databases, redis, spark, riak. solr" />
+<!-- END Metadata added by the Add-Meta-Tags WordPress plugin -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39891693-3"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-39891693-3');
+</script>
+<!-- END Global site tag (gtag.js) - Google Analytics -->
+<title>Enterprise NoSQL Database | Scalable Database Solutions | Riak</title>
+<link rel='dns-prefetch' href='https://ajax.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel='stylesheet' id='contact-form-7-css'  href='/content/plugins/contact-form-7/includes/css/styles.css?ver=4.9' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css'  href='/content/plugins/popup-maker/assets/css/site.min.css?ver=1.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='/content/plugins/revslider/public/assets/css/settings.css?ver=5.4.6.1' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.regmark{font-size:15px;  position:relative;  top:-10px}@media screen and (max-width:700px){.regmark{font-size:13px;  top:-4px}}
+</style>
+<link rel='stylesheet' id='megamenu-css'  href='/content/uploads/maxmegamenu/style.css?ver=a8ce69' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='/includes/css/dashicons.min.css?ver=4.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='megamenu-fontawesome-css'  href='/content/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=1.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='megamenu-genericons-css'  href='/content/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=1.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='evcal_cal_default-css'  href='/content/plugins/eventON/assets/css/eventon_styles.css?ver=2.3.15' type='text/css' media='all' />
+<!-- inject:css -->
+<link rel="stylesheet" href="/content/themes/basho-v2/dist/styles/styles-846178cbe9.min.css">
+<!-- endinject -->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src="/content/themes/basho-v2/dist/scripts/jquery.js"><\/script>')</script>
+<script type='text/javascript' src='/content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.6.1'></script>
+<script type='text/javascript' src='/content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.1'></script>
+<link rel='https://api.w.org/' href='/json/index.html' />
+<link rel="canonical" href="/index.html" />
+<link rel='shortlink' href='/index.html' />
+<script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+<style type="text/css">/** Mega Menu CSS Disabled **/</style>
+	<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.2 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Riak"/>
+  <meta property="og:title" content="Home Page"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="Home Page"/>
+  <meta property="og:image" content="/content/uploads/2015/04/riak-ts-demo-video-thumb-home.jpg"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Home Page"/>
+  <meta itemprop="description" content="Home Page"/>
+  <meta itemprop="image" content="/content/uploads/2015/04/riak-ts-demo-video-thumb-home.jpg"/>
+ <!-- Twitter Cards -->
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.2 -->
+	
+	<style>
+	_:-ms-input-placeholder, :root .page-template-tpl-riakkv .title_ph {  margin-left:16%; }
+	_:-ms-input-placeholder, :root .page-template-tpl-products .home_3_data .title_ph {  margin-left:28.5%; }
+	_:-ms-input-placeholder, :root .page-template-tpl-products .home_4_data .title_ph {  margin-left:20.5%; }
+	</style>
+	 </head>
+  <body class="home page-template page-template-templates page-template-tpl-home page-template-templatestpl-home-php page page-id-6 mega-menu-primary-navigation">
+    <!--[if lt IE 9]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+    
+
+
+<div id="screen_viewport">
+	
+	<div id="head_container" class="row">
+		<header>
+			
+			<div class="row upper">
+				
+				<div class="header-contain">
+				
+					<div class="col-sm-3 header-upper-left">
+						
+						<div class="logo_home">
+							<a href="/index.html"><img alt="Riak logo" src="/content/themes/basho-v2/dist/images/riak.png"></a>
+						</div>
+	
+					</div><!-- end header-upper-left-->
+					<div class="col-sm-9 header-upper-right">
+					
+		
+						<div class="quick_tools">
+	<ul class="quick_links">
+								<li><a href="https://docs.riak.com/index.html" target="_blank">DOWNLOAD RIAK</a></li><li><a href="https://docs.riak.com/index.html">DOCS</a></li>
+								<li class="lang_menu sling_lang"><a href="javascript: void(0);" class="language_choice">ENGLISH</a>
+									<ul>
+										<li class="language sling_lang"><a href="http://www.riak.com/index.html" rel="http://www.riak.com">English</a></li>
+										<li class="language sling_lang"><a href="http://jp.riak.com/" rel="http://jp.riak.com">日本語</a></li>
+										<li class="language sling_lang"><a href="http://de.riak.com/" rel="http://de.riak.com">Deutsch</a></li>
+										<li class="language sling_lang"><a href="http://fr.riak.com/" rel="http://fr.riak.com">Fran&ccedil;ais</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+		
+					</div><!-- end header-upper-right-->
+					<div class="cf clearfix"></div>
+				</div>	<!-- end header-contain -->
+		</div><!-- end row -->
+		<div class="col-sm-12 row header-lower">
+
+			<div class="header-contain">
+
+				<div class="main_nav">
+					<ul class="main_nav_top">
+
+						<div id="mega-menu-wrap-primary_navigation" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1' id='mega-toggle-block-1'></div></div><ul id="mega-menu-primary_navigation" class="mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="slide" data-effect-speed="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-add-arrow mega-m-products mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-11815' id='mega-menu-item-11815'><a class="mega-menu-link" href="/products/" aria-haspopup="true" tabindex="0">Products</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-columns-1-of-3 mega-menu-item-11816' id='mega-menu-item-11816'><a class="mega-menu-link" href="/products/">Overview</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-columns-1-of-3 mega-menu-item-11817' id='mega-menu-item-11817'><a class="mega-menu-link" href="/products/riak-kv/" aria-haspopup="true">Riak<sup>®</sup> KV</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-11819' id='mega-menu-item-11819'><a class="mega-menu-link" href="/products/riak-kv/index.html#features">Features</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-11820' id='mega-menu-item-11820'><a class="mega-menu-link" href="/products/riak-kv/index.html#commercial">Commercial V. OSS</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-menu-item-11821' id='mega-menu-item-11821'><a class="fa-sign-out mega-menu-link" href="/products/riak-kv/resiliency/index.html?p=10906.html">Take Feature Tour</a></li>	</ul>
+	</li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-columns-1-of-3 mega-menu-item-11822' id='mega-menu-item-11822'><a class="mega-menu-link" href="/products/riak-ts/" aria-haspopup="true">Riak<sup>®</sup> TS</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-11824' id='mega-menu-item-11824'><a class="mega-menu-link" href="/products/riak-ts/index.html#features">Features</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-11825' id='mega-menu-item-11825'><a class="mega-menu-link" href="/products/riak-ts/index.html#commercial">Commercial V. OSS</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-has-icon mega-menu-item-11826' id='mega-menu-item-11826'><a class="fa-sign-out mega-menu-link" href="/products/riak-ts/resiliency/index.html?p=10650.html">Take Feature Tour</a></li>	</ul>
+	</li></ul>
+	</li><li class='mega-m-integrations mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-11827' id='mega-menu-item-11827'><a class="mega-menu-link" href="/products/integrations/" aria-haspopup="true" tabindex="0">Integrations</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-widget widget_nav_menu mega-menu-columns-1-of-2 mega-menu-item-nav_menu-10' id='mega-menu-item-nav_menu-10'><ul id="menu-integrations-column-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11990"><a href="/products/apache-spark/">Apache Spark</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11885"><a href="/products/solr/">Apache Solr</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11883"><a href="/products/apache-mesos/index.html?p=11511.html">Apache Mesos</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11886"><a href="/products/redis/index.html?p=6927.html">Redis Caching</a></li>
+	</ul></li><li class='mega-menu-item mega-menu-item-type-widget widget_nav_menu mega-menu-columns-1-of-2 mega-menu-item-nav_menu-11' id='mega-menu-item-nav_menu-11'><ul id="menu-integrations-column-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11887"><a href="/products/riak-s2/index.html?p=6196.html">Riak S2</a>
+	<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11888"><a href="/products/riak-s2/index.html?p=6196.html#features">Features</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11889"><a href="/products/riak-s2/index.html?p=6196.html#commercial">Commercial V. OSS</a></li>
+	</ul>
+	</li>
+	</ul></li></ul>
+	</li><li class='mega-m-resources mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-hide-arrow mega-menu-item-11837' id='mega-menu-item-11837'><a class="mega-menu-link" href="/resources/" aria-haspopup="true" tabindex="0">Resources</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-widget widget_nav_menu mega-menu-columns-1-of-2 mega-menu-item-nav_menu-2' id='mega-menu-item-nav_menu-2'><ul id="menu-resources-column-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11890"><a href="/resources/">Resource Center</a>
+	<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11892"><a href="/resources/index.html?resource=types&amp;t=DATASHEET">DataSheets</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11893"><a href="/resources/index.html?resource=types&amp;t=WHITEPAPER">WhitePapers</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11894"><a href="/resources/index.html?resource=types&amp;t=SOLUTION BRIEF">Solution Briefs</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11895"><a href="/resources/index.html?resource=types&amp;t=CASE STUDY">Case Studies</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11896"><a href="/resources/index.html?resource=types&amp;t=USER STORY">User Stories</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11897"><a href="/resources/index.html?resource=types&amp;t=CUSTOMER TESTIMONIAL">Customer Testimonials</a></li>
+	</ul>
+	</li>
+	</ul></li><li class='mega-menu-item mega-menu-item-type-widget widget_nav_menu mega-menu-columns-1-of-2 mega-menu-item-nav_menu-3' id='mega-menu-item-nav_menu-3'><ul id="menu-resources-column-2" class="menu">
+	</ul></li></ul>
+	</li><li class='mega-add-arrow mega-m-blog mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-right mega-menu-flyout mega-hide-arrow mega-menu-item-11839' id='mega-menu-item-11839'><a class="mega-menu-link" href="/blog/" aria-haspopup="true" tabindex="0">Blog</a>
+	<ul class="mega-sub-menu">
+	<li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-11841' id='mega-menu-item-11841'><a class="mega-menu-link" href="/category/technical/">Technical</a></li><li class='mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-11840' id='mega-menu-item-11840'><a class="mega-menu-link" href="/category/business/">Business</a></li></ul>
+	</li></ul></div>						</ul>
+				</div>
+				<div class="cf clearfix"></div>
+			</div>	<!-- end header-contain -->	
+
+			</div><!-- end header-lower-->
+
+			
+		</header>
+	</div>
+	    <div class="wrap container" role="document">
+      <div class="content row">
+        <main class="main" role="main">
+          
+<div id="content_home"> 
+
+	<div class="tier tier_1 dropshadow_topbot">
+		
+		<div class="content_home_1">
+			<link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" data-aimg="http://localhost/basho-web/content/uploads/revslider/home/fukuro-owl-darker-orange.png"  data-amobile="enabled"  data-aie8="disabled"  style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER 5.4.6.1 fullwidth mode -->
+	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.6.1">
+<ul>	<!-- SLIDE  -->
+	<li data-index="rs-4" data-transition="fade,fadethroughdark" data-slotamount="default,default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default,default" data-easeout="default,default" data-masterspeed="300,default"  data-rotate="0,0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="/content/uploads/revslider/home/new-slide.jpg"  alt="" title="Home Page"  data-bgposition="center center" data-kenburns="on" data-duration="15000" data-ease="Power1.easeInOut" data-scalestart="140" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="-5 0" data-offsetend="5 -5" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-1" 
+			 data-x="['center','center','center','center']" data-hoffset="['-110','-110','-110','0']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['19','19','19','-136']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 5;"><img src="/content/uploads/2016/08/Riak_Man_Super_single.png" alt="" data-ww="['377px','377px','377px','231px']" data-hh="['383px','383px','383px','226px']" width="470" height="477" data-no-retina> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-2" 
+			 data-x="['left','left','left','center']" data-hoffset="['15','15','15','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['70','70','70','17']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":500,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 32px; font-weight: 400; color: rgba(255,158,1,1); letter-spacing: ;font-family:Oswald;">THE WORLD'S MOST<br/>
+RESILIENT NOSQL DATABASES
+ </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-3" 
+			 data-x="['left','left','left','center']" data-hoffset="['16','16','16','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['162','162','162','103']" 
+						data-fontsize="['20','20','20','26']"
+			data-lineheight="['30','30','30','40']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-visibility="['off','off','off','on']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":750,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 30px; font-weight: 400; color: rgba(98,99,103,1); letter-spacing: ;font-family:Georgia, serif;"><a href="products/riak-kv/" style="color:#626367;text-decoration:underline">Riak KV</a>: flexible data models<br/>
+<a href="products/riak-ts/" style="color:#626367;text-decoration:underline">Riak TS</a>: for IoT  & other Time Series </div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-4" 
+			 data-x="['left','left','left','center']" data-hoffset="['685','685','685','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['49','49','49','443']" 
+						data-fontsize="['40','40','40','30']"
+			data-lineheight="['50','50','50','35']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":950,"speed":600,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 8; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Oswald;">RIAK TS NOW AVAILABLE<BR/>
+AS OPEN SOURCE SOFTWARE </div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-5" 
+			 data-x="['left','left','left','center']" data-hoffset="['684','684','684','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['171','171','171','520']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":1150,"speed":600,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 9; white-space: nowrap; font-size: 25px; line-height: 35px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Oswald;">RIAK<sup class="regmark">®</sup> TS </div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-6" 
+			 data-x="['left','left','left','center']" data-hoffset="['685','685','685','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['202','202','202','561']" 
+						data-fontsize="['20','20','20','18']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":1150,"speed":600,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Georgia, serif;">Riak now optimized for time series use cases </div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-caption rev-btn  tp-resizeme" 
+			 id="slide-4-layer-8" 
+			 data-x="['left','left','left','center']" data-hoffset="['686','686','686','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['255','255','255','606']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="button" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":1750,"speed":400,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Back.easeIn"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(252,158,0,1);bs:solid;bw:0 0 0 0;"}]'
+			data-textAlign="['center','center','center','center']"
+			data-paddingtop="[12,12,12,12]"
+			data-paddingright="[35,35,35,35]"
+			data-paddingbottom="[12,12,12,12]"
+			data-paddingleft="[35,35,35,35]"
+
+			style="z-index: 11; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: px;font-family:Oswald;background-color:rgba(252,158,0,0.75);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><a href="https://docs.riak.com/index.html" style="color:#fff;text-decroation:none;" target="_blank">DOWNLOAD</a> </div>
+		
+		<!-- LAYER NR. 8 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-13" 
+			 data-x="['left','left','left','left']" data-hoffset="['740','740','740','816']" 
+			 data-y="['top','top','top','top']" data-voffset="['356','356','356','380']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":2800,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 15; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: px;font-family:Oswald;"><a href="/posts/technical/riak-kv-2-2-release-highlights/index.html?p=13017.html" target="_blank" style="color:#fc9e00; text-decoration:none">READ »</a> </div>
+
+		<!-- LAYER NR. 9 -->
+		<a class="tp-caption   tp-resizeme" 
+		href="/posts/technical/riak-kv-2-2-release-highlights/index.html?p=13017.html" target="_blank"			 id="slide-4-layer-15" 
+			 data-x="['left','left','left','left']" data-hoffset="['675','675','675','748']" 
+			 data-y="['top','top','top','top']" data-voffset="['356','356','356','374']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-actions=''
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":2800,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 16;text-decoration: none;"><img src="/content/uploads/revslider/home/fukuro-owl-darker-orange.png" alt="" data-ww="['44px','44px','44px','143px']" data-hh="['46px','46px','46px','151px']" width="398" height="420" data-no-retina> </a>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-14" 
+			 data-x="['left','left','left','left']" data-hoffset="['742','742','742','812']" 
+			 data-y="['top','top','top','top']" data-voffset="['380','380','380','430']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":2800,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 17; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Georgia, serif;">Riak KV 2.2<br/>
+Now Available.<br/>
+Read about <br/>
+highlights in our<br/>
+blog. </div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-16" 
+			 data-x="['left','left','left','left']" data-hoffset="['900','900','900','196']" 
+			 data-y="['top','top','top','top']" data-voffset="['356','356','356','677']" 
+						data-fontsize="['20','20','20','34']"
+			data-lineheight="['22','22','22','36']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":3200,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[25,25,25,25]"
+
+			style="z-index: 18; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(252,158,0,1); letter-spacing: px;font-family:Oswald;"><a href="/products/integrations/index.html" style="color:#fc9e00;text-decoration:none;">EXPLORE »</a> </div>
+
+		<!-- LAYER NR. 12 -->
+		<a class="tp-caption   tp-resizeme" 
+		href="/products/integrations/index.html" target="_self"			 id="slide-4-layer-9" 
+			 data-x="['left','left','left','left']" data-hoffset="['846','846','846','31']" 
+			 data-y="['top','top','top','top']" data-voffset="['356','356','356','677']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-actions=''
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":3200,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[10,10,10,10]"
+
+			style="z-index: 19;text-decoration: none;"><img src="/content/uploads/revslider/home/icon-read.png" alt="" data-ww="['56px','56px','56px','56px']" data-hh="['46px','46px','46px','46px']" width="56" height="46" data-no-retina> </a>
+
+		<!-- LAYER NR. 13 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-17" 
+			 data-x="['left','left','left','left']" data-hoffset="['900','900','900','194']" 
+			 data-y="['top','top','top','top']" data-voffset="['380','380','380','725']" 
+						data-fontsize="['15','15','15','25']"
+			data-lineheight="['22','22','22','32']"
+			data-color="['rgba(255,255,255,1)','rgba(255,255,255,1)','rgba(255,255,255,1)','rgba(247,247,247,1)']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-visibility="['off','off','off','on']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":3200,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 20; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Georgia, serif;">Riak Integrations<br/>
+ with other<br/>
+OS products </div>
+
+		<!-- LAYER NR. 14 -->
+		
+
+		<!-- LAYER NR. 15 -->
+		
+
+		<!-- LAYER NR. 16 -->
+		
+
+		<!-- LAYER NR. 17 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-18" 
+			 data-x="['left','left','left','left']" data-hoffset="['16','16','16','512']" 
+			 data-y="['top','top','top','top']" data-voffset="['162','162','162','48']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-visibility="['on','on','on','off']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":3600,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"easeInQuad"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 21; white-space: nowrap; font-size: 20px; line-height: 30px; font-weight: 400; color: rgba(98,99,103,1); letter-spacing: ;font-family:Georgia, serif;"><a href="products/riak-kv/" style="color:#626367;text-decoration:underline">Riak KV</a>: flexible data model for many<br/>unstructured use cases including user,<br/>
+session and profile data<br/> <br/>
+<a href="products/riak-ts/" style="color:#626367;text-decoration:underline">Riak TS</a>: for IoT & other time series data </div>
+
+		<!-- LAYER NR. 18 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-4-layer-20" 
+			 data-x="['left','left','left','left']" data-hoffset="['900','900','900','604']" 
+			 data-y="['top','top','top','top']" data-voffset="['380','380','380','640']" 
+						data-fontsize="['15','15','15','25']"
+			data-lineheight="['22','22','22','32']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-visibility="['on','on','on','off']"
+ 
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"delay":3200,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","ease":"nothing"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[25,25,25,25]"
+
+			style="z-index: 20; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: ;font-family:Georgia, serif;">Riak Integrations<br/>
+ with other<br/>
+OS products </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+setREVStartSize({c: jQuery('#rev_slider_2_1'), responsiveLevels: [1240,1024,778,480], gridwidth: [1240,1240,1240,480], gridheight: [517,517,517,900], sliderLayout: 'fullwidth'});
+			
+var revapi2,
+	tpj=jQuery;
+			
+tpj(document).ready(function() {
+	if(tpj("#rev_slider_2_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_2_1");
+	}else{
+		revapi2 = tpj("#rev_slider_2_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"/content/plugins/revslider/public/assets/js/",
+			sliderLayout:"fullwidth",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"on",
+				touch:{
+					touchenabled:"on",
+					touchOnDesktop:"off",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+			},
+			responsiveLevels:[1240,1024,778,480],
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:[1240,1240,1240,480],
+			gridheight:[517,517,517,900],
+			lazyType:"none",
+			shadow:0,
+			spinner:"spinner3",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}
+	
+});	/*ready*/
+</script>
+		<script>
+					var htmlDivCss = '	#rev_slider_2_1_wrapper .tp-loader.spinner3 div { background-color: #FFFFFF !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+					<script>
+					var htmlDivCss = unescape(".tp-kbimg-wrap%20img%20%7B%0A%09display%3Ablock%20%21important%3B%0A%7D%0A.tp-bgimg.defaultimg%20%7B%0A%09%09background-image%3A%20url%28%22%2Fwp-content%2Fuploads%2Frevslider%2Fhome%2Fnew-slide.jpg%22%29%20%21important%3B%0A%7D%0A%0A%20%20%0A%40media%20%28max-width%3A%20480px%29%20%7B%0A%09.tp-bgimg.defaultimg%20%7B%0A%09%09background-image%3A%20url%28%22%2Fwp-content%2Fuploads%2F2016%2F07%2Fbg-slide-alt.jpg%22%29%20%21important%3B%0A%09%7D%0A%09.tp-kbimg-wrap%20img%20%7B%0A%09%09display%3Anone%20%21important%3B%0A%09%7D%0A%7D");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script></div><!-- END REVOLUTION SLIDER -->		</div>
+		
+	</div>
+	<div class="divider_bar shadow"></div>
+
+	<div class="tier tier_2 dropshadow_topbot">
+		<div class="content_home_2 row">
+			<div class="col-md-12 home_2_data">
+				
+				<div class="riak_logo">
+					<img alt="" src="/content/themes/basho-v2/dist/images/riak-spear.png">
+				</div>
+				
+				<h2>Helping Enterprises Build More Resilient Applications<br/>When Accurate Data Matters</h2>
+				
+								<div class="col-md-12 col-sm-12 callout ">
+					
+					
+					<p>To address global audiences modern web and IoT applications must be built to be highly distributed. But this presents a few challenges.</p>
+<p>Distributed Systems Challenges:</p>
+<ul style="margin: 15px 5%;">
+<li>Data Availability</li>
+<li>Data Accuracy</li>
+<li>Cost of Scale</li>
+</ul>
+<p>At Riak, we are distributed systems experts and we work with Application teams to overcome these distributed system challenges.</p>
+<p>Riak’s Riak<sup>®</sup> is a distributed <a href="/resources/nosql-databases/">NoSQL database</a> that delivers:</p>
+<ul style="margin: 15px 5%;">
+<li>Unmatched Resiliency beyond typical “high availability” offerings</li>
+<li>Innovative technology to ensure data accuracy and never lose a write</li>
+<li>Massive scale on commodity hardware</li>
+<li>Common code foundation with true multi-model support</li>
+</ul>
+<p>Riak<sup>® </sup>provides all this, while still focused on ease of operations.</p>
+<p>Chose<a href="/products/riak-kv/"> Riak<sup>®</sup> KV</a> flexible key-value data model for web scale profile and session management, real-time big data, catalog, content management, customer 360, digital messaging, and more use cases.</p>
+<p>Chose<a href="/products/riak-ts/"> Riak<sup>® </sup>TS</a> for IoT and time series use cases.</p>
+					
+										<div class="col-sm-12 text-center">
+						<div class="learn_more_btn"> 
+							<a href="/products/riak-enterprise/index.html">Learn More</a>
+						</div>
+					</div>
+										
+				</div>
+												
+			</div>
+			
+		</div>
+		
+	</div>
+		
+	<div class="divider_bar shadow"></div>	
+	
+	<div class="tier tier_2_5 dropshadow_topbot">
+		<div class="content_home_2_5 row">
+			<div class="col-md-12 home_2_5_data">
+				
+				
+				<h2>Developer Resources</h2>
+				
+							
+								
+										
+					<div class="col-sm-6 col-md-3 resource-item  ">
+						
+												
+												<h3>Support</h3>
+							
+						<p>Riak and our <a href="/community/index.html?p=9029.html">Community</a> provide a range of Support and Professional Services designed to meet the needs of open source and Enterprise customers.<strong><br />
+</strong></p>
+						
+												
+					</div>
+				
+								
+										
+					<div class="col-sm-6 col-md-3 resource-item  ">
+						
+												
+												<h3>Downloads</h3>
+							
+						<p><a href="https://docs.riak.com/index.html" target="_blank">Download </a>and experience open source Riak and connectors for popular distributed systems technologies like Spark and Mesos.</p>
+						
+												
+					</div>
+				
+								
+										
+					<div class="col-sm-6 col-md-3 resource-item  ">
+						
+												
+												<h3>Community</h3>
+							
+						<p>Our <a href="/community/index.html?p=9029.html">Community page</a> is the place to find information on Open Source projects, developer conversation forums, and information Riak&#8217;s developer recognition program.</p>
+						
+												
+					</div>
+				
+								
+										
+					<div class="col-sm-6 col-md-3 resource-item  ">
+						
+												
+												<h3>Documentation</h3>
+							
+						<p>Browse our latest <a href="https://docs.riak.com/index.html" target="_blank">documentation</a>.</p>
+						
+												
+					</div>
+				
+								
+								<div class="col-sm-8 resource-item">
+											<br/>
+						<h3>Featured Tools & Training</h3>
+										<ul type="square">
+<li><a href="https://github.com/basho-labs/riak_explorer" target="_blank">Riak Explorer</a> &#8211; provides browsing and admin capabilities for Riak.</li>
+</ul>
+				</div>
+				<div class="col-sm-4 resource-item">
+					<div class="bashoman">
+							<img alt="" src="/content/themes/basho-v2/dist/images/bashoman_computer.png">
+						</div>
+				</div>
+								
+								
+			</div>
+			
+		</div>
+		
+	</div>
+		
+	<div class="divider_bar shadow"></div>	
+	<div class="tier tier_3">
+		<div class="basho_lanterns">
+			<img alt="" src="/content/themes/basho-v2/dist/images/lanterns.png">
+		</div>		
+		<div class="tier_3_mg"> 
+			<img alt="" src="/content/themes/basho-v2/dist/images/homeplax/tier_3_bg.png">
+		</div>
+		<div class="content_home_3 row">
+			<div class="col-sm-7 col-sm-offset-5 home_3_data">
+				<h2>FINALLY A NOSQL DATABASE THAT BRINGS YOU TRANQUILITY AND PEACE OF MIND</h2>
+				<p>When seconds of latency can cost thousands of dollars and an outage millions, the call for scalable, highly available databases that are easy to operationalize is resoundingly clear. Riak performs as promised and keeps the lights on.</p>
+			</div>
+		</div>
+	</div>
+	<div class="divider_bar shadow"></div>
+	<div class="tier tier_4">
+		
+		<div class="customers">
+			<div class="quotes dropshadow_top">
+				<div class="quote_content row">
+					<div class="left_arrow arrow col-sm-1">
+						<img alt="" src="/content/themes/basho-v2/dist/images/left-arrow.png">
+					</div>
+					<div class="col-sm-10 quote">
+						<div class="quote_port">
+														<div>
+								<p>After a stringent evaluation process, we decided that Riak’s flexible, scalable database was best-suited to our needs.</p>
+								<p><span class="quote_attribute">- Martin Davies, CEO of Technology, bet365</span></p>
+							</div>
+														<div>
+								<p>Initiatives such as integrating Riak KV with Redis and Apache Solr have the potential to ease our future development workload considerably.</p>
+								<p><span class="quote_attribute">- Jason Ordway, CTO, ShopKeep POS</span></p>
+							</div>
+														<div>
+								<p>They (Riak) have worked with us in a true partnership fashion to keep up with our rapidly scaling business and have always addressed our concerns in a timely manner.</p>
+								<p><span class="quote_attribute">- Matt Davis, Site Reliability Engineer at OpenX</span></p>
+							</div>
+														<div>
+								<p>Today, we now see peaks well over 250,000 operations per second, all while sustaining sub-millisecond response times and rock solid stability. Despite this massive change in growth, we still do not employ any full-time engineers to work on our Riak cluster. It&#8217;s really that easy to use.</p>
+								<p><span class="quote_attribute">- Wes Jossey, Head of Operations at Tapjoy</span></p>
+							</div>
+														<div>
+								<p>Riak has been a valuable partner in our transformation and Riak has proven to be a critical component as the NoSQL distributed database powering our new platform.</p>
+								<p><span class="quote_attribute">- Bryson Koehler, EVP and CIO, The Weather Company</span></p>
+							</div>
+														<div>
+								<p>My experience with Riak has been that the core promise of being an available, scalable, minimal operational support, key-value store delivers as advertised.</p>
+								<p><span class="quote_attribute">- Matt Ranney, Senior Staff Engineer, Uber</span></p>
+							</div>
+														
+						</div>
+						<div class="bullets">
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/on-bullet.png">
+							</div>							
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/off-bullet.png">
+							</div>							
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/off-bullet.png">
+							</div>							
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/off-bullet.png">
+							</div>							
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/off-bullet.png">
+							</div>							
+														<div class="single_bullet">
+								<img alt="" src="/content/themes/basho-v2/dist/images/off-bullet.png">
+							</div>							
+													</div>
+					</div>
+					<div class="right_arrow arrow col-sm-1">
+						<img alt="" src="/content/themes/basho-v2/dist/images/right-arrow.png">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="divider_bar"></div>
+		
+	</div>
+</div>         </main><!-- /.main -->
+              </div><!-- /.content -->
+    </div><!-- /.wrap -->
+    <footer class="content-info" role="contentinfo">
+	<div class="container">
+		<div class="footer_menu row">
+			<div class="footer-content row">
+
+				<div class="col-sm-12 col-md-8">
+
+					<div class="four-menus">
+
+	<div class="col-xs-6 col-sm-3 menu_col left">
+		<ul>
+		<li><a href="/products/">Products</a></li><li><a href="/products/integrations/">Integrations</a></li><li><a href="/resources/">Resources</a></li><li><a href="/resources/nosql-databases/index.html?p=9937.html">NoSQL Explained</a></li>							</ul>
+	</div>
+	<div class="col-xs-6 col-sm-3 menu_col middle">
+		<ul>
+		<li><a href="/about/">About Riak</a></li><li><a href="/newsroom/">Newsroom</a></li>							</ul>
+	</div>
+	<div class="col-xs-6 col-sm-3 menu_col middle">
+		<ul>
+		<li><a href="/blog/">Blog</a></li><li><a href="/community/">DEVELOPERS</a></li>							</ul>
+	</div>
+	<div class="col-xs-6  col-sm-3 menu_col right">
+		<ul>
+									</ul>
+
+	</div>
+
+</div>
+<div class="copyright col-xs-12">
+						
+											</div>
+				</div>
+				<div class="col-sm-12 col-md-3 footer-right">
+
+					<div class="logo_home">
+						<a href="/index.html"><img alt="" src="/content/themes/basho-v2/dist/images/riak-footer-logo.png"></a>
+					</div>
+
+										<div class="cf clearfix"></div>
+
+				</div>
+
+				<div class="back_top">
+					<img alt="" src="/content/themes/basho-v2/dist/images/back-top.png">
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+</footer>
+<div class="sidenav">
+ 
+
+</div>
+
+
+</div>
+
+
+<!-- google analytics code here -->
+			<script type="text/javascript">
+				function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			</script>
+			<link rel='stylesheet' id='eventon_dynamic_styles-css'  href='/content/plugins/eventON/assets/css/eventon_dynamic_styles.css?ver=4.8.2' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/riak.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9'></script>
+<script type='text/javascript' src='/includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100","effect":{"fadeUp":{"in":{"animate":{"opacity":"show","margin-top":"0"},"css":{"margin-top":"10px"}},"out":{"animate":{"opacity":"hide","margin-top":"10px"}}}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/content/plugins/megamenu/js/maxmegamenu.js?ver=2.3.8'></script>
+<script type='text/javascript' src='/content/plugins/megamenu-pro/assets/public.js?ver=1.4.5'></script>
+<script type='text/javascript' src='/includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='/includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pum_vars = {"ajaxurl":"http:\/\/riak.com\/wp-admin\/admin-ajax.php","restapi":"http:\/\/riak.com\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"11522","debug_mode":"","disable_open_tracking":""};
+var pum_debug_vars = {"debug_mode_enabled":"Popup Maker Debug Mode Enabled","debug_started_at":"Debug started at:","debug_more_info":"For more information on how to use this information visit http:\/\/docs.wppopupmaker.com\/?utm_medium=js-debug-info&utm_campaign=ContextualHelp&utm_source=browser-console&utm_content=more-info","global_info":"Global Information","localized_vars":"Localized variables","popups_initializing":"Popups Initializing","popups_initialized":"Popups Initialized","single_popup_label":"Popup: #","theme_id":"Theme ID: ","label_method_call":"Method Call:","label_method_args":"Method Arguments:","label_popup_settings":"Settings","label_triggers":"Triggers","label_cookies":"Cookies","label_delay":"Delay:","label_conditions":"Conditions","label_cookie":"Cookie:","label_settings":"Settings:","label_selector":"Selector:","label_mobile_disabled":"Mobile Disabled:","label_tablet_disabled":"Tablet Disabled:","label_display_settings":"Display Settings:","label_close_settings":"Close Settings:","label_event_before_open":"Event: Before Open","label_event_after_open":"Event: After Open","label_event_open_prevented":"Event: Open Prevented","label_event_setup_close":"Event: Setup Close","label_event_close_prevented":"Event: Close Prevented","label_event_before_close":"Event: Before Close","label_event_after_close":"Event: After Close","label_event_before_reposition":"Event: Before Reposition","label_event_after_reposition":"Event: After Reposition","label_event_checking_condition":"Event: Checking Condition","triggers":{"click_open":{"name":"Click Open","modal_title":"Click Trigger Settings","settings_column":"<strong>Extra Selectors<\/strong>: {{data.extra_selectors}}"},"auto_open":{"name":"Auto Open","modal_title":"Auto Open Settings","settings_column":"<strong>Delay<\/strong>: {{data.delay}}"},"scroll":{"name":"Scroll","modal_title":"Scroll Trigger Settings","settings_column":"<strong>Trigger<\/strong>: {{data.trigger}}"}},"cookies":{"on_popup_open":{"name":"On Popup Open","modal_title":"On Popup Open Settings"},"on_popup_close":{"name":"On Popup Close","modal_title":"On Popup Close Settings"},"manual":{"name":"Manual JavaScript","modal_title":"Click Trigger Settings"}}};
+var ajaxurl = "http:\/\/riak.com\/wp-admin\/admin-ajax.php";
+var popmake_default_theme = "11522";
+/* ]]> */
+</script>
+<script type='text/javascript' src='/content/plugins/popup-maker/assets/js/site.min.js?defer&amp;ver=1.6.6.js' defer='defer'></script>
+<script type='text/javascript' src='/content/plugins/popup-maker-scroll-triggered-popups/assets/js/site.min.js?defer&amp;ver=1.2.3.js' defer='defer'></script>
+
+<!-- inject:js -->
+<script src="/content/themes/basho-v2/dist/scripts/scripts-cd91f277db.min.js"></script>
+<!-- endinject -->
+<script type='text/javascript' src='/includes/js/embed.min.js?ver=4.8.2'></script>
+  </body>
+</html>
