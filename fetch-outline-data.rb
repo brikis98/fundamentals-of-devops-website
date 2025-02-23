@@ -129,8 +129,8 @@ def book_image_path(title)
   "assets/img/books/#{dasherize(title)}.jpg"
 end
 
-def other_resource_image_base_path(title)
-  "assets/img/other-resources/#{dasherize(title)}"
+def other_resource_image_base_path(title, image_subfolder)
+  "assets/img/#{image_subfolder}/#{dasherize(title)}"
 end
 
 def download_cover(title, cover_id, cover_image_path)
@@ -251,8 +251,8 @@ def get_image_extension_from_image_url(image_url)
   end
 end
 
-def fetch_image_for_doc(doc, url, title)
-  image_base_path = other_resource_image_base_path(title)
+def fetch_image_for_doc(doc, url, title, image_subfolder)
+  image_base_path = other_resource_image_base_path(title, image_subfolder)
   if image_path = check_if_image_exists_given_base_path(image_base_path)
     puts "Already have an image for other resource '#{title}' at '#{image_path}', will not download again"
     return image_path
@@ -319,16 +319,6 @@ def resize_image(image_path)
   image_path
 end
 
-def process_other_resources(chapter, outline_as_str)
-  other_resources = chapter['other_resources'] || []
-
-  other_resources.each do |other_resource|
-    outline_as_str = find_image_and_descriptions_for_resource(other_resource, "Other resource", outline_as_str)
-  end
-
-  outline_as_str
-end
-
 def should_skip(title, url)
   # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
   # them. You'll have to put these entries into the outline manually.
@@ -342,7 +332,7 @@ def should_skip(title, url)
   false
 end
 
-def find_image_and_descriptions_for_resource(resource, resource_type, outline_as_str)
+def find_image_and_descriptions_for_resource(resource, resource_type, image_subfolder, outline_as_str)
   title = resource['title']
   url = resource['url']
   image = resource['image']
@@ -366,9 +356,20 @@ def find_image_and_descriptions_for_resource(resource, resource_type, outline_as
     if image
       puts "#{resource_type} '#{title}' already has an image. Will not try to update it."
     else
-      image_file_path = fetch_image_for_doc(doc, url, title)
+      image_file_path = fetch_image_for_doc(doc, url, title, image_subfolder)
       outline_as_str = add_element_to_outline_yaml(title, outline_as_str, 'image', image_file_path)
     end
+  end
+
+  outline_as_str
+end
+
+
+def process_other_resources(chapter, outline_as_str)
+  other_resources = chapter['other_resources'] || []
+
+  other_resources.each do |other_resource|
+    outline_as_str = find_image_and_descriptions_for_resource(other_resource, "Other resource", "other-resources", outline_as_str)
   end
 
   outline_as_str
@@ -382,7 +383,7 @@ def process_tools(chapter, outline_as_str)
     tools = tool_category['tools']
 
     tools.each do |tool|
-      outline_as_str = find_image_and_descriptions_for_resource(tool, "Tool #{tool_type}", outline_as_str)
+      outline_as_str = find_image_and_descriptions_for_resource(tool, "Tool #{tool_type}", "tools", outline_as_str)
     end
   end
 
