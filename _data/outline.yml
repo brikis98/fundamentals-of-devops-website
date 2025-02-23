@@ -1934,7 +1934,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/cloud-native-data-center-networking.jpg"
-      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable. Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible. In the context of a cloud native data center, you’ll Clos topologyNetwork disaggregationNetwork operating system choicesRouting protocol choicesContainer networkingNetwork virtualization and EVPNNetwork automation."
+      description: "If you want to study, build, or simply validate your thinking about modern cloud native data center networks, this is your book. Whether you’re pursuing a multitenant private cloud, a network for running machine learning, or an enterprise data center, author Dinesh Dutt takes you through the steps necessary to design a data center that’s affordable, high capacity, easy to manage, agile, and reliable. Ideal for network architects, data center operators, and network and containerized application developers, this book mixes theory with practice to guide you through the architecture and protocols you need to create and operate a robust, scalable network infrastructure. The book offers a vendor-neutral way to look at network design. For those interested in open networking, this book is chock-full of examples using open source software, from FRR to Ansible."
       subtitle: "Architecture, Protocols, and Tools"
       author: "Dinesh Dutt"
       publisher: "O'Reilly"
@@ -1996,7 +1996,7 @@
       image_width: 180
       image_height: 95
       image: "assets/img/other-resources/beyondcorp-a-new-approach-to-enterprise-security.jpg"
-      description: "BeyondCorp: A New Approach to Enterprise Security."
+      description: "Virtually every company today uses firewalls to enforce perimeter security. However, this security model is problematic because, when that perimeter is breached, an attacker has relatively easy access to a company’s privileged intranet. As companies adopt mobile and cloud technologies, the perimeter is becoming increasingly difficult to enforce. Google is taking a different approach to network security. We are removing the requirement for a privileged intranet and moving our corporate applications to the Internet."
       author: "Rory Ward and Betsy Beyer"
       url: "https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/"
       type: Article
@@ -2011,19 +2011,27 @@
           url: https://aws.amazon.com/route53/
         - title: "Azure DNS"
           url: https://azure.microsoft.com/en-us/products/dns
+          description: "Host your Domain Name System (DNS) domain in Azure."
+          image: "assets/img/tools/azure-dns.png"
+          image_width: 180
+          image_height: 95
         - title: "GoDaddy"
           url: https://www.godaddy.com/
+          description: "Your all in one solution to grow online. Start a free trial to create a beautiful website, get a domain name, fast hosting, online marketing and award-winning 24/7 support."
+          image: "assets/img/tools/godaddy.png"
+          image_width: 180
+          image_height: 37
         - title: "Namecheap"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/namecheap.png"
+          image_height: 91
+          image: "assets/img/tools/namecheap.svg"
           description: "Register domain names at Namecheap. Buy cheap domain names and enjoy 24/7 support. With over 18 million domains under management, you know you’re in good hands."
           url: https://www.namecheap.com/
         - title: "CloudFlare DNS"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/cloudflare-dns.png"
-          description: "With Cloudflare DNS you have the fastest response time of any DNS provider. Our DNS has unparalleled redundancy and built-in security. ."
+          description: "With Cloudflare DNS you have the fastest response time of any DNS provider. Our DNS has unparalleled redundancy and built-in security."
           url: https://www.cloudflare.com/application-services/products/dns/
     - type: Single Sign On (SSO)
       tools:
@@ -2053,6 +2061,10 @@
           url: https://duo.com/
         - title: "Microsoft Entra ID"
           url: https://www.microsoft.com/en-ie/security/business/identity-access/microsoft-entra-id
+          description: "Microsoft Entra ID (formerly Azure Active Directory) is a cloud identity and access management solution that safeguards your data."
+          image: "assets/img/tools/microsoft-entra-id.png"
+          image_width: 180
+          image_height: 180
         - title: "Ping Identity"
           image_width: 180
           image_height: 95
@@ -2081,9 +2093,13 @@
           url: https://www.ninjaone.com/
         - title: "Microsoft Intune"
           url: https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune
+          description: "Microsoft Intune manages users and devices, simplifies app management and automated policy deployment, and integrates with mobile threat defense. It connects to Managed Google Play, Apple tokens and certificates, and Teamviewer for remote assistance. Can use MDM or MAM to protect data, configure devices, and simplify access to company resources."
+          image: "assets/img/tools/microsoft-intune.png"
+          image_width: 180
+          image_height: 180
         - title: "Scalefusion"
-          image_width: 1200
-          image_height: 630
+          image_width: 180
+          image_height: 95
           image: "assets/img/tools/scalefusion.webp"
           description: "Scalefusion offers the next era of advanced endpoint management, zero trust access, and endpoint security to safeguard your business with unmatched protection."
           url: https://scalefusion.com/
@@ -2130,6 +2146,7 @@
           image_height: 95
           image: "assets/img/tools/metadata-managed-ssh-connections.png"
           url: https://cloud.google.com/compute/docs/instances/ssh
+          description: "Compute Engine uses key-based SSH authentication to establish connections to all Linux virtual machine (VM) instances."
     - type: VPN
       tools:
         - title: "Cisco"
@@ -2154,13 +2171,14 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/barracuda.jpg"
-          description: "Remote VPN Access | Barracuda Networks."
+          description: "Remote VPN Access. Optimize productivity for off-network users."
           url: https://www.barracuda.com/products/network-protection/cloudgen-firewall/use-cases/remote-vpn-access
         - title: "SonicWall"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/sonicwall.png"
           url: https://www.sonicwall.com/
+          description: "SonicWall provides cybersecurity products, services and support for business."
         - title: "Fortinet"
           image_width: 180
           image_height: 96
@@ -2196,11 +2214,12 @@
           image_height: 95
           image: "assets/img/tools/google-cloud-vpn.png"
           url: https://cloud.google.com/network-connectivity/docs/vpn/concepts/overview
+          description: "Cloud VPN securely extends your peer network to your Virtual Private Cloud (VPC) network through an IPsec VPN connection. The VPN connection encrypts traffic traveling between the networks, with one VPN gateway handling encryption and the other handling decryption. This process protects your data during transmission. You can also connect two VPC networks together by connecting two Cloud VPN instances."
         - title: "AWS Virtual Private Gateways"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/aws-virtual-private-gateways.png"
-          description: "Understand how Site-to-Site VPN connects your on-premises network to your VPC."
+          description: "Virtual private gateway is the VPN concentrator on the Amazon side of the Site-to-Site VPN connection. You create a virtual private gateway and attach it to a virtual private cloud (VPC) with resources that must access the Site-to-Site VPN connection."
           url: https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html
     - type: Service Discovery
       tools:
@@ -2214,19 +2233,19 @@
           image_width: 180
           image_height: 75
           image: "assets/img/tools/curator.png"
-          description: "What is Curator?."
+          description: "Curator is a keeper or custodian of a museum or other collection - A ZooKeeper Keeper. Apache Curator is a Java/JVM client library for Apache ZooKeeper, a distributed coordination service. It includes a high level API framework and utilities to make using Apache ZooKeeper much easier and more reliable. It also includes recipes for common use cases and extensions such as service discovery and a Java 8 asynchronous DSL."
           url: https://curator.apache.org/docs/about/
         - title: "ZooKeeper"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/zookeeper.png"
-          description: "Apache ZooKeeper."
+          description: "ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by distributed applications. Each time they are implemented there is a lot of work that goes into fixing the bugs and race conditions that are inevitable. Because of the difficulty of implementing these kinds of services, applications initially usually skimp on them, which make them brittle in the presence of change and difficult to manage. Even when done correctly, different implementations of these services lead to management complexity when the applications are deployed."
           url: https://zookeeper.apache.org/
         - title: "Eureka"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/eureka.jpg"
-          description: "AWS Service registry for resilient mid-tier load balancing and failover. - Netflix/eureka."
+          description: "AWS Service registry for resilient mid-tier load balancing and failover."
           url: https://github.com/Netflix/eureka
         - title: "gRPC with etcd"
           image_width: 180
@@ -2238,13 +2257,13 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/synapse.png"
-          description: "Airbnb Engineering & Data Science."
+          description: "Synapse is Airbnb's new system for service discovery. Synapse solves the problem of automated fail-over in the cloud, where failover via network re-configuration is impossible. The end result is the ability to connect internal services together in a scalable, fault-tolerant way."
           url: https://airbnb.io/projects/synapse/
         - title: "Envoy"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/envoy.png"
-          description: "Envoy proxy - home."
+          description: "Originally built at Lyft, Envoy is a high performance C++ distributed proxy designed for single services and applications, as well as a communication bus and “universal data plane” designed for large microservice “service mesh” architectures. Built on the learnings of solutions such as NGINX, HAProxy, hardware load balancers, and cloud load balancers, Envoy runs alongside every application and abstracts the network by providing common features in a platform-agnostic manner. When all service traffic in an infrastructure flows via an Envoy mesh, it becomes easy to visualize problem areas via consistent observability, tune overall performance, and add substrate features in a single place."
           url: https://www.envoyproxy.io/
         - title: "Kubernetes Service Discovery"
           image_width: 180
@@ -2270,25 +2289,25 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/cap’n-proto.png"
-          description: "Cap'n Proto: Introduction."
+          description: "Cap’n Proto is an insanely fast data interchange format and capability-based RPC system. Think JSON, except binary. Or think Protocol Buffers, except faster. In fact, in benchmarks, Cap’n Proto is INFINITY TIMES faster than Protocol Buffers."
           url: https://capnproto.org/
         - title: "FlatBuffers"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/flatbuffers.png"
-          description: "FlatBuffers Docs."
+          description: "FlatBuffers is an efficient cross platform serialization library for C++, C#, C, Go, Java, Kotlin, JavaScript, Lobster, Lua, TypeScript, PHP, Python, Rust and Swift. It was originally created at Google for game development and other performance-critical applications."
           url: https://flatbuffers.dev/
         - title: "Thrift"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/thrift.png"
-          description: "Apache Thrift - Home."
+          description: "The Apache Thrift software framework, for scalable cross-language services development, combines a software stack with a code generation engine to build services that work efficiently and seamlessly between C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and other languages."
           url: https://thrift.apache.org/
         - title: "Avro"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/avro.png"
-          description: "Apache Avro™ Learn More Download a data serialization system Apache Avro™ is the leading serialization format for record data, and first choice for streaming data pipelines. It offers excellent schema evolution, and has implementations for the JVM (Java, Kotlin, Scala, …), Python, C/C++/C#, PHP, Ruby, Rust, JavaScript, and even Perl. Getting started with Java For Java / JVM users, find out everything you need to know about specifying a schema, (de)serializing Avro data and code generation."
+          description: "Apache Avro is the leading serialization format for record data, and first choice for streaming data pipelines. It offers excellent schema evolution, and has implementations for the JVM (Java, Kotlin, Scala, …), Python, C/C++/C#, PHP, Ruby, Rust, JavaScript, and even Perl."
           url: https://avro.apache.org/
     - type: RPC
       tools:
@@ -2321,6 +2340,7 @@
           image_height: 93
           image: "assets/img/tools/openapi.png"
           url: https://www.openapis.org/
+          description: "The OpenAPI Specifications provide a formal standard for describing HTTP APIs. This allows people to understand how an API works, how a sequence of APIs work together, generate client code, create tests, apply design standards, and much, much more."
     - type: Service Mesh
       tools:
         - title: "Linkerd"
@@ -2363,7 +2383,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/consul-service-mesh.jpg"
-          description: "Consul’s service mesh makes application and microservice networking secure and observable with identity-based authentication, mutual TLS (mTLS) encryption, and explicit service-to-service authorization enforced by sidecar proxies. Learn how Consul’s service mesh works and get started on VMs or Kubernetes."
+          description: "Consul’s service mesh makes application and microservice networking secure and observable with identity-based authentication, mutual TLS (mTLS) encryption, and explicit service-to-service authorization enforced by sidecar proxies."
           url: https://developer.hashicorp.com/consul/docs/connect
         - title: "Kuma"
           image_width: 180
