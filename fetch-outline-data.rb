@@ -31,7 +31,12 @@ def make_http_request_with_retries(url)
   retries = 0
 
   begin
-    URI.open(url, :read_timeout => 5, "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    URI.open(url,
+             :read_timeout => 5,
+             "user-agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+             "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'",
+             "accept-language" => "en-US,en;q=0.9"
+    )
   rescue => error
     # https://stackoverflow.com/a/39160567
     # URI.open doesn't allow redirecting https to http... So this is a massive hack to allow it manually by
