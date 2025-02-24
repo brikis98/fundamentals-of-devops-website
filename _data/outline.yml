@@ -82,8 +82,8 @@
       publisher: "IT Revolution Press"
       url: "https://amzn.to/48aToXs"
     - title: "Leading the Transformation"
-      image_width: 180
-      image_height: 280
+      image_width: 120
+      image_height: 180
       image: "assets/img/books/leading-the-transformation.jpg"
       description: "Software is becoming more and more important across a broad range of industries, yet most technology executives struggle to deliver software improvements their businesses require. Leading-edge companies like Amazon and Google are applying DevOps and Agile principles to deliver large software projects faster than anyone thought possible. But most executives don't understand how to transform their current legacy systems and processes to scale these principles across their organizations. Leading the Transformation is an executive guide, providing a clear framework for improving development and delivery. Instead of the traditional Agile and DevOps approaches that focus on improving the effectiveness of teams, this book targets the coordination of work across teams in large organizations -- an improvement that executives are uniquely positioned to lead."
       subtitle: "Applying Agile and DevOps Principles at Scale"
