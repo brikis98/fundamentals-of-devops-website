@@ -525,8 +525,8 @@
           url: https://www.terraform.io/
         - title: "CloudFormation"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/cloudformation.png"
+          image_height: 180
+          image: "assets/img/tools/cloudformation.svg"
           description: "AWS CloudFormation is an infrastructure as code (IaC) service that allows you to easily model, provision, and manage AWS and third-party resources."
           url: https://aws.amazon.com/cloudformation/
         - title: "OpenStack Heat"
@@ -783,8 +783,8 @@
           description: "Internet Information Services (IIS) for Windows Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks."
         - title: "AWS Elastic Load Balancer"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-elastic-load-balancer.png"
+          image_height: 180
+          image: "assets/img/tools/elastic-load-balancer.svg"
           description: "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets and virtual appliances in one or more Availability Zones (AZs)."
           url: https://aws.amazon.com/elasticloadbalancing/
         - title: "GCP Cloud Load Balancer"
@@ -803,8 +803,8 @@
       tools:
         - title: "Auto Scaling Groups (ASG)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/auto-scaling-groups-asg.png"
+          image_height: 180
+          image: "assets/img/tools/auto-scaling-group.svg"
           description: "Automatically maintain application performance and availability by dynamically scaling EC2 instances based on user-defined policies and health checks."
           url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
         - title: "Managed Instance Groups"
@@ -841,8 +841,8 @@
           url: https://docs.docker.com/engine/swarm/
         - title: "Amazon ECS"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-ecs.png"
+          image_height: 180
+          image: "assets/img/tools/elastic-container-service.svg"
           description: "Amazon Elastic Container Service (Amazon ECS) provides a fully managed container service solution that’s easy to use, scalable, secure, and reliable."
           url: https://aws.amazon.com/ecs/
         - title: "Mesos"
@@ -899,8 +899,8 @@
           url: https://hub.docker.com/
         - title: "Amazon Elastic Container Registry (ECR)"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-elastic-container-registry-ecr.png"
+          image_height: 180
+          image: "assets/img/tools/elastic-container-registry.svg"
           description: "Amazon Elastic Container Registry (ECR) is a fully managed Docker container registry that makes it easy to store, share, and deploy container images."
           url: https://aws.amazon.com/ecr/
         - title: "Azure Container Registry"
@@ -931,8 +931,8 @@
       tools:
         - title: "AWS Lambda"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-lambda.png"
+          image_height: 180
+          image: "assets/img/tools/aws-lambda.svg"
           description: "AWS Lambda is a serverless compute service for running code without having to provision or manage servers. You pay only for the compute time you consume."
           url: https://aws.amazon.com/lambda/
         - title: "GCP Cloud Functions"
@@ -961,8 +961,8 @@
           url: https://vercel.com/docs/functions
         - title: "AWS Fargate"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-fargate.png"
+          image_height: 180
+          image: "assets/img/tools/aws-fargate.svg"
           description: "AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes (EKS)."
           url: https://aws.amazon.com/fargate/
         - title: "Knative"
@@ -973,20 +973,20 @@
           url: https://knative.dev/
         - title: "Lambda Function URLs"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/lambda-function-urls.png"
+          image_height: 180
+          image: "assets/img/tools/aws-lambda.svg"
           description: "Configure a Lambda function URL to assign an HTTP(S) endpoint to your Lambda function without having to integrate with other AWS services."
           url: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
         - title: "Amazon API Gateway"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-api-gateway.png"
+          image_height: 180
+          image: "assets/img/tools/api-gateway.svg"
           description: "Amazon API Gateway helps you build HTTP, REST, and WebSocket APIs with a fully managed service that makes it easy to create, publish, maintain, manage, monitor, and secure APIs."
           url: https://aws.amazon.com/api-gateway/
         - title: "Amazon Aurora Serverless"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-aurora-serverless.png"
+          image_height: 180
+          image: "assets/img/tools/aurora.svg"
           description: "With Amazon Aurora Serverless, there are no DB Instances to manage. The database automatically starts, stops, and scales capacity up or down based on your application's needs."
           url: https://aws.amazon.com/rds/aurora/serverless/
         - title: "Serverless Framework"
@@ -1621,8 +1621,8 @@
           url: https://www.travis-ci.com/
         - title: "AWS CodePipeline"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-codepipeline.png"
+          image_height: 180
+          image: "assets/img/tools/aws-codepipeline.svg"
           description: "AWS CodePipeline automates the build, test, and deploy phases of your release process each time a code change occurs."
           url: https://aws.amazon.com/codepipeline/
         - title: "Azure Pipelines"
@@ -1689,9 +1689,9 @@
           url: https://statsig.com/
         - title: "AWS AppConfig"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-appconfig.png"
-          description: "AWS AppConfig – AWS Systems Manager – safely deploy feature flags and application configuration."
+          image_height: 180
+          image: "assets/img/tools/aws-appconfig.svg"
+          description: "Faster application deployments with automated safeguards."
           url: https://aws.amazon.com/systems-manager/features/appconfig/
     - type: OpenTofu / Terraform Deployment
       tools:
@@ -2005,8 +2005,8 @@
       tools:
         - title: "Amazon Route 53"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-route-53.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-route53.svg"
           description: "Amazon Route 53 is a highly available and scalable cloud domain name system (DNS) service. Enables to customize DNS routing policies to reduce latency."
           url: https://aws.amazon.com/route53/
         - title: "Azure DNS"
@@ -2131,14 +2131,14 @@
           url: https://www.strongdm.com/
         - title: "EC2 instance connect"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/ec2-instance-connect.png"
+          image_height: 180
+          image: "assets/img/tools/ec2.svg"
           description: "Connect to your Linux instances using EC2 Instance Connect."
           url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html
         - title: "Systems Manager"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/systems-manager.png"
+          image_height: 180
+          image: "assets/img/tools/aws-systems-manager.svg"
           description: "Learn how to connect to your EC2 instance using Session Manager, a capability of AWS Systems Manager."
           url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-with-systems-manager-session-manager.html
         - title: "Metadata-managed SSH connections"
@@ -2205,8 +2205,8 @@
           url: https://tailscale.com/
         - title: "AWS Client VPN"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-client-vpn.png"
+          image_height: 180
+          image: "assets/img/tools/aws-client-vpn.svg"
           description: "Securely connect your remote workforce to resources within both AWS and your on-premises network using AWS Client VPN."
           url: https://aws.amazon.com/vpn/client-vpn/
         - title: "Google Cloud VPN"
@@ -2369,8 +2369,8 @@
           url: https://traefik.io/traefik-mesh/
         - title: "AWS App Mesh"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/aws-app-mesh.png"
+          image_height: 180
+          image: "assets/img/tools/aws-app-mesh.svg"
           description: "AWS App Mesh is an application networking service mesh that lets you more easily monitor and control communications across services."
           url: https://aws.amazon.com/app-mesh/
         - title: "Google Cloud Service Mesh"
@@ -2592,8 +2592,8 @@
           url: https://www.okta.com/
         - title: "Amazon Cognito"
           image_width: 180
-          image_height: 95
-          image: "assets/img/tools/amazon-cognito.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-cognito.svg"
           url: https://aws.amazon.com/cognito/
           description: "Implement a secure, scalable, and customized sign-up and sign-in experience in minutes."
         - title: "Google Firebase Authentication"
@@ -2721,8 +2721,8 @@
           url: https://www.yubico.com/products/hardware-security-module/
         - title: "AWS Key Management Service (KMS)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-kms.png"
+          image_height: 180
+          image: "assets/img/tools/aws-kms.svg"
           url: https://aws.amazon.com/kms/
           description: "Create and control keys used to encrypt or digitally sign your data."
         - title: "Azure Key Vault"
@@ -2777,14 +2777,14 @@
           url: https://square.github.io/keywhiz
         - title: "AWS Secrets Manager"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-secrets-manager.png"
+          image_height: 180
+          image: "assets/img/tools/aws-secrets-manager.svg"
           url: https://aws.amazon.com/secrets-manager/
           description: "Centrally manage the lifecycle of secrets."
         - title: "AWS Systems Manager Parameter Store"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-systems-manager-parameter-store.png"
+          image_height: 180
+          image: "assets/img/tools/aws-ssm-parameter-store.svg"
           description: "Learn how Parameter Store, a tool in AWS Systems Manager, provides secure, hierarchical storage for configuration data management and secrets management."
           url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html
         - title: "Google Cloud Secret Manager"
@@ -2841,8 +2841,8 @@
           url: https://www.cloudflare.com/application-services/products/ssl/
         - title: "AWS Certificate Manager (ACM)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-certificate-manager-acm.png"
+          image_height: 180
+          image: "assets/img/tools/aws-certificate-manager.svg"
           url: https://aws.amazon.com/certificate-manager/
           description: "Provision and manage SSL/TLS certificates with AWS services and connected resources."
         - title: "Google-managed SSL certificates"
@@ -2947,8 +2947,8 @@
           url: https://appviewx.com/
         - title: "AWS Private CA"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-private-ca.png"
+          image_height: 180
+          image: "assets/img/tools/aws-certificate-manager.svg"
           url: https://aws.amazon.com/private-ca/
           description: "Use AWS Private Certificate Authority (AWS Private CA) to securely issue and manage private certificates for your connected resources in one place."
         - title: "Google CA Service"
@@ -3088,8 +3088,8 @@
       tools:
         - title: "Amazon Elastic Block Store (EBS)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-elastic-block-store-ebs.png"
+          image_height: 180
+          image: "assets/img/tools/aws-elastic-block-store.svg"
           url: https://aws.amazon.com/ebs/
           description: "Easy to use, high performance block storage at any scale."
         - title: "Google Persistent Disk"
@@ -3106,8 +3106,8 @@
           image_height: 95
         - title: "Amazon Elastic File System (EFS)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-elastic-file-system-efs.png"
+          image_height: 180
+          image: "assets/img/tools/aws-elastic-file-system.svg"
           url: https://aws.amazon.com/efs/
           description: "Serverless, fully elastic file storage."
         - title: "Google Cloud Filestore"
@@ -3244,8 +3244,8 @@
           url: https://memcached.org/
         - title: "Amazon DynamoDB"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-dynamodb.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-dynamodb.svg"
           url: https://aws.amazon.com/dynamodb/
           description: "Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale."
         - title: "Riak KV"
@@ -3262,8 +3262,8 @@
           url: https://redis.io/cloud/
         - title: "Amazon ElastiCache"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-elasticache.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-elasticache.svg"
           url: https://aws.amazon.com/elasticache/
           description: "Real-time performance for real-time applications."
         - title: "Google Cloud Memorystore"
@@ -3312,8 +3312,8 @@
           url: https://www.imperva.com/
         - title: "Amazon CloudFront"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-cloudfront.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-cloudfront.svg"
           url: https://aws.amazon.com/cloudfront/
           description: "Securely deliver content with low latency and high transfer speeds."
         - title: "Google Cloud and Media CDN"
@@ -3332,8 +3332,8 @@
       tools:
         - title: "Amazon Simple Storage Service (S3)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-simple-storage-service-s3.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-simple-storage-service.svg"
           url: https://aws.amazon.com/s3/
           description: "Object storage built to retrieve any amount of data from anywhere."
         - title: "Google Cloud Storage (GCS)"
@@ -3406,8 +3406,8 @@
           url: https://opensearch.org/
         - title: "Amazon OpenSearch"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-opensearch.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-opensearch.svg"
           url: https://aws.amazon.com/opensearch-service/
           description: "Securely unlock real-time search, monitoring, and analysis of business and operational data."
         - title: "Algolia"
@@ -3462,8 +3462,8 @@
           url: https://www.influxdata.com/
         - title: "Amazon Timestream"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-timestream.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-timestream.svg"
           url: https://aws.amazon.com/timestream/
           description: "Easy-to-manage time-series databases optimized for security, performance, availability, and scalability."
         - title: "Prometheus"
@@ -3500,8 +3500,8 @@
           url: https://www.cloudera.com/
         - title: "Amazon EMR"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-emr.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-emr.svg"
           url: https://aws.amazon.com/emr/
           description: "Easily run and scale Apache Spark, Hive, Presto, and other big data workloads."
         - title: "Google Dataproc"
@@ -3562,8 +3562,8 @@
           url: https://pinot.apache.org/
         - title: "Amazon Data Firehose"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-data-firehose.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-firehose.svg"
           url: https://aws.amazon.com/firehose/
           description: "Reliably load real-time streams into data lakes, warehouses, and analytics services."
     - type: Data Warehouse
@@ -3576,8 +3576,8 @@
           url: https://www.snowflake.com/
         - title: "Amazon Redshift"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-redshift.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-redshift.svg"
           url: https://aws.amazon.com/redshift/
           description: "Deliver unmatched price performance at scale with SQL for your data lakehouse."
         - title: "Google BigQuery"
@@ -3641,8 +3641,8 @@
           image: "assets/img/tools/sql-server-integration-services.png"
         - title: "AWS Glue"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-glue.png"
+          image_height: 180
+          image: "assets/img/tools/aws-glue.svg"
           url: https://aws.amazon.com/glue/
           description: "Discover, prepare, and integrate all your data at any scale."
         - title: "Azure Data Factory"
@@ -3709,8 +3709,8 @@
           url: https://zeromq.org/
         - title: "Amazon Simple Queue Service (SQS)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-simple-queue-service-sqs.png"
+          image_height: 180
+          image: "assets/img/tools/aws-sqs.svg"
           url: https://aws.amazon.com/sqs/
           description: "Fully managed message queuing for microservices, distributed systems, and serverless applications."
         - title: "Google Cloud Tasks"
@@ -3741,20 +3741,20 @@
           url: https://www.confluent.io/
         - title: "Amazon Managed Streaming for Kafka (MSK)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-managed-streaming-for-kafka-msk.png"
+          image_height: 180
+          image: "assets/img/tools/aws-msk.svg"
           url: https://aws.amazon.com/msk/
           description: "Securely stream data with a fully managed, highly available Apache Kafka service."
         - title: "Amazon Kinesis"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-kinesis.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-kinesis.svg"
           url: https://aws.amazon.com/kinesis/
           description: "Collect, process, and analyze real-time video and data streams."
         - title: "Amazon EventBridge"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-eventbridge.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-eventbridge.svg"
           url: https://aws.amazon.com/eventbridge/
           description: "Build event-driven applications at scale across AWS, existing systems, or SaaS applications."
         - title: "Google Cloud Managed Service for Kafka"
@@ -3803,8 +3803,8 @@
           url: https://neo4j.com/
         - title: "Amazon Neptune"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-neptune.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-neptune.svg"
           url: https://aws.amazon.com/neptune/
           description: "High-performance graph analytics and serverless database for superior scalability and availability."
         - title: "Aerospike"
@@ -3823,8 +3823,8 @@
           url: https://cloud.google.com/spanner
         - title: "Amazon Aurora"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-aurora.png"
+          image_height: 180
+          image: "assets/img/tools/aurora.svg"
           url: https://aws.amazon.com/rds/aurora/
           description: "Unparalleled high performance and availability at global scale for PostgreSQL, MySQL, and DSQL."
         - title: "CockroachDB"
@@ -4014,8 +4014,8 @@
           url: https://newrelic.com/platform/log-management
         - title: "Amazon CloudWatch Logs"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-cloudwatch-logs.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-cloudwatch-logs.svg"
           description: "You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources. CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive them securely for future analysis. CloudWatch Logs enables you to see all of your logs, regardless of their source, as a single and consistent flow of events ordered by time. CloudWatch Logs also supports querying your logs with a powerful query language, auditing and masking sensitive data in logs, and generating metrics from logs using filters or an embedded log format."
           url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
         - title: "Google Cloud Logging"
@@ -4097,8 +4097,8 @@
           url: https://www.datadoghq.com/monitoring/uptime-monitoring-tools/
         - title: "Amazon Route 53 Health Checks"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-route-53-health-checks.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-route53-health-checks.svg"
           description: "Configure Route 53 to check the health of your resources and to respond to DNS queries using only healthy resources."
           url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html
         - title: "Google Cloud Uptime Checks"
@@ -4203,8 +4203,8 @@
           url: https://www.appdynamics.com/
         - title: "Amazon CloudWatch"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-cloudwatch.png"
+          image_height: 180
+          image: "assets/img/tools/amazon-cloudwatch.svg"
           url: https://aws.amazon.com/cloudwatch/
           description: "Observe and monitor resources and applications on AWS, on premises, and on other clouds."
         - title: "Google Cloud Monitoring"
@@ -4458,8 +4458,8 @@
           url: https://www.jaegertracing.io/
         - title: "AWS X-Ray"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/aws-x-ray.png"
+          image_height: 180
+          image: "assets/img/tools/aws-xray.svg"
           url: https://aws.amazon.com/xray/
           description: "Analyze and debug production and distributed applications."
         - title: "Google Cloud Trace"
@@ -4692,9 +4692,9 @@
           description: "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you."
           url: https://github.com/features/copilot
         - title: "Amazon Q Developer"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/amazon-q-developer.png"
+          image_width: 172
+          image_height: 180
+          image: "assets/img/tools/amazon-q.jpg"
           url: https://aws.amazon.com/q/developer/
           description: "The most capable generative AI–powered assistant for software development."
         - title: "Stable Diffusion"
