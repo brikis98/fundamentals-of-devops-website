@@ -40,13 +40,13 @@
   $('.tracked').on('click', trackOutboundLink);
 
   for (const jsReadMoreLink of document.getElementsByClassName('js-read-more')) {
-    jsReadMoreLink.onclick = (event) => {
+    jsReadMoreLink.addEventListener('click', (event) => {
       event.preventDefault();
       const elementId = jsReadMoreLink.dataset.target;
       const element = document.getElementById(elementId);
       element.classList.toggle('read-more');
       jsReadMoreLink.innerText = jsReadMoreLink.innerText === "(show)" ? "(hide)" : "(show)";
-    };
+    });
   }
 
   const enableAnchors = () => {
