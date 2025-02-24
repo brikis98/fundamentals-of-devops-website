@@ -3861,7 +3861,7 @@
       image_width: 180
       image_height: 236
       image: "assets/img/books/practical-monitoring.jpg"
-      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you. Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company. This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool. Practical Monitoring covers essential topics Monitoring antipatternsPrinciples of monitoring designHow to build an effective on-call rotationGetting metrics and logs out of your application."
+      description: "Do you have a nagging feeling that your monitoring needs improvement, but you just aren’t sure where to start or how to do it? Are you plagued by constant, meaningless alerts? Does your monitoring system routinely miss real problems? This is the book for you. Mike Julian lays out a practical approach to designing and implementing effective monitoring—from your enterprise application down to the hardware in a datacenter, and everything between. Practical Monitoring provides you with straightforward strategies and tactics for designing and implementing a strong monitoring foundation for your company. This book takes a unique vendor-neutral approach to monitoring. Rather than discuss how to implement specific tools, Mike teaches the principles and underlying mechanics behind monitoring so you can implement the lessons in any tool."
       subtitle: "Effective Strategies for the Real World"
       author: "Mike Julian"
       publisher: "O'Reilly"
@@ -3897,7 +3897,7 @@
       image_width: 180
       image_height: 268
       image: "assets/img/books/how-to-measure-anything.jpg"
-      description: "This book is remarkable in its range of measurement applications and its clarity of style. A must-read for every professional who has ever exclaimed, 'Sure, that concept is important, but can we measure it?''-Dr. Jack StennerCofounder and CEO of MetraMetrics, Inc."
+      description: "Now updated with new measurement methods and new examples, How to Measure Anything shows managers how to inform themselves in order to make less risky, more profitable business decisions. This insightful and eloquent book will show you how to measure those things in your own business, government agency or other organization that, until now, you may have considered 'immeasurable,' including customer satisfaction, organizational flexibility, technology risk, and technology ROI."
       subtitle: "Finding the Value of Intangibles in Business"
       author: "Douglas W. Hubbard"
       publisher: "Wiley"
@@ -3907,7 +3907,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/how-long-will-your-experiment-take.png"
-      description: "How long will your experiment take?."
+      description: "A calculator to estimate how long you'll need to run an experiment (e.g., A/B test) to get statistically meaningful results."
       author: Dan McKinley
       type: Calculator
       url: http://www.experimentcalculator.com/
@@ -3918,31 +3918,31 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/log4j.png"
-          description: "Apache Log4j :: Apache Log4j."
+          description: "Apache Log4j is a versatile, industrial-grade Java logging framework composed of an API, its implementation, and components to assist the deployment for various use cases."
           url: https://logging.apache.org/log4j
         - title: "Winston"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/winston.jpg"
-          description: "A logger for just about everything. Contribute to winstonjs/winston development by creating an account on GitHub."
+          description: "A logger for just about everything."
           url: https://github.com/winstonjs/winston
         - title: "zap"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/zap.jpg"
-          description: "Blazing fast, structured, leveled logging in Go. Contribute to uber-go/zap development by creating an account on GitHub."
+          description: "Blazing fast, structured, leveled logging in Go."
           url: https://github.com/uber-go/zap
         - title: "Loguru"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/loguru.jpg"
-          description: "Python logging made (stupidly) simple. Contribute to Delgan/loguru development by creating an account on GitHub."
+          description: "Python logging made (stupidly) simple."
           url: https://github.com/Delgan/loguru
         - title: "logrotate"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/logrotate.jpg"
-          description: "The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files. - logrotate/logrotate."
+          description: "The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files."
           url: https://github.com/logrotate/logrotate
     - type: Log Aggregation
       tools:
@@ -3954,8 +3954,8 @@
           url: https://www.loggly.com/
         - title: "Papertrail"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/papertrail.png"
+          image_height: 34
+          image: "assets/img/tools/papertrail.svg"
           description: "Frustration-free log management. Seamlessly manage logs from apps, servers, and cloud services."
           url: https://www.papertrail.com/
         - title: "Sumo Logic"
@@ -3998,7 +3998,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/opensearch-logstash.png"
-          description: "Logstash."
+          description: "Logstash is a real-time event processing engine. It’s part of the OpenSearch stack which includes OpenSearch, Beats, and OpenSearch Dashboards. You can send events to Logstash from many different sources. Logstash processes the events and sends it one or more destinations. For example, you can send access logs from a web server to Logstash. Logstash extracts useful information from each log and sends it to a destination like OpenSearch. Sending events to Logstash lets you decouple event processing from your app. Your app only needs to send events to Logstash and doesn’t need to know anything about what happens to the events afterwards."
           url: https://opensearch.org/docs/latest/tools/logstash/index/
         - title: "Datadog"
           image_width: 180
@@ -4016,7 +4016,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-cloudwatch-logs.png"
-          description: "Describes the fundamentals, concepts, and terminology you need to know for using CloudWatch Logs to monitor, store, and access log files from Amazon Elastic Compute Cloud and AWS CloudTrail."
+          description: "You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources. CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive them securely for future analysis. CloudWatch Logs enables you to see all of your logs, regardless of their source, as a single and consistent flow of events ordered by time. CloudWatch Logs also supports querying your logs with a powerful query language, auditing and masking sensitive data in logs, and generating metrics from logs using filters or an embedded log format."
           url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
         - title: "Google Cloud Logging"
           image_width: 180
@@ -4026,23 +4026,25 @@
           url: https://cloud.google.com/logging
         - title: "Azure Monitor Logs"
           url: https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs
-        - title: "Syslog"
+          description: "Azure Monitor Logs is a centralized software as a service (SaaS) platform for collecting, analyzing, and acting on telemetry data generated by Azure and non-Azure resources and applications. You can collect logs, manage log data and costs, and consume different types of data in one Log Analytics workspace, the primary Azure Monitor Logs resource. This means you never have to move data or manage other storage, and you can retain different data types for as long or as little as you need."
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/syslog.png"
-          description: "Syslog - Wikipedia."
+          image_height: 95
+          image: "assets/img/tools/azure-monitor.png"
+        - title: "Syslog"
+          description: "syslog is a standard for message logging. It allows separation of the software that generates messages, the system that stores them, and the software that reports and analyzes them. Each message is labeled with a facility code, indicating the type of system generating the message, and is assigned a severity level."
           url: https://en.wikipedia.org/wiki/Syslog
         - title: "Fluentd"
           image_width: 180
-          image_height: 93
+          image_height: 87
           image: "assets/img/tools/fluentd.png"
-          description: "Fluentd | Open Source Data Collector | Unified Logging Layer."
+          description: "Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data."
           url: https://www.fluentd.org/
         - title: "Fluent Bit"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/fluent-bit.png"
+          image_width: 157
+          image_height: 50
+          image: "assets/img/tools/fluentbit.svg"
           url: https://fluentbit.io/
+          description: "Fluent Bit is a super fast, lightweight, and highly scalable logging, metrics, and traces processor and forwarder. It is the preferred choice for cloud and containerized environments."
         - title: "Beats"
           image_width: 180
           image_height: 113
@@ -4065,9 +4067,9 @@
       tools:
         - title: "Pingdom"
           image_width: 180
-          image_height: 93
+          image_height: 37
           image: "assets/img/tools/pingdom.png"
-          description: "Website Monitoring Service - Availability and Performance | Pingdom."
+          description: "Simplified website monitoring. We help you deliver exceptional customer experience with real-time, actionable insights into your website uptime and performance, so you can keep your users coming back again and again."
           url: https://www.pingdom.com/
         - title: "Uptime Robot"
           image_width: 180
@@ -4104,6 +4106,7 @@
           image_height: 95
           image: "assets/img/tools/google-cloud-uptime-checks.png"
           url: https://cloud.google.com/monitoring/uptime-checks
+          description: "A public uptime check can issue requests from multiple locations throughout the world to publicly available URLs or Google Cloud resources to see whether the resource responds."
     - type: Business Metrics
       tools:
         - title: "Google Analytics"
@@ -4178,14 +4181,14 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/datadog.png"
-          description: "Datadog Log Management enables you to collect, monitor, manage, and analyze large volumes of logs as well as unify metrics and traces all in one platform."
-          url: https://www.datadoghq.com/
+          description: "Easily monitor service health metrics, distributed traces, and code performance with cloud-scale Application Performance Monitoring (APM)."
+          url: https://www.datadoghq.com/product/apm/
         - title: "New Relic"
           image_width: 180
           image_height: 101
           image: "assets/img/tools/new-relic.png"
-          description: "Deploying log management in context and at scale has never been faster, easier, or more attainable."
-          url: https://newrelic.com/
+          description: "Application monitoring a set of tools and software used to monitor and optimize the performance of software applications. Detect and diagnose issues quickly."
+          url: https://newrelic.com/platform/application-monitoring
         - title: "Dynatrace"
           image_width: 180
           image_height: 95
@@ -4203,6 +4206,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-cloudwatch.png"
           url: https://aws.amazon.com/cloudwatch/
+          description: "Observe and monitor resources and applications on AWS, on premises, and on other clouds."
         - title: "Google Cloud Monitoring"
           image_width: 180
           image_height: 95
@@ -4211,6 +4215,10 @@
           url: https://cloud.google.com/monitoring
         - title: "Azure Monitor"
           url: https://learn.microsoft.com/en-us/azure/azure-monitor/overview
+          description: "Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from your cloud and on-premises environments. You can use Azure Monitor to maximize the availability and performance of your applications and services. It helps you understand how your applications are performing and allows you to manually and programmatically respond to system events. Azure Monitor collects and aggregates the data from every layer and component of your system across multiple Azure and non-Azure subscriptions and tenants. It stores it in a common data platform for consumption by a common set of tools that can correlate, analyze, visualize, and/or respond to the data. You can also integrate other Microsoft and non-Microsoft tools."
+          image_width: 180
+          image_height: 95
+          image: "assets/img/tools/azure-monitor.png"
     - type: Real User Monitoring (RUM)
       tools:
         - title: "DataDog RUM"
@@ -4245,6 +4253,11 @@
           url: https://sematext.com/experience/
         - title: "Akamai mPulse"
           url: https://www.akamai.com/products/mpulse-real-user-monitoring
+          description: "Measure user experience and performance data to improve site performance."
+          url: https://www.akamai.com/cloud-computing
+          image: "assets/img/tools/akamai.svg"
+          image_width: 180
+          image_height: 186
         - title: "Raygun RUM"
           image_width: 180
           image_height: 101
@@ -4257,7 +4270,7 @@
           image_width: 1024
           image_height: 595
           image: "assets/img/tools/nagios.webp"
-          description: "Don't miss your chance to attend the 2025 Nagios World Conference Sept 29th-Oct 2nd. Meet IT experts from around the world, increase your IT knowledge, up."
+          description: "Enterprise Grade Monitoring Powered By Open Source. Built on over 25 years of monitoring experience, the Nagios Core Services Platform provides insightful monitoring dashboards, time-saving monitoring wizards, and unmatched ease of use.  Use it for free indefinitely."
           url: https://www.nagios.org/
         - title: "Icinga"
           image_width: 180
@@ -4289,18 +4302,19 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/collectd.png"
-          description: "The system statistics collection daemon."
+          description: "collectd is a daemon collecting system and application performance metrics periodically and provides mechanisms to store the values in a variety of ways, for example in RRD files."
           url: https://www.collectd.org/
         - title: "Fluent Bit"
-          image_width: 180
-          image_height: 93
-          image: "assets/img/tools/fluent-bit.png"
+          image_width: 157
+          image_height: 50
+          image: "assets/img/tools/fluentbit.svg"
           url: https://fluentbit.io/
+          description: "Fluent Bit is a super fast, lightweight, and highly scalable logging, metrics, and traces processor and forwarder. It is the preferred choice for cloud and containerized environments."
         - title: "StatsD"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/statsd.jpg"
-          description: "Daemon for easy but powerful stats aggregation. Contribute to statsd/statsd development by creating an account on GitHub."
+          description: "A network daemon that runs on the Node.js platform and listens for statistics, like counters and timers, sent over UDP or TCP and sends aggregates to one or more pluggable backend services (e.g., Graphite)."
           url: https://github.com/statsd/statsd
         - title: "Telegraf"
           image_width: 180
@@ -4324,9 +4338,9 @@
       tools:
         - title: "Open Time Series Database (OpenTSDB)"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/open-time-series-database-opentsdb.png"
-          description: "OpenTSDB - A Distributed, Scalable Monitoring System."
+          image_height: 37
+          image: "assets/img/tools/opentsdb.png"
+          description: "Store and serve massive amounts of time series data without losing granularity."
           url: http://opentsdb.net/
         - title: "Prometheus"
           image_width: 180
@@ -4348,9 +4362,9 @@
           url: https://www.influxdata.com/index/
         - title: "Graphite"
           image_width: 180
-          image_height: 93
+          image_height: 47
           image: "assets/img/tools/graphite.png"
-          description: ""
+          description: "Graphite is an enterprise-ready monitoring tool that runs equally well on cheap hardware or Cloud infrastructure. Teams use Graphite to track the performance of their websites, applications, business services, and networked servers. It marked the start of a new generation of monitoring tools, making it easier than ever to store, retrieve, share, and visualize time-series data."
           url: https://graphiteapp.org/
         - title: "QuestDB"
           image_width: 180
@@ -4368,9 +4382,9 @@
           url: https://grafana.com/
         - title: "Perses"
           image_width: 180
-          image_height: 93
+          image_height: 43
           image: "assets/img/tools/perses.png"
-          description: "Perses - Perses."
+          description: "An open specification for dashboards. The open dashboard tool for Prometheus and other data sources."
           url: https://perses.dev/
         - title: "Kibana"
           image_width: 180
@@ -4382,7 +4396,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/opensearch-dashboards.png"
-          description: "OpenSearch Dashboards."
+          description: "OpenSearch Dashboards is the user interface that lets you visualize your OpenSearch data and run and scale your OpenSearch clusters."
           url: https://opensearch.org/docs/latest/dashboards/
     - type: Observability
       tools:
@@ -4406,6 +4420,10 @@
           url: https://uptrace.dev/
         - title: "ServiceNow Observability"
           url: https://www.servicenow.com/products/observability.html
+          description: "Break down silos to resolve issues quickly across teams. Integrate observability capabilities into your existing workflows for alerting and incident management."
+          image_width: 132
+          image_height: 20
+          image: "assets/img/tools/servicenow.svg"
         - title: "Chronosphere"
           image_width: 180
           image_height: 94
@@ -4427,14 +4445,14 @@
     - type: Distributed Tracing
       tools:
         - title: "Zipkin"
-          image_width: 180
-          image_height: 93
+          image_width: 151
+          image_height: 180
           image: "assets/img/tools/zipkin.png"
-          description: "A distributed tracing system."
+          description: "Zipkin is a distributed tracing system. It helps gather timing data needed to troubleshoot latency problems in service architectures. Features include both the collection and lookup of this data. If you have a trace ID in a log file, you can jump directly to it. Otherwise, you can query based on attributes such as service, operation name, tags and duration. Some interesting data will be summarized for you, such as the percentage of time spent in a service, and whether or not operations failed."
           url: https://zipkin.io/
         - title: "Jaeger"
           image_width: 180
-          image_height: 93
+          image_height: 59
           image: "assets/img/tools/jaeger.png"
           description: "Monitor and troubleshoot workflows in complex distributed systems."
           url: https://www.jaegertracing.io/
@@ -4443,6 +4461,7 @@
           image_height: 93
           image: "assets/img/tools/aws-x-ray.png"
           url: https://aws.amazon.com/xray/
+          description: "Analyze and debug production and distributed applications."
         - title: "Google Cloud Trace"
           image_width: 180
           image_height: 95
@@ -4489,6 +4508,10 @@
           url: https://allquiet.app/
         - title: "Rootly"
           url: https://rootly.com/
+          description: "AI-powered on-call and incident response."
+          image_width: 180
+          image_height: 44
+          image: "assets/img/tools/rootly.png"
     - type: Issue Tracker
       tools:
         - title: "Jira"
@@ -4519,6 +4542,10 @@
       tools:
         - title: "Codacy"
           url: https://www.codacy.com/
+          description: "Build clean, secure code efficiently and fearlessly with Codacy Platform."
+          image_width: 180
+          image_height: 51
+          image: "assets/img/tools/codacy.svg"
         - title: "SonarQube"
           image_width: 180
           image_height: 94
@@ -4535,7 +4562,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/coverity.png"
-          description: ""
+          description: "Coverity Scan is a service by which Black Duck provides the results of analysis on open source coding projects to open source code developers that have registered their products with Coverity Scan."
           url: https://scan.coverity.com/
         - title: "Snyk"
           image_width: 180
