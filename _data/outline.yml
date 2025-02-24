@@ -4651,6 +4651,10 @@
       tools:
         - title: "ChatGPT"
           url: https://chatgpt.com/
+          description: "ChatGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try."
+          image_width: 180
+          image_height: 180
+          image: "assets/img/tools/chatgpt.png"
         - title: "Claude"
           image_width: 180
           image_height: 101
@@ -4659,6 +4663,10 @@
           url: https://claude.ai/
         - title: "Dall-E"
           url: https://openai.com/index/dall-e/
+          description: "We’ve trained a neural network called DALL·E that creates images from text captions for a wide range of concepts expressible in natural language."
+          image_width: 180
+          image_height: 180
+          image: "assets/img/tools/chatgpt.png"
         - title: "Gemini"
           image_width: 180
           image_height: 95
@@ -4667,8 +4675,16 @@
           url: https://gemini.google.com/
         - title: "Llama"
           url: https://www.llama.com/
+          description: "The open-source AI models you can fine-tune, distill and deploy anywhere."
+          image_width: 180
+          image_height: 36
+          image: "assets/img/tools/meta.svg"
         - title: "Microsoft Copilot"
           url: https://copilot.microsoft.com/
+          description: "Microsoft Copilot is your companion to inform, entertain, and inspire. Get advice, feedback, and straightforward answers."
+          image_width: 180
+          image_height: 164
+          image: "assets/img/tools/microsoft-copilot.png"
         - title: "GitHub Copilot"
           image_width: 180
           image_height: 95
@@ -4680,6 +4696,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-q-developer.png"
           url: https://aws.amazon.com/q/developer/
+          description: "The most capable generative AI–powered assistant for software development."
         - title: "Stable Diffusion"
           image_width: 180
           image_height: 93
@@ -4688,6 +4705,10 @@
           url: https://stability.ai/
         - title: "Midjourney"
           url: https://www.midjourney.com/
+          description: "Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species."
+          image_width: 180
+          image_height: 180
+          image: "assets/img/tools/midjourney.png"
         - title: "Cursor"
           image_width: 180
           image_height: 95
@@ -4748,15 +4769,16 @@
       tools:
         - title: "FindBugs"
           image_width: 180
-          image_height: 93
+          image_height: 176
           image: "assets/img/tools/findbugs.png"
-          description: "FindBugs - Find Bugs in Java Programs."
+          description: "A program which uses static analysis to look for bugs in Java code.  It is free software, distributed under the terms of the Lesser GNU Public License"
           url: https://findbugs.sourceforge.net/
         - title: "Bandit"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/bandit.png"
           url: https://bandit.readthedocs.io/en/latest/
+          description: "Bandit is a tool designed to find common security issues in Python code. To do this, Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has finished scanning all the files, it generates a report."
         - title: "Brakeman"
           image_width: 180
           image_height: 93
@@ -4768,6 +4790,7 @@
           image_height: 93
           image: "assets/img/tools/kubesec.png"
           url: https://kubesec.io/
+          description: "Security risk analysis for Kubernetes resources."
         - title: "Snyk"
           image_width: 180
           image_height: 95
@@ -4794,15 +4817,19 @@
           url: https://www.openpolicyagent.org/
         - title: "Codacy"
           url: https://www.codacy.com/
+          description: "Build clean, secure code efficiently and fearlessly with Codacy Platform."
+          image_width: 180
+          image_height: 51
+          image: "assets/img/tools/codacy.svg"
         - title: "Coverity Scan"
           image_width: 180
           image_height: 93
-          image: "assets/img/tools/coverity-scan.png"
-          description: ""
+          image: "assets/img/tools/coverity.png"
+          description: "Coverity Scan is a service by which Black Duck provides the results of analysis on open source coding projects to open source code developers that have registered their products with Coverity Scan."
           url: https://scan.coverity.com/
         - title: "Veracode"
           image_width: 180
-          image_height: 95
+          image_height: 120
           image: "assets/img/tools/veracode.png"
           description: "Adaptive application security for the AI era. Build and run secure software from code to cloud with Veracode."
           url: https://www.veracode.com/
@@ -4810,7 +4837,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/trivy.png"
-          description: "Redirecting."
+          description: "Use Trivy to find vulnerabilities (CVE) & misconfigurations (IaC) across code repositories, binary artifacts, container images, Kubernetes clusters, and more. All in one tool!"
           url: https://trivy.dev/
         - title: "Mend"
           image_width: 180
@@ -4823,8 +4850,8 @@
         - title: "Zed Attack Proxy"
           image_width: 180
           image_height: 91
-          image: "assets/img/tools/zed-attack-proxy.png"
-          description: "Welcome to ZAP!"
+          image: "assets/img/tools/zed-attack-proxy.svg"
+          description: "The world’s most widely used web app scanner. Free and open source."
           url: https://www.zaproxy.org/
         - title: "Invicti"
           image_width: 180
@@ -4834,8 +4861,8 @@
           url: https://www.invicti.com/
         - title: "Veracode Dynamic Analysis"
           image_width: 180
-          image_height: 178
-          image: "assets/img/tools/veracode-dynamic-analysis.png"
+          image_height: 120
+          image: "assets/img/tools/veracode.png"
           description: "Discover Dynamic Application Security Testing (DAST) from Veracode to detect runtime vulnerabilities and secure your applications."
           url: https://www.veracode.com/products/dynamic-analysis-dast
         - title: "PortSwigger"
@@ -4874,18 +4901,26 @@
           image_width: 180
           image_height: 180
           image: "assets/img/tools/dependabot.png"
-          description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability. This guide will help get you started on enabling Dependabot for a repository, and exploring reported alerts."
+          description: "You can use Dependabot to alert you when your repository is using a software dependency with a known vulnerability."
           url: https://github.com/dependabot
         - title: "Patcher"
           image_width: 180
           image_height: 94
           image: "assets/img/tools/patcher.png"
-          description: "Keep infrastructure up to date."
+          description: "Keep IaC up to date, even with breaking changes."
           url: https://www.gruntwork.io/platform/patcher
         - title: "ReversingLabs"
           url: https://www.reversinglabs.com/
+          image_width: 180
+          image_height: 36
+          image: "assets/img/tools/reversinglabs.svg"
+          description: "Software Supply Chain Security, Threat Intelligence, and Threat Analysis Solutions."
         - title: "Ox Security"
           url: https://www.ox.security/
+          image_width: 180
+          image_height: 27
+          image: "assets/img/tools/oxsecurity.png"
+          description: "Scale your AppSec with continuous scanning and analysis of software vulnerabilities."
         - title: "GitGuardian"
           image_width: 180
           image_height: 95
@@ -4902,7 +4937,7 @@
           image_width: 180
           image_height: 96
           image: "assets/img/tools/syft.jpg"
-          description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems - anchore/syft."
+          description: "CLI tool and library for generating a Software Bill of Materials from container images and filesystems."
           url: https://github.com/anchore/syft
         - title: "Sonatype"
           image_width: 180
@@ -4942,7 +4977,7 @@
           image_width: 180
           image_height: 101
           image: "assets/img/tools/backstage.png"
-          description: "Backstage Software Catalog and Developer Platform."
+          description: "An open source framework for building developer portals. Powered by a centralized software catalog, Backstage restores order to your infrastructure and enables your product teams to ship high-quality code quickly — without compromising autonomy."
           url: https://backstage.io/
         - title: "Humanitec"
           image_width: 180
@@ -5016,13 +5051,13 @@
           image_width: 180
           image_height: 188
           image: "assets/img/tools/smartplaybooks.png"
-          description: "Discover the art of automation with Business Playbooks and Runbooks. Simplify complex tasks, optimize processes, and achieve business excellence. %."
+          description: "Discover the art of automation with Business Playbooks and Runbooks. Simplify complex tasks, optimize processes, and achieve business excellence."
           url: https://www.smartplaybooks.io/
         - title: "Doctor Droid"
           image_width: 180
           image_height: 67
           image: "assets/img/tools/doctor-droid.png"
-          description: "Automated Investigations by Doctor Droid."
+          description: "Doctor Droid is an AI teammate that continuously monitors your alerts, and investigates issues by integrating with your monitoring tools & understanding your company's context (Playbooks)."
           url: https://drdroid.io/
         - title: "Jupyter Notebooks"
           image_width: 180
