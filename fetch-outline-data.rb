@@ -25,9 +25,10 @@ def fetch_book_description_from_open_library(title, subtitle, author)
   end
 end
 
+$max_retries = 3
+$sec_between_retries = 3
+
 def make_http_request_with_retries(url)
-  max_retries = 3
-  sec_between_retries = 3
   retries = 0
 
   begin
@@ -50,9 +51,9 @@ def make_http_request_with_retries(url)
     end
     puts "WARN: Got error while calling URL '#{url}': '#{error}'"
     retries += 1
-    if retries < max_retries
-      puts "This was attempt #{retries}. Will sleep for #{sec_between_retries} and try again"
-      sleep(sec_between_retries)
+    if retries < $max_retries
+      puts "This was attempt #{retries}. Will sleep for #{$sec_between_retries} and try again"
+      sleep($sec_between_retries)
       retry
     else
       raise "Failed to call URL '#{url}' after #{retries} retries. Most recent error: '#{error}'"
@@ -261,9 +262,10 @@ def get_image_url_for_doc(doc, url)
   end
 end
 
+$image_extensions = %w[png jpg jpeg gif]
+
 def check_if_image_exists_given_base_path(image_base_path)
-  image_extensions = %w[png jpg jpeg gif]
-  Dir.glob("#{image_base_path}.{#{image_extensions.join(',')}}").first
+  Dir.glob("#{image_base_path}.{#{$image_extensions.join(',')}}").first
 end
 
 def get_image_extension_from_image_url(image_url)
@@ -326,9 +328,10 @@ def capture_screenshot(url, image_path)
   image_path
 end
 
+$resizable_extensions = %w[.jpg .jpeg .png .gif]
+
 def resize_image(image_path)
-  resizable_extensions = %w[.jpg .jpeg .png .gif]
-  unless resizable_extensions.include?(File.extname(image_path))
+  unless $resizable_extensions.include?(File.extname(image_path))
     puts "WARN: Image '#{image_path}' is not one I know how to resize, so skipping."
     return image_path
   end
@@ -344,11 +347,12 @@ def resize_image(image_path)
   image_path
 end
 
+$domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com entrust.com mysql.com servicenow.com rootly.com codacy.com chatgpt.com openai.com llama.com midjourney.com reversinglabs.com ox.security]
+
 def should_skip(title, url)
   # These are domains known not to work with scripting (some sort of user agent blocking or bot detection), so we skip
   # them. You'll have to put these entries into the outline manually.
-  domains_to_skip = %w[akamai.com microsoft.com oracle.com godaddy.com entrust.com mysql.com servicenow.com rootly.com codacy.com chatgpt.com openai.com llama.com midjourney.com reversinglabs.com ox.security]
-  domains_to_skip.each do |domain_to_skip|
+  $domains_to_skip.each do |domain_to_skip|
     if url.include?(domain_to_skip)
       return true
     end
