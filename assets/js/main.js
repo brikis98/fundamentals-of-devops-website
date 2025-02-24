@@ -37,27 +37,30 @@
     ga('send', props);
   };
 
-  $('.tracked').on('click', trackOutboundLink);
+  const initialize = () => {
+    // Track links in GA
+    $('.tracked').on('click', trackOutboundLink);
 
-  for (const jsReadMoreLink of document.getElementsByClassName('js-read-more')) {
-    jsReadMoreLink.addEventListener('click', (event) => {
-      event.preventDefault();
-      const elementId = jsReadMoreLink.dataset.target;
-      const element = document.getElementById(elementId);
-      element.classList.toggle('read-more');
-      jsReadMoreLink.innerText = jsReadMoreLink.innerText === "(show)" ? "(hide)" : "(show)";
-    });
-  }
+    // "Show more" links
+    for (const jsReadMoreLink of document.getElementsByClassName('js-read-more')) {
+      jsReadMoreLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        const elementId = jsReadMoreLink.dataset.target;
+        const element = document.getElementById(elementId);
+        element.classList.toggle('read-more');
+        jsReadMoreLink.innerText = jsReadMoreLink.innerText === "(show)" ? "(hide)" : "(show)";
+      });
+    }
 
-  const enableAnchors = () => {
+    // Add anchors to headings
     anchors.add('h2');
   };
 
   if (document.readyState !== 'loading') {
-    enableAnchors();
+    initialize();
   } else {
     document.addEventListener('DOMContentLoaded', function(event) {
-      enableAnchors();
+      initialize();
     });
   }
 })();
