@@ -30,6 +30,12 @@ layout: default
       {% else %}
         {% include {{ section }} chapter=chapter chapter_index=chapter_index %}
       {% endif %}
+
+      {% if forloop.last %}
+        <div class="mt0 mb0 light-gray thin center">
+          {% include chapter-pagination.html chapter_index=chapter_index %}
+        </div>
+      {% endif %}
     </div>
   </section>
 {% endfor %}
