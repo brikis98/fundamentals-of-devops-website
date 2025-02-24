@@ -461,8 +461,8 @@
           url: https://firecracker-microvm.github.io/
         - title: "v8 isolates"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/v8-isolates.png"
+          image_height: 155
+          image: "assets/img/tools/v8.png"
           description: "Lightweight contexts that provide your code with variables it can access and a safe environment to be executed within. You could even consider an isolate a sandbox for your function to run in."
           url: https://developers.cloudflare.com/workers/reference/how-workers-works/#isolates
         - title: "WebAssembly"
