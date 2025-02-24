@@ -249,7 +249,7 @@
         - title: "Akamai Connected Cloud"
           description: "Akamai Connected Cloud brings core cloud computing and edge computing together, along with industry-leading security — all on the most distributed network on the planet. You get the global scale, speed, performance, and flexibility you need to build more engaging and resilient applications, reach more users in more places, and optimize your cloud spend."
           url: https://www.akamai.com/cloud-computing
-          image: "assets/img/tools/akamai-connected-cloud.svg"
+          image: "assets/img/tools/akamai.svg"
           image_width: 180
           image_height: 186
         - title: "BuyVM"
@@ -780,7 +780,7 @@
           image_height: 93
           image: "assets/img/tools/microsoft-iis.png"
           url: https://www.iis.net/
-          description: "Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks."
+          description: "Internet Information Services (IIS) for Windows Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks."
         - title: "AWS Elastic Load Balancer"
           image_width: 180
           image_height: 95
@@ -2115,7 +2115,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/tailscale.jpg"
-          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
+          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard-based VPN to achieve point-to-point connectivity that enforces least privilege."
           url: https://tailscale.com/
         - title: "Boundary"
           image_width: 180
@@ -2201,7 +2201,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/tailscale.jpg"
-          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard®-based VPN to achieve point-to-point connectivity that enforces least privilege."
+          description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard-based VPN to achieve point-to-point connectivity that enforces least privilege."
           url: https://tailscale.com/
         - title: "AWS Client VPN"
           image_width: 180
@@ -3002,7 +3002,7 @@
       image_width: 180
       image_height: 215
       image: "assets/img/books/seven-databases-in-seven-weeks.jpg"
-      description: "Data is getting bigger and more complex by the day, and so are the choices in handling that data. As a modern application developer you need to understand the emerging field of data management, both RDBMS and NoSQL. Seven Databases in Seven Weeks takes you on a tour of some of the hottest open source databases today. In the tradition of Bruce A. Tate's Seven Languages in Seven Weeks , this book goes beyond your basic tutorial to explore the essential concepts at the core each technology.Redis, Neo4J, CouchDB, MongoDB, HBase, Riak and Postgres. With each database, you'll tackle a real-world data problem that highlights the concepts and features that make it shine. You'll explore the five data models employed by these databases-relational, key/value, columnar, document and graph-and which kinds of problems are best suited to each.You'll learn how MongoDB and CouchDB are strikingly different, and discover the Dynamo heritage at the heart of Riak. Make your applications faster with Redis and more connected with Neo4J. Use MapReduce to solve Big Data problems. Build clusters of servers using scalable services like Amazon's Elastic Compute Cloud (EC2).Discover the CAP theorem and its implications for your distributed data. Understand the tradeoffs between consistency and availability, and when you can use them to your advantage. Use multiple databases in concert to create a platform that's more than the sum of its parts, or find one that meets all your needs at once.Seven Databases in Seven Weeks will take you on a deep dive into each of the databases, their strengths and weaknesses, and how to choose the ones that fit your needs.What You To get the most of of this book you'll have to follow along, and that means you'll need a *nix shell (Mac OSX or Linux preferred, Windows users will need Cygwin), and Java 6 (or greater) and Ruby 1.8.7 (or greater). Each chapter will list the downloads required for that database."
+      description: "Data is getting bigger and more complex by the day, and so are your choices in handling it. Explore some of the most cutting-edge databases available - from a traditional relational database to newer NoSQL approaches - and make informed decisions about challenging data storage problems. This is the only comprehensive guide to the world of NoSQL databases, with in-depth practical and conceptual introductions to seven different technologies: Redis, Neo4J, CouchDB, MongoDB, HBase, Postgres, and DynamoDB. This second edition includes a new chapter on DynamoDB and updated content for each chapter."
       subtitle: "A Guide to Modern Databases and the NoSQL Movement"
       author: "Eric Redmond and Jim Wilson"
       publisher: "Pragmatic Bookshelf"
@@ -3029,7 +3029,7 @@
       image_width: 180
       image_height: 270
       image: "assets/img/books/sql-in-10-minutes-a-day.jpg"
-      description: "Just the parts of SQL you need to know from simple data retrieval to the use of SQL joins, subqueries, stored procedures, cursors, triggers, and table constraintsDesigned for anyone interacting with databases, this SQL book methodically, systematically, and simply teaches you in lessons that each take 10 minutes or less to complete. Lessons includeSQL statements, including complex SQL statements using multiple clauses and operators Data retrieve, sort, and format database contents, including inserting, updating, and deleting Data Pinpoint the data you need using a variety of filtering techniques and aggregate functions to summarize data create, alter, and join database tables Views Stored procedures Expert trainer and popular author Ben Forta created this book for most of us who just need to learn SQL and do not need to understand database design and normalization to relational database theory and administrative concerns."
+      description: "Whether you're an application developer, database administrator, web application designer, mobile app developer, or Microsoft Office users, a good working knowledge of SQL is an important part of interacting with databases. And Sams Teach Yourself SQL in 10 Minutes offers the straightforward, practical answers you need to help you do your job. Expert trainer and popular author Ben Forta teaches you just the parts of SQL you need to know–starting with simple data retrieval and quickly going on to more complex topics including the use of joins, subqueries, stored procedures, cursors, triggers, and table constraints. You'll learn methodically, systematically, and simply–in short, quick lessons that will each take only 10 minutes or less to complete."
       subtitle: "Sams Teach Yourself"
       author: "Ben Forta"
       publisher: "Sams Publishing"
@@ -3079,7 +3079,7 @@
       image_width: 180
       image_height: 93
       image: "assets/img/other-resources/choose-boring-technology.png"
-      description: "Choose Boring Technology."
+      description: "This is the spoken word version of my essay, Choose Boring Technology. I have largely come to terms with it and the reality that I will never escape its popularity."
       author: "Dan McKinley"
       type: Talk
       url: "https://boringtechnology.club/"
@@ -3091,6 +3091,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-elastic-block-store-ebs.png"
           url: https://aws.amazon.com/ebs/
+          description: "Easy to use, high performance block storage at any scale."
         - title: "Google Persistent Disk"
           image_width: 180
           image_height: 95
@@ -3099,11 +3100,16 @@
           url: https://cloud.google.com/persistent-disk?hl=en
         - title: "Azure Disk Storage"
           url: https://azure.microsoft.com/en-us/products/storage/disks
+          description: "Discover a high-performance, highly durable block storage service designed for Azure Virtual Machines."
+          image: "assets/img/tools/azure-disk-storage.png"
+          image_width: 180
+          image_height: 95
         - title: "Amazon Elastic File System (EFS)"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-elastic-file-system-efs.png"
           url: https://aws.amazon.com/efs/
+          description: "Serverless, fully elastic file storage."
         - title: "Google Cloud Filestore"
           image_width: 180
           image_height: 95
@@ -3112,22 +3118,42 @@
           url: https://cloud.google.com/filestore?hl=en
         - title: "Azure Files"
           url: https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction
+          description: "Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and Azure Files REST API. Azure file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares are accessible from Windows, Linux, and macOS clients. NFS Azure file shares are accessible from Linux clients. Additionally, SMB Azure file shares can be cached on Windows servers with Azure File Sync for fast access near where the data is being used."
+          image: "assets/img/tools/azure-files.png"
+          image_width: 180
+          image_height: 160
     - type: Relational Database
       tools:
         - title: "PostgreSQL"
-          url: https://www.mysql.com/
+          url: https://www.postgresql.org/
+          description: "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance."
+          image: "assets/img/tools/postgresql.png"
+          image_width: 175
+          image_height: 180
         - title: "MySQL"
           url: https://www.mysql.com/
+          description: "The world's most popular open source database."
+          image: "assets/img/tools/mysql.png"
+          image_width: 180
+          image_height: 83
         - title: "SQLite"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/sqlite.png"
-          description: "SQLite Home Page."
+          image_height: 81
+          image: "assets/img/tools/sqlite.svg"
+          description: "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world. SQLite is built into all mobile phones and most computers and comes bundled inside countless other applications that people use every day."
           url: https://www.sqlite.org/
         - title: "MS SQL Server"
-          url: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+          url: https://www.microsoft.com/sql-server
+          description: "Get the flexibility you need to use integrated solutions and apps with your data—in the cloud, on-premises, or at the edge. SQL Server 2022 is the most Azure-enabled release yet, with innovation across performance, security, and availability."
+          image: "assets/img/tools/ms-sql-server.png"
+          image_width: 180
+          image_height: 146
         - title: "Oracle"
-          url: https://www.oracle.com/ie/database/
+          url: https://www.oracle.com/database/
+          description: "Harness AI with Oracle Database 23ai to power app development and critical workloads, enhancing your data operations for free."
+          image: "assets/img/tools/oracle.png"
+          image_width: 180
+          image_height: 98
     - type: Schema Management
       tools:
         - title: "Flyway"
@@ -3146,7 +3172,7 @@
           image_width: 180
           image_height: 95
           image: "assets/img/tools/atlas.jpg"
-          description: "Atlas | Manage your database schema as code."
+          description: "Manage your database schema as code."
           url: https://atlasgo.io/
         - title: "Bytebase"
           image_width: 180
@@ -3159,11 +3185,12 @@
           image_height: 93
           image: "assets/img/tools/alembic.png"
           url: https://alembic.sqlalchemy.org/en/latest/
+          description: "Alembic is a lightweight database migration tool for usage with the SQLAlchemy Database Toolkit for Python."
         - title: "migrate"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/migrate.jpg"
-          description: "Database migrations. CLI and Golang library. Contribute to golang-migrate/migrate development by creating an account on GitHub."
+          description: "Database migrations written in Go. Use as CLI or import as library."
           url: https://github.com/golang-migrate/migrate
         - title: "Squitch"
           image_width: 180
@@ -3176,6 +3203,7 @@
           image_height: 180
           image: "assets/img/tools/activerecord.jpg"
           url: https://guides.rubyonrails.org/active_record_basics.html
+          description: "Active Record is part of the M in MVC - the model - which is the layer of the system responsible for representing data and business logic. Active Record helps you create and use Ruby objects whose attributes require persistent storage to a database."
         - title: "Sequel"
           image_width: 180
           image_height: 93
@@ -3186,7 +3214,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/knex.js.png"
-          description: "Beta knex.js documentation."
+          description: "Knex.js (pronounced /kəˈnɛks/) is a 'batteries included' SQL query builder for PostgreSQL, CockroachDB, MSSQL, MySQL, MariaDB, SQLite3, Better-SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full-featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects."
           url: https://knexjs.org/
         - title: "GORM"
           image_width: 180
@@ -3206,24 +3234,25 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/valkey.png"
-          description: "Valkey."
+          description: "Valkey is an open source (BSD) high-performance key/value datastore that supports a variety of workloads such as caching, message queues, and can act as a primary database. Valkey can run as either a standalone daemon or in a cluster, with options for replication and high availability."
           url: https://valkey.io/
         - title: "Memcached"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/memcached.png"
-          description: "memcached."
+          description: "Free & open source, high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load. Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering."
           url: https://memcached.org/
         - title: "Amazon DynamoDB"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-dynamodb.png"
           url: https://aws.amazon.com/dynamodb/
+          description: "Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale."
         - title: "Riak KV"
           image_width: 480
           image_height: 153
           image: "assets/img/tools/riak-kv.png"
-          description: "Riak KV."
+          description: "With a key/value design that delivers powerful – yet simple – data models for storing massive amounts of unstructured data, Riak KV is built to handle a variety of challenges facing Big Data applications that include tracking user or session information, storing connected device data and replicating data across the globe. Riak KV automates data distribution across the cluster to achieve fast performance and robust business continuity with a masterless architecture that ensures high availability, and scales near linearly using commodity hardware so you can easily add capacity without a large operational burden."
           url: https://riak.com/products/riak-kv/
         - title: "Redis Cloud"
           image_width: 518
@@ -3236,6 +3265,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-elasticache.png"
           url: https://aws.amazon.com/elasticache/
+          description: "Real-time performance for real-time applications."
         - title: "Google Cloud Memorystore"
           image_width: 180
           image_height: 95
@@ -3244,6 +3274,10 @@
           url: https://cloud.google.com/memorystore
         - title: "Azure Cache for Redis"
           url: https://azure.microsoft.com/en-us/products/cache
+          description: "Distributed, in-memory, scalable solution providing super-fast data access."
+          image: "assets/img/tools/azure-cache.png"
+          image_width: 180
+          image_height: 95
         - title: "Upstash"
           image_width: 180
           image_height: 94
@@ -3260,6 +3294,10 @@
           url: https://www.cloudflare.com/
         - title: "Akamai"
           url: https://www.akamai.com/
+          description: "Akamai is the cybersecurity and cloud computing company that powers and protects business online."
+          image: "assets/img/tools/akamai.svg"
+          image_width: 180
+          image_height: 186
         - title: "Fastly"
           image_width: 180
           image_height: 95
@@ -3277,6 +3315,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-cloudfront.png"
           url: https://aws.amazon.com/cloudfront/
+          description: "Securely deliver content with low latency and high transfer speeds."
         - title: "Google Cloud and Media CDN"
           image_width: 180
           image_height: 95
@@ -3285,6 +3324,10 @@
           url: https://cloud.google.com/cdn
         - title: "Azure CDN"
           url: https://azure.microsoft.com/en-us/products/cdn
+          description: "Fast, reliable content delivery network with global reach."
+          image: "assets/img/tools/azure-cdn.jpeg"
+          image_width: 180
+          image_height: 95
     - type: Object Store
       tools:
         - title: "Amazon Simple Storage Service (S3)"
@@ -3292,6 +3335,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-simple-storage-service-s3.png"
           url: https://aws.amazon.com/s3/
+          description: "Object storage built to retrieve any amount of data from anywhere."
         - title: "Google Cloud Storage (GCS)"
           image_width: 180
           image_height: 95
@@ -3300,6 +3344,10 @@
           url: https://cloud.google.com/storage?hl=en
         - title: "Azure Blog Storage"
           url: https://azure.microsoft.com/en-us/products/storage/blobs
+          description: "Massively scalable and secure object storage for cloud-native workloads, archives, data lakes, HPC, and machine learning."
+          image_width: 180
+          image_height: 160
+          image: "assets/img/tools/azure-blob-storage.png"
         - title: "CloudFlare R2"
           image_width: 180
           image_height: 95
@@ -3330,7 +3378,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/couchdb.png"
-          description: "Apache CouchDB."
+          description: "Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability."
           url: https://couchdb.apache.org/
         - title: "Couchbase"
           image_width: 180
@@ -3361,6 +3409,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-opensearch.png"
           url: https://aws.amazon.com/opensearch-service/
+          description: "Securely unlock real-time search, monitoring, and analysis of business and operational data."
         - title: "Algolia"
           image_width: 180
           image_height: 93
@@ -3369,23 +3418,23 @@
           url: https://www.algolia.com/
         - title: "Apache Solr"
           image_width: 180
-          image_height: 94
+          image_height: 91
           image: "assets/img/tools/apache-solr.png"
-          description: ""
+          description: "Solr is the blazing-fast, open source, multi-modal search platform built on the full-text, vector, and geospatial search capabilities of Apache Lucene."
           url: https://solr.apache.org/
         - title: "Apache Lucene"
           image_width: 180
           image_height: 115
           image: "assets/img/tools/apache-lucene.png"
-          description: ""
+          description: "The Apache Lucene project develops open-source search software. The project releases a core search library, named Lucene core, as well as PyLucene, a python binding for Lucene. Lucene Core is a Java library providing powerful indexing and search features, as well as spellchecking, hit highlighting and advanced analysis/tokenization capabilities. The PyLucene sub project provides Python bindings for Lucene Core."
           url: https://lucene.apache.org/
     - type: Columnar and Time-Series Database
       tools:
         - title: "Cassandra"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/cassandra.png"
-          description: ""
+          image_height: 121
+          image: "assets/img/tools/apache-cassandra.png"
+          description: "Apache Cassandra is an open source NoSQL distributed database trusted by thousands of companies for scalability and high availability without compromising performance. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure make it the perfect platform for mission-critical data."
           url: https://cassandra.apache.org/
         - title: "Google Bigtable"
           image_width: 180
@@ -3395,14 +3444,14 @@
           url: https://cloud.google.com/bigtable
         - title: "HBase"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/hbase.png"
-          description: "Apache HBase – Apache HBase® Home."
+          image_height: 46
+          image: "assets/img/tools/apache-hbase.png"
+          description: "Apache HBase is the Hadoop database, a distributed, scalable, big data store. Use Apache HBase when you need random, realtime read/write access to your Big Data. This project's goal is the hosting of very large tables -- billions of rows X millions of columns -- atop clusters of commodity hardware. Apache HBase is an open-source, distributed, versioned, non-relational database modeled after Google's Bigtable: A Distributed Storage System for Structured Data by Chang et al. Just as Bigtable leverages the distributed data storage provided by the Google File System, Apache HBase provides Bigtable-like capabilities on top of Hadoop and HDFS."
           url: https://hbase.apache.org/
         - title: "Kudu"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/kudu.png"
+          image_height: 130
+          image: "assets/img/tools/apache-kudu.png"
           description: "A new open source Apache Hadoop ecosystem project, Apache Kudu completes Hadoop's storage layer to enable fast analytics on fast data."
           url: https://kudu.apache.org/
         - title: "InfluxDB"
@@ -3416,6 +3465,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-timestream.png"
           url: https://aws.amazon.com/timestream/
+          description: "Easy-to-manage time-series databases optimized for security, performance, availability, and scalability."
         - title: "Prometheus"
           image_width: 180
           image_height: 180
@@ -3426,7 +3476,7 @@
           image_width: 480
           image_height: 153
           image: "assets/img/tools/riak-ts.jpg"
-          description: "Riak TS."
+          description: "Riak TS is the only enterprise-grade NoSQL time series database optimized specifically for IoT and Time Series data. It ingests, transforms, stores, and analyzes massive amounts of time series data. Riak TS is engineered to be faster than Cassandra."
           url: https://riak.com/products/riak-ts/
         - title: "Timescale"
           image_width: 180
@@ -3438,9 +3488,9 @@
       tools:
         - title: "Hadoop"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/hadoop.png"
-          description: ""
+          image_height: 45
+          image: "assets/img/tools/apache-hadoop.jpg"
+          description: "The Apache Hadoop project develops open-source software for reliable, scalable, distributed computing. The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures."
           url: https://hadoop.apache.org/
         - title: "Cloudera"
           image_width: 180
@@ -3453,6 +3503,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-emr.png"
           url: https://aws.amazon.com/emr/
+          description: "Easily run and scale Apache Spark, Hive, Presto, and other big data workloads."
         - title: "Google Dataproc"
           image_width: 180
           image_height: 95
@@ -3461,43 +3512,47 @@
           url: https://cloud.google.com/dataproc
         - title: "Azure HDInsight"
           url: https://azure.microsoft.com/en-us/products/hdinsight
+          description: "Provision cloud Hadoop, Spark and HBase clusters."
+          image_width: 180
+          image_height: 130
+          image: "assets/img/tools/azure-hdinsight.png"
     - type: Fast Data
       tools:
         - title: "Apache Spark"
           image_width: 180
-          image_height: 93
+          image_height: 94
           image: "assets/img/tools/apache-spark.png"
           description: "Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters."
           url: https://spark.apache.org/
         - title: "Apache Flink"
           image_width: 180
-          image_height: 93
+          image_height: 180
           image: "assets/img/tools/apache-flink.png"
-          description: ""
+          description: "Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale."
           url: https://flink.apache.org/
         - title: "Apache Storm"
           image_width: 180
-          image_height: 93
+          image_height: 56
           image: "assets/img/tools/apache-storm.png"
-          description: "Apache Storm."
+          description: "Apache Storm is a free and open source distributed realtime computation system. Apache Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing. Apache Storm is simple, can be used with any programming language, and is a lot of fun to use! Apache Storm has many use cases: realtime analytics, online machine learning, continuous computation, distributed RPC, ETL, and more. Apache Storm is fast: a benchmark clocked it at over a million tuples processed per second per node. It is scalable, fault-tolerant, guarantees your data will be processed, and is easy to set up and operate. Apache Storm integrates with the queueing and database technologies you already use. An Apache Storm topology consumes streams of data and processes those streams in arbitrarily complex ways, repartitioning the streams between each stage of the computation however needed. Read more in the tutorial."
           url: https://storm.apache.org/
         - title: "Apache Samza"
           image_width: 180
-          image_height: 93
+          image_height: 45
           image: "assets/img/tools/apache-samza.png"
-          description: "Samza ."
+          description: "Samza allows you to build stateful applications that process data in real-time from multiple sources including Apache Kafka. Battle-tested at scale, it supports flexible deployment options to run on YARN or as a standalone library."
           url: https://samza.apache.org/
         - title: "Apache Beam"
           image_width: 180
-          image_height: 93
+          image_height: 66
           image: "assets/img/tools/apache-beam.png"
           description: "Apache Beam is an open source, unified model and set of language-specific SDKs for defining and executing data processing workflows, and also data ingestion and integration flows, supporting Enterprise Integration Patterns (EIPs) and Domain Specific Languages (DSLs). Dataflow pipelines simplify the mechanics of large-scale batch and streaming data processing and can run on a number of runtimes like Apache Flink, Apache Spark, and Google Cloud Dataflow (a cloud service). Beam also brings DSL in different languages, allowing users to easily implement their data integration processes."
           url: https://beam.apache.org/
         - title: "Apache Druid"
           image_width: 180
-          image_height: 62
+          image_height: 47
           image: "assets/img/tools/apache-druid.png"
-          description: "Apache Druid | Apache® Druid."
+          description: "A high performance, real-time analytics database that delivers sub-second queries on streaming and batch data at scale and under load."
           url: https://druid.apache.org/
         - title: "Apache Pinot"
           image_width: 180
@@ -3510,6 +3565,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-data-firehose.png"
           url: https://aws.amazon.com/firehose/
+          description: "Reliably load real-time streams into data lakes, warehouses, and analytics services."
     - type: Data Warehouse
       tools:
         - title: "Snowflake"
@@ -3523,6 +3579,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-redshift.png"
           url: https://aws.amazon.com/redshift/
+          description: "Deliver unmatched price performance at scale with SQL for your data lakehouse."
         - title: "Google BigQuery"
           image_width: 180
           image_height: 95
@@ -3531,14 +3588,19 @@
           url: https://cloud.google.com/bigquery
         - title: "Azure Synapse Analytics"
           url: https://azure.microsoft.com/en-us/products/synapse-analytics
+          description: "Accelerate time to insight across enterprise data warehouses and big data systems."
+          image_width: 157
+          image_height: 180
+          image: "assets/img/tools/azure-synapse-analytics.png"
         - title: "Apache Hive"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/apache-hive.png"
-          description: ""
+          image_height: 162
+          image: "assets/img/tools/apache-hive.svg"
+          description: "The Apache Hive is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale and facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL."
           url: https://hive.apache.org/
         - title: "Oracle Enterprise Data Warehouse"
           url: https://www.oracle.com/ie/autonomous-database/enterprise-data-warehouse/
+          description: "Get real-time data access and machine learning generated insights to make better decisions that drive innovation with Enterprise Data Warehouse. Benefit from auto-scalability, high performance, security, and autonomous management, on-premises or in the cloud, eliminating complexity and lowering operational costs. Oracle’s enterprise-class data warehouse solution integrates, transforms, and connects all data across the organization."
         - title: "Teradata"
           image_width: 180
           image_height: 95
@@ -3567,15 +3629,28 @@
           url: https://airflow.apache.org/
         - title: "Oracle Data Integrator"
           url: https://www.oracle.com/uk/middleware/technologies/data-integrator.html
+          description: "Oracle Data Integrator is a comprehensive data integration platform that covers all data integration requirements: from high-volume, high-performance batch loads, to event-driven, trickle-feed integration processes, to SOA-enabled data services. Oracle Data Integrator (ODI) 12c, the latest version of Oracle’s strategic Data Integration offering, provides superior developer productivity and improved user experience with a redesigned flow-based declarative user interface and deeper integration with Oracle GoldenGate. ODI12c further builds on its flexible and high-performance architecture with comprehensive big data support and added parallelism when executing data integration processes. It includes interoperability with Oracle Warehouse Builder (OWB) for a quick and simple migration for OWB customers to ODI12c. Additionally, ODI can be monitored from a single solution along with other Oracle technologies and applications through the integration with Oracle Enterprise Manager 12c."
+          image_width: 180
+          image_height: 180
+          image: "assets/img/tools/oracle-data-integrator.svg"
         - title: "SQL Server Integration Services"
           url: https://learn.microsoft.com/en-us/sql/integration-services/sql-server-integration-services
+          description: "SQL Server Integration Services is a platform for building enterprise-level data integration and data transformations solutions."
+          image_width: 180
+          image_height: 62
+          image: "assets/img/tools/sql-server-integration-services.png"
         - title: "AWS Glue"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/aws-glue.png"
           url: https://aws.amazon.com/glue/
+          description: "Discover, prepare, and integrate all your data at any scale."
         - title: "Azure Data Factory"
           url: https://learn.microsoft.com/en-us/azure/data-factory/
+          description: "Azure Data Factory is Azure's cloud ETL service for scale-out serverless data integration and data transformation. It offers a code-free UI for intuitive authoring and single-pane-of-glass monitoring and management. You can also lift and shift existing SSIS packages to Azure and run them with full compatibility in ADF. SSIS Integration Runtime offers a fully managed service, so you don't have to worry about infrastructure management."
+          image_width: 180
+          image_height: 135
+          image: "assets/img/tools/azure-data-factory.jpg"
         - title: "Google Cloud Dataflow"
           image_width: 180
           image_height: 95
@@ -3584,9 +3659,9 @@
           url: https://cloud.google.com/products/dataflow
         - title: "Stitch"
           image_width: 180
-          image_height: 93
+          image_height: 55
           image: "assets/img/tools/stitch.png"
-          description: "Stitch - A Qlik product."
+          description: "Get to insights faster with fully automated cloud data pipelines. Rapidly move data from source to warehouse in just a few clicks, no IT expertise required."
           url: https://www.stitchdata.com/
         - title: "Qlik"
           image_width: 180
@@ -3610,7 +3685,7 @@
           image_width: 180
           image_height: 94
           image: "assets/img/tools/integrate.io.png"
-          description: "Integrate.io - Unify your data while building & managing clean, secure pipelines for better decision making. Power your data warehouse with ETL, ELT, CDC, Reverse ETL, and API Management."
+          description: "Unify your data while building & managing clean, secure pipelines for better decision making. Power your data warehouse with ETL, ELT, CDC, Reverse ETL, and API Management."
           url: https://www.integrate.io/
     - type: Message Queue
       tools:
@@ -3618,25 +3693,26 @@
           image_width: 1814
           image_height: 500
           image: "assets/img/tools/rabbitmq.svg"
-          description: "RabbitMQ: One broker to queue them all | RabbitMQ."
+          description: "RabbitMQ is a reliable and mature messaging and streaming broker, which is easy to deploy on cloud environments, on-premises, and on your local machine. It is currently used by millions worldwide."
           url: https://www.rabbitmq.com/
         - title: "ActiveMQ"
           image_width: 180
-          image_height: 93
+          image_height: 84
           image: "assets/img/tools/activemq.png"
-          description: "ActiveMQ."
+          description: "Apache ActiveMQ is the most popular open source, multi-protocol, Java-based message broker. It supports industry standard protocols so users get the benefits of client choices across a broad range of languages and platforms. Connect from clients written in JavaScript, C, C++, Python, .Net, and more. Integrate your multi-platform applications using the ubiquitous AMQP protocol. Exchange messages between your web applications using STOMP over websockets. Manage your IoT devices using MQTT. Support your existing JMS infrastructure and beyond. ActiveMQ offers the power and flexibility to support any messaging use-case."
           url: https://activemq.apache.org/
         - title: "ZeroMQ"
           image_width: 180
-          image_height: 93
-          image: "assets/img/tools/zeromq.png"
-          description: "An open-source universal messaging library."
+          image_height: 56
+          image: "assets/img/tools/zeromq.gif"
+          description: "ZeroMQ (also known as ØMQ, 0MQ, or zmq) looks like an embeddable networking library but acts like a concurrency framework. It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast. You can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply. It's fast enough to be the fabric for clustered products. Its asynchronous I/O model gives you scalable multicore applications, built as asynchronous message-processing tasks. It has a score of language APIs and runs on most operating systems."
           url: https://zeromq.org/
         - title: "Amazon Simple Queue Service (SQS)"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-simple-queue-service-sqs.png"
           url: https://aws.amazon.com/sqs/
+          description: "Fully managed message queuing for microservices, distributed systems, and serverless applications."
         - title: "Google Cloud Tasks"
           image_width: 180
           image_height: 95
@@ -3645,35 +3721,42 @@
           url: https://cloud.google.com/tasks
         - title: "Azure Queue Storage"
           url: https://azure.microsoft.com/en-us/products/storage/queues
+          description: "Durable queues for large-volume cloud services."
+          image_width: 180
+          image_height: 180
+          image: "assets/img/tools/azure-queue-storage.jpg"
     - type: Event Streaming
       tools:
         - title: "Apache Kafka"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/apache-kafka.png"
-          description: "Apache Kafka: A Distributed Streaming Platform."
+          description: "Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications."
           url: https://kafka.apache.org/
         - title: "Confluent"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/confluent.png"
-          description: "Stream, connect, process, and govern your data with a unified Data Streaming Platform built on the heritage of Apache Kafka® and Apache Flink®."
+          description: "Stream, connect, process, and govern your data with a unified Data Streaming Platform built on the heritage of Apache Kafka and Apache Flink."
           url: https://www.confluent.io/
         - title: "Amazon Managed Streaming for Kafka (MSK)"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-managed-streaming-for-kafka-msk.png"
           url: https://aws.amazon.com/msk/
+          description: "Securely stream data with a fully managed, highly available Apache Kafka service."
         - title: "Amazon Kinesis"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-kinesis.png"
           url: https://aws.amazon.com/kinesis/
+          description: "Collect, process, and analyze real-time video and data streams."
         - title: "Amazon EventBridge"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/amazon-eventbridge.png"
           url: https://aws.amazon.com/eventbridge/
+          description: "Build event-driven applications at scale across AWS, existing systems, or SaaS applications."
         - title: "Google Cloud Managed Service for Kafka"
           image_width: 180
           image_height: 95
@@ -3688,6 +3771,10 @@
           url: https://cloud.google.com/pubsub
         - title: "Azure HDInsight"
           url: https://azure.microsoft.com/en-us/products/hdinsight
+          description: "Provision cloud Hadoop, Spark and HBase clusters."
+          image_width: 180
+          image_height: 130
+          image: "assets/img/tools/azure-hdinsight.png"
         - title: "Apache Pulsar"
           image_width: 180
           image_height: 95
@@ -3704,7 +3791,7 @@
           image_width: 1200
           image_height: 628
           image: "assets/img/tools/redpanda.webp"
-          description: "Redpanda is a powerful, simple, and cost-efficient streaming data platform that is compatible with Kafka® APIs while eliminating Kafka complexity."
+          description: "Redpanda is a powerful, simple, and cost-efficient streaming data platform that is compatible with Kafka APIs while eliminating Kafka complexity."
           url: https://www.redpanda.com/
     - type: Graph Database
       tools:
@@ -3719,6 +3806,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-neptune.png"
           url: https://aws.amazon.com/neptune/
+          description: "High-performance graph analytics and serverless database for superior scalability and availability."
         - title: "Aerospike"
           image_width: 1200
           image_height: 630
@@ -3738,6 +3826,7 @@
           image_height: 93
           image: "assets/img/tools/amazon-aurora.png"
           url: https://aws.amazon.com/rds/aurora/
+          description: "Unparalleled high performance and availability at global scale for PostgreSQL, MySQL, and DSQL."
         - title: "CockroachDB"
           image_width: 180
           image_height: 63
@@ -4634,7 +4723,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/findbugs.png"
-          description: "FindBugs™ - Find Bugs in Java Programs."
+          description: "FindBugs - Find Bugs in Java Programs."
           url: https://findbugs.sourceforge.net/
         - title: "Bandit"
           image_width: 180
@@ -4792,7 +4881,7 @@
           image_width: 180
           image_height: 93
           image: "assets/img/tools/sonatype.png"
-          description: "Accelerate innovation with secure software supply chain management from Sonatype, a Leader in Forrester Wave™: for SCA. Trusted by 2000+ organizations."
+          description: "Accelerate innovation with secure software supply chain management from Sonatype, a Leader in Forrester Wave: for SCA. Trusted by 2000+ organizations."
           url: https://www.sonatype.com/
         - title: "RapidFort"
           image_width: 180
