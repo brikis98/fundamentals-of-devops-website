@@ -18,6 +18,9 @@
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
       url: "https://amzn.to/3Ybvre2"
+      tags:
+        - recommended
+        - same-author
     - title: "Site Reliability Engineering"
       image_width: 180
       image_height: 236
@@ -27,6 +30,8 @@
       author: "Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy"
       publisher: "O'Reilly"
       url: "https://amzn.to/3XWle4U"
+      tags:
+        - recommended
     - title: "The Practice of Cloud System Administration"
       image_width: 180
       image_height: 235
@@ -133,6 +138,10 @@
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/25/authenticate-to-aws-with-iam-identity-center/"
       type: "Blog post"
+      tags:
+        - recommended
+        - used-in-book
+        - same-author
   tools:
     - type: Platform as a Service (PaaS)
       tools:
@@ -148,12 +157,17 @@
           image: "assets/img/tools/render.png"
           description: "On Render, you can build, deploy, and scale your apps with unparalleled ease – from your first user to your billionth."
           url: https://render.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Fly.io"
           image_width: 180
           image_height: 93
           image: "assets/img/tools/fly.io.png"
           description: "Deploy app servers close to your users."
           url: https://fly.io/
+          tags:
+            - recommended
         - title: "Vercel"
           image_width: 180
           image_height: 94
@@ -278,6 +292,9 @@
           image: "assets/img/tools/amazon-web-services-aws.png"
           description: "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use."
           url: https://aws.amazon.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Microsoft Azure"
           description: "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure’s open and flexible cloud computing platform."
           url: https://azure.microsoft.com/
@@ -331,6 +348,9 @@
       author: "Yevgeniy Brikman"
       publisher: "O'Reilly"
       url: "https://amzn.to/3ZWnKL8"
+      tags:
+        - recommended
+        - same-author
     - title: "Infrastructure as Code"
       image_width: 180
       image_height: 236
@@ -340,6 +360,8 @@
       author: "Kief Morris"
       publisher: "O'Reilly"
       url: "https://amzn.to/3Yn0gxE"
+      tags:
+        - recommended
     - title: "Ansible for DevOps"
       image_width: 180
       image_height: 234
@@ -358,6 +380,8 @@
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/blog/2017/10/13/reusable-composable-battle-tested-terraform-modules/"
       type: "Talk"
+      tags:
+        - same-author
     - title: "5 Lessons Learned from Writing Over 300,000 Lines of Infrastructure Code"
       image_width: 180
       image_height: 101
@@ -366,6 +390,8 @@
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1"
       type: "Talk, blog post"
+      tags:
+        - same-author
     - title: "Infrastructure as Code Best Practices"
       image_width: 180
       image_height: 93
@@ -374,6 +400,8 @@
       author: "Yevgeniy Brikman"
       url: "https://se-radio.net/2020/04/episode-405-yevgeniy-brikman-on-infrastructure-as-code-best-practices/"
       type: "Podcast"
+      tags:
+        - same-author
     - title: "What is Infrastructure as Code?"
       image_width: 180
       image_height: 101
@@ -393,6 +421,14 @@
   tools:
     - type: Configuration Management
       tools:
+        - title: "Ansible"
+          image_width: 146
+          image_height: 180
+          image: "assets/img/tools/ansible.png"
+          description: "Ansible offers open-source automation that is simple, flexible, and powerful."
+          url: https://docs.ansible.com/
+          tags:
+            - used-in-book
         - title: "Chef"
           image_width: 180
           image_height: 95
@@ -405,12 +441,6 @@
           image: "assets/img/tools/puppet.svg"
           description: "Puppet is the industry-leading automation solution for configuration management, compliance, CI/CD, patch management, IT automation, and more."
           url: https://www.puppet.com/
-        - title: "Ansible"
-          image_width: 146
-          image_height: 180
-          image: "assets/img/tools/ansible.png"
-          description: "Ansible offers open-source automation that is simple, flexible, and powerful."
-          url: https://docs.ansible.com/
     - type: VM Hypervisor
       tools:
         - title: "VMware vSphere"
@@ -445,6 +475,9 @@
           image: "assets/img/tools/packer.png"
           description: "Use Packer to create golden images for multiple platforms from a single source configuration."
           url: https://www.packer.io/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Vagrant"
           image_width: 180
           image_height: 101
@@ -479,6 +512,9 @@
           image: "assets/img/tools/docker.png"
           description: "Docker is a platform designed to help developers build, share, and run container applications. We handle the tedious setup, so you can focus on the code."
           url: https://www.docker.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Moby"
           image_width: 180
           image_height: 90
@@ -517,6 +553,9 @@
           image: "assets/img/tools/opentofu.png"
           description: "The open source infrastructure as code tool."
           url: https://opentofu.org/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Terraform"
           image_width: 180
           image_height: 101
@@ -555,12 +594,18 @@
           image: "assets/img/tools/docker-hub.png"
           description: "Welcome to the world's largest container registry built for developers and open source contributors to find, use, and share their container images. Build, push and pull."
           url: https://hub.docker.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "OpenTofu Registry"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/opentofu-registry.png"
           description: "A fast and easy-to-use UI for quickly browsing and viewing OpenTofu modules and providers."
           url: https://search.opentofu.org/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Terraform Registry"
           image_width: 180
           image_height: 93
@@ -573,6 +618,8 @@
           image: "assets/img/tools/gruntwork-infrastructure-as-code-library.png"
           description: "Production-ready IaC modules for AWS. Leverage a catalog of 300+ battle-tested Terraform/OpenTofu modules to set up your AWS foundations, run apps, and store data."
           url: https://www.gruntwork.io/platform/iac-library
+          tags:
+            - same-author
 
 - title: "How to Manage Your Apps Using Orchestration Tools"
   icon: cubes
@@ -587,6 +634,16 @@
     - Deploy a Dockerized app in Kubernetes
     - Deploy a serverless app with AWS Lambda
   books:
+    - title: "Kubernetes in Action"
+      image_width: 180
+      image_height: 225
+      image: "assets/img/books/kubernetes-in-action.jpg"
+      description: "With Kubernetes, users don't have to worry about which specific machine in their data center their application is running on. Each layer in their application is decoupled from other layers so they can scale, update, and maintain them independently. Kubernetes in Action teaches developers how to use Kubernetes to deploy self-healing scalable distributed applications. By the end, readers will be able to build and deploy applications in a proper way to take full advantage of the Kubernetes platform."
+      author: "Marko Luksa"
+      publisher: "Manning"
+      url: "https://amzn.to/402dml9"
+      tags:
+        - recommended
     - title: "Cloud Native Infrastructure"
       image_width: 180
       image_height: 238
@@ -596,14 +653,6 @@
       author: "Justin Garrison and Kris Nova"
       publisher: "O'Reilly"
       url: "https://amzn.to/3XWmswQ"
-    - title: "Kubernetes in Action"
-      image_width: 180
-      image_height: 225
-      image: "assets/img/books/kubernetes-in-action.jpg"
-      description: "With Kubernetes, users don't have to worry about which specific machine in their data center their application is running on. Each layer in their application is decoupled from other layers so they can scale, update, and maintain them independently. Kubernetes in Action teaches developers how to use Kubernetes to deploy self-healing scalable distributed applications. By the end, readers will be able to build and deploy applications in a proper way to take full advantage of the Kubernetes platform."
-      author: "Marko Luksa"
-      publisher: "Manning"
-      url: "https://amzn.to/402dml9"
     - title: "Cloud Native DevOps with Kubernetes"
       image_width: 180
       image_height: 236
@@ -717,6 +766,9 @@
           image: "assets/img/tools/systemd.png"
           description: "systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system."
           url: https://systemd.io/
+          tags:
+            - recommended
+            - used-in-book
         - title: "supervisord"
           image_width: 180
           image_height: 93
@@ -735,6 +787,9 @@
           image: "assets/img/tools/pm2.png"
           description: "Advanced process manager for production Node.js applications. Load balancer, logs facility, startup script, micro service management, at a glance."
           url: https://pm2.keymetrics.io/
+          tags:
+            - recommended
+            - used-in-book
     - type: Load Balancer (Web Server)
       tools:
         - title: "Apache HTTP Server"
@@ -749,6 +804,9 @@
           image: "assets/img/tools/nginx.png"
           url: https://www.nginx.com/
           description: "Optimize, deliver, and secure apps across the entire enterprise with NGINX."
+          tags:
+            - recommended
+            - used-in-book
         - title: "HAProxy"
           image_width: 180
           image_height: 43
@@ -787,6 +845,9 @@
           image: "assets/img/tools/elastic-load-balancer.svg"
           description: "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets and virtual appliances in one or more Availability Zones (AZs)."
           url: https://aws.amazon.com/elasticloadbalancing/
+          tags:
+            - recommended
+            - used-in-book
         - title: "GCP Cloud Load Balancer"
           image_width: 180
           image_height: 95
@@ -807,6 +868,9 @@
           image: "assets/img/tools/auto-scaling-group.svg"
           description: "Automatically maintain application performance and availability by dynamically scaling EC2 instances based on user-defined policies and health checks."
           url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
+          tags:
+            - recommended
+            - used-in-book
         - title: "Managed Instance Groups"
           image_width: 180
           image_height: 95
@@ -827,36 +891,41 @@
           image: "assets/img/tools/kubernetes.png"
           description: "Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community. Planet Scale Designed on the same principles that allow Google to run billions of containers a week, Kubernetes can scale without increasing your operations team."
           url: https://kubernetes.io/
-        - title: "Nomad"
-          image_width: 180
-          image_height: 101
-          image: "assets/img/tools/nomad.png"
-          description: "Nomad is a simple and flexible scheduler and orchestrator for managing containers and non-containerized applications across on-prem and clouds at scale."
-          url: https://www.nomadproject.io/
-        - title: "Docker Swarm"
-          image_width: 2400
-          image_height: 1260
-          image: "assets/img/tools/docker-swarm.webp"
-          description: "Swarm mode is an advanced feature for managing a cluster of Docker daemons. Use Swarm mode if you intend to use Swarm as a production runtime environment."
-          url: https://docs.docker.com/engine/swarm/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Amazon ECS"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/elastic-container-service.svg"
           description: "Amazon Elastic Container Service (Amazon ECS) provides a fully managed container service solution that’s easy to use, scalable, secure, and reliable."
           url: https://aws.amazon.com/ecs/
-        - title: "Mesos"
+          tags:
+            - recommended
+        - title: "Nomad"
           image_width: 180
-          image_height: 80
-          image: "assets/img/tools/mesos.png"
-          description: "Apache Mesos abstracts resources away from machines, enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
-          url: https://mesos.apache.org/
+          image_height: 101
+          image: "assets/img/tools/nomad.png"
+          description: "Nomad is a simple and flexible scheduler and orchestrator for managing containers and non-containerized applications across on-prem and clouds at scale."
+          url: https://www.nomadproject.io/
         - title: "OpenShift"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/openshift.jpg"
           description: "A unified application development platform that lets you build, modernize, and deploy applications at scale on your choice of hybrid cloud infrastructure."
           url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+        - title: "Docker Swarm"
+          image_width: 2400
+          image_height: 1260
+          image: "assets/img/tools/docker-swarm.webp"
+          description: "Swarm mode is an advanced feature for managing a cluster of Docker daemons. Use Swarm mode if you intend to use Swarm as a production runtime environment."
+          url: https://docs.docker.com/engine/swarm/
+        - title: "Mesos"
+          image_width: 180
+          image_height: 80
+          image: "assets/img/tools/mesos.png"
+          description: "Apache Mesos abstracts resources away from machines, enabling fault-tolerant and elastic distributed systems to easily be built and run effectively."
+          url: https://mesos.apache.org/
     - type: Kubernetes Application Configuration
       tools:
         - title: "Helm"
@@ -865,12 +934,16 @@
           image: "assets/img/tools/helm.svg"
           description: "Helm - The Kubernetes Package Manager."
           url: https://helm.sh/
+          tags:
+            - recommended
         - title: "OpenTofu"
           image_width: 180
           image_height: 101
           image: "assets/img/tools/opentofu.png"
           description: "The open source infrastructure as code tool."
           url: https://opentofu.org/
+          tags:
+            - recommended
         - title: "Pulumi"
           image_width: 180
           image_height: 95
@@ -897,12 +970,18 @@
           image: "assets/img/tools/docker-hub.png"
           description: "Welcome to the world's largest container registry built for developers and open source contributors to find, use, and share their container images. Build, push and pull."
           url: https://hub.docker.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Amazon Elastic Container Registry (ECR)"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/elastic-container-registry.svg"
           description: "Amazon Elastic Container Registry (ECR) is a fully managed Docker container registry that makes it easy to store, share, and deploy container images."
           url: https://aws.amazon.com/ecr/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Azure Container Registry"
           url: https://azure.microsoft.com/en-us/products/container-registry
           description: "A registry of Docker and Open Container Initiative (OCI) images, with support for all OCI artifacts."
@@ -915,18 +994,18 @@
           image: "assets/img/tools/google-artifact-registry.png"
           description: "A universal package manager for all your build artifacts and dependencies. Fast, scalable, reliable and secure."
           url: https://cloud.google.com/artifact-registry
-        - title: "JFrog Docker Registry"
-          image_width: 180
-          image_height: 94
-          image: "assets/img/tools/jfrog-docker-registry.png"
-          description: "Manage your Docker images within a private Docker registry, with high availability, in a single Artifactory and unlimited image pulls."
-          url: https://jfrog.com/integration/docker-registry/
         - title: "GitHub Container Registry"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/github-container-registry.png"
           description: "You can store and manage Docker and OCI images in the Container registry."
           url: https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+        - title: "JFrog Docker Registry"
+          image_width: 180
+          image_height: 94
+          image: "assets/img/tools/jfrog-docker-registry.png"
+          description: "Manage your Docker images within a private Docker registry, with high availability, in a single Artifactory and unlimited image pulls."
+          url: https://jfrog.com/integration/docker-registry/
     - type: Serverless
       tools:
         - title: "AWS Lambda"
@@ -935,6 +1014,9 @@
           image: "assets/img/tools/aws-lambda.svg"
           description: "AWS Lambda is a serverless compute service for running code without having to provision or manage servers. You pay only for the compute time you consume."
           url: https://aws.amazon.com/lambda/
+          tags:
+            - recommended
+            - used-in-book
         - title: "GCP Cloud Functions"
           image_width: 180
           image_height: 95
@@ -965,6 +1047,8 @@
           image: "assets/img/tools/aws-fargate.svg"
           description: "AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes (EKS)."
           url: https://aws.amazon.com/fargate/
+          tags:
+            - recommended
         - title: "Knative"
           image_width: 180
           image_height: 145
@@ -977,6 +1061,9 @@
           image: "assets/img/tools/aws-lambda.svg"
           description: "Configure a Lambda function URL to assign an HTTP(S) endpoint to your Lambda function without having to integrate with other AWS services."
           url: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
+          tags:
+            - recommended
+            - used-in-book
         - title: "Amazon API Gateway"
           image_width: 180
           image_height: 180
@@ -995,6 +1082,8 @@
           image: "assets/img/tools/serverless-framework.png"
           description: "Easily build auto-scaling, low-overhead applications on AWS Lambda, API Gateway, DynamoDB, and other managed services with the Serverless Framework."
           url: https://www.serverless.com/
+          tags:
+            - recommended
         - title: "SAM"
           image_width: 180
           image_height: 95
@@ -1023,6 +1112,19 @@
       author: "Steve Freeman and Nat Pryce"
       publisher: "Addison-Wesley Professional"
       url: "https://amzn.to/4f0sAeG"
+      tags:
+        - recommended
+    - title: "Clean Code"
+      image_width: 180
+      image_height: 238
+      image: "assets/img/books/clean-code.jpg"
+      description: "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way. Noted software expert Robert C. Martin, presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin, who has helped bring agile principles from a practitioner’s point of view to tens of thousands of programmers, has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of software craftsman, and make you a better programmer―but only if you work at it. What kind of work will you be doing? You’ll be reading code―lots of code. And you will be challenged to think about what’s right about that code, and what’s wrong with it. More importantly you will be challenged to reassess your professional values and your commitment to your craft."
+      subtitle: "A Handbook of Agile Software Craftsmanship"
+      author: "Robert C. Martin"
+      publisher: "Pearson"
+      url: "https://amzn.to/4fkDJXZ"
+      tags:
+        - recommended
     - title: "Working Effectively with Legacy Code"
       image_width: 180
       image_height: 238
@@ -1031,6 +1133,15 @@
       author: "Michael Feathers"
       publisher: "Pearson"
       url: "https://amzn.to/3BG1I54"
+    - title: "Extreme Programming Explained"
+      image_width: 128
+      image_height: 161
+      image: "assets/img/books/extreme-programming-explained.jpg"
+      description: "Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned."
+      subtitle: "Embrace Change"
+      author: "Kent Beck and Cynthia Andres"
+      publisher: "Addison-Wesley"
+      url: "https://amzn.to/4eZOONR"
     - title: "Full Stack Testing"
       image_width: 180
       image_height: 236
@@ -1065,24 +1176,6 @@
       author: "Lucas da Costa"
       publisher: "Manning"
       url: "https://amzn.to/40GpJ58"
-    - title: "Clean Code"
-      image_width: 180
-      image_height: 238
-      image: "assets/img/books/clean-code.jpg"
-      description: "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way. Noted software expert Robert C. Martin, presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin, who has helped bring agile principles from a practitioner’s point of view to tens of thousands of programmers, has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of software craftsman, and make you a better programmer―but only if you work at it. What kind of work will you be doing? You’ll be reading code―lots of code. And you will be challenged to think about what’s right about that code, and what’s wrong with it. More importantly you will be challenged to reassess your professional values and your commitment to your craft."
-      subtitle: "A Handbook of Agile Software Craftsmanship"
-      author: "Robert C. Martin"
-      publisher: "Pearson"
-      url: "https://amzn.to/4fkDJXZ"
-    - title: "Extreme Programming Explained"
-      image_width: 128
-      image_height: 161
-      image: "assets/img/books/extreme-programming-explained.jpg"
-      description: "Extreme Programming (XP) was conceived and developed to address the specific needs of software development conducted by small teams in the face of vague and changing requirements. This new lightweight methodology challenges many conventional tenets, including the long-held assumption that the cost of changing a piece of software necessarily rises dramatically over the course of time. XP recognizes that projects have to work to achieve this reduction in cost and exploit the savings once they have been earned."
-      subtitle: "Embrace Change"
-      author: "Kent Beck and Cynthia Andres"
-      publisher: "Addison-Wesley"
-      url: "https://amzn.to/4eZOONR"
     - title: "Pro Git"
       image_width: 180
       image_height: 222
@@ -1100,6 +1193,10 @@
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/20/learn-git-and-github-in-15-minutes/"
       type: "Blog post"
+      tags:
+        - recommended
+        - used-in-book
+        - same-author
     - title: "Automated Testing for Terraform, Docker, Packer, Kubernetes, and More"
       image_width: 270
       image_height: 200
@@ -1108,6 +1205,8 @@
       author: "Yevgeniy Brikman"
       url: "https://www.infoq.com/presentations/automated-testing-terraform-docker-packer/"
       type: "Talk"
+      tags:
+        - same-author
     - title: "The Practical Test Pyramid"
       image_width: 180
       image_height: 94
@@ -1181,6 +1280,9 @@
           image: "assets/img/tools/git.png"
           description: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows."
           url: https://git-scm.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Mercurial"
           image_width: 98
           image_height: 114
@@ -1213,6 +1315,9 @@
           image: "assets/img/tools/github.jpg"
           description: "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity."
           url: https://github.com/
+          tags:
+            - recommended
+            - used-in-book
         - title: "GitLab"
           image_width: 180
           image_height: 126
@@ -1257,6 +1362,8 @@
           image: "assets/img/tools/npm.png"
           description: "Relied upon by more than 17 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe. The free npm Registry has become the center of JavaScript code sharing, and with more than two million packages, the largest software registry in the world."
           url: https://www.npmjs.com/
+          tags:
+            - used-in-book
         - title: "Bazel"
           image_width: 180
           image_height: 93
@@ -1313,6 +1420,8 @@
           image: "assets/img/tools/shellcheck.png"
           description: "ShellCheck finds bugs in your shell scripts."
           url: https://www.shellcheck.net/
+          tags:
+            - recommended
         - title: "ESLint"
           image_width: 180
           image_height: 180
@@ -1389,6 +1498,8 @@
           image: "assets/img/tools/terratest.png"
           description: "Terratest is a Go library that provides patterns and helper functions for testing infrastructure, with 1st-class support for Terraform, Packer, Docker, Kubernetes, AWS, GCP, and more."
           url: https://terratest.gruntwork.io/
+          tags:
+            - same-author
     - type: Unit Testing
       tools:
         - title: "testing (Golang)"
@@ -1436,6 +1547,8 @@
       author: "Jez Humble and David Farley"
       publisher: "Addison-Wesley Professional"
       url: "https://amzn.to/3BLPDeY"
+      tags:
+        - recommended
     - title: "Release It!"
       image_width: 180
       image_height: 215
@@ -1454,6 +1567,8 @@
       author: "Yevgeniy Brikman"
       url: "https://www.ybrikman.com/blog/2016/02/14/agility-requires-safety/"
       type: "Talk"
+      tags:
+        - same-author
     - title: "Cloud Adoption Fails"
       image_width: 180
       image_height: 135
@@ -1462,6 +1577,8 @@
       author: "Yevgeniy Brikman"
       url: "https://www.youtube.com/watch?v=sYzhlBayRpU"
       type: "Talk"
+      tags:
+        - same-author
     - title: "How to manage state and environments with OpenTofu"
       image_width: 180
       image_height: 111
@@ -1470,6 +1587,10 @@
       author: "Yevgeniy Brikman"
       url: "https://www.fundamentals-of-devops.com/resources/2025/01/28/how-to-manage-state-and-environments-with-opentofu/"
       type: "Blog post"
+      tags:
+        - recommended
+        - used-in-book
+        - same-author
     - title: "Continuous Integration"
       image_width: 180
       image_height: 96
@@ -1542,6 +1663,8 @@
       author: "Dan McKinley"
       url: "http://mcfunley.com/data-driven-products-now"
       type: "Talk"
+      tags:
+        - recommended
     - title: "OpenGitOps"
       image_width: 180
       image_height: 94
@@ -1559,6 +1682,9 @@
           image: "assets/img/tools/github-actions.png"
           description: "Easily build, package, release, update, and deploy your project in any language—on GitHub or any external system—without having to run code yourself."
           url: https://github.com/features/actions
+          tags:
+            - recommended
+            - used-in-book
         - title: "GitLab"
           image_width: 180
           image_height: 126
@@ -1707,6 +1833,8 @@
           image: "assets/img/tools/gruntwork-pipelines.png"
           description: "Deploy infrastructure changes with control and confidence."
           url: https://www.gruntwork.io/platform/pipelines
+          tags:
+            - same-author
         - title: "env0"
           image_width: 180
           image_height: 95
@@ -1747,6 +1875,8 @@
           image: "assets/img/tools/dagger.webp"
           description: "Powerful, programmable CI/CD engine that runs your pipelines in containers — pre-push on your local machine and/or post-push in CI."
           url: https://dagger.io/
+          tags:
+            - recommended
         - title: "Common Workflow Language"
           image_width: 180
           image_height: 93
@@ -1818,6 +1948,8 @@
       author: "Yevgeniy Brikman"
       url: "https://blog.gruntwork.io/devops-foundations-6a9adf96921b"
       type: "Blog post"
+      tags:
+        - same-author
     - title: "Microservices"
       image_width: 180
       image_height: 96
@@ -1881,6 +2013,8 @@
           image: "assets/img/tools/cloud-nuke.jpg"
           description: "A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it."
           url: https://github.com/gruntwork-io/cloud-nuke
+          tags:
+            - same-author
     - type: Automatic Update
       tools:
         - title: "DependaBot"
@@ -1895,6 +2029,8 @@
           image: "assets/img/tools/renovate.svg"
           description: "Mend Renovate products help developers automate dependency updates by detecting newer package versions and providing updates directly to the application code."
           url: https://www.mend.io/renovate/
+          tags:
+            - recommended
         - title: "Snyk"
           image_width: 180
           image_height: 95
@@ -1907,6 +2043,8 @@
           image: "assets/img/tools/patcher.png"
           description: "Keep IaC up to date, even with breaking changes."
           url: https://www.gruntwork.io/platform/patcher
+          tags:
+            - same-author
 
 - title: "How to Set Up Networking"
   icon: sitemap
@@ -2009,6 +2147,9 @@
           image: "assets/img/tools/amazon-route53.svg"
           description: "Amazon Route 53 is a highly available and scalable cloud domain name system (DNS) service. Enables to customize DNS routing policies to reduce latency."
           url: https://aws.amazon.com/route53/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Azure DNS"
           url: https://azure.microsoft.com/en-us/products/dns
           description: "Host your Domain Name System (DNS) domain in Azure."
@@ -2033,6 +2174,8 @@
           image: "assets/img/tools/cloudflare-dns.png"
           description: "With Cloudflare DNS you have the fastest response time of any DNS provider. Our DNS has unparalleled redundancy and built-in security."
           url: https://www.cloudflare.com/application-services/products/dns/
+          tags:
+            - recommended
     - type: Single Sign On (SSO)
       tools:
         - title: "JumpCloud"
@@ -2111,12 +2254,16 @@
           image: "assets/img/tools/teleport.png"
           description: "Teleport delivers least privileged access on a foundation of cryptographic identity and zero trust, making infrastructure resilient to identity-based attacks, improving engineer productivity, and streamlining compliance."
           url: https://goteleport.com/
+          tags:
+            - recommended
         - title: "Tailscale"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/tailscale.jpg"
           description: "Securely connect to anything on the internet with Tailscale. Deploy a WireGuard-based VPN to achieve point-to-point connectivity that enforces least privilege."
           url: https://tailscale.com/
+          tags:
+            - recommended
         - title: "Boundary"
           image_width: 180
           image_height: 101
@@ -2271,6 +2418,9 @@
           image: "assets/img/tools/kubernetes-service-discovery.png"
           description: "Expose an application running in your cluster behind a single outward-facing endpoint, even when the workload is split across multiple backends."
           url: https://kubernetes.io/docs/concepts/services-networking/service/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Nomad Service Discovery"
           image_width: 180
           image_height: 101
@@ -2355,6 +2505,9 @@
           image: "assets/img/tools/istio.png"
           description: "A service mesh for observability, security in depth, and management that speeds deployment cycles."
           url: https://istio.io/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Cilium"
           image_width: 180
           image_height: 95
@@ -2417,6 +2570,8 @@
       author: "David Wong"
       publisher: "Manning"
       url: "https://amzn.to/3zSZy1F"
+      tags:
+        - recommended
     - title: "Serious Cryptography"
       image_width: 180
       image_height: 237
@@ -2504,6 +2659,8 @@
       author: Randall Munroe
       type: Comic
       url: https://xkcd.com/936/
+      tags:
+        - recommended
     - title: "OWASP Top Ten"
       image_width: 64
       image_height: 64
@@ -2512,6 +2669,8 @@
       author: "the OWASP Foundation"
       url: "https://owasp.org/www-project-top-ten/"
       type: "Cheat sheet"
+      tags:
+        - recommended
     - title: "OWASP Password Cheat Sheet"
       image_width: 180
       image_height: 93
@@ -2520,6 +2679,8 @@
       author: "the OWASP Foundation"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
       type: "Cheat sheet"
+      tags:
+        - recommended
   tools:
     - type: Cryptography
       tools:
@@ -2552,6 +2713,8 @@
           image: "assets/img/tools/stripe.png"
           description: "Stripe powers online and in-person payment processing and financial solutions for businesses of all sizes. Accept payments, send payouts, and automate financial processes with a suite of APIs and no-code tools."
           url: https://stripe.com/
+          tags:
+            - recommended
         - title: "PayPal"
           image_width: 180
           image_height: 180
@@ -2628,12 +2791,16 @@
           image: "assets/img/tools/1password.jpg"
           description: "More than a password manager and leader in Extended Access Management. Discover why 1Password is the exclusive Cybersecurity Partner of Oracle Red Bull Racing."
           url: https://1password.com/
+          tags:
+            - recommended
         - title: "Bitwarden"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/bitwarden.png"
           description: "Bitwarden is the most trusted password manager for passwords and passkeys at home or at work, on any browser or device. Start with a free trial."
           url: https://bitwarden.com/
+          tags:
+            - recommended
         - title: "NordPass"
           image_width: 180
           image_height: 93
@@ -2687,6 +2854,9 @@
           image: "assets/img/tools/diceware-password-generator.jpg"
           description: "Tired of forgetting passwords? We got you covered! All passwords consist of real words, chosen at random."
           url: https://diceware.dmuth.org/
+          tags:
+            - recommended
+            - used-in-book
         - title: "diceware"
           image_width: 180
           image_height: 90
@@ -2725,6 +2895,9 @@
           image: "assets/img/tools/aws-kms.svg"
           url: https://aws.amazon.com/kms/
           description: "Create and control keys used to encrypt or digitally sign your data."
+          tags:
+            - recommended
+            - used-in-book
         - title: "Azure Key Vault"
           url: https://azure.microsoft.com/en-us/products/key-vault
           description: "Safeguard cryptographic keys and other secrets used by cloud apps and services."
@@ -2757,6 +2930,8 @@
           image: "assets/img/tools/openbao.png"
           description: "OpenBao is an open source, community-driven fork of HashiCorp Vault managed by the Linux Foundation to manage, store, and distribute sensitive data."
           url: https://openbao.org/
+          tags:
+            - recommended
         - title: "Doppler"
           image_width: 180
           image_height: 101
@@ -2781,6 +2956,9 @@
           image: "assets/img/tools/aws-secrets-manager.svg"
           url: https://aws.amazon.com/secrets-manager/
           description: "Centrally manage the lifecycle of secrets."
+          tags:
+            - recommended
+            - used-in-book
         - title: "AWS Systems Manager Parameter Store"
           image_width: 180
           image_height: 180
@@ -2807,6 +2985,8 @@
           image: "assets/img/tools/macos-filevault.png"
           description: "Turn on FileVault to add an extra layer of security to the encrypted data on your Mac."
           url: https://support.apple.com/en-ie/guide/mac-help/mh11785/mac
+          tags:
+            - recommended
         - title: "Windows BitLocker"
           url: https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/
           description: "BitLocker is a Windows security feature that provides encryption for entire volumes, addressing the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices."
@@ -2821,12 +3001,18 @@
           image: "assets/img/tools/letsencrypt.png"
           description: "Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG)."
           url: https://letsencrypt.org/
+          tags:
+            - recommended
+            - used-in-book
         - title: "Certbot"
           image_width: 180
           image_height: 90
           image: "assets/img/tools/certbot.png"
           description: "Certbot is a free, open source software tool for automatically using Let’s Encrypt certificates on manually-administrated websites to enable HTTPS."
           url: https://certbot.eff.org/
+          tags:
+            - recommended
+            - used-in-book
         - title: "ZeroSSL"
           image_width: 180
           image_height: 93
@@ -2839,12 +3025,16 @@
           image: "assets/img/tools/cloudflare’s-free-tier.png"
           description: "Cloudflare offers free SSL/TLS certificates to secure your web traffic. Improve performance and save time on TLS certificate management with Cloudflare."
           url: https://www.cloudflare.com/application-services/products/ssl/
+          tags:
+            - recommended
         - title: "AWS Certificate Manager (ACM)"
           image_width: 180
           image_height: 180
           image: "assets/img/tools/aws-certificate-manager.svg"
           url: https://aws.amazon.com/certificate-manager/
           description: "Provision and manage SSL/TLS certificates with AWS services and connected resources."
+          tags:
+            - recommended
         - title: "Google-managed SSL certificates"
           image_width: 180
           image_height: 95
@@ -2877,6 +3067,8 @@
           image: "assets/img/tools/openbao.png"
           description: "OpenBao is an open source, community-driven fork of HashiCorp Vault managed by the Linux Foundation to manage, store, and distribute sensitive data."
           url: https://openbao.org/
+          tags:
+            - recommended
         - title: "step-ca"
           image_width: 180
           image_height: 94
@@ -2897,6 +3089,8 @@
           image: "assets/img/tools/caddy.png"
           description: "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go."
           url: https://caddyserver.com/
+          tags:
+            - recommended
         - title: "certstrap"
           image_width: 180
           image_height: 90
@@ -2980,6 +3174,8 @@
       author: "Martin Kleppmann"
       publisher: "O'Reilly"
       url: "https://amzn.to/4eExfTO"
+      tags:
+        - recommended
     - title: "Database Reliability Engineering"
       image_width: 180
       image_height: 236
@@ -3043,6 +3239,26 @@
       publisher: "Microsoft Press"
       url: "https://amzn.to/3Yniei7"
   other_resources:
+    - title: "Distributed systems theory for the distributed systems engineer"
+      image_width: 180
+      image_height: 93
+      image: "assets/img/other-resources/distributed-systems-theory-for-the-distributed-systems-engineer.png"
+      description: "Writing about distributed systems, compilers, virtual machines, databases and research papers from SOSP, ATC, NSDI, OSDI, EuroSys and others."
+      author: "Paper Trail"
+      url: "https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/"
+      type: "Blog post"
+      tags:
+        - recommended
+    - title: "Choose Boring Technology"
+      image_width: 180
+      image_height: 93
+      image: "assets/img/other-resources/choose-boring-technology.png"
+      description: "This is the spoken word version of my essay, Choose Boring Technology. I have largely come to terms with it and the reality that I will never escape its popularity."
+      author: "Dan McKinley"
+      type: Talk
+      url: "https://boringtechnology.club/"
+      tags:
+        - recommended
     - title: "MapReduce: Simplified Data Processing on Large Clusters"
       image_width: 180
       image_height: 93
@@ -3067,22 +3283,6 @@
       author: "Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan Sivasubramanian, Peter Vosshall, and Werner Vogels"
       url: https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
       type: Article
-    - title: "Distributed systems theory for the distributed systems engineer"
-      image_width: 180
-      image_height: 93
-      image: "assets/img/other-resources/distributed-systems-theory-for-the-distributed-systems-engineer.png"
-      description: "Writing about distributed systems, compilers, virtual machines, databases and research papers from SOSP, ATC, NSDI, OSDI, EuroSys and others."
-      author: "Paper Trail"
-      url: "https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/"
-      type: "Blog post"
-    - title: "Choose Boring Technology"
-      image_width: 180
-      image_height: 93
-      image: "assets/img/other-resources/choose-boring-technology.png"
-      description: "This is the spoken word version of my essay, Choose Boring Technology. I have largely come to terms with it and the reality that I will never escape its popularity."
-      author: "Dan McKinley"
-      type: Talk
-      url: "https://boringtechnology.club/"
   tools:
     - type: Network-Attached Hard Drive
       tools:
@@ -3130,6 +3330,9 @@
           image: "assets/img/tools/postgresql.png"
           image_width: 175
           image_height: 180
+          tags:
+            - recommended
+            - used-in-book
         - title: "MySQL"
           url: https://www.mysql.com/
           description: "The world's most popular open source database."
@@ -3142,6 +3345,8 @@
           image: "assets/img/tools/sqlite.svg"
           description: "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world. SQLite is built into all mobile phones and most computers and comes bundled inside countless other applications that people use every day."
           url: https://www.sqlite.org/
+          tags:
+            - recommended
         - title: "MS SQL Server"
           url: https://www.microsoft.com/sql-server
           description: "Get the flexibility you need to use integrated solutions and apps with your data—in the cloud, on-premises, or at the edge. SQL Server 2022 is the most Azure-enabled release yet, with innovation across performance, security, and availability."
@@ -3204,6 +3409,8 @@
           image: "assets/img/tools/activerecord.jpg"
           url: https://guides.rubyonrails.org/active_record_basics.html
           description: "Active Record is part of the M in MVC - the model - which is the layer of the system responsible for representing data and business logic. Active Record helps you create and use Ruby objects whose attributes require persistent storage to a database."
+          tags:
+            - recommended
         - title: "Sequel"
           image_width: 180
           image_height: 93
@@ -3216,6 +3423,8 @@
           image: "assets/img/tools/knex.js.png"
           description: "Knex.js (pronounced /kəˈnɛks/) is a 'batteries included' SQL query builder for PostgreSQL, CockroachDB, MSSQL, MySQL, MariaDB, SQLite3, Better-SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use. It features both traditional node style callbacks as well as a promise interface for cleaner async flow control, a stream interface, full-featured query and schema builders, transaction support (with savepoints), connection pooling and standardized responses between different query clients and dialects."
           url: https://knexjs.org/
+          tags:
+            - used-in-book
         - title: "GORM"
           image_width: 180
           image_height: 93
@@ -3248,6 +3457,8 @@
           image: "assets/img/tools/amazon-dynamodb.svg"
           url: https://aws.amazon.com/dynamodb/
           description: "Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale."
+          tags:
+            - used-in-book
         - title: "Riak KV"
           image_width: 480
           image_height: 153
@@ -3292,6 +3503,8 @@
           image: "assets/img/tools/cloudflare.png"
           description: "Make employees, applications and networks faster and more secure everywhere, while reducing complexity and cost."
           url: https://www.cloudflare.com/
+          tags:
+            - recommended
         - title: "Akamai"
           url: https://www.akamai.com/
           description: "Akamai is the cybersecurity and cloud computing company that powers and protects business online."
@@ -3316,6 +3529,8 @@
           image: "assets/img/tools/amazon-cloudfront.svg"
           url: https://aws.amazon.com/cloudfront/
           description: "Securely deliver content with low latency and high transfer speeds."
+          tags:
+            - used-in-book
         - title: "Google Cloud and Media CDN"
           image_width: 180
           image_height: 95
@@ -3336,6 +3551,9 @@
           image: "assets/img/tools/amazon-simple-storage-service.svg"
           url: https://aws.amazon.com/s3/
           description: "Object storage built to retrieve any amount of data from anywhere."
+          tags:
+            - recommended
+            - used-in-book
         - title: "Google Cloud Storage (GCS)"
           image_width: 180
           image_height: 95
@@ -3713,6 +3931,8 @@
           image: "assets/img/tools/aws-sqs.svg"
           url: https://aws.amazon.com/sqs/
           description: "Fully managed message queuing for microservices, distributed systems, and serverless applications."
+          tags:
+            - recommended
         - title: "Google Cloud Tasks"
           image_width: 180
           image_height: 95
@@ -3733,6 +3953,8 @@
           image: "assets/img/tools/apache-kafka.png"
           description: "Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications."
           url: https://kafka.apache.org/
+          tags:
+            - recommended
         - title: "Confluent"
           image_width: 180
           image_height: 180
@@ -3902,6 +4124,8 @@
       author: "Douglas W. Hubbard"
       publisher: "Wiley"
       url: "https://amzn.to/4f1hSo3"
+      tags:
+        - recommended
   other_resources:
     - title: "How long will your experiment take?"
       image_width: 180
@@ -3911,6 +4135,8 @@
       author: Dan McKinley
       type: Calculator
       url: http://www.experimentcalculator.com/
+      tags:
+        - recommended
   tools:
     - type: Logging
       tools:
@@ -3926,6 +4152,9 @@
           image: "assets/img/tools/winston.jpg"
           description: "A logger for just about everything."
           url: https://github.com/winstonjs/winston
+          tags:
+            - recommended
+            - used-in-book
         - title: "zap"
           image_width: 180
           image_height: 90
@@ -4018,6 +4247,8 @@
           image: "assets/img/tools/amazon-cloudwatch-logs.svg"
           description: "You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources. CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive them securely for future analysis. CloudWatch Logs enables you to see all of your logs, regardless of their source, as a single and consistent flow of events ordered by time. CloudWatch Logs also supports querying your logs with a powerful query language, auditing and masking sensitive data in logs, and generating metrics from logs using filters or an embedded log format."
           url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
+          tags:
+            - used-in-book
         - title: "Google Cloud Logging"
           image_width: 180
           image_height: 95
@@ -4077,6 +4308,8 @@
           image: "assets/img/tools/uptime-robot.png"
           description: "Start monitoring in 30 seconds. Use advanced SSL, keyword and cron monitoring. Get notified by email, SMS, Slack and more. Get 50 monitors for FREE!"
           url: https://uptimerobot.com/
+          tags:
+            - recommended
         - title: "Better Stack"
           image_width: 180
           image_height: 95
@@ -4101,6 +4334,8 @@
           image: "assets/img/tools/amazon-route53-health-checks.svg"
           description: "Configure Route 53 to check the health of your resources and to respond to DNS queries using only healthy resources."
           url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html
+          tags:
+            - used-in-book
         - title: "Google Cloud Uptime Checks"
           image_width: 180
           image_height: 95
@@ -4183,6 +4418,8 @@
           image: "assets/img/tools/datadog.png"
           description: "Easily monitor service health metrics, distributed traces, and code performance with cloud-scale Application Performance Monitoring (APM)."
           url: https://www.datadoghq.com/product/apm/
+          tags:
+            - recommended
         - title: "New Relic"
           image_width: 180
           image_height: 101
@@ -4207,6 +4444,8 @@
           image: "assets/img/tools/amazon-cloudwatch.svg"
           url: https://aws.amazon.com/cloudwatch/
           description: "Observe and monitor resources and applications on AWS, on premises, and on other clouds."
+          tags:
+            - used-in-book
         - title: "Google Cloud Monitoring"
           image_width: 180
           image_height: 95
@@ -4334,6 +4573,8 @@
           image: "assets/img/tools/opentelemetry.png"
           description: "High-quality, ubiquitous, and portable telemetry to enable effective observability."
           url: https://opentelemetry.io/
+          tags:
+            - recommended
     - type: Metrics Backend
       tools:
         - title: "Open Time Series Database (OpenTSDB)"
@@ -4348,6 +4589,8 @@
           image: "assets/img/tools/prometheus.png"
           description: "An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach."
           url: https://prometheus.io/
+          tags:
+            - recommended
         - title: "Timescale"
           image_width: 180
           image_height: 95
@@ -4406,6 +4649,8 @@
           image: "assets/img/tools/honeycomb.jpg"
           description: "Honeycomb is the only observability platform you need. Get all your data in one unified platform with limitless possibilities."
           url: https://www.honeycomb.io/
+          tags:
+            - recommended
         - title: "SigNoz"
           image_width: 180
           image_height: 93
@@ -4526,12 +4771,16 @@
           image: "assets/img/tools/linear.jpg"
           description: "Linear streamlines issues, projects, and roadmaps. Purpose-built for modern product development."
           url: https://linear.app/
+          tags:
+            - recommended
         - title: "GitHub Issues"
           image_width: 180
           image_height: 95
           image: "assets/img/tools/github-issues.jpg"
           description: "Give your developers flexible features for project management that adapts to any team, project, and workflow—all alongside your code."
           url: https://github.com/features/issues
+          tags:
+            - recommended
         - title: "Asana"
           image_width: 180
           image_height: 94
@@ -4646,6 +4895,8 @@
       author: "James Iry"
       url: "https://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html"
       type: "Blog post"
+      tags:
+        - recommended
   tools:
     - type: Generative AI (GenAI, LLM)
       tools:
@@ -4897,6 +5148,8 @@
           image: "assets/img/tools/mend.png"
           description: "Mend.io gives you all the tools you need to build a mature, proactive AppSec program that effectively manages application risk."
           url: https://www.mend.io/
+          tags:
+            - recommended
         - title: "DependaBot"
           image_width: 180
           image_height: 180
@@ -4909,6 +5162,8 @@
           image: "assets/img/tools/patcher.png"
           description: "Keep IaC up to date, even with breaking changes."
           url: https://www.gruntwork.io/platform/patcher
+          tags:
+            - same-author
         - title: "ReversingLabs"
           url: https://www.reversinglabs.com/
           image_width: 180
@@ -4927,6 +5182,8 @@
           image: "assets/img/tools/gitguardian.png"
           description: "Secure your SDLC and Non-Human Identities (NHIs) with GitGuardian 🔐 — detect secrets in code, repos, and tools. Available as SaaS or Self-Hosted."
           url: https://www.gitguardian.com/
+          tags:
+            - recommended
         - title: "Anchore"
           image_width: 180
           image_height: 101
@@ -5041,6 +5298,8 @@
           image: "assets/img/tools/runme.png"
           description: "Runme turns your documentation into interactive notebooks for operating cloud infrastructure. Put another way, you can use your docs the way you use your terminal, instead of just as a reference that tends to go out of date."
           url: https://runme.dev/
+          tags:
+            - recommended
         - title: "Stateful"
           image_width: 180
           image_height: 101

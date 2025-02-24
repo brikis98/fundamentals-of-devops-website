@@ -17,11 +17,32 @@
       </a>
     </h3>
     {% if include.author %}
-      <p class="thin mt0 mb1 light-gray">
+      <p class="thin my0 light-gray">
         By {{ include.author }}
         {% if include.publisher %}({{ include.publisher }}){% endif %}
         {% if include.type %}({{ include.type }}){% endif %}
       </p>
+    {% endif %}
+    {% if include.tags %}
+      <div>
+        {% for tag in include.tags %}
+          {% case tag %}
+            {% when "recommended" %}
+              {% assign color = "green" %}
+              {% assign more_info = "Recommended by the author, Yevgeniy Brikman" %}
+            {% when "used-in-book" %}
+              {% assign color = "red" %}
+              {% assign more_info = "Fundamentals of DevOps and Software Delivery includes examples that use this resource." %}
+            {% when "same-author" %}
+              {% assign color = "olive" %}
+              {% assign more_info = "Full disclosure: the same author, Yevgeniy Brikman, worked on this resource." %}
+            {% else %}
+              {% assign color = "gray" %}
+              {% assign more_info = "" %}
+          {% endcase %}
+          <span class="rounded px1 white h6 bg-{{ color }}" title="{{ more_info }}">{{ tag }}</span>
+        {% endfor %}
+      </div>
     {% endif %}
     {% if include.description %}
       <p id="description-{% include dasherize.html text=include.title %}" class="mt1 mb0 thin read-more">

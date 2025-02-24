@@ -1,4 +1,4 @@
 <h2 id="{% include camel-case.html text=include.tool_type.type %}">{{ include.tool_type.type }} Tools </h2>
 {% for tool in include.tool_type.tools %}
-  {% include chapter-resource.html title=tool.title description=tool.description url=tool.url image=tool.image image_width=tool.image_width image_height=tool.image_height %}
+  {% include chapter-resource.html title=tool.title description=tool.description url=tool.url image=tool.image image_width=tool.image_width image_height=tool.image_height tags=tool.tags %}
 {% endfor %}
