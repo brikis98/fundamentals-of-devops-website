@@ -9,4 +9,8 @@
     ·
     {{ minutes }} min read
   {% endif %}
+  {% if include.include_comment_count %}
+    ·
+    <a href="{{ include.url | default: '' }}#disqus_thread" data-disqus-identifier="{{ include.id }}">Comments</a>
+  {% endif %}
 </span>
