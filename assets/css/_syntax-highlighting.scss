@@ -31,3 +31,8 @@ pre code {
     border: none;
     padding: 0;
 }
+
+// Disable highlighting of what Pygments considers syntax errors in my code snippets!
+.highlight .err {
+    border: none !important;
+}
