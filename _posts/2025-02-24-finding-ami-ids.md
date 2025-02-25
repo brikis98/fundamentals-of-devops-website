@@ -57,11 +57,11 @@ aws ec2 describe-images \
   --output text
 ```
 
-And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, run the following:
+And to look up the ID of the most recent Ubuntu 24.04 AMI in `us-east-2`, run the following:
 
 ```bash
 aws ec2 describe-images \
-  --region eu-west-1 \
+  --region us-east-2 \
   --owners 099720109477 \
   --filters 'Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*' \
   --query 'reverse(sort_by(Images, &CreationDate))[:1] | [0].ImageId' \
@@ -73,7 +73,7 @@ ID in a variable called `ami_id` as follows:
 
 ```bash
 ami_id=$(aws ec2 describe-images \
-  --region eu-west-1 \
+  --region us-east-2 \
   --owners 099720109477 \
   --filters 'Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*' \
   --query 'reverse(sort_by(Images, &CreationDate))[:1] | [0].ImageId' \
@@ -85,7 +85,7 @@ AMI you just found:
 
 ```bash
 aws ec2 run-instances \
-  --region eu-west-1 \
+  --region us-east-2 \
   --image-id "$ami_id" \
   --instance-type "t2.micro"
 ```
@@ -138,11 +138,11 @@ output "ami_id" {
 }
 ```
 
-And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, you'd fill in the following:
+And to look up the ID of the most recent Ubuntu 24.04 AMI in `us-east-2`, you'd fill in the following:
 
 ```bash
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-2"
 }
 
 data "aws_ami" "image" {
@@ -217,7 +217,7 @@ data "amazon-ami" "image" {
 }
 ```
 
-And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, you'd fill in the following:
+And to look up the ID of the most recent Ubuntu 24.04 AMI in `us-east-2`, you'd fill in the following:
 
 ```hcl
 data "amazon-ami" "image" {
@@ -226,7 +226,7 @@ data "amazon-ami" "image" {
   }
   owners      = ["099720109477"]
   most_recent = true
-  region      = "eu-west-1"
+  region      = "us-east-2"
 }
 ```
 
@@ -238,7 +238,7 @@ source "amazon-ebs" "example" {
   ami_name        = "custom-ami"
   ami_description = "Example of a custom AMI built using Packer."
   instance_type   = "t2.micro"
-  region          = "eu-west-1"
+  region          = "us-east-2"
   source_ami      = data.amazon-ami.image.id
   ssh_username    = "ec2-user"
 }
@@ -310,7 +310,7 @@ values:
 ```
 {% endraw %}
 
-And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, you'd fill in the following:
+And to look up the ID of the most recent Ubuntu 24.04 AMI in `us-east-2`, you'd fill in the following:
 
 {% raw %}
 ```yaml
@@ -321,7 +321,7 @@ And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, you'd 
     - name: 'Get AMI IDs'
       amazon.aws.ec2_ami_info:
         owners: 099720109477
-        region: eu-west-1
+        region: us-east-2
         filters:
           name: ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*
       register: amis
@@ -348,7 +348,7 @@ instance with the AMI you just found:
   amazon.aws.ec2_instance:
     name: "example"
     instance_type: t2.micro
-    region: eu-west-1
+    region: us-east-2
     image_id: "{{ amazon_linux_amis.images[-1].image_id }}"
 ```
 {% endraw %}
@@ -374,7 +374,7 @@ AWS CLI, you can launch an EC2 instance with the latest Amazon Linux AMI with th
 
 ```bash
 aws ec2 run-instances \
-  --region eu-west-1 \
+  --region us-east-2 \
   --image-id "resolve:ssm:/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64" \
   --instance-type "t2.micro"
 ```
@@ -383,7 +383,7 @@ And you can launch an EC2 instance with the latest Ubuntu AMI with the following
 
 ```bash
 aws ec2 run-instances \
-  --region eu-west-1 \
+  --region us-east-2 \
   --image-id "resolve:ssm:/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id" \
   --instance-type "t2.micro"
 ```
@@ -400,7 +400,7 @@ latest Amazon Linux AMI:
       amazon.aws.ec2_instance:
         name: "example"
         instance_type: t2.micro
-        region: eu-west-1
+        region: us-east-2
         image_id: "resolve:ssm:/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64"
 ```
 
@@ -408,7 +408,7 @@ It works in OpenTofu and Terraform, too:
 
 ```terraform
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-2"
 }
 
 resource "aws_instance" "example" {
@@ -425,14 +425,14 @@ to resolve the AMI ID yourself, which requires slightly less code than the `amaz
 ```hcl
 data "amazon-parameterstore" "image" {
   name   = "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64"
-  region = "eu-west-1"
+  region = "us-east-2"
 }
 
 source "amazon-ebs" "example" {
   ami_name        = "custom-ami"
   ami_description = "Example of a custom AMI built using Packer."
   instance_type   = "t2.micro"
-  region          = "eu-west-1"
+  region          = "us-east-2"
   source_ami      = data.amazon-parameterstore.image.value
   ssh_username    = "ec2-user"
 }
