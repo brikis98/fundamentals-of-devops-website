@@ -9,15 +9,16 @@
 </p>
 <div class="clearfix clear-2">
   {% for chapter in site.data.outline %}
+    {% capture chapter_url %}{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}{% endcapture %}
     <div class="md-col md-col-6 px2 mb3 center">
-      <div style="height: 295px">
-        <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="fa-stack fa-3x book-blue">
+      <div>
+        <a href="{{ chapter_url }}" class="fa-stack fa-3x book-blue">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-{{ chapter.icon }} fa-stack-1x fa-inverse"></i>
         </a>
         <h3 class="left-align">
           <div class="h5 light-gray thin">
-            <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="light-gray">
+            <a href="{{ chapter_url }}" class="light-gray">
               {% if chapter.skip_chapter_heading %}&nbsp;{% else %}Chapter {{ forloop.index }}{% endif %}
             </a>
           </div>
@@ -25,7 +26,7 @@
             {% if chapter.skip_chapter_heading %}
               {{ chapter.title }}
             {% else %}
-              <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}" class="black">
+              <a href="{{ chapter_url }}" class="black">
                 {{ chapter.title }}
               </a>
             {% endif %}
@@ -45,10 +46,21 @@
         {% endif %}
       </div>
       {% unless chapter.skip_chapter_heading %}
-        <p class="light-gray thin left-align">
-          <a href="{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}">
-            Learn more &#187;
-          </a>
+        <p class="thin light-gray h6 my0 left-align">
+          <a href="{{ chapter_url }}#books">{{ chapter.books | size }} Related Books</a>
+          ·
+          <a href="{{ chapter_url }}#other-resources">{{ chapter.other_resources | size }} Other Related Resources</a>
+          <br>
+          {% assign tools_count = 0 %}
+          {% for tool_category in chapter.tools %}
+            {% assign tools_count_in_category = tool_category.tools | size %}
+            {% assign tools_count = tools_count | plus: tools_count_in_category %}
+          {% endfor %}
+          <a href="{{ chapter_url }}#related-tools">{{ tools_count }} Related Tools</a>
+          ·
+          <a href="{{ chapter_url }}#disqus_thread" data-disqus-identifier="{{ chapter_url }}">Comments</a>
+          ·
+          <a href="{{ chapter_url }}">Learn More &#187;</a>
         </p>
       {% endunless %}
     </div>

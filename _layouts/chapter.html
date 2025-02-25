@@ -25,6 +25,9 @@ layout: default
 {% for section in all_sections %}
   <section class="py4 px2 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
     <div class="max-width-3 mx-auto">
+      {% if forloop.index0 == tools_start_index %}
+        <div id="related-tools"></div>
+      {% endif %}
       {% if forloop.index0 >= tools_start_index %}
         {% include chapter-tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
       {% else %}
@@ -40,5 +43,6 @@ layout: default
   </section>
 {% endfor %}
 
+{% include comments.html %}
 {% include foot.html %}
 

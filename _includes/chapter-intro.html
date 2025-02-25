@@ -21,18 +21,18 @@
       <h4 class="mt2">Chapter overview</h4>
       <ul class="thin mt0">
         <li><a href="#chapter-overview">Description</a></li>
-        <li><a href="#chapter-overview">Key ideas you'll explore</a></li>
-        <li><a href="#chapter-overview">Examples you'll try</a></li>
-        <li><a href="#chapter-overview">Table of contents</a></li>
+        <li><a href="#chapter-overview">Key Ideas You'll Explore</a></li>
+        <li><a href="#chapter-overview">Examples You'll Try</a></li>
+        <li><a href="#chapter-overview">Table of Contents</a></li>
       </ul>
       {% if include.chapter.books or include.chapter.other_resources %}
         <h4 class="mt2">Learning resources</h4>
         <ul class="thin mt0">
           {% if include.chapter.books %}
-            <li><a href="#books">Books</a></li>
+            <li><a href="#books">Related Books ({{ include.chapter.books | size }})</a></li>
           {% endif %}
           {% if include.chapter.other_resources %}
-            <li><a href="#other-resources">Other resources</a></li>
+            <li><a href="#other-resources">Other Related Resources ({{ include.chapter.other_resources | size }})</a></li>
           {% endif %}
         </ul>
       {% endif %}
@@ -40,10 +40,14 @@
         <h4 class="mt2">Tools</h4>
         <ul class="thin mt0">
           {% for tool_type in include.chapter.tools %}
-            <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }} Tools</a></li>
+            <li><a href="#{% include camel-case.html text=tool_type.type %}">{{ tool_type.type }} Tools ({{ tool_type.tools | size }})</a></li>
           {% endfor %}
         </ul>
       {% endif %}
+      <h4 class="mt2">Discussion</h4>
+      <ul class="thin">
+        <li><a href="#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></li>
+      </ul>
       <p class="mt3">
         {% include buy-now.html id="chapter-buy" label="Buy the book" absolute_url=true %}
       </p>
