@@ -1,11 +1,12 @@
 ---
 layout: default
+include_comments: true
 ---
 
 <section class="my4 p2 max-width-3 mx-auto">
   <div class="max-width-3 mx-auto pb2">
     <h1 class="mt0 h1-xl">{{ page.title }}</h1>
-    {% include resource-metadata.html content=page.content date=page.date %}
+    {% include resource-metadata.html content=page.content date=page.date id=page.id include_comment_count=true %}
   </div>
 
   <p class="mx-auto center py4">
@@ -22,6 +23,8 @@ layout: default
     <hr class="mt2">
   </div>
 </section>
+
+{% include comments.html %}
 
 {% include foot.html %}
 
