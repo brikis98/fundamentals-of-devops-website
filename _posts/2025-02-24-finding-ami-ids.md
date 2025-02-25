@@ -150,7 +150,7 @@ data "aws_ami" "image" {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"]
   }
-  owners      = ["99720109477"]
+  owners      = ["099720109477"]
   most_recent = true
 }
 
@@ -224,7 +224,7 @@ data "amazon-ami" "image" {
   filters = {
     name = "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"
   }
-  owners      = ["99720109477"]
+  owners      = ["099720109477"]
   most_recent = true
   region      = "eu-west-1"
 }
@@ -320,7 +320,7 @@ And to look up the ID of the most recent Ubuntu 24.04 AMI in `eu-west-1`, you'd 
   tasks:
     - name: 'Get AMI IDs'
       amazon.aws.ec2_ami_info:
-        owners: 99720109477
+        owners: 099720109477
         region: eu-west-1
         filters:
           name: ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*
