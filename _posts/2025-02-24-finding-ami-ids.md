@@ -262,7 +262,7 @@ packer build custom-ami.pkr.hcl
 
 ## Ansible
 
-The fourth recipe is for [Ansible](https://docs.ansible.com/), a configuration management tool, which allows you to 
+The fourth recipe is for [Ansible](https://docs.ansible.com/), a configuration management tool which allows you to 
 find AMIs using the [`ec2_ami_info` 
 module](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_ami_info_module.html):
 
@@ -349,7 +349,7 @@ instance with the AMI you just found:
     name: "example"
     instance_type: t2.micro
     region: us-east-2
-    image_id: "{{ amazon_linux_amis.images[-1].image_id }}"
+    image_id: "{{ amis.images[-1].image_id }}"
 ```
 {% endraw %}
 
