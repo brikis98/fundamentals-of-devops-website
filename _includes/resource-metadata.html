@@ -11,7 +11,7 @@
       {% include date-length.html content=include.content date=include.date %}
       {% if include.include_comment_count %}
         ·
-        <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ include.id }}">Comments</a>
+        <a href="#disqus_thread" data-disqus-identifier="{{ include.id }}">Comments</a>
       {% endif %}
     </div>
     <div>
