@@ -240,7 +240,7 @@ source "amazon-ebs" "example" {
   instance_type   = "t2.micro"
   region          = "us-east-2"
   source_ami      = data.amazon-ami.image.id
-  ssh_username    = "ec2-user"
+  ssh_username    = "ubuntu"
 }
 
 build {
