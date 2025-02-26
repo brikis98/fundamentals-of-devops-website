@@ -517,17 +517,18 @@ instance_type = "m7i.large"
 ```
 
 Now, when you run OpenTofu commands, you pass in the variable definition file for the environment you want to use via
-the `-var-file` flag. For example, to make updates to the dev environment, you would run the following:
+the `-var-file` flag. You also `tofu init` with the `-reconfigure` flag to switch between environments. For example, to 
+make updates to the dev environment, you would run the following:
 
 ```console
-$ tofu init -var-file=dev.tfvars
+$ tofu init -var-file=dev.tfvars -reconfigure
 $ tofu apply -var-file=dev.tfvars
 ```
 
 And to make updates to the prod environment, you would run the following:
 
 ```console
-$ tofu init -var-file=prod.tfvars
+$ tofu init -var-file=prod.tfvars -reconfigure
 $ tofu apply -var-file=prod.tfvars
 ```
 
