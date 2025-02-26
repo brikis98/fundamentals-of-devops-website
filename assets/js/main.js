@@ -37,11 +37,11 @@
     ga('send', props);
   };
 
-  const initialize = () => {
-    // Track links in GA
+  const trackLinksInGA = () => {
     $('.tracked').on('click', trackOutboundLink);
+  };
 
-    // "Show more" links
+  const handleReadMoreLinks = () => {
     for (const jsReadMoreLink of document.getElementsByClassName('js-read-more')) {
       jsReadMoreLink.addEventListener('click', (event) => {
         event.preventDefault();
@@ -51,9 +51,35 @@
         jsReadMoreLink.innerText = jsReadMoreLink.innerText === "(show)" ? "(hide)" : "(show)";
       });
     }
+  };
 
-    // Add anchors to headings
+  const enableAnchorJs = () => {
     anchors.add('h2');
+  };
+
+  const injectScriptTag = (src, attrs) => {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = src;
+    for (const [key, value] of Object.entries(attrs)) {
+      scriptTag.setAttribute(key, value);
+    }
+    (document.head || document.body).appendChild(scriptTag);
+  };
+
+  const disqusBaseUrl = '//fundamentals-of-devops-and-software-delivery.disqus.com';
+
+  const enableDisqus = () => {
+    if (document.getElementById('disqus_thread')) {
+      injectScriptTag(`${disqusBaseUrl}/embed.js`, {'data-timestamp': +new Date()});
+    }
+    injectScriptTag(`${disqusBaseUrl}/count.js`, {id: 'dsq-count-scr'});
+  };
+
+  const initialize = () => {
+    trackLinksInGA();
+    handleReadMoreLinks();
+    enableAnchorJs();
+    enableDisqus();
   };
 
   if (document.readyState !== 'loading') {
