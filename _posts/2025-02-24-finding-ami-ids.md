@@ -1,7 +1,7 @@
 ---
 layout: resource
 title: "How to find AMI IDs for Amazon Linux and Ubuntu"
-description: "Learn the different ways to automatically find the IDs of common Amazon-managed AMIs such as Amazon Linux and Ubuntu, using tools such as the AWS CLI, OpenTofu, and Packer."
+description: "Learn the several copy-pasteable recipes for programmatically finding the IDs of the latest Amazon-managed AMIs, such as Amazon Linux and Ubuntu, using tools such as the AWS CLI, OpenTofu, Packer, Ansible, and AWS SSM Parameter Store."
 thumbnail_path: "/resources/finding-ami-ids/amis.png"
 ---
 
@@ -11,8 +11,8 @@ Console, the web UI makes it easy to find the latest versions of AMIs that Amazo
 Ubuntu. However, when you are trying to launch instances programmatically, you need the ID of the AMI to use, and that 
 ID can be surprisingly tricky to find, as (a) it's not easy to find the ID in the web UI and (b) even 
 if you find it, you wouldn't want to hard-code the ID anyway, as it is different in each region, and changes each time 
-AWS updates its AMIs (e.g., with security fixes). In this blog post, I'll show you several recipes for how to 
-programmatically find the latest ID of Amazon-managed AMIs, with each recipe making use of one of the following
+AWS updates its AMIs (e.g., with security fixes). In this blog post, I'll share several copy-pasteable recipes for how 
+to programmatically find the latest ID of Amazon-managed AMIs, with each recipe making use of one of the following
 tools:
 
 * [AWS CLI](#aws-cli)
