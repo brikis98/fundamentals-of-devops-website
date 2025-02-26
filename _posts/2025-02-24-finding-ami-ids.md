@@ -369,8 +369,10 @@ you the latest AMI ID, in any region, without any extra lookup steps!
 
 To use this functionality, you set the AMI ID to `resolve:ssm:<AMI_NAME>`, where `<AMI_NAME>` is 
 `/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64` for Amazon Linux and 
-`/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id` for Ubuntu. For example, with the 
-AWS CLI, you can launch an EC2 instance with the latest Amazon Linux AMI with the following command:
+`/aws/service/canonical/ubuntu/server/24.04/stable/current/amd64/hvm/ebs-gp3/ami-id` for Ubuntu (see
+[this link](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ami.html) 
+for others, such as Windows and macOS AMIs). For example, with the AWS CLI, you can launch an EC2 instance with the 
+latest Amazon Linux AMI with the following command:
 
 ```bash
 aws ec2 run-instances \
