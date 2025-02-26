@@ -372,6 +372,17 @@
       publisher: "Midwestern Mac"
       url: "https://amzn.to/3UwLouj"
   other_resources:
+    - title: "How to find AMI IDs for Amazon Linux and Ubuntu"
+      image_width: 175
+      image_height: 180
+      image: "assets/img/resources/finding-ami-ids/amis.png"
+      description: "Learn the several copy-pasteable recipes for programmatically finding the IDs of the latest Amazon-managed AMIs, such as Amazon Linux and Ubuntu, using tools such as the AWS CLI, OpenTofu, Packer, Ansible, and AWS SSM Parameter Store."
+      author: "Yevgeniy Brikman"
+      url: "https://www.fundamentals-of-devops.com/resources/2025/02/24/finding-ami-ids/"
+      type: "Blog post"
+      tags:
+        - recommended
+        - same-author
     - title: "Reusable, composable, battle-tested Terraform modules"
       image_width: 180
       image_height: 95
