@@ -155,8 +155,9 @@ provider "aws" {
 }
 
 module "state" {
-  source = "github.com/brikis98/devops-book//ch5/tofu/modules/state-bucket"
-
+  source  = "brikis98/devops/book//modules/state-bucket"
+  version = "1.0.0"
+  
   # TODO: fill in your own bucket name!
   name = "fundamentals-of-devops-tofu-state"
 }
@@ -303,8 +304,9 @@ To use the `kms-key` module, add the following code to _main.tf_ in your _tofu-s
 
 ```terraform
 module "key" {
-  source = "github.com/brikis98/devops-book//ch5/tofu/modules/kms-key"
-
+  source  = "brikis98/devops/book//modules/kms-key"
+  version = "1.0.0"
+  
   name = "tofu-state-key"
 }
 ```
@@ -539,7 +541,8 @@ the book's sample code repo as follows:
 
 ```terraform
 module "instance" {
-  source = "github.com/brikis98/devops-book//ch2/tofu/modules/ec2-instance?ref=${var.instance_module_version}"
+  source  = "brikis98/devops/book//modules/ec2-instance"
+  version = var.instance_module_version  
 
   name          = "example"
   instance_type = var.instance_type
@@ -547,8 +550,7 @@ module "instance" {
 }
 ```
 
-Note that the `source` URL includes a `ref` parameter. This can be any valid Git reference, such as a tag. The
-preceding code sets the `ref` parameter to an input variable named `instance_module_version`. Add this input variable
+Note that the `version` parameter is set to an input variable named `instance_module_version`. Add this input variable
 to _variables.tf_ as follows:
 
 ```terraform
