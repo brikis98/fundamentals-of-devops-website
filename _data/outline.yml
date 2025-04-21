@@ -50,6 +50,14 @@
       author: "Nicole Forsgren PhD, Jez Humble, Gene Kim"
       publisher: "IT Revolution Press"
       url: "https://amzn.to/3Yi5dHP"
+    - title: "UNIX and Linux System Administration Handbook"
+      image_width: 180
+      image_height: 236
+      image: "assets/img/books/unix-and-linux-system-administration-handbook.jpg"
+      description: "This book is today’s definitive guide to installing, configuring, and maintaining any UNIX or Linux system, including systems that supply core Internet and cloud infrastructure. Updated for new distributions and cloud environments, this comprehensive guide covers best practices for every facet of system administration, including storage management, network design and administration, security, web hosting, automation, configuration management, performance analysis, virtualization, DNS, security, and the management of IT service organizations. The authors―world-class, hands-on technologists―offer indispensable new coverage of cloud platforms, the DevOps philosophy, continuous deployment, containerization, monitoring, and many other essential topics."
+      author: "Evi Nemeth, Garth Snyder, Trent Hein, Ben Whaley, Dan Mackin"
+      publisher: "Addison-Wesley Professional"
+      url: "https://amzn.to/4iqVWE2"
     - title: "Implementing Lean Software Development"
       image_width: 180
       image_height: 238
