@@ -1,4 +1,4 @@
 <h2 id="books">Related Books</h2>
 {% for resource in include.chapter.books %}
-  {% include chapter-resource.html title=resource.title subtitle=resource.subtitle description=resource.description url=resource.url image=resource.image image_width=resource.image_width image_height=resource.image_height author=resource.author publisher=resource.publisher tags=resource.tags %}
+  {% include chapter-resource.html title=resource.title subtitle=resource.subtitle description=resource.description url=resource.url image=resource.image image_width=resource.image_width image_height=resource.image_height author=resource.author publisher=resource.publisher tags=resource.tags include_comment_count=true %}
 {% endfor %}

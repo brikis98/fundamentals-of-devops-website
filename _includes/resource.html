@@ -10,7 +10,7 @@
   <div class="sm-col sm-col-8 thin px2">
     <h3 class="mt0 mb0"><a href="{{ include.url }}" target="{{ target }}" class="black tracked" data-trk="click-{{ include.type }}-{{ include.id }}">{{ include.title }}</a></h3>
     {% if include.include_metadata %}
-      {% include resource-base-metadata.html content=include.content date=include.date include_comment_count=true id=include.id url=include.url %}
+      {% include resource-base-metadata.html content=include.content date=include.date include_comment_count=include.include_comment_count id=include.id url=include.url %}
     {% endif %}
     <p class="mt1">
       {{ include.description }}

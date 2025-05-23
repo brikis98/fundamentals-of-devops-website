@@ -3,5 +3,5 @@
   Blog posts, appendices, and other useful information related to the book.
 </p>
 {% for resource in paginator.posts %}
-  {% include resource.html type="resource" id=resource.id url=resource.url title=resource.title description=resource.description content=resource.content image=resource.thumbnail_path date=resource.date call_to_action=resource.call_to_action include_metadata=true id=resource.id %}
+  {% include resource.html type="resource" id=resource.id url=resource.url title=resource.title description=resource.description content=resource.content image=resource.thumbnail_path date=resource.date call_to_action=resource.call_to_action include_metadata=true id=resource.id include_comment_count=true %}
 {% endfor %}
