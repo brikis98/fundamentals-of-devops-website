@@ -1,3 +1,12 @@
+- id: "published"
+  url: "#buy-now"
+  title: "<em>Fundamentals of DevOps and Software Delivery</em> has been published!"
+  date: "May 20, 2025"
+  image: "fundamentals-of-devops-cover-2d-color-small.png"
+  description: |
+    The final version of <em>Fundamentals of DevOps and Software Delivery</em> has been published and the ebook and
+    print edition are now available online and in your local bookstores!
+  call_to_action: "Get your copy now!"
 - id: "early-release"
   url: "#buy-now"
   title: "The early release and pre-orders are now available!"
