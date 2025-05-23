@@ -1,0 +1,38 @@
+- id: kief-morris-praise
+  quote: |
+    I'm not aware of any other book that provides such practical advice on operations and systems administration in the
+    context of delivering and running software. Jim's book stays refreshingly focused on the real-world aspects of
+    DevOps—what most people actually mean when they use the term—rather than the theory.
+  author: Kief Morris
+  title: |
+    Distinguished infrastructure engineer at Thoughtworks and author of <em>Infrastructure as Code</em>
+  image: kief-morris.jpg
+  url: "https://kief.com/"
+- id: niall-murphy-praise
+  quote: |
+    An excellent step-by-step guide to getting practical things done—the kind of thing I wish I'd had when I was
+    starting off.
+  author: Niall Murphy
+  title: |
+    Co-founder & CEO of Stanza and co-author of <em>Site Reliability Engineering: How Google Runs Production Systems</em>
+  image: niall-murphy.jpeg
+  url: "https://relyabilit.ie/"
+- id: ben-whaley-praise
+  quote: |
+    Meticulously organized, chock full of examples, buoyed by research and practical experience,
+    <em>Fundamentals of DevOps and Software Delivery</em> is another outstanding project from the prolific Yevgeniy
+    “Jim” Brikman. The breadth of technology in this space can feel overwhelming, but Jim manages to isolate the signal
+    from the noise, emphasizing the prevailing industry best practices while smartly identifying pitfalls along the way.
+  author: Ben Whaley
+  title: |
+    Staff software engineer at Chime and co-author of <em>UNIX and Linux System Administration Handbook</em>
+  image: ben-whaley.png
+  url: "https://whaletech.co/"
+- id: yousif-akbar-praise
+  quote: |
+    If you want to learn DevOps principles quickly, and learn them in a way that's directly applicable to your problems,
+    buy this book.
+  author: Yousif Akbar
+  title: Principal software engineer at Gruntwork
+  image: yousif-akbar.jpeg
+  url: "https://www.linkedin.com/in/yousif-akbar/"
