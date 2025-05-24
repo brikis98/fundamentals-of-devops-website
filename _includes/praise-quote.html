@@ -5,10 +5,10 @@
     </a>
   </div>
   <div class="sm-col sm-col-8 px2 thin">
-    <p class="mt0 light-gray">
-      {{ include.quote | strip }}
+    <p class="mt0 quote italic h3">
+      <span class="quote quote-margin">&ldquo;</span>{{ include.quote | strip }}<span class="quote">&rdquo;</span>
     </p>
-    <p>
+    <p class="light-gray">
       <a href="{{ include.url }}" target="blank" class="tracked" data-trk="click-praise-quote-{{ include.id }}">{{ include.author | strip }}</a>,
       {{ include.title }}
     </p>
