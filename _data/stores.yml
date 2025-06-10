@@ -2,7 +2,7 @@
   name: "Amazon"
   url: "https://amzn.to/3VZaRxu"
   image: "amazon-small.png"
-  value: 70
+  value: 53
 - id: "barnes-noble"
   name: "Barnes & Noble"
   url: "https://www.barnesandnoble.com/w/fundamentals-of-devops-and-software-delivery-jim-brikman/1145837544"
@@ -22,19 +22,19 @@
   name: "Apple iTunes"
   url: "https://books.apple.com/us/book/fundamentals-of-devops-and-software-delivery/id6746210255"
   image: "itunes-logo-small.png"
-  value: 20
+  value: 60
 - id: "whsmith"
   name: "WHSmith"
   url: "https://www.whsmith.co.uk/Product/Yevgeniy-Brikman/Fundamentals-of-DevOps-and-Software-Delivery--A-Hands-On-Guide-to-Deploying-and-Managing-Software-in-Production/15478980"
   image: "wh-smith-logo-small.png"
-  value: 20
+  value: 70
+- id: "shroff"
+  name: "Shroff Publishers (India)"
+  url: "https://www.shroffpublishers.com/books/9789368083566/"
+  image: "shroff-publishers-small.jpg"
+  value: 25
 - id: "oreilly"
   name: "O'Reilly"
   url: "http://oreillymedia.pxf.io/c/5553902/2077261/15173"
   image: "oreilly-small.png"
-  value: 50
-#- id: "shroff"
-#  name: "Shroff Publishers (India)"
-#  url: "https://www.shroffpublishers.com/books/9789355421821/"
-#  image: "shroff-publishers-small.jpg"
-#  value: 20
+  value: 70
