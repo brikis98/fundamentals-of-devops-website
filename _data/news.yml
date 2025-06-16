@@ -5,7 +5,9 @@
   image: "fundamentals-of-devops-cover-2d-color-small.png"
   description: |
     The final version of <em>Fundamentals of DevOps and Software Delivery</em> has been published and the ebook and
-    print edition are now available online and in your local bookstores!
+    print edition are now available online and in your local bookstores! Learn more about why I wrote the book, and
+    why you may want to read it, in this
+    <a href="https://www.ybrikman.com/blog/2025/06/02/fundamentals-of-devops-published/" target="_blank">announcement blog post</a>.
   call_to_action: "Get your copy now!"
 - id: "early-release"
   url: "#buy-now"
