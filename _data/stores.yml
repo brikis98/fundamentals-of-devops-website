@@ -18,6 +18,11 @@
   url: "https://play.google.com/store/books/details?pcampaignid=books_read_action&id=2gRfEQAAQBAJ"
   image: "google-play-small.png"
   value: 60
+- id: "ebooks"
+  name: "eBooks.com"
+  url: "https://www.ebooks.com/en-us/book/346550998/fundamentals-of-devops-and-software-delivery/yevgeniy-brikman/"
+  image: "ebooks-small.png"
+  value: 60
 - id: "adlibris"
   name: "Adlibris"
   url: "https://www.adlibris.com/no/bok/fundamentals-of-devops-and-software-delivery-9781098174590"
