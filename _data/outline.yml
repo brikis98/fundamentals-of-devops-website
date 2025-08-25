@@ -5261,6 +5261,12 @@
           image: "assets/img/tools/humanitec.jpg"
           description: "Humanitec empowers platform engineers to build the perfect Internal Developer Platform for the enterprise. Our products enable platform teams to reduce cognitive load, drive standardization and slash time to market."
           url: https://humanitec.com/
+        - title: "Kratix"
+          image_width: 180
+          image_height: 109
+          image: "assets/img/tools/kratix.png"
+          description: "Kratix is an open-source platform framework for building composable internal developer platforms (IDPs)."
+          url: "https://www.kratix.io/"
         - title: "OpsLevel"
           image_width: 180
           image_height: 180
