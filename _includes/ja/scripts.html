@@ -1,0 +1,19 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XT93N4JFV8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XT93N4JFV8');
+</script>
+<script>
+  window.disqus_config = function () {
+    this.page.url = '{{ site.url }}{{ page.url }}';
+    this.page.identifier = '{{ page.id | default: page.url }}';
+    this.page.title = '{{ page.title }}';
+  };
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.js" async></script>

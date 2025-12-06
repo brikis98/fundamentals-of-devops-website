@@ -1,0 +1,5 @@
+<h2 id="news" class="my0">ニュース</h2>
+{% include ja/newsletter.html %}
+{% for news in site.data.news %}
+  {% include ja/resource.html type="news" id=news.id url=news.url title=news.title description=news.description image=news.image date=news.date call_to_action=news.call_to_action include_metadata=true %}
+{% endfor %}

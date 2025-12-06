@@ -1,0 +1,52 @@
+---
+layout: ja/default
+---
+
+{% assign chapter_index = page.path | replace: 'ja/chapters/chapter-', '' | replace: '/index.html', '' | minus: 1 %}
+{% assign chapter = site.data.outline[chapter_index] %}
+
+{% if page.lang == "ja" and page.translated != true %}
+{% include ja/not-translated.html %}
+{% endif %}
+
+{% include ja/chapter-intro.html chapter=chapter chapter_index=chapter_index %}
+
+{% assign all_sections = "ja/chapter-overview.html" %}
+{% if chapter.books %}
+  {% assign all_sections = all_sections | append: ",ja/chapter-books.html" %}
+{% endif %}
+{% if chapter.other_resources %}
+  {% assign all_sections = all_sections | append: ",ja/chapter-other-resources.html" %}
+{% endif %}
+
+{% assign all_sections = all_sections | split: "," %}
+
+{% if chapter.tools %}
+  {% assign tools_start_index = all_sections | size %}
+  {% assign all_sections = all_sections | concat: chapter.tools %}
+{% endif %}
+
+{% for section in all_sections %}
+  <section class="py4 px2 clearfix border-bottom border-gray {% cycle '', 'bg-gray-color' %}">
+    <div class="max-width-3 mx-auto">
+      {% if forloop.index0 == tools_start_index %}
+        <div id="related-tools"></div>
+      {% endif %}
+      {% if forloop.index0 >= tools_start_index %}
+        {% include ja/chapter-tools.html tool_type=section chapter=chapter chapter_index=chapter_index %}
+      {% else %}
+        {% include {{ section }} chapter=chapter chapter_index=chapter_index %}
+      {% endif %}
+
+      {% if forloop.last %}
+        <div class="mt0 mb0 light-gray thin center">
+          {% include ja/chapter-pagination.html chapter_index=chapter_index %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}
+
+{% include ja/comments.html %}
+{% include ja/foot.html %}
+

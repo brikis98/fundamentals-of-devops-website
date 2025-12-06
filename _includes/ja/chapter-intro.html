@@ -1,0 +1,56 @@
+<section class="py4 px2 clearfix border-bottom border-gray bg-gray-color">
+  <div class="max-width-4 mx-auto">
+    <div class="lg-col lg-col-5 lg-col-right p3 py4">
+      <a href="{{ site.url }}" class="book-container">
+        <div class="book">
+          <picture>
+            <source media="(min-width: 64em)" srcset="{% include ja/image-url.html path="fundamentals-of-devops-cover-2d-color-website-home.png" %}">
+            {% include ja/image.html path="fundamentals-of-devops-cover-2d-color-website-home-small.png" alt="DevOpsとソフトウェアデリバリの基礎" %}
+          </picture>
+        </div>
+      </a>
+    </div>
+    <div class="lg-col lg-col-7 lg-col-right p3">
+      <div class="mt0 mb0 light-gray thin">
+        {% include ja/chapter-pagination.html chapter_index=include.chapter_index %}
+      </div>
+      <h1 class="mt0 mb0">
+        {% assign chapter_index_1 = include.chapter_index | plus: 1 %}
+        第{{ chapter_index_1 }}章: {{ include.chapter.title_ja }}
+      </h1>
+      <h4 class="mt2">この章の概要</h4>
+      <ul class="thin mt0">
+        <li><a href="#chapter-overview">概要</a></li>
+        <li><a href="#chapter-overview">この章で学ぶ考え方</a></li>
+        <li><a href="#chapter-overview">取り組む演習</a></li>
+        <li><a href="#chapter-overview">目次</a></li>
+      </ul>
+      {% if include.chapter.books or include.chapter.other_resources %}
+        <h4 class="mt2">学習リソース</h4>
+        <ul class="thin mt0">
+          {% if include.chapter.books %}
+            <li><a href="#books">関連書籍 ({{ include.chapter.books | size }})</a></li>
+          {% endif %}
+          {% if include.chapter.other_resources %}
+            <li><a href="#other-resources">その他の関連情報 ({{ include.chapter.other_resources | size }})</a></li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      {% if include.chapter.tools %}
+        <h4 class="mt2">ツール</h4>
+        <ul class="thin mt0">
+          {% for tool_type in include.chapter.tools %}
+            <li><a href="#{% include ja/camel-case.html text=tool_type.type %}">{{ tool_type.type }} Tools ({{ tool_type.tools | size }})</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <h4 class="mt2">ディスカッション</h4>
+      <ul class="thin">
+        <li><a href="#disqus_thread" data-disqus-identifier="{{ page.url }}">コメント</a></li>
+      </ul>
+      <p class="mt3">
+        {% include ja/buy-now.html id="chapter-buy" label="書籍を購入" absolute_url=true %}
+      </p>
+    </div>
+  </div>
+</section>

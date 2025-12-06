@@ -1,0 +1,9 @@
+<div class="border p2 mt1" style="height: 450px; overflow-y: scroll; overflow-x: hidden">
+  <div class="right-align">
+    <h3 class="mb3 mt0">Table of Contents</h3>
+  </div>
+  {% for item in site.data.toc %}
+    {% include ja/toc-contents.html toc_item=item highlight=true %}
+  {% endfor %}
+</div>
+<p class="thin h6 mt1">The book's table of contents, with hands-on examples highlighted.</p>

@@ -1,0 +1,22 @@
+- id: "published"
+  url: "#buy-now"
+  title: "<em>Fundamentals of DevOps and Software Delivery</em> has been published!"
+  date: "May 20, 2025"
+  image: "fundamentals-of-devops-cover-2d-color-small.png"
+  description: |
+    The final version of <em>Fundamentals of DevOps and Software Delivery</em> has been published and the ebook and
+    print edition are now available online and in your local bookstores! Learn more about why I wrote the book, and
+    why you may want to read it, in this
+    <a href="https://www.ybrikman.com/blog/2025/06/02/fundamentals-of-devops-published/" target="_blank">announcement blog post</a>.
+  call_to_action: "Get your copy now!"
+- id: "early-release"
+  url: "#buy-now"
+  title: "The early release and pre-orders are now available!"
+  date: "June 25, 2024"
+  image: "fundamentals-of-devops-and-software-delivery-2d-cover-early-release-small.png"
+  description: |
+    The early release is now available at O'Reilly Media! Grab a copy of the ebook before the final version is done so
+    you can start learning today, and receive new chapters and updates as they are written, plus the final ebook bundle
+    when the book is released. If you prefer to wait for the final version, you can preorder the book at online stores
+    now!
+  call_to_action: "Get the early release or pre-order now!"

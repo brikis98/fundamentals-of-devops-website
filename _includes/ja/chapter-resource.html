@@ -1,0 +1,59 @@
+<div class="clearfix my3">
+  <div class="col col-3 pr2 center">
+    <a href="{{ include.url }}" target="_blank">
+      {% if include.image %}
+        <img src="/{{ include.image }}" alt="{{ include.title }}" width="{{ include.image_width }}" height="{{ include.image_height }}" loading="lazy">
+      {% else %}
+        <div class="border border-silver center align-middle gray h1" style="height: 180px; line-height: 180px">
+          A
+        </div>
+      {% endif %}
+    </a>
+  </div>
+  <div class="col col-9">
+    <h3 class="my0">
+      <a href="{{ include.url }}" target="_blank">
+        {{ include.title }}{% if include.subtitle %}: {{ include.subtitle }}{% endif %}
+      </a>
+    </h3>
+    {% if include.author %}
+      <p class="thin my0 light-gray">
+        By {{ include.author }}
+        {% if include.publisher %}({{ include.publisher }}){% endif %}
+        {% if include.type %}({{ include.type }}){% endif %}
+      </p>
+    {% endif %}
+    {% if include.tags %}
+      <div>
+        {% for tag in include.tags %}
+          {% case tag %}
+            {% when "recommended" %}
+              {% assign color = "green" %}
+              {% assign more_info = "Recommended by the author, Yevgeniy Brikman" %}
+            {% when "used-in-book" %}
+              {% assign color = "red" %}
+              {% assign more_info = "Fundamentals of DevOps and Software Delivery includes examples that use this resource." %}
+            {% when "same-author" %}
+              {% assign color = "olive" %}
+              {% assign more_info = "Full disclosure: the same author, Yevgeniy Brikman, worked on this resource." %}
+            {% else %}
+              {% assign color = "gray" %}
+              {% assign more_info = "" %}
+          {% endcase %}
+          <span class="rounded px1 white h6 bg-{{ color }}" title="{{ more_info }}">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if include.description %}
+      <p id="description-{% include ja/dasherize.html text=include.title %}" class="mt1 mb0 thin read-more">
+        {{ include.description }}
+      </p>
+      {% assign description_length = include.description | size %}
+      {% if description_length >= 260 %}
+        <div class="h6 thin">
+          <a href="#" class="js-read-more" data-target="description-{% include ja/dasherize.html text=include.title %}">(show)</a>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

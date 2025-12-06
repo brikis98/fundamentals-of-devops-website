@@ -1,0 +1,23 @@
+---
+layout: ja/default
+title: "DevOpsとソフトウェアデリバリの基礎"
+lang: ja
+sections:
+  - ja/intro.html
+  - ja/different.html
+  - ja/praise.html
+  - ja/buy.html
+  - ja/author.html
+  - ja/outline.html
+  - ja/news.html
+---
+
+{% for section in page.sections %}
+  <section class="py4 px2 clearfix border-bottom border-gray {% cycle 'bg-gray-color', '' %}">
+    <div class="max-width-{% if section == 'ja/intro.html' %}4{% else %}3{% endif %} mx-auto">
+      {% include {{ section }} %}
+    </div>
+  </section>
+{% endfor %}
+
+{% include ja/foot.html %}

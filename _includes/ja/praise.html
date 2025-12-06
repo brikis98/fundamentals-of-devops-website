@@ -1,0 +1,4 @@
+<h2 id="praise" class="mt0 mb2">この本への賞賛の声</h2>
+{% for praise in site.data.praise %}
+  {% include ja/praise-quote.html id=praise.id url=praise.url quote=praise.quote author=praise.author title=praise.title image=praise.image title=praise.title %}
+{% endfor %}

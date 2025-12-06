@@ -1,0 +1,8 @@
+<nav id="lang-switch-nav" class="light-gray thin">
+  <span>Language:</span>
+  {% if page.url contains '/ja/' %}
+    <a href="{{ page.url | remove: 'ja/' }}">English</a>
+  {% else %}
+    <a href="{{ page.url | prepend: '/ja' }}">日本語</a>
+  {% endif %}
+</nav>

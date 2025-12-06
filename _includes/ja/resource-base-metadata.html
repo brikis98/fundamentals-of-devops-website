@@ -1,0 +1,16 @@
+
+<span class="thin light-gray">
+  <time datetime="{{ include.date | date:"%Y-%m-%d" }}">{{ include.date | date:"%b %d, %Y" }}</time>
+  {% if include.content %}
+    {% assign minutes = include.content | number_of_words | divided_by: 290 %}
+    {% if minutes == 0 %}
+      {% assign minutes = 1 %}
+    {% endif %}
+    ·
+    {{ minutes }} min read
+  {% endif %}
+  {% if include.include_comment_count %}
+    ·
+    <a href="{{ include.url | default: '' }}#disqus_thread" data-disqus-identifier="{{ include.id }}">Comments</a>
+  {% endif %}
+</span>

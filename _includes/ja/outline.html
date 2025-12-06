@@ -1,0 +1,60 @@
+<h2 id="outline" class="mt0 mb4">書籍の概要</h2>
+<div class="clearfix clear-2">
+  {% for chapter in site.data.ja.outline %}
+    {% capture chapter_url %}{% include ja/chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}{% endcapture %}
+    <div class="md-col md-col-6 px2 mb3 center">
+      <div>
+        <a href="{{ chapter_url }}" class="fa-stack fa-3x book-blue">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-{{ chapter.icon }} fa-stack-1x fa-inverse"></i>
+        </a>
+        <h3 class="left-align">
+          <div class="h5 light-gray thin">
+            <a href="{{ chapter_url }}" class="light-gray">
+              {% if chapter.skip_chapter_heading %}&nbsp;{% else %}第{{ forloop.index }}章{% endif %}
+            </a>
+          </div>
+          <div style="height: 50px">
+            {% if chapter.skip_chapter_heading %}
+              {{ chapter.title_ja }}
+            {% else %}
+              <a href="{{ chapter_url }}" class="black">
+                {{ chapter.title_ja }}
+              </a>
+            {% endif %}
+          </div>
+        </h3>
+        {% if chapter.summary %}
+          <p class="light-gray thin left-align" style="height: 50px;">
+            {{ chapter.summary }}
+          </p>
+        {% endif %}
+        {% if chapter.key_ideas %}
+          <ul class="mt0 pl2 light-gray thin left-align">
+            {% for item in chapter.key_ideas %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      {% unless chapter.skip_chapter_heading %}
+        <p class="thin light-gray h6 my0 left-align">
+          <a href="{{ chapter_url }}#books">{{ chapter.books | size }} 関連書籍</a>
+          ·
+          <a href="{{ chapter_url }}#other-resources">{{ chapter.other_resources | size }} その他の関連リソース</a>
+          <br>
+          {% assign tools_count = 0 %}
+          {% for tool_category in chapter.tools %}
+            {% assign tools_count_in_category = tool_category.tools | size %}
+            {% assign tools_count = tools_count | plus: tools_count_in_category %}
+          {% endfor %}
+          <a href="{{ chapter_url }}#related-tools">{{ tools_count }} 関連ツール</a>
+          ·
+          <a href="{{ chapter_url }}#disqus_thread" data-disqus-identifier="{{ chapter_url }}">コメント</a>
+          ·
+          <a href="{{ chapter_url }}">さらに学ぶ &#187;</a>
+        </p>
+      {% endunless %}
+    </div>
+  {% endfor %}
+</div>

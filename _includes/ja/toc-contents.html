@@ -1,0 +1,19 @@
+{% assign classes = "h5 bold" %}
+{% assign styles = "" %}
+{% assign substr = "" %}
+{% if include.toc_item.section %}
+  {% assign classes = "h5 ml1" %}
+  {% assign styles = "width: 350px" %}
+  {% assign substr = include.toc_item.section | slice: 4, 7 %}
+{% elsif include.toc_item.subsection %}
+  {% assign classes = "h6 ml2" %}
+  {% assign styles = "width: 342px" %}
+  {% assign substr = include.toc_item.subsection | slice: 6, 7 %}
+{% elsif include.toc_item.subsubsection %}
+  {% assign classes = "h6 ml3" %}
+  {% assign styles = "width: 326px" %}
+  {% assign substr = include.toc_item.subsubsection | slice: 0, 7 %}
+{% endif %}
+<div class="truncate px1 my1 {{ classes }}{% if include.highlight and substr == 'Example' %} bg-yellow {% endif %}" style="{{ styles }}">
+  {{ include.toc_item.chapter | default: include.toc_item.section | default: include.toc_item.subsection | default: include.toc_item.subsubsection }}
+</div>
