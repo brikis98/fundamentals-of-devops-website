@@ -1,0 +1,42 @@
+---
+---
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "@id": "{{ site.url }}",
+  "name": "{{ site.name }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.author_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.publisher }}"
+  },
+  "datePublished": "{{ site.date_published }}",
+  "isbn": "{{ site.isbn }}",
+  "bookEdition": "{{ site.edition }}",
+  "about": "{{ site.description }}",
+  "hasPart": [
+    {% assign real_chapters = "" | split: "" %}
+    {% for chapter in site.data.outline %}
+      {% unless chapter.skip_chapter_heading %}
+        {% assign chapter_as_array = chapter | reverse | reverse %}
+        {% assign real_chapters = real_chapters | concat: chapter_as_array %}
+      {% endunless %}
+    {% endfor %}
+    {% for chapter in real_chapters %}
+      {% assign empty_array = "" | split: "" %}
+      {% assign key_ideas = chapter.key_ideas | default: empty_array %}
+      {% assign examples = chapter.examples | default: empty_array %}
+      {
+        "@type": "Chapter",
+        "position": {{ forloop.index }},
+        "name": "{{ chapter.title }}",
+        "description": "Key ideas: {{ chapter.key_ideas | join: ', ' }}.{% if chapter.examples %} Examples: {{ chapter.examples | join: ', ' }}.{% endif %}",
+        "learningResourceType": "Technical Tutorial"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
