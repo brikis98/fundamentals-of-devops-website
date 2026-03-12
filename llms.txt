@@ -22,7 +22,7 @@ software in production through dozens of step-by-step examples.
 
 ## Attribution and contact
 
-- Author: Yevgeniy Brikman
-- Author website: https://www.ybrikman.com
+- Author: {{ site.author }}
+- Author website: {{ site.author_url }}
 - Book website repository: {{ site.website_repo_url }}
 - Book code examples repository: {{ site.code_examples_url }}
