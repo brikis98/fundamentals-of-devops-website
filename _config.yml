@@ -6,6 +6,12 @@ thumbnail_path: "fundamentals-of-devops-and-software-delivery-3d-cover-no-shadow
 # About settings
 name: "Fundamentals of DevOps and Software Delivery"
 description: "This book is a hands-on guide to software delivery—that is, all the processes, tools, and techniques that are required to run and maintain software in production on an ongoing basis—and DevOps, one of the methodologies used today to make software delivery vastly more efficient."
+author: "Yevgeniy Brikman"
+author_url: "https://www.ybrikman.com"
+publisher: "O'Reilly Media"
+date_published: "2025-06-24"
+isbn: "978-1098174590"
+edition: "1st Edition"
 website_repo_url: "https://github.com/brikis98/fundamentals-of-devops-website"
 code_examples_url: "https://github.com/brikis98/devops-book"
 
