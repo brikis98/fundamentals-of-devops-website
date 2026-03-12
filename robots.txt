@@ -1,4 +1,6 @@
+---
+---
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fundamentals-of-devops.com/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
