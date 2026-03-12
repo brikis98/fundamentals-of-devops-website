@@ -2,6 +2,7 @@
 baseurl: "/"
 url: "https://www.fundamentals-of-devops.com"
 thumbnail_path: "fundamentals-of-devops-and-software-delivery-3d-cover-no-shadow-medium.png"
+book_cover_path: "fundamentals-of-devops-cover-2d-color-medium.png"
 
 # About settings
 name: "Fundamentals of DevOps and Software Delivery"
@@ -12,6 +13,7 @@ publisher: "O'Reilly Media"
 date_published: "2025-06-24"
 isbn: "978-1098174590"
 edition: "1st Edition"
+language: "en-US"
 website_repo_url: "https://github.com/brikis98/fundamentals-of-devops-website"
 code_examples_url: "https://github.com/brikis98/devops-book"
 
