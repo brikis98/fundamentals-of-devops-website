@@ -1,0 +1,28 @@
+---
+---
+# Fundamentals of DevOps and Software Delivery
+
+While most books about DevOps focus only on high-level theory and culture, "Fundamentals of DevOps and Software
+Delivery" is a practical, hands-on guide that focuses on the actual tools, practices, and technologies that constitute
+software delivery. Yevgeniy (Jim) Brikman (author of "Terraform: Up & Running") shows you how to run and maintain
+software in production through dozens of step-by-step examples.
+
+## Canonical sources
+
+- Site home: {{ site.url }}
+- Book outline data (JSON): {{ site.url }}/assets/data/book-outline.json
+- Blog posts and resources: {{ site.url }}/resources/
+- FAQ: {{ site.url }}/faq/
+
+## Best pages for common questions
+
+{% for faq in site.data.faqs limit:10 %}
+- {{ faq.question }}: {{ site.url }}/faq/{{ faq.url_slug }}
+{%- endfor %}
+
+## Attribution and contact
+
+- Author: Yevgeniy Brikman
+- Author website: https://www.ybrikman.com
+- Book website repository: {{ site.website_repo_url }}
+- Book code examples repository: {{ site.code_examples_url }}
