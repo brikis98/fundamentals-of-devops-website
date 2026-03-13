@@ -6,7 +6,7 @@
       "@type": "Organization",
       "name": {{ store.name | jsonify }}
     },
-    "url": {{ store.url | jsonfiy }}
+    "url": {{ store.url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
