@@ -1,0 +1,1 @@
+{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ page.description | default: site.description }}{% endif %}
