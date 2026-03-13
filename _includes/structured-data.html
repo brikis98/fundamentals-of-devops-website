@@ -1,0 +1,6 @@
+{%- assign structured_data_json = page.structured_data_json | default: layout.structured_data_json -%}
+{% for json_file in structured_data_json %}
+  <script type="application/ld+json">
+    {% include {{ json_file }} %}
+  </script>
+{% endfor %}

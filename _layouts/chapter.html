@@ -1,5 +1,8 @@
 ---
 layout: default
+structured_data_json:
+  - chapter-collection.json
+  - chapter-item-list.json
 ---
 
 {% assign chapter_index = page.path | replace: 'chapters/chapter-', '' | replace: '/index.html', '' | minus: 1 %}
