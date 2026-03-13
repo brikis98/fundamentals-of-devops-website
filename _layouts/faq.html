@@ -1,0 +1,30 @@
+---
+layout: default
+structured_data_json:
+  - article.json
+---
+
+<section class="py4 px2 clearfix border-bottom border-gray bg-gray-color">
+  <div class="max-width-4 mx-auto">
+    <div class="lg-col lg-col-5 lg-col-right p3 py4">
+      <a href="{{ site.url }}" class="book-container">
+        <div class="book">
+          <picture>
+            <source media="(min-width: 64em)" srcset="{% include image-url.html path="fundamentals-of-devops-cover-2d-color-website-home.png" %}">
+            {% include image.html path="fundamentals-of-devops-cover-2d-color-website-home-small.png" alt="Fundamentals of DevOps and Software Delivery" %}
+          </picture>
+        </div>
+      </a>
+    </div>
+    <div class="lg-col lg-col-7 lg-col-right p3">
+      <p class="thin h5 mb0"><a href="{{ site.url }}"><em>{{ site.name }}</em></a> &raquo; <a href="/faq">FAQ</a></p>
+      <h1 class="mt0 mb0">{{ page.title }}</h1>
+      <p class="thin">
+        {{ page.tldr }}
+      </p>
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+{% include foot.html %}
