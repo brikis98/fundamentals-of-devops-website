@@ -1,5 +1,7 @@
-<ol class="mt3 pl2">
-  {% for faq in site.data.faqs %}
-    <li class="mt1"><a href="/faq/{{ faq.url_slug }}">{{ faq.question }}</a></li>
+{% assign num_faqs = site.data.faqs | size %}
+{%- assign limit = include.limit | default: num_faqs -%}
+<ol class="mt3 pl3">
+  {% for faq in site.data.faqs limit:limit %}
+    <li class="mt1 thin"><a href="/faq/{{ faq.url_slug }}">{{ faq.question }}</a></li>
   {% endfor %}
 </ol>
