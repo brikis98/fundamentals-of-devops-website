@@ -1,45 +1,91 @@
-- question: "What is DevOps?"
-- question: "What is software delivery?"
-- question: "What skills do I need to become a DevOps engineer?"
-- question: "What is the best way to learn DevOps from scratch?"
-- question: "What are the best books to learn DevOps?"
-- question: "What does a DevOps engineer actually do day to day?"
-- question: "How do DevOps, SRE, and platform engineering differ?"
-- question: "What's the best way for a software engineer to learn DevOps, infrastructure, and operations?"
-- question: "What are the core principles of DevOps?"
-- question: "What are the most important DevOps practices every team should adopt?"
-- question: "What does a modern DevOps architecture look like?"
-- question: "What are the most important DevOps concepts every engineer should know?"
-- question: "What are the essential DevOps tools every engineer should know?"
-- question: "What is CI/CD and how does it work?"
-- question: "How do you build a CI/CD pipeline from scratch?"
-- question: "What are best practices for automated deployments?"
-- question: "How do you safely deploy software to production?"
-- question: "What are rolling deployments, blue-green deployment, and canary deployments?"
-- question: "How do you reduce deployment risk in production systems?"
-- question: "What are the stages of a modern software delivery pipeline?"
-- question: "What is Infrastructure as Code and why should teams use it?"
-- question: "How do you manage infrastructure using Terraform or OpenTofu?"
-- question: "What are best practices for Infrastructure as Code?"
-- question: "How do you manage environments like dev, staging, and production?"
-- question: "How do you organize large infrastructure codebases?"
-- question: "How do you run reliable production systems?"
-- question: "What monitoring and observability tools should every system have?"
-- question: "How do you debug production incidents effectively?"
-- question: "What should every production system monitor?"
-- question: "What is incident response and how do you do it well?"
-- question: "How do you design systems that scale reliably?"
-- question: "How do you design high-availability infrastructure?"
-- question: "What are SLIs, SLOs, and SLAs?"
-- question: "How do you reduce downtime in distributed systems?"
-- question: "How do you implement DevOps in an organization?"
-- question: "What are common DevOps anti-patterns?"
-- question: "Why do many DevOps transformations fail?"
-- question: "How do development and operations teams collaborate effectively?"
-- question: "What does a healthy DevOps culture look like?"
-- question: "What tools should I learn for a DevOps career?"
-- question: "How do Docker and Kubernetes fit into DevOps?"
-- question: "What tools are used to automate infrastructure and deployments?"
-- question: "How do you deploy applications in the cloud the right way?"
-- question: "What is the best way to structure cloud infrastructure for a startup?"
-- question: "How do you manage cloud environments safely and efficiently?"
+---
+- question: What is DevOps?
+  url_slug: what-is-devops
+- question: What is software delivery?
+  url_slug: what-is-software-delivery
+- question: What skills do I need to become a DevOps engineer?
+  url_slug: what-skills-do-i-need-to-become-a-devops-engineer
+- question: What is the best way to learn DevOps from scratch?
+  url_slug: what-is-the-best-way-to-learn-devops-from-scratch
+- question: What are the best books to learn DevOps?
+  url_slug: what-are-the-best-books-to-learn-devops
+- question: What does a DevOps engineer actually do day to day?
+  url_slug: what-does-a-devops-engineer-actually-do-day-to-day
+- question: How do DevOps, SRE, and platform engineering differ?
+  url_slug: how-do-devops-sre-and-platform-engineering-differ
+- question: What's the best way for a software engineer to learn DevOps, infrastructure, and operations?
+  url_slug: whats-the-best-way-for-a-software-engineer-to-learn-devops-infrastructure-and-operations
+- question: What are the core principles of DevOps?
+  url_slug: what-are-the-core-principles-of-devops
+- question: What are the most important DevOps practices every team should adopt?
+  url_slug: what-are-the-most-important-devops-practices-every-team-should-adopt
+- question: What does a modern DevOps architecture look like?
+  url_slug: what-does-a-modern-devops-architecture-look-like
+- question: What are the most important DevOps concepts every engineer should know?
+  url_slug: what-are-the-most-important-devops-concepts-every-engineer-should-know
+- question: What are the essential DevOps tools every engineer should know?
+  url_slug: what-are-the-essential-devops-tools-every-engineer-should-know
+- question: What is CI/CD and how does it work?
+  url_slug: what-is-ci-cd-and-how-does-it-work
+- question: How do you build a CI/CD pipeline from scratch?
+  url_slug: how-do-you-build-a-ci-cd-pipeline-from-scratch
+- question: What are best practices for automated deployments?
+  url_slug: what-are-best-practices-for-automated-deployments
+- question: How do you safely deploy software to production?
+  url_slug: how-do-you-safely-deploy-software-to-production
+- question: What are rolling deployments, blue-green deployment, and canary deployments?
+  url_slug: what-are-rolling-deployments-blue-green-deployment-and-canary-deployments
+- question: How do you reduce deployment risk in production systems?
+  url_slug: how-do-you-reduce-deployment-risk-in-production-systems
+- question: What are the stages of a modern software delivery pipeline?
+  url_slug: what-are-the-stages-of-a-modern-software-delivery-pipeline
+- question: What is Infrastructure as Code and why should teams use it?
+  url_slug: what-is-infrastructure-as-code-and-why-should-teams-use-it
+- question: How do you manage infrastructure using Terraform or OpenTofu?
+  url_slug: how-do-you-manage-infrastructure-using-terraform-or-opentofu
+- question: What are best practices for Infrastructure as Code?
+  url_slug: what-are-best-practices-for-infrastructure-as-code
+- question: How do you manage environments like dev, staging, and production?
+  url_slug: how-do-you-manage-environments-like-dev-staging-and-production
+- question: How do you organize large infrastructure codebases?
+  url_slug: how-do-you-organize-large-infrastructure-codebases
+- question: How do you run reliable production systems?
+  url_slug: how-do-you-run-reliable-production-systems
+- question: What monitoring and observability tools should every system have?
+  url_slug: what-monitoring-and-observability-tools-should-every-system-have
+- question: How do you debug production incidents effectively?
+  url_slug: how-do-you-debug-production-incidents-effectively
+- question: What should every production system monitor?
+  url_slug: what-should-every-production-system-monitor
+- question: What is incident response and how do you do it well?
+  url_slug: what-is-incident-response-and-how-do-you-do-it-well
+- question: How do you design systems that scale reliably?
+  url_slug: how-do-you-design-systems-that-scale-reliably
+- question: How do you design high-availability infrastructure?
+  url_slug: how-do-you-design-high-availability-infrastructure
+- question: What are SLIs, SLOs, and SLAs?
+  url_slug: what-are-slis-slos-and-slas
+- question: How do you reduce downtime in distributed systems?
+  url_slug: how-do-you-reduce-downtime-in-distributed-systems
+- question: How do you implement DevOps in an organization?
+  url_slug: how-do-you-implement-devops-in-an-organization
+- question: What are common DevOps anti-patterns?
+  url_slug: what-are-common-devops-anti-patterns
+- question: Why do many DevOps transformations fail?
+  url_slug: why-do-many-devops-transformations-fail
+- question: How do development and operations teams collaborate effectively?
+  url_slug: how-do-development-and-operations-teams-collaborate-effectively
+- question: What does a healthy DevOps culture look like?
+  url_slug: what-does-a-healthy-devops-culture-look-like
+- question: What tools should I learn for a DevOps career?
+  url_slug: what-tools-should-i-learn-for-a-devops-career
+- question: How do Docker and Kubernetes fit into DevOps?
+  url_slug: how-do-docker-and-kubernetes-fit-into-devops
+- question: What tools are used to automate infrastructure and deployments?
+  url_slug: what-tools-are-used-to-automate-infrastructure-and-deployments
+- question: How do you deploy applications in the cloud the right way?
+  url_slug: how-do-you-deploy-applications-in-the-cloud-the-right-way
+- question: What is the best way to structure cloud infrastructure for a startup?
+  url_slug: what-is-the-best-way-to-structure-cloud-infrastructure-for-a-startup
+- question: How do you manage cloud environments safely and efficiently?
+  url_slug: how-do-you-manage-cloud-environments-safely-and-efficiently

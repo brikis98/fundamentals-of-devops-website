@@ -1,0 +1,27 @@
+---
+layout: faq
+title: "How do you safely deploy software to production?"
+tldr: "Safe delivery comes from a repeatable pipeline: version control, automated tests, artifact creation, staged environments, progressive rollout, and rollback readiness. The goal is to increase deployment frequency while lowering change failure rate."
+last_modified_at: 2026-03-13
+structured_data_json:
+  - article.json
+---
+
+<section>
+  <div class="max-width-3 mx-auto thin">
+    <h2>Practical guidance</h2>
+    <ul>
+      <li>Gate every change with automated checks appropriate to risk level.</li>
+      <li>Use progressive delivery patterns for high-impact services.</li>
+      <li>Keep releases small and frequent to reduce rollback complexity.</li>
+      <li>Predefine rollback and communication steps for every production deploy.</li>
+    </ul>
+
+    <h2>Relevant chapters from the book</h2>
+    <ul>
+      <li><a href="/chapters/chapter-04-how-to-version-build-and-test-your-code/">Chapter 4: How to Version, Build, and Test Your Code</a></li>
+      <li><a href="/chapters/chapter-05-how-to-set-up-ci-and-cd/">Chapter 5: How to Set Up CI and CD</a></li>
+      <li><a href="/chapters/chapter-03-how-to-manage-your-apps-using-orchestration-tools/">Chapter 3: How to Manage Your Apps Using Orchestration Tools</a></li>
+    </ul>
+  </div>
+</section>
