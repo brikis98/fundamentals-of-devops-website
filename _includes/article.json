@@ -1,0 +1,18 @@
+{%- capture image_path %}{% if page.thumbnail_path %}{{ page.thumbnail_path }}{% else %}{{ site.thumbnail_path }}{% endif %}{% endcapture -%}
+{%- capture image_url %}{% include image-url.html path=image_path absolute=true %}{% endcapture -%}
+{%- capture page_title %}{% include page-title.html %}{% endcapture -%}
+{%- capture page_description %}{% include page-description.html %}{% endcapture -%}
+{%- assign modified_time = page.last_modified_at | default: page.date -%}
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page_title | jsonify }},
+  "description": {{ page_description | jsonify }},
+  "url": "{% include canonical-url.html %}",
+  "mainEntityOfPage": "{% include canonical-url.html %}",
+  "image": {{ image_url | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ modified_time | date_to_xmlschema | jsonify }},
+  "author": {% include author.json %},
+  "publisher": {% include site-publisher.json %}
+}

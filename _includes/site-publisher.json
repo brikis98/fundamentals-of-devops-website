@@ -1,0 +1,5 @@
+{
+  "@type": "Organization",
+  "name": {{ site.name | jsonify }},
+  "url": {{ site.url | jsonify }}
+}

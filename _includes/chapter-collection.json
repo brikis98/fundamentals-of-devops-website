@@ -1,0 +1,21 @@
+{%- capture page_title %}{% include page-title.html %}{% endcapture -%}
+{%- capture page_description %}{% include page-description.html %}{% endcapture -%}
+{%- assign chapter_index = page.path | replace: 'chapters/chapter-', '' | replace: '/index.html', '' | minus: 1 -%}
+{%- assign chapter = site.data.outline[chapter_index] -%}
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page_title | jsonify }},
+  "description": {{ page_description | jsonify }},
+  "url": "{% include canonical-url.html %}",
+  "isPartOf": {
+    "@type": "Book",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "about": [
+    {% for idea in chapter.key_ideas %}
+    {{ idea | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

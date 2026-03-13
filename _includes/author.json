@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author | jsonify }},
+  "url": {{ site.author_url | jsonify }},
+  "sameAs": [
+    {%- assign first = true -%}
+    {%- for contact in site.contact_urls -%}
+      {%- assign contact_url = contact[1].url -%}
+      {%- assign contact_url_first_char = contact_url | slice: 0 -%}
+      {%- if contact_url_first_char == "h" -%}
+        {%- unless first %},{% endunless -%}
+        {{ contact_url | jsonify }}
+        {%- assign first = false -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}

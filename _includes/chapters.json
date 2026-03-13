@@ -1,0 +1,19 @@
+[
+  {% assign real_chapters = "" | split: "" %}
+  {% for chapter in site.data.outline %}
+    {% unless chapter.skip_chapter_heading %}
+      {% assign chapter_as_array = chapter | reverse | reverse %}
+      {% assign real_chapters = real_chapters | concat: chapter_as_array %}
+    {% endunless %}
+  {% endfor %}
+  {% for chapter in real_chapters %}
+    {
+      "@type": "Chapter",
+      "position": {{ forloop.index }},
+      "name": {{ chapter.title | jsonify }},
+      "description": "Key ideas: {{ chapter.key_ideas | join: ', ' }}.{% if chapter.examples %} Examples: {{ chapter.examples | join: ', ' }}.{% endif %}",
+      "learningResourceType": "Technical Tutorial",
+      "url": "{{ site.url }}{% include chapter-url.html chapter_index=forloop.index chapter_title=chapter.title %}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
