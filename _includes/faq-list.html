@@ -1,0 +1,5 @@
+<ol class="mt3 pl2">
+  {% for faq in site.data.faqs %}
+    <li class="mt1"><a href="/faq/{{ faq.url_slug }}">{{ faq.question }}</a></li>
+  {% endfor %}
+</ol>
