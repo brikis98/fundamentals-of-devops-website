@@ -1,0 +1,27 @@
+---
+layout: faq
+title: "When should I use Ansible vs Docker vs Terraform?"
+tldr: "Use Terraform/OpenTofu to provision infrastructure, Docker to package and run applications consistently, and Ansible to configure servers and orchestrate host-level tasks. They solve different layers of the delivery stack and frequently work best together."
+last_modified_at: 2026-03-15
+structured_data_json:
+  - article.json
+---
+
+<section class="py2">
+  <div class="max-width-3 mx-auto thin">
+    <h2 class="mt0">Practical guidance</h2>
+    <ul>
+      <li>Map tools to layers: infra provisioning, app packaging/runtime, host configuration.</li>
+      <li>Avoid forcing one tool to do every job when it is not designed for that scope.</li>
+      <li>Use reproducible pipelines that connect tool outputs cleanly.</li>
+      <li>Document ownership per layer to reduce operational ambiguity.</li>
+    </ul>
+
+    <h2>Relevant chapters from the book</h2>
+    <ul>
+      <li><a href="/chapters/chapter-02-how-to-manage-your-infrastructure-as-code/">Chapter 2: How to Manage Your Infrastructure as Code</a></li>
+      <li><a href="/chapters/chapter-03-how-to-manage-your-apps-using-orchestration-tools/">Chapter 3: How to Manage Your Apps Using Orchestration Tools</a></li>
+      <li><a href="/chapters/chapter-04-how-to-version-build-and-test-your-code/">Chapter 4: How to Version, Build, and Test Your Code</a></li>
+    </ul>
+  </div>
+</section>

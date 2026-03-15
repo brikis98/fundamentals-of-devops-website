@@ -89,3 +89,61 @@
   url_slug: what-is-the-best-way-to-structure-cloud-infrastructure-for-a-startup
 - question: How do you manage cloud environments safely and efficiently?
   url_slug: how-do-you-manage-cloud-environments-safely-and-efficiently
+- question: What is Kubernetes?
+  url_slug: what-is-kubernetes
+- question: What's the best way to learn Kubernetes?
+  url_slug: whats-the-best-way-to-learn-kubernetes
+- question: When should you use Kubernetes vs VMs vs serverless?
+  url_slug: when-should-you-use-kubernetes-vs-vms-vs-serverless
+- question: What networking concepts should DevOps engineers learn first?
+  url_slug: what-networking-concepts-should-devops-engineers-learn-first
+- question: What is the best CI server?
+  url_slug: what-is-the-best-ci-server
+- question: When should you use on-prem vs the cloud?
+  url_slug: when-should-you-use-on-prem-vs-the-cloud
+- question: How does IaaS compare to PaaS?
+  url_slug: how-does-iaas-compare-to-paas
+- question: How do configuration management tools compare to infrastructure as code tools?
+  url_slug: how-do-configuration-management-tools-compare-to-infrastructure-as-code-tools
+- question: When should I use Ansible vs Docker vs Terraform?
+  url_slug: when-should-i-use-ansible-vs-docker-vs-terraform
+- question: What's a monolith? What are microservices?
+  url_slug: whats-a-monolith-what-are-microservices
+- question: What is DevSecOps?
+  url_slug: what-is-devsecops
+- question: How do I harden my servers and secure my infrastructure?
+  url_slug: how-do-i-harden-my-servers-and-secure-my-infrastructure
+- question: What are the key security concepts and tools every DevOps engineer should learn?
+  url_slug: what-are-the-key-security-concepts-and-tools-every-devops-engineer-should-learn
+- question: What is service discovery?
+  url_slug: what-is-service-discovery
+- question: What are the best service discovery tools?
+  url_slug: what-are-the-best-service-discovery-tools
+- question: What is a service mesh?
+  url_slug: what-is-a-service-mesh
+- question: What are the best service mesh tools?
+  url_slug: what-are-the-best-service-mesh-tools
+- question: How do I store passwords securely?
+  url_slug: how-do-i-store-passwords-securely
+- question: How do I configure a custom domain name for my website?
+  url_slug: how-do-i-configure-a-custom-domain-name-for-my-website
+- question: How do I set up a TLS certificate for my website?
+  url_slug: how-do-i-set-up-a-tls-certificate-for-my-website
+- question: What's the best way to back up my data?
+  url_slug: whats-the-best-way-to-back-up-my-data
+- question: What metrics should every company track?
+  url_slug: what-metrics-should-every-company-track
+- question: How does monitoring compare to observability?
+  url_slug: how-does-monitoring-compare-to-observability
+- question: What are the best monitoring and observability tools?
+  url_slug: what-are-the-best-monitoring-and-observability-tools
+- question: What are feature toggles?
+  url_slug: what-are-feature-toggles
+- question: What is trunk based development?
+  url_slug: what-is-trunk-based-development
+- question: When should I use SQL vs NoSQL?
+  url_slug: when-should-i-use-sql-vs-nosql
+- question: What is an event-driven architecture?
+  url_slug: what-is-an-event-driven-architecture
+- question: What is Kafka and when should I use it?
+  url_slug: what-is-kafka-and-when-should-i-use-it

@@ -1,0 +1,27 @@
+---
+layout: faq
+title: "How do I store passwords securely?"
+tldr: "Secure credentials and web identity setup rely on three fundamentals: strong secret storage, correct DNS configuration, and properly managed TLS certificates. Automate renewal and rotation to avoid preventable outages and breaches."
+last_modified_at: 2026-03-15
+structured_data_json:
+  - article.json
+---
+
+<section class="py2">
+  <div class="max-width-3 mx-auto thin">
+    <h2 class="mt0">Practical guidance</h2>
+    <ul>
+      <li>Store passwords and secrets in dedicated managers, never in source control.</li>
+      <li>Use DNS records and domain ownership controls with clear change workflows.</li>
+      <li>Automate certificate issuance and renewal with monitored expiration alerts.</li>
+      <li>Enforce HTTPS and strong cipher/TLS policies across all public endpoints.</li>
+    </ul>
+
+    <h2>Relevant chapters from the book</h2>
+    <ul>
+      <li><a href="/chapters/chapter-08-how-to-secure-communication-and-storage/">Chapter 8: How to Secure Communication and Storage</a></li>
+      <li><a href="/chapters/chapter-07-how-to-set-up-networking/">Chapter 7: How to Set Up Networking</a></li>
+      <li><a href="/chapters/chapter-01-how-to-deploy-your-app/">Chapter 1: How to Deploy Your App</a></li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+layout: faq
+title: "What is an event-driven architecture?"
+tldr: "Use SQL when you need strong relational integrity and transactional consistency; use NoSQL for specific scale, access pattern, or schema-flexibility needs. Event-driven architectures and Kafka are useful when decoupling producers/consumers and handling high-throughput asynchronous workflows."
+last_modified_at: 2026-03-15
+structured_data_json:
+  - article.json
+---
+
+<section class="py2">
+  <div class="max-width-3 mx-auto thin">
+    <h2 class="mt0">Practical guidance</h2>
+    <ul>
+      <li>Choose data stores based on access patterns, consistency needs, and operations cost.</li>
+      <li>Use event-driven patterns when loose coupling and asynchronous processing are priorities.</li>
+      <li>Adopt Kafka for durable, high-throughput event streaming with multiple consumers.</li>
+      <li>Avoid technology-first decisions; start from domain and reliability requirements.</li>
+    </ul>
+
+    <h2>Relevant chapters from the book</h2>
+    <ul>
+      <li><a href="/chapters/chapter-09-how-to-store-data/">Chapter 9: How to Store Data</a></li>
+      <li><a href="/chapters/chapter-06-how-to-work-with-multiple-teams-and-environments/">Chapter 6: How to Work with Multiple Teams and Environments</a></li>
+      <li><a href="/chapters/chapter-10-how-to-monitor-your-systems/">Chapter 10: How to Monitor Your Systems</a></li>
+    </ul>
+  </div>
+</section>

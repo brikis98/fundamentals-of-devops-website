@@ -1,0 +1,27 @@
+---
+layout: faq
+title: "How do configuration management tools compare to infrastructure as code tools?"
+tldr: "Configuration management tools (like Ansible) focus on software and system state on existing hosts, while infrastructure-as-code tools (like Terraform/OpenTofu) provision and manage underlying infrastructure resources. They are complementary and often used together."
+last_modified_at: 2026-03-15
+structured_data_json:
+  - article.json
+---
+
+<section class="py2">
+  <div class="max-width-3 mx-auto thin">
+    <h2 class="mt0">Practical guidance</h2>
+    <ul>
+      <li>Use IaC to create infrastructure; use configuration tools to shape host runtime state.</li>
+      <li>Keep clear boundaries between provisioning and configuration responsibilities.</li>
+      <li>Automate both layers in CI/CD to avoid manual drift.</li>
+      <li>Choose one primary workflow and enforce it consistently across environments.</li>
+    </ul>
+
+    <h2>Relevant chapters from the book</h2>
+    <ul>
+      <li><a href="/chapters/chapter-02-how-to-manage-your-infrastructure-as-code/">Chapter 2: How to Manage Your Infrastructure as Code</a></li>
+      <li><a href="/chapters/chapter-03-how-to-manage-your-apps-using-orchestration-tools/">Chapter 3: How to Manage Your Apps Using Orchestration Tools</a></li>
+      <li><a href="/chapters/chapter-05-how-to-set-up-ci-and-cd/">Chapter 5: How to Set Up CI and CD</a></li>
+    </ul>
+  </div>
+</section>
