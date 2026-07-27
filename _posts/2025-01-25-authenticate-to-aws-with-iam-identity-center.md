@@ -57,8 +57,8 @@ summary, as shown in the following image:
 
 Take note of the following two pieces of information:
 
-1. **Region**: Jot down which AWS region you're using for AWS Identity Center. It'll be something like "United
-   "Europe (Ireland) | eu-west-1" or "States (Ohio) | us-east-2". You can learn more about AWS regions 
+1. **Region**: Jot down which AWS region you're using for AWS Identity Center. It'll be something like
+   "United States (Ohio) | us-east-2". You can learn more about AWS regions
    [here](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 2. **Access portal URL**: Jot down your unique AWS access portal URL. It'll look something like
    `https://d-c123456789.awsapps.com/start/`. A little later on, you'll see how to use this URL to log in to your AWS 
