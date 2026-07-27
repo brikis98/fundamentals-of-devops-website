@@ -216,7 +216,7 @@ A _session_ in the AWS CLI roughly corresponds to being authenticated to a singl
 $ aws configure sso
 SSO session name (Recommended): personal
 SSO start URL [None]: https://d-c123456789.awsapps.com/start/
-SSO region [None]: eu-west-1
+SSO region [None]: us-east-2
 SSO registration scopes [sso:account:access]:
 ```
 
@@ -229,7 +229,7 @@ The AWS CLI will prompt you for the following information:
 * **SSO start URL**. This is the URL of the access portal you use to log in to your AWS accounts. This is one of the
   pieces of information you saved when configuring IAM Identity Center; it's also in the invitation email you got when
   creating an IAM Identity Center user. It looks something like `https://d-c123456789.awsapps.com/start/`.
-* **SSO region name**. This is the AWS region in which you set up AWS IAM Identity Center (e.g., eu-west-1).
+* **SSO region name**. This is the AWS region in which you set up AWS IAM Identity Center (e.g., us-east-2).
 * **SSO registration scopes**. These scopes define the permissions the AWS CLI will have on your behalf. You can find
   the [available scopes 
   here](https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.html), but in most
