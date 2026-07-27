@@ -195,7 +195,7 @@ the permission set you have access to, such as `AdministratorAccess`, as shown i
 ![Seeing the permission set you have access to in an account](/assets/img/resources/authenticate-to-aws-with-iam-identity-center/identity-center-portal-auth-to-account.png)
 
 Click on the permission set you want to use (e.g., `AdministratorAccess`), and AWS will open up a new tab and log you 
-into that AWS account, with those corresponding permissions. That's all there is too it!
+into that AWS account, with those corresponding permissions. That's all there is to it!
 
 ## Authenticate to AWS on the command line
 
