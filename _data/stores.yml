@@ -38,6 +38,16 @@
   url: "https://www.whsmith.co.uk/Product/Yevgeniy-Brikman/Fundamentals-of-DevOps-and-Software-Delivery--A-Hands-On-Guide-to-Deploying-and-Managing-Software-in-Production/15478980"
   image: "wh-smith-logo-small.png"
   value: 70
+- id: "dpunkt"
+  name: "dpunkt"
+  url: "https://dpunkt.de/produkt/handbuch-fuer-software-delivery-und-operations/"
+  image: "spunkt-logo-small.png"
+  value: 70
+- id: "piter"
+  name: "Piter"
+  url: "https://www.piter.com/collection/all/product/osnovy-devops-i-software-delivery-praktika-razvertyvaniya-i-soprovozhdeniya-po-v-prodakshene"
+  image: "piter-logo-small.png"
+  value: 70
 - id: "shroff"
   name: "Shroff Publishers (India)"
   url: "https://www.shroffpublishers.com/books/9789368083566/"
